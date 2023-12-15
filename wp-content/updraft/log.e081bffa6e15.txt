@@ -1,0 +1,733 @@
+0000.000 (0) Opened log file at time: Mon, 04 Dec 2023 10:06:11 +0000 on https://www.gifto.co
+0000.007 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.23.10 WP: 6.3.1 PHP: 8.0.30 (fpm-fcgi, Linux host.contenthq.co 3.10.0-1160.92.1.el7.x86_64 #1 SMP Tue Jun 20 11:48:01 UTC 2023 x86_64) MySQL: 10.6.16-MariaDB (max packet size=167772160) WPLANG: en_US Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 2048M (used: 33.2M | 38M) multisite: N openssl: OpenSSL 1.0.2k  26 Jan 2017 mcrypt: Y LANG:  ZipArchive::addFile: Y
+0000.013 (0) Free space on disk containing Updraft's temporary directory: 71595.6 MB
+0000.102 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others73.zip.list.tmp
+0000.109 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others84.zip.list.tmp
+0000.110 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others100.zip.list.tmp
+0000.110 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others88.zip.list.tmp
+0000.111 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others12.zip.list.tmp
+0000.111 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others148.zip.tmp
+0000.111 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others19.zip.list.tmp
+0000.112 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others8.zip.list.tmp
+0000.112 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others13.zip.list.tmp
+0000.112 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others17.zip.list.tmp
+0000.112 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others45.zip.list.tmp
+0000.113 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others109.zip.list.tmp
+0000.113 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others48.zip.list.tmp
+0000.114 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others29.zip.list.tmp
+0000.114 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others46.zip.list.tmp
+0000.114 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others67.zip.list.tmp
+0000.115 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others104.zip.list.tmp
+0000.115 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others62.zip.list.tmp
+0000.115 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others55.zip.list.tmp
+0000.116 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others71.zip.list.tmp
+0000.116 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others103.zip.list.tmp
+0000.117 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others112.zip.list.tmp
+0000.117 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others37.zip.list.tmp
+0000.117 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others63.zip.list.tmp
+0000.118 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others65.zip.list.tmp
+0000.118 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others.zip.list.tmp
+0000.123 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others79.zip.list.tmp
+0000.124 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others25.zip.list.tmp
+0000.124 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others41.zip.list.tmp
+0000.124 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others74.zip.list.tmp
+0000.124 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others16.zip.list.tmp
+0000.125 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others72.zip.list.tmp
+0000.125 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others10.zip.list.tmp
+0000.125 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others76.zip.list.tmp
+0000.125 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others26.zip.list.tmp
+0000.126 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others49.zip.list.tmp
+0000.126 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others52.zip.list.tmp
+0000.126 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others68.zip.list.tmp
+0000.126 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others60.zip.list.tmp
+0000.126 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others58.zip.list.tmp
+0000.128 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others53.zip.list.tmp
+0000.129 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others101.zip.list.tmp
+0000.129 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others22.zip.list.tmp
+0000.129 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others18.zip.list.tmp
+0000.129 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others78.zip.list.tmp
+0000.130 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others82.zip.list.tmp
+0000.130 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others107.zip.list.tmp
+0000.130 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others11.zip.list.tmp
+0000.131 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others110.zip.list.tmp
+0000.131 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others28.zip.list.tmp
+0000.131 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others40.zip.list.tmp
+0000.136 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others97.zip.list.tmp
+0000.137 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others87.zip.list.tmp
+0000.137 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others54.zip.list.tmp
+0000.137 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others5.zip.list.tmp
+0000.137 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others92.zip.list.tmp
+0000.138 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others66.zip.list.tmp
+0000.138 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others111.zip.list.tmp
+0000.138 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others33.zip.list.tmp
+0000.138 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others14.zip.list.tmp
+0000.139 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others114.zip.list.tmp
+0000.139 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others102.zip.list.tmp
+0000.139 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others35.zip.list.tmp
+0000.139 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others75.zip.list.tmp
+0000.140 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others9.zip.list.tmp
+0000.140 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others44.zip.list.tmp
+0000.140 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others96.zip.list.tmp
+0000.140 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others2.zip.list.tmp
+0000.140 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others59.zip.list.tmp
+0000.141 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others77.zip.list.tmp
+0000.141 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others61.zip.list.tmp
+0000.141 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others15.zip.list.tmp
+0000.141 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others21.zip.list.tmp
+0000.141 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others38.zip.list.tmp
+0000.141 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others91.zip.list.tmp
+0000.142 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others86.zip.list.tmp
+0000.146 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others42.zip.list.tmp
+0000.147 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others20.zip.list.tmp
+0000.147 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others105.zip.list.tmp
+0000.147 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others80.zip.list.tmp
+0000.147 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others6.zip.list.tmp
+0000.147 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others31.zip.list.tmp
+0000.147 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others7.zip.list.tmp
+0000.148 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others98.zip.list.tmp
+0000.148 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others56.zip.list.tmp
+0000.148 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others69.zip.list.tmp
+0000.149 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others108.zip.list.tmp
+0000.149 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others148.zip.list.tmp
+0000.149 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others113.zip.list.tmp
+0000.149 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others47.zip.list.tmp
+0000.149 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others50.zip.list.tmp
+0000.149 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others43.zip.list.tmp
+0000.150 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others32.zip.list.tmp
+0000.150 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others83.zip.list.tmp
+0000.150 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others115.zip.list.tmp
+0000.150 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others94.zip.list.tmp
+0000.151 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others4.zip.list.tmp
+0000.151 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others99.zip.list.tmp
+0000.151 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others36.zip.list.tmp
+0000.151 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others106.zip.list.tmp
+0000.151 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others3.zip.list.tmp
+0000.156 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others34.zip.list.tmp
+0000.157 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others95.zip.list.tmp
+0000.157 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others24.zip.list.tmp
+0000.157 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others89.zip.list.tmp
+0000.157 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others57.zip.list.tmp
+0000.157 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others30.zip.list.tmp
+0000.157 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others23.zip.list.tmp
+0000.158 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others27.zip.list.tmp
+0000.158 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others116.zip.list-temp.tmp
+0000.158 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others64.zip.list.tmp
+0000.158 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others85.zip.list.tmp
+0000.158 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others93.zip.list.tmp
+0000.158 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others90.zip.list.tmp
+0000.159 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others70.zip.list.tmp
+0000.159 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others81.zip.list.tmp
+0000.159 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others51.zip.list.tmp
+0000.159 (0) Deleting old temporary file: backup_2023-10-27-2321_Gifto_Gifting_made_better_ae1c2e47cc37-others39.zip.list.tmp
+0000.160 (0) Tasks: Backup files: 0 (schedule: every2hours) Backup DB: 1 (schedule: every2hours)
+0000.172 (0) Requesting semaphore lock (d) (apparently not via scheduler)
+0000.178 (0) Set semaphore last lock (d) time to 2023-12-04 10:06:12
+0000.183 (0) Semaphore lock (d) complete
+0000.195 (0) Backup run: resumption=0, nonce=e081bffa6e15, file_nonce=e081bffa6e15 begun at=1701684371 (1s ago), job type=backup
+0000.208 (0) Scheduling a resumption (1) after 300 seconds (1701684672) in case this run gets aborted
+0000.229 (0) This backup run is not intended for files - skipping
+0000.235 (0) Beginning creation of database dump (WordPress DB)
+0000.241 (0) SQL compatibility mode is: ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+0000.252 (0) Testing potential mysqldump binary: /usr/bin/mysqldump
+0000.314 (0) Output: /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;\n/*!40103 SET TIME_ZONE='+00:00' */;\n/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;\n/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;\n/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;\n/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;\nDROP TABLE IF EXISTS `oprca_options`;\n/*!40101 SET @saved_cs_client     = @@character_set_client */;\n/*!40101 SET character_set_client = utf8 */;\n (truncated - 1461 bytes total)
+0000.320 (0) Working binary mysqldump found: /usr/bin/mysqldump
+0000.347 (0) Table oprca_options: Total expected rows (approximate): 1351
+0000.417 (0) Table oprca_options: Rows added in this batch (next record: 1405223): 1520 (uncompressed bytes in this segment=2387072) in 0.08 seconds
+0000.445 (0) Table oprca_options: finishing file(s) (2, 280.6 KB)
+0000.458 (0) Table oprca_users: Total expected rows (via COUNT): 4
+0000.463 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.473 (0) Table oprca_users: Rows added in this batch (next record: 24): 4 (uncompressed bytes in this segment=1666) in 0.02 seconds
+0000.488 (0) Table oprca_users: finishing file(s) (2, 0.8 KB)
+0000.506 (0) Table oprca_usermeta: Total expected rows (via COUNT): 251
+0000.511 (0) Table is relatively small; fetch_rows will thus be: 500 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.523 (0) Table oprca_usermeta: Rows added in this batch (next record: 2761): 251 (uncompressed bytes in this segment=64952) in 0.02 seconds
+0000.543 (0) Table oprca_usermeta: finishing file(s) (2, 11.1 KB)
+0000.572 (0) Table oprca_actionscheduler_actions: Total expected rows (approximate): 1761
+0000.609 (0) Table oprca_actionscheduler_actions: Rows added in this batch (next record: 97745): 1835 (uncompressed bytes in this segment=681468) in 0.06 seconds
+0000.629 (0) Table oprca_actionscheduler_actions: finishing file(s) (2, 51.9 KB)
+0000.642 (0) Table oprca_actionscheduler_claims: Total expected rows (via COUNT): 0
+0000.647 (0) Table oprca_actionscheduler_claims: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=641) in 0.01 seconds
+0000.662 (0) Table oprca_actionscheduler_claims: finishing file(s) (2, 0.4 KB)
+0000.674 (0) Table oprca_actionscheduler_groups: Total expected rows (via COUNT): 11
+0000.679 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.689 (0) Table oprca_actionscheduler_groups: Rows added in this batch (next record: 11): 11 (uncompressed bytes in this segment=949) in 0.02 seconds
+0000.704 (0) Table oprca_actionscheduler_groups: finishing file(s) (2, 0.5 KB)
+0000.716 (0) Table oprca_actionscheduler_logs: Total expected rows (approximate): 5593
+0000.770 (0) Table oprca_actionscheduler_logs: Rows added in this batch (next record: 294750): 5565 (uncompressed bytes in this segment=576103) in 0.06 seconds
+0000.786 (0) Table oprca_actionscheduler_logs: finishing file(s) (2, 52.9 KB)
+0000.809 (0) Table oprca_commentmeta: Total expected rows (via COUNT): 0
+0000.821 (0) Table oprca_commentmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=648) in 0.02 seconds
+0000.842 (0) Table oprca_commentmeta: finishing file(s) (2, 0.4 KB)
+0000.873 (0) Table oprca_comments: Total expected rows (approximate): 1018
+0000.916 (0) Table oprca_comments: Rows added in this batch (next record: 1368): 1018 (uncompressed bytes in this segment=276466) in 0.06 seconds
+0000.932 (0) Table oprca_comments: finishing file(s) (2, 24 KB)
+0000.946 (0) Table oprca_links: Total expected rows (via COUNT): 0
+0000.951 (0) Table oprca_links: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1041) in 0.01 seconds
+0000.967 (0) Table oprca_links: finishing file(s) (2, 0.5 KB)
+0000.978 (0) Table oprca_postmeta: Total expected rows (approximate): 2528878
+0000.988 (0) [Warning] Table oprca_postmeta has very many rows (2528878) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0018.923 (0) Table oprca_postmeta: binary mysqldump finished (writes: 671, bytes 665184718, return code 0) in 17.93 seconds
+0018.941 (0) Table oprca_postmeta: finishing file(s) (1, 51577.5 KB)
+0018.951 (0) Table oprca_posts: Total expected rows (approximate): 291384
+0018.960 (0) [Warning] Table oprca_posts has very many rows (291384) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0024.807 (0) Table oprca_posts: binary mysqldump finished (writes: 213, bytes 167618073, return code 0) in 5.84 seconds
+0024.827 (0) Table oprca_posts: finishing file(s) (1, 23914.5 KB)
+0024.839 (0) Table oprca_term_relationships: Total expected rows (approximate): 213154
+0024.849 (0) [Warning] Table oprca_term_relationships has very many rows (213154) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0025.086 (0) Table oprca_term_relationships: binary mysqldump finished (writes: 33, bytes 3172893, return code 0) in 0.23 seconds
+0025.105 (0) Table oprca_term_relationships: finishing file(s) (1, 506.1 KB)
+0025.125 (0) Table oprca_term_taxonomy: Total expected rows (via COUNT): 356
+0025.129 (0) Table is relatively small; fetch_rows will thus be: 500 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0025.140 (0) Table oprca_term_taxonomy: Rows added in this batch (next record: 641): 356 (uncompressed bytes in this segment=15467) in 0.02 seconds
+0025.159 (0) Table oprca_term_taxonomy: finishing file(s) (2, 3 KB)
+0025.177 (0) Table oprca_termmeta: Total expected rows (via COUNT): 421
+0025.181 (0) Table is relatively small; fetch_rows will thus be: 500 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0025.188 (0) Table oprca_termmeta: Rows added in this batch (next record: 844): 421 (uncompressed bytes in this segment=19702) in 0.02 seconds
+0025.207 (0) Table oprca_termmeta: finishing file(s) (2, 3.2 KB)
+0025.218 (0) Table oprca_terms: Total expected rows (via COUNT): 356
+0025.222 (0) Table is relatively small; fetch_rows will thus be: 500 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0025.229 (0) Table oprca_terms: Rows added in this batch (next record: 641): 356 (uncompressed bytes in this segment=14563) in 0.01 seconds
+0025.247 (0) Table oprca_terms: finishing file(s) (2, 5.5 KB)
+0025.259 (0) Table oprca_wc_category_lookup: Total expected rows (approximate): 34
+0025.269 (0) Table oprca_wc_category_lookup: Rows added in this batch (next record: 1000): 34 (uncompressed bytes in this segment=1036) in 0.01 seconds
+0025.284 (0) Table oprca_wc_category_lookup: finishing file(s) (2, 0.5 KB)
+0025.298 (0) Table oprca_wc_product_meta_lookup: Total expected rows (via COUNT): 461
+0025.303 (0) Table is relatively small; fetch_rows will thus be: 500 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0025.317 (0) Table oprca_wc_product_meta_lookup: Rows added in this batch (next record: 513436): 461 (uncompressed bytes in this segment=43752) in 0.02 seconds
+0025.332 (0) Table oprca_wc_product_meta_lookup: finishing file(s) (2, 3.9 KB)
+0025.344 (0) Table oprca_wc_reserved_stock: Total expected rows (approximate): 0
+0025.354 (0) Table oprca_wc_reserved_stock: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=677) in 0.01 seconds
+0025.369 (0) Table oprca_wc_reserved_stock: finishing file(s) (2, 0.4 KB)
+0025.382 (0) Table oprca_wc_tax_rate_classes: Total expected rows (via COUNT): 2
+0025.388 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0025.399 (0) Table oprca_wc_tax_rate_classes: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=767) in 0.02 seconds
+0025.414 (0) Table oprca_wc_tax_rate_classes: finishing file(s) (2, 0.4 KB)
+0025.426 (0) Table oprca_woocommerce_order_itemmeta: Total expected rows (approximate): 23106
+0025.525 (0) Table oprca_woocommerce_order_itemmeta: binary mysqldump finished (writes: 33, bytes 1239952, return code 0) in 0.09 seconds
+0025.538 (0) Table oprca_woocommerce_order_itemmeta: finishing file(s) (1, 148.9 KB)
+0025.556 (0) Table oprca_woocommerce_payment_tokenmeta: Total expected rows (via COUNT): 0
+0025.568 (0) Table oprca_woocommerce_payment_tokenmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=780) in 0.02 seconds
+0025.590 (0) Table oprca_woocommerce_payment_tokenmeta: finishing file(s) (2, 0.4 KB)
+0025.595 (0) Skipping table (lacks our prefix (oprca_)): moceansms_wc_send_sms_outbox
+0025.607 (0) Table oprca_aiowps_audit_log: Total expected rows (approximate): 16151
+0028.873 (0) Table oprca_aiowps_audit_log: binary mysqldump finished (writes: 172, bytes 138050072, return code 0) in 3.26 seconds
+0028.886 (0) Table oprca_aiowps_audit_log: finishing file(s) (1, 9641.3 KB)
+0028.900 (0) Table oprca_aiowps_debug_log: Total expected rows (via COUNT): 0
+0028.912 (0) Table oprca_aiowps_debug_log: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=643) in 0.01 seconds
+0028.928 (0) Table oprca_aiowps_debug_log: finishing file(s) (2, 0.4 KB)
+0028.941 (0) Table oprca_aiowps_events: Total expected rows (approximate): 80253
+0029.163 (0) Table oprca_aiowps_events: binary mysqldump finished (writes: 42, bytes 7178234, return code 0) in 0.22 seconds
+0029.177 (0) Table oprca_aiowps_events: finishing file(s) (1, 516.1 KB)
+0029.196 (0) Table oprca_aiowps_global_meta: Total expected rows (via COUNT): 0
+0029.207 (0) Table oprca_aiowps_global_meta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=900) in 0.02 seconds
+0029.228 (0) Table oprca_aiowps_global_meta: finishing file(s) (2, 0.4 KB)
+0029.244 (0) Table oprca_aiowps_login_lockdown: Total expected rows (via COUNT): 0
+0029.256 (0) Table oprca_aiowps_login_lockdown: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1084) in 0.01 seconds
+0029.274 (0) Table oprca_aiowps_login_lockdown: finishing file(s) (2, 0.5 KB)
+0029.317 (0) Table oprca_aiowps_message_store: Total expected rows (via COUNT): 1655
+0029.465 (0) Table oprca_aiowps_message_store: Rows added in this batch (next record: 1655): 1655 (uncompressed bytes in this segment=8461345) in 0.18 seconds
+0029.481 (0) Table oprca_aiowps_message_store: finishing file(s) (2, 254.6 KB)
+0029.494 (0) Table oprca_aiowps_permanent_block: Total expected rows (via COUNT): 0
+0029.499 (0) Table oprca_aiowps_permanent_block: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=791) in 0.01 seconds
+0029.515 (0) Table oprca_aiowps_permanent_block: finishing file(s) (2, 0.4 KB)
+0029.538 (0) Table oprca_alm: Total expected rows (via COUNT): 1
+0029.542 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0029.553 (0) Table oprca_alm: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=976) in 0.03 seconds
+0029.573 (0) Table oprca_alm: finishing file(s) (2, 0.6 KB)
+0029.592 (0) Table oprca_berocket_termmeta: Total expected rows (via COUNT): 0
+0029.602 (0) Table oprca_berocket_termmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=641) in 0.02 seconds
+0029.621 (0) Table oprca_berocket_termmeta: finishing file(s) (2, 0.4 KB)
+0029.635 (0) Table oprca_braapf_product_stock_status_parent: Total expected rows (via COUNT): 1
+0029.639 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0029.649 (0) Table oprca_braapf_product_stock_status_parent: Rows added in this batch (next record: 377349): 1 (uncompressed bytes in this segment=753) in 0.02 seconds
+0029.697 (0) Table oprca_braapf_product_stock_status_parent: finishing file(s) (2, 0.4 KB)
+0029.708 (0) Table oprca_braapf_product_variation_attributes: Total expected rows (approximate): 0
+0029.719 (0) Table oprca_braapf_product_variation_attributes: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=853) in 0.01 seconds
+0029.734 (0) Table oprca_braapf_product_variation_attributes: finishing file(s) (2, 0.4 KB)
+0029.746 (0) Table oprca_braapf_term_taxonomy_hierarchical: Total expected rows (approximate): 64
+0029.752 (0) Table oprca_braapf_term_taxonomy_hierarchical: Rows added in this batch (next record: 1000): 64 (uncompressed bytes in this segment=3437) in 0.01 seconds
+0029.767 (0) Table oprca_braapf_term_taxonomy_hierarchical: finishing file(s) (2, 0.8 KB)
+0029.779 (0) Table oprca_braapf_variable_attributes: Total expected rows (approximate): 0
+0029.785 (0) Table oprca_braapf_variable_attributes: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=630) in 0.01 seconds
+0029.800 (0) Table oprca_braapf_variable_attributes: finishing file(s) (2, 0.3 KB)
+0029.813 (0) Table oprca_counrtry_table: Total expected rows (via COUNT): 234
+0029.817 (0) Table is relatively small; fetch_rows will thus be: 250 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0029.829 (0) Table oprca_counrtry_table: Rows added in this batch (next record: 704): 234 (uncompressed bytes in this segment=11539) in 0.02 seconds
+0029.844 (0) Table oprca_counrtry_table: finishing file(s) (2, 4.5 KB)
+0029.857 (0) Table oprca_e_events: Total expected rows (via COUNT): 0
+0029.867 (0) Table oprca_e_events: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=525) in 0.01 seconds
+0029.881 (0) Table oprca_e_events: finishing file(s) (2, 0.3 KB)
+0029.894 (0) Table oprca_fswcwallet: Total expected rows (via COUNT): 7
+0029.899 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0029.909 (0) Table oprca_fswcwallet: Rows added in this batch (next record: 10): 7 (uncompressed bytes in this segment=1502) in 0.02 seconds
+0029.924 (0) Table oprca_fswcwallet: finishing file(s) (2, 0.8 KB)
+0029.937 (0) Table oprca_fswcwallet_requests: Total expected rows (via COUNT): 0
+0029.947 (0) Table oprca_fswcwallet_requests: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=653) in 0.01 seconds
+0029.962 (0) Table oprca_fswcwallet_requests: finishing file(s) (2, 0.4 KB)
+0029.975 (0) Table oprca_fswcwallet_transaction: Total expected rows (via COUNT): 23
+0029.980 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0029.990 (0) Table oprca_fswcwallet_transaction: Rows added in this batch (next record: 23): 23 (uncompressed bytes in this segment=2746) in 0.02 seconds
+0030.005 (0) Table oprca_fswcwallet_transaction: finishing file(s) (2, 0.9 KB)
+0030.018 (0) Table oprca_fswcwallet_withdrawal_requests: Total expected rows (via COUNT): 0
+0030.028 (0) Table oprca_fswcwallet_withdrawal_requests: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=728) in 0.01 seconds
+0030.043 (0) Table oprca_fswcwallet_withdrawal_requests: finishing file(s) (2, 0.4 KB)
+0030.056 (0) Table oprca_mo_openid_linked_user: Total expected rows (via COUNT): 1
+0030.061 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0030.070 (0) Table oprca_mo_openid_linked_user: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=863) in 0.02 seconds
+0030.085 (0) Table oprca_mo_openid_linked_user: finishing file(s) (2, 0.5 KB)
+0030.099 (0) Table oprca_mobile_recharges: Total expected rows (via COUNT): 285
+0030.104 (0) Table is relatively small; fetch_rows will thus be: 500 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0030.117 (0) Table oprca_mobile_recharges: Rows added in this batch (next record: 312): 285 (uncompressed bytes in this segment=49338) in 0.02 seconds
+0030.132 (0) Table oprca_mobile_recharges: finishing file(s) (2, 4.1 KB)
+0030.145 (0) Table oprca_productsdata_table: Total expected rows (via COUNT): 0
+0030.155 (0) Table oprca_productsdata_table: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=462) in 0.01 seconds
+0030.170 (0) Table oprca_productsdata_table: finishing file(s) (2, 0.3 KB)
+0030.188 (0) Table oprca_sa_captured_wc_fields: Total expected rows (via COUNT): 0
+0030.193 (0) Table oprca_sa_captured_wc_fields: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1017) in 0.01 seconds
+0030.212 (0) Table oprca_sa_captured_wc_fields: finishing file(s) (2, 0.5 KB)
+0030.236 (0) Table oprca_shopmagic_automation_outcome: Total expected rows (via COUNT): 352
+0030.241 (0) Table is relatively small; fetch_rows will thus be: 500 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0030.266 (0) Table oprca_shopmagic_automation_outcome: Rows added in this batch (next record: 352): 352 (uncompressed bytes in this segment=78436) in 0.04 seconds
+0030.281 (0) Table oprca_shopmagic_automation_outcome: finishing file(s) (2, 9.3 KB)
+0030.294 (0) Table oprca_shopmagic_automation_outcome_logs: Total expected rows (via COUNT): 182
+0030.298 (0) Table is relatively small; fetch_rows will thus be: 250 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0030.330 (0) Table oprca_shopmagic_automation_outcome_logs: Rows added in this batch (next record: 182): 182 (uncompressed bytes in this segment=797461) in 0.04 seconds
+0030.345 (0) Table oprca_shopmagic_automation_outcome_logs: finishing file(s) (2, 11.8 KB)
+0030.357 (0) Table oprca_shopmagic_guest: Total expected rows (via COUNT): 44
+0030.385 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0030.395 (0) Table oprca_shopmagic_guest: Rows added in this batch (next record: 44): 44 (uncompressed bytes in this segment=5611) in 0.04 seconds
+0030.410 (0) Table oprca_shopmagic_guest: finishing file(s) (2, 2.4 KB)
+0030.428 (0) Table oprca_shopmagic_guest_meta: Total expected rows (via COUNT): 587
+0030.433 (0) Table is relatively small; fetch_rows will thus be: 500 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0030.445 (0) Table oprca_shopmagic_guest_meta: Rows added in this batch (next record: 1998): 587 (uncompressed bytes in this segment=23274) in 0.03 seconds
+0030.464 (0) Table oprca_shopmagic_guest_meta: finishing file(s) (2, 4.9 KB)
+0030.478 (0) Table oprca_shopmagic_marketing_lists: Total expected rows (via COUNT): 0
+0030.487 (0) Table oprca_shopmagic_marketing_lists: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=725) in 0.01 seconds
+0030.502 (0) Table oprca_shopmagic_marketing_lists: finishing file(s) (2, 0.4 KB)
+0030.514 (0) Table oprca_shopmagic_optin_email: Total expected rows (via COUNT): 0
+0030.519 (0) Table oprca_shopmagic_optin_email: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=668) in 0.01 seconds
+0030.534 (0) Table oprca_shopmagic_optin_email: finishing file(s) (2, 0.4 KB)
+0030.546 (0) Table oprca_shopmagic_tracked_emails: Total expected rows (via COUNT): 179
+0030.550 (0) Table is relatively small; fetch_rows will thus be: 250 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0030.562 (0) Table oprca_shopmagic_tracked_emails: Rows added in this batch (next record: 179): 179 (uncompressed bytes in this segment=23364) in 0.02 seconds
+0030.576 (0) Table oprca_shopmagic_tracked_emails: finishing file(s) (2, 7 KB)
+0030.588 (0) Table oprca_shopmagic_tracked_emails_clicks: Total expected rows (via COUNT): 0
+0030.598 (0) Table oprca_shopmagic_tracked_emails_clicks: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=701) in 0.01 seconds
+0030.612 (0) Table oprca_shopmagic_tracked_emails_clicks: finishing file(s) (2, 0.4 KB)
+0030.624 (0) Table oprca_smsalert_booking_reminder: Total expected rows (via COUNT): 0
+0030.629 (0) Table oprca_smsalert_booking_reminder: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=725) in 0.01 seconds
+0030.643 (0) Table oprca_smsalert_booking_reminder: finishing file(s) (2, 0.4 KB)
+0030.656 (0) Table oprca_smsalert_renewal_reminders: Total expected rows (via COUNT): 0
+0030.660 (0) Table oprca_smsalert_renewal_reminders: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=722) in 0.01 seconds
+0030.675 (0) Table oprca_smsalert_renewal_reminders: finishing file(s) (2, 0.4 KB)
+0030.687 (0) Table oprca_topup_recharge: Total expected rows (via COUNT): 105
+0030.692 (0) Table is relatively small; fetch_rows will thus be: 200 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0030.703 (0) Table oprca_topup_recharge: Rows added in this batch (next record: 299): 105 (uncompressed bytes in this segment=20138) in 0.02 seconds
+0030.718 (0) Table oprca_topup_recharge: finishing file(s) (2, 2.2 KB)
+0030.734 (0) Table oprca_wc_admin_note_actions: Total expected rows (via COUNT): 197
+0030.739 (0) Table is relatively small; fetch_rows will thus be: 250 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0030.750 (0) Table oprca_wc_admin_note_actions: Rows added in this batch (next record: 53328): 197 (uncompressed bytes in this segment=38912) in 0.02 seconds
+0030.769 (0) Table oprca_wc_admin_note_actions: finishing file(s) (2, 6.3 KB)
+0030.786 (0) Table oprca_wc_admin_notes: Total expected rows (via COUNT): 156
+0030.791 (0) Table is relatively small; fetch_rows will thus be: 250 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0030.799 (0) Table oprca_wc_admin_notes: Rows added in this batch (next record: 166): 156 (uncompressed bytes in this segment=72511) in 0.02 seconds
+0030.821 (0) Table oprca_wc_admin_notes: finishing file(s) (2, 14.9 KB)
+0030.835 (0) Table oprca_wc_customer_lookup: Total expected rows (via COUNT): 50
+0030.840 (0) Table is relatively small; fetch_rows will thus be: 100 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0030.851 (0) Table oprca_wc_customer_lookup: Rows added in this batch (next record: 71): 50 (uncompressed bytes in this segment=6664) in 0.02 seconds
+0030.866 (0) Table oprca_wc_customer_lookup: finishing file(s) (2, 2.2 KB)
+0030.878 (0) Table oprca_wc_download_log: Total expected rows (via COUNT): 0
+0030.888 (0) Table oprca_wc_download_log: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=730) in 0.01 seconds
+0030.902 (0) Table oprca_wc_download_log: finishing file(s) (2, 0.4 KB)
+0030.915 (0) Table oprca_wc_order_addresses: Total expected rows (via COUNT): 0
+0030.920 (0) Table oprca_wc_order_addresses: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1071) in 0.01 seconds
+0030.935 (0) Table oprca_wc_order_addresses: finishing file(s) (2, 0.4 KB)
+0030.947 (0) Table oprca_wc_order_coupon_lookup: Total expected rows (approximate): 42
+0030.952 (0) Table oprca_wc_order_coupon_lookup: Rows added in this batch (next record: 1000): 42 (uncompressed bytes in this segment=2825) in 0.01 seconds
+0030.967 (0) Table oprca_wc_order_coupon_lookup: finishing file(s) (2, 0.9 KB)
+0030.979 (0) Table oprca_wc_order_operational_data: Total expected rows (via COUNT): 0
+0030.985 (0) Table oprca_wc_order_operational_data: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1417) in 0.01 seconds
+0031.000 (0) Table oprca_wc_order_operational_data: finishing file(s) (2, 0.6 KB)
+0031.014 (0) Table oprca_wc_order_product_lookup: Total expected rows (via COUNT): 912
+0031.034 (0) Table oprca_wc_order_product_lookup: Rows added in this batch (next record: 4278): 912 (uncompressed bytes in this segment=85081) in 0.02 seconds
+0031.049 (0) Table oprca_wc_order_product_lookup: finishing file(s) (2, 13.8 KB)
+0031.062 (0) Table oprca_wc_order_stats: Total expected rows (via COUNT): 881
+0031.078 (0) Table oprca_wc_order_stats: Rows added in this batch (next record: 514153): 881 (uncompressed bytes in this segment=137744) in 0.02 seconds
+0031.093 (0) Table oprca_wc_order_stats: finishing file(s) (2, 16.2 KB)
+0031.105 (0) Table oprca_wc_order_tax_lookup: Total expected rows (approximate): 12
+0031.111 (0) Table oprca_wc_order_tax_lookup: Rows added in this batch (next record: 1000): 12 (uncompressed bytes in this segment=1529) in 0.01 seconds
+0031.125 (0) Table oprca_wc_order_tax_lookup: finishing file(s) (2, 0.6 KB)
+0031.137 (0) Table oprca_wc_orders: Total expected rows (via COUNT): 0
+0031.143 (0) Table oprca_wc_orders: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1401) in 0.01 seconds
+0031.157 (0) Table oprca_wc_orders: finishing file(s) (2, 0.5 KB)
+0031.169 (0) Table oprca_wc_orders_meta: Total expected rows (via COUNT): 0
+0031.178 (0) Table oprca_wc_orders_meta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=712) in 0.01 seconds
+0031.193 (0) Table oprca_wc_orders_meta: finishing file(s) (2, 0.4 KB)
+0031.204 (0) Table oprca_wc_product_attributes_lookup: Total expected rows (approximate): 0
+0031.215 (0) Table oprca_wc_product_attributes_lookup: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=849) in 0.01 seconds
+0031.229 (0) Table oprca_wc_product_attributes_lookup: finishing file(s) (2, 0.4 KB)
+0031.242 (0) Table oprca_wc_product_download_directories: Total expected rows (via COUNT): 2
+0031.247 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0031.256 (0) Table oprca_wc_product_download_directories: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=901) in 0.02 seconds
+0031.270 (0) Table oprca_wc_product_download_directories: finishing file(s) (2, 0.5 KB)
+0031.283 (0) Table oprca_wc_rate_limits: Total expected rows (via COUNT): 0
+0031.293 (0) Table oprca_wc_rate_limits: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=681) in 0.01 seconds
+0031.308 (0) Table oprca_wc_rate_limits: finishing file(s) (2, 0.4 KB)
+0031.320 (0) Table oprca_wc_se_queue: Total expected rows (via COUNT): 0
+0031.325 (0) Table oprca_wc_se_queue: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=843) in 0.01 seconds
+0031.339 (0) Table oprca_wc_se_queue: finishing file(s) (2, 0.5 KB)
+0031.351 (0) Table oprca_wc_se_settings: Total expected rows (approximate): 15
+0031.356 (0) Table oprca_wc_se_settings: Rows added in this batch (next record: 1000): 15 (uncompressed bytes in this segment=1209) in 0.01 seconds
+0031.371 (0) Table oprca_wc_se_settings: finishing file(s) (2, 0.6 KB)
+0031.383 (0) Table oprca_wc_webhooks: Total expected rows (via COUNT): 0
+0031.389 (0) Table oprca_wc_webhooks: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1085) in 0.01 seconds
+0031.405 (0) Table oprca_wc_webhooks: finishing file(s) (2, 0.5 KB)
+0031.424 (0) Table oprca_woocommerce_api_keys: Total expected rows (via COUNT): 0
+0031.429 (0) Table oprca_woocommerce_api_keys: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=887) in 0.01 seconds
+0031.448 (0) Table oprca_woocommerce_api_keys: finishing file(s) (2, 0.4 KB)
+0031.460 (0) Table oprca_woocommerce_attribute_taxonomies: Total expected rows (via COUNT): 1
+0031.465 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0031.475 (0) Table oprca_woocommerce_attribute_taxonomies: Rows added in this batch (next record: 5): 1 (uncompressed bytes in this segment=973) in 0.02 seconds
+0031.489 (0) Table oprca_woocommerce_attribute_taxonomies: finishing file(s) (2, 0.4 KB)
+0031.502 (0) Table oprca_woocommerce_downloadable_product_permissions: Total expected rows (via COUNT): 0
+0031.512 (0) Table oprca_woocommerce_downloadable_product_permissions: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1424) in 0.01 seconds
+0031.526 (0) Table oprca_woocommerce_downloadable_product_permissions: finishing file(s) (2, 0.5 KB)
+0031.544 (0) Table oprca_woocommerce_log: Total expected rows (via COUNT): 0
+0031.549 (0) Table oprca_woocommerce_log: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=656) in 0.01 seconds
+0031.568 (0) Table oprca_woocommerce_log: finishing file(s) (2, 0.4 KB)
+0031.580 (0) Table oprca_woocommerce_order_items: Total expected rows (approximate): 2640
+0031.600 (0) Table oprca_woocommerce_order_items: Rows added in this batch (next record: 4280): 2640 (uncompressed bytes in this segment=119618) in 0.02 seconds
+0031.616 (0) Table oprca_woocommerce_order_items: finishing file(s) (2, 15.1 KB)
+0031.629 (0) Table oprca_woocommerce_payment_tokens: Total expected rows (via COUNT): 0
+0031.634 (0) Table oprca_woocommerce_payment_tokens: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=775) in 0.01 seconds
+0031.650 (0) Table oprca_woocommerce_payment_tokens: finishing file(s) (2, 0.4 KB)
+0031.673 (0) Table oprca_woocommerce_sessions: Total expected rows (via COUNT): 130
+0031.678 (0) Table is relatively small; fetch_rows will thus be: 250 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0031.698 (0) Table oprca_woocommerce_sessions: Rows added in this batch (next record: 21024): 130 (uncompressed bytes in this segment=493020) in 0.04 seconds
+0031.719 (0) Table oprca_woocommerce_sessions: finishing file(s) (2, 34.9 KB)
+0031.731 (0) Table oprca_woocommerce_shipping_zone_locations: Total expected rows (via COUNT): 0
+0031.741 (0) Table oprca_woocommerce_shipping_zone_locations: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=826) in 0.01 seconds
+0031.756 (0) Table oprca_woocommerce_shipping_zone_locations: finishing file(s) (2, 0.4 KB)
+0031.769 (0) Table oprca_woocommerce_shipping_zone_methods: Total expected rows (via COUNT): 0
+0031.774 (0) Table oprca_woocommerce_shipping_zone_methods: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=756) in 0.01 seconds
+0031.789 (0) Table oprca_woocommerce_shipping_zone_methods: finishing file(s) (2, 0.4 KB)
+0031.808 (0) Table oprca_woocommerce_shipping_zones: Total expected rows (via COUNT): 0
+0031.814 (0) Table oprca_woocommerce_shipping_zones: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=616) in 0.01 seconds
+0031.832 (0) Table oprca_woocommerce_shipping_zones: finishing file(s) (2, 0.3 KB)
+0031.852 (0) Table oprca_woocommerce_tax_rate_locations: Total expected rows (via COUNT): 0
+0031.861 (0) Table oprca_woocommerce_tax_rate_locations: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=800) in 0.02 seconds
+0031.878 (0) Table oprca_woocommerce_tax_rate_locations: finishing file(s) (2, 0.4 KB)
+0031.894 (0) Table oprca_woocommerce_tax_rates: Total expected rows (via COUNT): 0
+0031.900 (0) Table oprca_woocommerce_tax_rates: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1156) in 0.01 seconds
+0031.917 (0) Table oprca_woocommerce_tax_rates: finishing file(s) (2, 0.4 KB)
+0031.931 (0) Table oprca_woof_sd: Total expected rows (via COUNT): 0
+0031.936 (0) Table oprca_woof_sd: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=586) in 0.01 seconds
+0031.951 (0) Table oprca_woof_sd: finishing file(s) (2, 0.4 KB)
+0031.974 (0) Table oprca_woof_sd_presets: Total expected rows (via COUNT): 0
+0031.980 (0) Table oprca_woof_sd_presets: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=567) in 0.01 seconds
+0031.996 (0) Table oprca_woof_sd_presets: finishing file(s) (2, 0.4 KB)
+0032.009 (0) Table oprca_wpf_filters: Total expected rows (via COUNT): 3
+0032.014 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0032.025 (0) Table oprca_wpf_filters: Rows added in this batch (next record: 5): 3 (uncompressed bytes in this segment=6655) in 0.02 seconds
+0032.044 (0) Table oprca_wpf_filters: finishing file(s) (2, 1.6 KB)
+0032.063 (0) Table oprca_wpf_meta_keys: Total expected rows (via COUNT): 7
+0032.068 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0032.073 (0) Table oprca_wpf_meta_keys: Rows added in this batch (next record: 7): 7 (uncompressed bytes in this segment=2044) in 0.02 seconds
+0032.089 (0) Table oprca_wpf_meta_keys: finishing file(s) (2, 0.6 KB)
+0032.103 (0) Table oprca_wpf_meta_values: Total expected rows (via COUNT): 4
+0032.108 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0032.113 (0) Table oprca_wpf_meta_values: Rows added in this batch (next record: 4): 4 (uncompressed bytes in this segment=1183) in 0.01 seconds
+0032.129 (0) Table oprca_wpf_meta_values: finishing file(s) (2, 0.5 KB)
+0032.142 (0) Table oprca_wpf_meta_values_bk: Total expected rows (via COUNT): 0
+0032.152 (0) Table oprca_wpf_meta_values_bk: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=638) in 0.01 seconds
+0032.168 (0) Table oprca_wpf_meta_values_bk: finishing file(s) (2, 0.3 KB)
+0032.181 (0) Table oprca_wpfm_backup: Total expected rows (via COUNT): 1
+0032.185 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0032.197 (0) Table oprca_wpfm_backup: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=616) in 0.02 seconds
+0032.212 (0) Table oprca_wpfm_backup: finishing file(s) (2, 0.4 KB)
+0032.230 (0) Table oprca_wpforms_payment_meta: Total expected rows (via COUNT): 0
+0032.239 (0) Table oprca_wpforms_payment_meta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=708) in 0.02 seconds
+0032.259 (0) Table oprca_wpforms_payment_meta: finishing file(s) (2, 0.4 KB)
+0032.272 (0) Table oprca_wpforms_payments: Total expected rows (via COUNT): 0
+0032.282 (0) Table oprca_wpforms_payments: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1668) in 0.01 seconds
+0032.297 (0) Table oprca_wpforms_payments: finishing file(s) (2, 0.6 KB)
+0032.315 (0) Table oprca_wpforms_tasks_meta: Total expected rows (via COUNT): 14
+0032.319 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0032.329 (0) Table oprca_wpforms_tasks_meta: Rows added in this batch (next record: 696): 14 (uncompressed bytes in this segment=1728) in 0.02 seconds
+0032.349 (0) Table oprca_wpforms_tasks_meta: finishing file(s) (2, 0.6 KB)
+0032.362 (0) Table oprca_wpmailsmtp_attachment_files: Total expected rows (via COUNT): 0
+0032.373 (0) Table oprca_wpmailsmtp_attachment_files: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=647) in 0.01 seconds
+0032.388 (0) Table oprca_wpmailsmtp_attachment_files: finishing file(s) (2, 0.4 KB)
+0032.400 (0) Table oprca_wpmailsmtp_debug_events: Total expected rows (approximate): 1280
+0032.482 (0) Table oprca_wpmailsmtp_debug_events: Rows added in this batch (next record: 1979): 1979 (uncompressed bytes in this segment=3250283) in 0.08 seconds
+0032.498 (0) Table oprca_wpmailsmtp_debug_events: finishing file(s) (2, 82.2 KB)
+0032.510 (0) Table oprca_wpmailsmtp_email_attachments: Total expected rows (approximate): 0
+0032.515 (0) Table oprca_wpmailsmtp_email_attachments: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=713) in 0.01 seconds
+0032.530 (0) Table oprca_wpmailsmtp_email_attachments: finishing file(s) (2, 0.4 KB)
+0032.552 (0) Table oprca_wpmailsmtp_email_tracking_events: Total expected rows (approximate): 1049
+0032.566 (0) Table oprca_wpmailsmtp_email_tracking_events: Rows added in this batch (next record: 1049): 1049 (uncompressed bytes in this segment=60680) in 0.02 seconds
+0032.581 (0) Table oprca_wpmailsmtp_email_tracking_events: finishing file(s) (2, 8.9 KB)
+0032.593 (0) Table oprca_wpmailsmtp_email_tracking_links: Total expected rows (approximate): 3558
+0032.621 (0) Table oprca_wpmailsmtp_email_tracking_links: Rows added in this batch (next record: 3589): 3558 (uncompressed bytes in this segment=205243) in 0.03 seconds
+0032.638 (0) Table oprca_wpmailsmtp_email_tracking_links: finishing file(s) (2, 29.7 KB)
+0032.794 (0) Table oprca_wpmailsmtp_emails_log: Total expected rows (approximate): 2156
+0033.117 (0) Table oprca_wpmailsmtp_emails_log: Rows added in this batch (next record: 2219): 2209 (uncompressed bytes in this segment=15761074) in 0.47 seconds
+0033.141 (0) Table oprca_wpmailsmtp_emails_log: finishing file(s) (2, 772.4 KB)
+0033.159 (0) Table oprca_wpmailsmtp_tasks_meta: Total expected rows (via COUNT): 7
+0033.163 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0033.173 (0) Table oprca_wpmailsmtp_tasks_meta: Rows added in this batch (next record: 326): 7 (uncompressed bytes in this segment=1255) in 0.02 seconds
+0033.245 (0) Table oprca_wpmailsmtp_tasks_meta: finishing file(s) (2, 0.6 KB)
+0033.293 (0) Table oprca_wpr_rucss_resources: Total expected rows (via COUNT): 0
+0033.303 (0) Table oprca_wpr_rucss_resources: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1013) in 0.02 seconds
+0033.323 (0) Table oprca_wpr_rucss_resources: finishing file(s) (2, 0.5 KB)
+0033.342 (0) Table oprca_wpr_rucss_used_css: Total expected rows (via COUNT): 0
+0033.347 (0) Table oprca_wpr_rucss_used_css: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=932) in 0.01 seconds
+0033.366 (0) Table oprca_wpr_rucss_used_css: finishing file(s) (2, 0.5 KB)
+0033.384 (0) Table oprca_wt_iew_action_history: Total expected rows (via COUNT): 5
+0033.389 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0033.399 (0) Table oprca_wt_iew_action_history: Rows added in this batch (next record: 5): 5 (uncompressed bytes in this segment=9224) in 0.02 seconds
+0033.418 (0) Table oprca_wt_iew_action_history: finishing file(s) (2, 1.8 KB)
+0033.436 (0) Table oprca_wt_iew_mapping_template: Total expected rows (via COUNT): 0
+0033.447 (0) Table oprca_wt_iew_mapping_template: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=632) in 0.02 seconds
+0033.466 (0) Table oprca_wt_iew_mapping_template: finishing file(s) (2, 0.3 KB)
+0033.479 (0) Table oprca_wt_sc_coupon_lookup: Total expected rows (via COUNT): 4
+0033.484 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0033.494 (0) Table oprca_wt_sc_coupon_lookup: Rows added in this batch (next record: 4): 4 (uncompressed bytes in this segment=1674) in 0.02 seconds
+0033.510 (0) Table oprca_wt_sc_coupon_lookup: finishing file(s) (2, 0.6 KB)
+0033.514 (0) Skipping table (lacks our prefix (oprca_)): transaction_status
+0033.519 (0) Skipping table (lacks our prefix (oprca_)): vouchercards
+0033.524 (0) PHP event: code E_WARNING: filemtime(): stat failed for /chroot/home/giftoco/gifto.co/html/wp-content/updraft/backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db.gz (line 1976, wp-content/plugins/updraftplus/backup.php)
+0033.530 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_options.table.tmpr1405224.gz (1/111/fopen): adding to final database dump
+0033.567 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_options.table.gz (2/111/fopen): adding to final database dump
+0033.572 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_users.table.tmpr25.gz (3/111/fopen): adding to final database dump
+0033.577 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_users.table.gz (4/111/fopen): adding to final database dump
+0033.582 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_usermeta.table.tmpr2762.gz (5/111/fopen): adding to final database dump
+0033.588 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_usermeta.table.gz (6/111/fopen): adding to final database dump
+0033.593 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_actionscheduler_actions.table.tmpr97746.gz (7/111/fopen): adding to final database dump
+0033.602 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_actionscheduler_actions.table.gz (8/111/fopen): adding to final database dump
+0033.607 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_actionscheduler_claims.table.tmpr0.gz (9/111/fopen): adding to final database dump
+0033.612 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_actionscheduler_claims.table.gz (10/111/fopen): adding to final database dump
+0033.616 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_actionscheduler_groups.table.tmpr12.gz (11/111/fopen): adding to final database dump
+0033.621 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_actionscheduler_groups.table.gz (12/111/fopen): adding to final database dump
+0033.626 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_actionscheduler_logs.table.tmpr294751.gz (13/111/fopen): adding to final database dump
+0033.636 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_actionscheduler_logs.table.gz (14/111/fopen): adding to final database dump
+0033.641 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_commentmeta.table.tmpr0.gz (15/111/fopen): adding to final database dump
+0033.646 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_commentmeta.table.gz (16/111/fopen): adding to final database dump
+0033.651 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_comments.table.tmpr1369.gz (17/111/fopen): adding to final database dump
+0033.658 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_comments.table.gz (18/111/fopen): adding to final database dump
+0033.663 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_links.table.tmpr0.gz (19/111/fopen): adding to final database dump
+0033.668 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_links.table.gz (20/111/fopen): adding to final database dump
+0033.673 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_postmeta.table.gz (21/111/fopen): adding to final database dump
+0039.412 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_posts.table.gz (22/111/fopen): adding to final database dump
+0042.036 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_term_relationships.table.gz (23/111/fopen): adding to final database dump
+0042.076 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_term_taxonomy.table.tmpr642.gz (24/111/fopen): adding to final database dump
+0042.082 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_term_taxonomy.table.gz (25/111/fopen): adding to final database dump
+0042.086 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_termmeta.table.tmpr845.gz (26/111/fopen): adding to final database dump
+0042.092 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_termmeta.table.gz (27/111/fopen): adding to final database dump
+0042.097 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_terms.table.tmpr642.gz (28/111/fopen): adding to final database dump
+0042.103 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_terms.table.gz (29/111/fopen): adding to final database dump
+0042.108 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wc_category_lookup.table.tmpr1001.gz (30/111/fopen): adding to final database dump
+0042.112 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wc_category_lookup.table.gz (31/111/fopen): adding to final database dump
+0042.117 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wc_product_meta_lookup.table.tmpr513437.gz (32/111/fopen): adding to final database dump
+0042.122 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wc_product_meta_lookup.table.gz (33/111/fopen): adding to final database dump
+0042.127 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wc_reserved_stock.table.tmpr1.gz (34/111/fopen): adding to final database dump
+0042.132 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wc_reserved_stock.table.gz (35/111/fopen): adding to final database dump
+0042.137 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wc_tax_rate_classes.table.tmpr3.gz (36/111/fopen): adding to final database dump
+0042.142 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wc_tax_rate_classes.table.gz (37/111/fopen): adding to final database dump
+0042.148 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_woocommerce_order_itemmeta.table.gz (38/111/fopen): adding to final database dump
+0042.171 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_woocommerce_payment_tokenmeta.table.tmpr0.gz (39/111/fopen): adding to final database dump
+0042.176 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_woocommerce_payment_tokenmeta.table.gz (40/111/fopen): adding to final database dump
+0042.181 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_aiowps_audit_log.table.gz (41/111/fopen): adding to final database dump
+0043.246 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_aiowps_debug_log.table.tmpr0.gz (42/111/fopen): adding to final database dump
+0043.252 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_aiowps_debug_log.table.gz (43/111/fopen): adding to final database dump
+0043.257 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_aiowps_events.table.gz (44/111/fopen): adding to final database dump
+0043.301 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_aiowps_global_meta.table.tmpr0.gz (45/111/fopen): adding to final database dump
+0043.306 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_aiowps_global_meta.table.gz (46/111/fopen): adding to final database dump
+0043.311 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_aiowps_login_lockdown.table.tmpr0.gz (47/111/fopen): adding to final database dump
+0043.316 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_aiowps_login_lockdown.table.gz (48/111/fopen): adding to final database dump
+0043.321 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_aiowps_message_store.table.tmpr1656.gz (49/111/fopen): adding to final database dump
+0043.354 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_aiowps_message_store.table.gz (50/111/fopen): adding to final database dump
+0043.359 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_aiowps_permanent_block.table.tmpr0.gz (51/111/fopen): adding to final database dump
+0043.364 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_aiowps_permanent_block.table.gz (52/111/fopen): adding to final database dump
+0043.369 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_alm.table.tmpr2.gz (53/111/fopen): adding to final database dump
+0043.373 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_alm.table.gz (54/111/fopen): adding to final database dump
+0043.378 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_berocket_termmeta.table.tmpr0.gz (55/111/fopen): adding to final database dump
+0043.383 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_berocket_termmeta.table.gz (56/111/fopen): adding to final database dump
+0043.387 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_braapf_product_stock_status_parent.table.tmpr377350.gz (57/111/fopen): adding to final database dump
+0043.392 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_braapf_product_stock_status_parent.table.gz (58/111/fopen): adding to final database dump
+0043.397 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_braapf_product_variation_attributes.table.tmpr1.gz (59/111/fopen): adding to final database dump
+0043.402 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_braapf_product_variation_attributes.table.gz (60/111/fopen): adding to final database dump
+0043.406 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_braapf_term_taxonomy_hierarchical.table.tmpr1001.gz (61/111/fopen): adding to final database dump
+0043.411 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_braapf_term_taxonomy_hierarchical.table.gz (62/111/fopen): adding to final database dump
+0043.416 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_braapf_variable_attributes.table.tmpr1.gz (63/111/fopen): adding to final database dump
+0043.420 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_braapf_variable_attributes.table.gz (64/111/fopen): adding to final database dump
+0043.425 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_counrtry_table.table.tmpr705.gz (65/111/fopen): adding to final database dump
+0043.430 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_counrtry_table.table.gz (66/111/fopen): adding to final database dump
+0043.435 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_e_events.table.tmpr0.gz (67/111/fopen): adding to final database dump
+0043.440 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_e_events.table.gz (68/111/fopen): adding to final database dump
+0043.444 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_fswcwallet.table.tmpr11.gz (69/111/fopen): adding to final database dump
+0043.449 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_fswcwallet.table.gz (70/111/fopen): adding to final database dump
+0043.454 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_fswcwallet_requests.table.tmpr0.gz (71/111/fopen): adding to final database dump
+0043.459 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_fswcwallet_requests.table.gz (72/111/fopen): adding to final database dump
+0043.463 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_fswcwallet_transaction.table.tmpr24.gz (73/111/fopen): adding to final database dump
+0043.468 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_fswcwallet_transaction.table.gz (74/111/fopen): adding to final database dump
+0043.473 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_fswcwallet_withdrawal_requests.table.tmpr0.gz (75/111/fopen): adding to final database dump
+0043.478 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_fswcwallet_withdrawal_requests.table.gz (76/111/fopen): adding to final database dump
+0043.483 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_mo_openid_linked_user.table.tmpr2.gz (77/111/fopen): adding to final database dump
+0043.488 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_mo_openid_linked_user.table.gz (78/111/fopen): adding to final database dump
+0043.493 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_mobile_recharges.table.tmpr313.gz (79/111/fopen): adding to final database dump
+0043.499 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_mobile_recharges.table.gz (80/111/fopen): adding to final database dump
+0043.504 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_productsdata_table.table.tmpr0.gz (81/111/fopen): adding to final database dump
+0043.509 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_productsdata_table.table.gz (82/111/fopen): adding to final database dump
+0043.515 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_sa_captured_wc_fields.table.tmpr0.gz (83/111/fopen): adding to final database dump
+0043.522 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_sa_captured_wc_fields.table.gz (84/111/fopen): adding to final database dump
+0043.527 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_shopmagic_automation_outcome.table.tmpr353.gz (85/111/fopen): adding to final database dump
+0043.533 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_shopmagic_automation_outcome.table.gz (86/111/fopen): adding to final database dump
+0043.537 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_shopmagic_automation_outcome_logs.table.tmpr183.gz (87/111/fopen): adding to final database dump
+0043.542 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_shopmagic_automation_outcome_logs.table.gz (88/111/fopen): adding to final database dump
+0043.547 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_shopmagic_guest.table.tmpr45.gz (89/111/fopen): adding to final database dump
+0043.552 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_shopmagic_guest.table.gz (90/111/fopen): adding to final database dump
+0043.556 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_shopmagic_guest_meta.table.tmpr1999.gz (91/111/fopen): adding to final database dump
+0043.562 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_shopmagic_guest_meta.table.gz (92/111/fopen): adding to final database dump
+0043.566 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_shopmagic_marketing_lists.table.tmpr0.gz (93/111/fopen): adding to final database dump
+0043.571 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_shopmagic_marketing_lists.table.gz (94/111/fopen): adding to final database dump
+0043.576 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_shopmagic_optin_email.table.tmpr0.gz (95/111/fopen): adding to final database dump
+0043.581 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_shopmagic_optin_email.table.gz (96/111/fopen): adding to final database dump
+0043.585 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_shopmagic_tracked_emails.table.tmpr180.gz (97/111/fopen): adding to final database dump
+0043.591 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_shopmagic_tracked_emails.table.gz (98/111/fopen): adding to final database dump
+0043.596 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_shopmagic_tracked_emails_clicks.table.tmpr0.gz (99/111/fopen): adding to final database dump
+0043.605 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_shopmagic_tracked_emails_clicks.table.gz (100/111/fopen): adding to final database dump
+0043.610 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_smsalert_booking_reminder.table.tmpr0.gz (101/111/fopen): adding to final database dump
+0043.614 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_smsalert_booking_reminder.table.gz (102/111/fopen): adding to final database dump
+0043.619 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_smsalert_renewal_reminders.table.tmpr0.gz (103/111/fopen): adding to final database dump
+0043.624 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_smsalert_renewal_reminders.table.gz (104/111/fopen): adding to final database dump
+0043.628 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_topup_recharge.table.tmpr300.gz (105/111/fopen): adding to final database dump
+0043.633 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_topup_recharge.table.gz (106/111/fopen): adding to final database dump
+0043.638 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wc_admin_note_actions.table.tmpr53329.gz (107/111/fopen): adding to final database dump
+0043.643 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wc_admin_note_actions.table.gz (108/111/fopen): adding to final database dump
+0043.648 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wc_admin_notes.table.tmpr167.gz (109/111/fopen): adding to final database dump
+0043.653 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wc_admin_notes.table.gz (110/111/fopen): adding to final database dump
+0043.658 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wc_customer_lookup.table.tmpr72.gz (111/111/fopen): adding to final database dump
+0043.663 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wc_customer_lookup.table.gz (112/111/fopen): adding to final database dump
+0043.667 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wc_download_log.table.tmpr0.gz (113/111/fopen): adding to final database dump
+0043.672 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wc_download_log.table.gz (114/111/fopen): adding to final database dump
+0043.677 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wc_order_addresses.table.tmpr0.gz (115/111/fopen): adding to final database dump
+0043.682 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wc_order_addresses.table.gz (116/111/fopen): adding to final database dump
+0043.687 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wc_order_coupon_lookup.table.tmpr1001.gz (117/111/fopen): adding to final database dump
+0043.692 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wc_order_coupon_lookup.table.gz (118/111/fopen): adding to final database dump
+0043.697 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wc_order_operational_data.table.tmpr0.gz (119/111/fopen): adding to final database dump
+0043.701 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wc_order_operational_data.table.gz (120/111/fopen): adding to final database dump
+0043.706 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wc_order_product_lookup.table.tmpr4279.gz (121/111/fopen): adding to final database dump
+0043.712 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wc_order_product_lookup.table.gz (122/111/fopen): adding to final database dump
+0043.717 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wc_order_stats.table.tmpr514154.gz (123/111/fopen): adding to final database dump
+0043.723 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wc_order_stats.table.gz (124/111/fopen): adding to final database dump
+0043.728 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wc_order_tax_lookup.table.tmpr1001.gz (125/111/fopen): adding to final database dump
+0043.733 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wc_order_tax_lookup.table.gz (126/111/fopen): adding to final database dump
+0043.737 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wc_orders.table.tmpr0.gz (127/111/fopen): adding to final database dump
+0043.742 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wc_orders.table.gz (128/111/fopen): adding to final database dump
+0043.747 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wc_orders_meta.table.tmpr0.gz (129/111/fopen): adding to final database dump
+0043.752 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wc_orders_meta.table.gz (130/111/fopen): adding to final database dump
+0043.756 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wc_product_attributes_lookup.table.tmpr1.gz (131/111/fopen): adding to final database dump
+0043.761 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wc_product_attributes_lookup.table.gz (132/111/fopen): adding to final database dump
+0043.766 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wc_product_download_directories.table.tmpr3.gz (133/111/fopen): adding to final database dump
+0043.770 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wc_product_download_directories.table.gz (134/111/fopen): adding to final database dump
+0043.775 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wc_rate_limits.table.tmpr0.gz (135/111/fopen): adding to final database dump
+0043.780 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wc_rate_limits.table.gz (136/111/fopen): adding to final database dump
+0043.784 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wc_se_queue.table.tmpr0.gz (137/111/fopen): adding to final database dump
+0043.789 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wc_se_queue.table.gz (138/111/fopen): adding to final database dump
+0043.794 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wc_se_settings.table.tmpr1001.gz (139/111/fopen): adding to final database dump
+0043.799 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wc_se_settings.table.gz (140/111/fopen): adding to final database dump
+0043.804 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wc_webhooks.table.tmpr0.gz (141/111/fopen): adding to final database dump
+0043.808 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wc_webhooks.table.gz (142/111/fopen): adding to final database dump
+0043.813 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_woocommerce_api_keys.table.tmpr0.gz (143/111/fopen): adding to final database dump
+0043.818 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_woocommerce_api_keys.table.gz (144/111/fopen): adding to final database dump
+0043.823 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_woocommerce_attribute_taxonomies.table.tmpr6.gz (145/111/fopen): adding to final database dump
+0043.827 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_woocommerce_attribute_taxonomies.table.gz (146/111/fopen): adding to final database dump
+0043.832 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_woocommerce_downloadable_product_permissions.table.tmpr0.gz (147/111/fopen): adding to final database dump
+0043.837 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_woocommerce_downloadable_product_permissions.table.gz (148/111/fopen): adding to final database dump
+0043.841 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_woocommerce_log.table.tmpr0.gz (149/111/fopen): adding to final database dump
+0043.847 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_woocommerce_log.table.gz (150/111/fopen): adding to final database dump
+0043.852 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_woocommerce_order_items.table.tmpr4281.gz (151/111/fopen): adding to final database dump
+0043.858 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_woocommerce_order_items.table.gz (152/111/fopen): adding to final database dump
+0043.863 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_woocommerce_payment_tokens.table.tmpr0.gz (153/111/fopen): adding to final database dump
+0043.868 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_woocommerce_payment_tokens.table.gz (154/111/fopen): adding to final database dump
+0043.872 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_woocommerce_sessions.table.tmpr21025.gz (155/111/fopen): adding to final database dump
+0043.881 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_woocommerce_sessions.table.gz (156/111/fopen): adding to final database dump
+0043.886 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_woocommerce_shipping_zone_locations.table.tmpr0.gz (157/111/fopen): adding to final database dump
+0043.891 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_woocommerce_shipping_zone_locations.table.gz (158/111/fopen): adding to final database dump
+0043.895 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_woocommerce_shipping_zone_methods.table.tmpr0.gz (159/111/fopen): adding to final database dump
+0043.900 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_woocommerce_shipping_zone_methods.table.gz (160/111/fopen): adding to final database dump
+0043.905 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_woocommerce_shipping_zones.table.tmpr0.gz (161/111/fopen): adding to final database dump
+0043.910 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_woocommerce_shipping_zones.table.gz (162/111/fopen): adding to final database dump
+0043.915 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_woocommerce_tax_rate_locations.table.tmpr0.gz (163/111/fopen): adding to final database dump
+0043.920 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_woocommerce_tax_rate_locations.table.gz (164/111/fopen): adding to final database dump
+0043.924 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_woocommerce_tax_rates.table.tmpr0.gz (165/111/fopen): adding to final database dump
+0043.929 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_woocommerce_tax_rates.table.gz (166/111/fopen): adding to final database dump
+0043.934 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_woof_sd.table.tmpr0.gz (167/111/fopen): adding to final database dump
+0043.939 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_woof_sd.table.gz (168/111/fopen): adding to final database dump
+0043.944 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_woof_sd_presets.table.tmpr0.gz (169/111/fopen): adding to final database dump
+0043.948 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_woof_sd_presets.table.gz (170/111/fopen): adding to final database dump
+0043.953 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wpf_filters.table.tmpr6.gz (171/111/fopen): adding to final database dump
+0043.958 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wpf_filters.table.gz (172/111/fopen): adding to final database dump
+0043.962 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wpf_meta_keys.table.tmpr8.gz (173/111/fopen): adding to final database dump
+0043.967 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wpf_meta_keys.table.gz (174/111/fopen): adding to final database dump
+0043.972 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wpf_meta_values.table.tmpr5.gz (175/111/fopen): adding to final database dump
+0043.977 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wpf_meta_values.table.gz (176/111/fopen): adding to final database dump
+0043.982 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wpf_meta_values_bk.table.tmpr0.gz (177/111/fopen): adding to final database dump
+0043.986 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wpf_meta_values_bk.table.gz (178/111/fopen): adding to final database dump
+0043.991 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wpfm_backup.table.tmpr2.gz (179/111/fopen): adding to final database dump
+0043.996 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wpfm_backup.table.gz (180/111/fopen): adding to final database dump
+0044.001 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wpforms_payment_meta.table.tmpr0.gz (181/111/fopen): adding to final database dump
+0044.005 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wpforms_payment_meta.table.gz (182/111/fopen): adding to final database dump
+0044.010 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wpforms_payments.table.tmpr0.gz (183/111/fopen): adding to final database dump
+0044.015 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wpforms_payments.table.gz (184/111/fopen): adding to final database dump
+0044.019 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wpforms_tasks_meta.table.tmpr697.gz (185/111/fopen): adding to final database dump
+0044.024 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wpforms_tasks_meta.table.gz (186/111/fopen): adding to final database dump
+0044.029 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wpmailsmtp_attachment_files.table.tmpr0.gz (187/111/fopen): adding to final database dump
+0044.034 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wpmailsmtp_attachment_files.table.gz (188/111/fopen): adding to final database dump
+0044.039 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wpmailsmtp_debug_events.table.tmpr1980.gz (189/111/fopen): adding to final database dump
+0044.051 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wpmailsmtp_debug_events.table.gz (190/111/fopen): adding to final database dump
+0044.067 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wpmailsmtp_email_attachments.table.tmpr1.gz (191/111/fopen): adding to final database dump
+0044.078 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wpmailsmtp_email_attachments.table.gz (192/111/fopen): adding to final database dump
+0044.089 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wpmailsmtp_email_tracking_events.table.tmpr1050.gz (193/111/fopen): adding to final database dump
+0044.094 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wpmailsmtp_email_tracking_events.table.gz (194/111/fopen): adding to final database dump
+0044.099 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wpmailsmtp_email_tracking_links.table.tmpr3590.gz (195/111/fopen): adding to final database dump
+0044.106 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wpmailsmtp_email_tracking_links.table.gz (196/111/fopen): adding to final database dump
+0044.111 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wpmailsmtp_emails_log.table.tmpr2220.gz (197/111/fopen): adding to final database dump
+0044.178 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wpmailsmtp_emails_log.table.gz (198/111/fopen): adding to final database dump
+0044.183 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wpmailsmtp_tasks_meta.table.tmpr327.gz (199/111/fopen): adding to final database dump
+0044.193 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wpmailsmtp_tasks_meta.table.gz (200/111/fopen): adding to final database dump
+0044.198 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wpr_rucss_resources.table.tmpr0.gz (201/111/fopen): adding to final database dump
+0044.202 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wpr_rucss_resources.table.gz (202/111/fopen): adding to final database dump
+0044.207 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wpr_rucss_used_css.table.tmpr0.gz (203/111/fopen): adding to final database dump
+0044.212 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wpr_rucss_used_css.table.gz (204/111/fopen): adding to final database dump
+0044.216 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wt_iew_action_history.table.tmpr6.gz (205/111/fopen): adding to final database dump
+0044.221 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wt_iew_action_history.table.gz (206/111/fopen): adding to final database dump
+0044.226 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wt_iew_mapping_template.table.tmpr0.gz (207/111/fopen): adding to final database dump
+0044.231 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wt_iew_mapping_template.table.gz (208/111/fopen): adding to final database dump
+0044.236 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wt_sc_coupon_lookup.table.tmpr5.gz (209/111/fopen): adding to final database dump
+0044.241 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db-table-oprca_wt_sc_coupon_lookup.table.gz (210/111/fopen): adding to final database dump
+0044.279 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db.gz: finished writing out complete database file (88072.8 KB)
+0045.183 (0) Total database tables backed up: 108 (backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db.gz, size: 90186661, sha1: 9e63cbfa6bad697f2cba5b8a2b9c2acb495a397a, sha256: bda39871b24f96e02c273c715c5b7101028da0882cf391bfc08c1c295c38ea04)
+0045.215 (0) backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db.gz: db: This file has not yet been successfully uploaded: will queue
+0045.221 (0) Saving backup history. Total backup size: 86 MB
+0045.232 (0) Requesting upload of the files that have not yet been successfully uploaded (1)
+0045.248 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0045.255 (0) No remote despatch: user chose no remote backup service
+0045.261 (0) Recording as successfully uploaded: backup_2023-12-04-1406_Gifto_Gifting_made_better_e081bffa6e15-db.gz
+0045.276 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0045.281 (0) Number of backup sets in history: 1; groups (db): 1
+0045.285 (0) Examining (for databases) backup set with group_id=0, nonce=e081bffa6e15, datestamp=1701684371 (Dec 04 2023 10:06:11)
+0045.290 (0) This backup set is the backup set just made, so will not be deleted.
+0045.290 (0) Number of backup sets in history: 1; groups (files): 1
+0045.295 (0) Examining (for files) backup set with nonce=e081bffa6e15, datestamp=1701684371 (Dec 04 2023 10:06:11)
+0045.295 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0045.300 (0) Retain: saving new backup history (sets now: 1) and finishing retain operation
+0045.310 (0) Resume backup (e081bffa6e15, 0): finish run
+0045.321 (0) Decremented the semaphore (d) by 1
+0045.326 (0) Semaphore (d) unlocked
+0045.331 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0045.348 (0) Fetching RSS news feed
+0045.577 (0) Fetched RSS news feed; result is a: SimplePie
+0045.586 (0) Sending email ('Database only (files were not part of this particular schedule)') report (attachments: 0, size: 0 KB) to: maddy...
+0046.339 (0) The backup succeeded and is now complete

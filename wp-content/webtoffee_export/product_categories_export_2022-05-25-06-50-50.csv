@@ -1,0 +1,144 @@
+﻿term_id,name,slug,description,display_type,parent,thumbnail
+16,Uncategorized,uncategorized,,default,0,
+50,"Active Wear",active-wear,,default,0,
+51,Artwork,artwork,,default,0,
+52,Baby,baby,,default,0,
+54,"Baby Layette",baby-layette,,default,53,
+55,Backpack,backpack,,default,0,
+57,Bags,bags,,default,0,
+58,Barber,barber,,default,0,
+60,Bathroom,bathroom,,default,0,
+61,"Bathroom Sinks",bathroom-sinks,,default,60,http://localhost/egifts/wp-content/uploads/2022/02/cat-bathroom-sinks.jpg
+62,Bathtubs,bathtubs,,default,60,http://localhost/egifts/wp-content/uploads/2022/02/cat-bathroom-bathtubs.jpg
+64,Beauty,beauty,,default,0,
+65,Bedding,bedding,,default,0,
+70,Blankets,blankets,,default,65,http://localhost/egifts/wp-content/uploads/2022/01/cat_blankets.png
+73,Book,book,,default,0,
+75,"BPA Free Baby Bottles",bpa-free-baby-bottles,,default,53,
+77,Bra,bra,,default,0,
+81,"Bucket bags",bucket-bags,,default,57,http://localhost/egifts/wp-content/uploads/2022/02/cat_bags_1.jpeg
+83,Candles,candles,,default,0,
+88,Clothing,clothing,,default,53,
+89,Clutches,clutches,,default,57,http://localhost/egifts/wp-content/uploads/2022/02/cat_bags_4.jpeg
+90,Coffee,coffee,,default,0,
+92,Cooking,cooking,,default,74,
+94,Curtains,curtains,,default,65,http://localhost/egifts/wp-content/uploads/2022/01/cat_curtains.png
+95,"Cushion Cover",cushion-cover,,default,65,http://localhost/egifts/wp-content/uploads/2022/01/cat_cushion_cover.png
+100,"Decor & Toy",decor-toy,,default,53,
+104,Drink,drink,,default,0,
+105,"Duvet Covers",duvet-covers,,default,65,http://localhost/egifts/wp-content/uploads/2022/01/cat_duvet_covers.png
+106,Eating,eating,,default,53,
+107,Electronic,electronic,,default,0,
+109,"Expresso Coffee",expresso-coffee,,default,91,
+111,Fashion,fashion,,default,0,
+114,"Food Pairing",food-pairing,,default,104,
+116,"For kids",for-kids,,default,74,
+117,Furniture,furniture,,default,0,
+119,Glasses,glasses,,default,111,http://localhost/egifts/wp-content/uploads/2022/01/cat-fashion-02.jpeg
+120,Glasses,glasses-2,,default,0,
+121,Glasses,glasses-glasses-2,,default,120,
+125,"Gym Supplement",gym-supplement,,default,0,
+126,"Hand Sanitizer",hand-sanitizer,,default,0,
+127,Handbags,handbags,,default,111,http://localhost/egifts/wp-content/uploads/2022/01/cat-fashion-12.jpeg
+128,Hat,hat,,default,0,
+130,Headphones,headphones,,default,108,http://localhost/egifts/wp-content/uploads/2022/02/cat-electronic-headphones.jpg
+131,"House Paint",house-paint,,default,0,
+133,Houseware,houseware,,default,0,
+134,Hydration,hydration,,default,125,
+141,Jackets,jackets,,default,111,http://localhost/egifts/wp-content/uploads/2022/01/cat-fashion-10.jpeg
+142,"Jar Candle",jar-candle,,default,83,
+143,Jewelry,jewelry,,default,0,
+144,Juice,juice,,default,0,
+146,Juice,juice-juice,,default,145,
+149,"Leather Bag",leather-bag,,default,111,http://localhost/egifts/wp-content/uploads/2022/01/cat-fashion-05.jpeg
+151,"Life style",life-style,,default,74,
+155,Living,living,,default,0,
+156,Living,living-book,,default,74,
+158,"Mini bags",mini-bags,,default,57,http://localhost/egifts/wp-content/uploads/2022/02/cat_bags_3.jpeg
+162,Mirror,mirror,,default,0,
+163,"Mix Bundle",mix-bundle,,default,145,
+165,"Nail Polishing",nail-polishing,,default,0,
+166,"New arrivals",new-arrivals,,default,120,
+168,Organic,organic,,default,0,
+169,"Organic Essentials",organic-essentials,,default,53,
+171,Pan,pan,,default,0,
+172,Pet,pet,,default,0,
+174,"Phone Case",phone-case,,default,0,
+175,Pillowcases,pillowcases,,default,65,http://localhost/egifts/wp-content/uploads/2022/01/cat_pillowcases.png
+177,Pizza,pizza,,default,0,
+178,Plants,plants,,default,0,
+181,POD,pod,,default,0,
+182,Pre-workout,pre-workout,,default,125,
+183,Print,print,,default,0,
+185,Protein,protein,,default,125,
+192,Sandals,sandals,,default,111,http://localhost/egifts/wp-content/uploads/2022/01/cat-fashion-08.jpeg
+194,Shoes,shoes,,default,111,http://localhost/egifts/wp-content/uploads/2022/01/cat-fashion-07.jpeg
+195,"Shop Gifts",shop-gifts,,default,184,
+196,"Shop Home",shop-home,,default,184,
+197,"Shop Masks",shop-masks,,default,184,
+199,"Shop T-shirts",shop-t-shirts,,default,184,
+200,Showers,showers,,default,60,http://localhost/egifts/wp-content/uploads/2022/02/cat-bathroom-showers.jpg
+201,Sideboards,sideboards,,default,118,
+203,"Single Origin",single-origin,,default,91,
+205,Skateboards,skateboards,,default,0,
+206,Skincare,skincare,,default,0,
+207,"Smart Phones",smart-phones,,default,108,http://localhost/egifts/wp-content/uploads/2022/02/cat-electronic-smart-phones.jpg
+209,Sneaker,sneaker,,default,0,
+210,Sneakers,sneakers,,default,111,http://localhost/egifts/wp-content/uploads/2022/01/cat-fashion-11.jpeg
+211,Socks,socks,,default,0,
+213,Speakers,speakers,,default,108,http://localhost/egifts/wp-content/uploads/2022/02/cat-electronic-speakers.jpg
+214,Stationery,stationery,,default,0,
+216,Sunglasses,sunglasses,,default,120,
+217,Supplement,supplement,,default,0,
+218,"Table Mirrors",table-mirrors,,default,162,
+219,Tables,tables,,default,118,
+221,"The Barkery",the-barkery,,default,168,
+222,"The systems",the-systems,,default,165,
+224,Toilets,toilets,,default,60,http://localhost/egifts/wp-content/uploads/2022/02/cat-bathroom-toilets.jpg
+225,Tops,tops,,default,111,http://localhost/egifts/wp-content/uploads/2022/01/cat-fashion-09.jpeg
+226,"Tote bags",tote-bags,,default,57,http://localhost/egifts/wp-content/uploads/2022/02/cat_bags_2.jpeg
+228,Toys,toys,,default,0,
+229,Trucks,trucks,,default,205,
+233,Vegetable,vegetable,,default,168,
+235,"Wall Mirrors",wall-mirrors,,default,162,
+236,Watch,watch,,default,0,
+238,Wheels,wheels,,default,205,
+244,Zodiac,zodiac,,default,74,
+245,"3 Wick Candle",3-wick-candle,,default,83,
+246,Accessories,accessories,,default,111,http://localhost/egifts/wp-content/uploads/2022/01/cat-fashion-02.jpeg
+247,Accessories,accessories-bathroom,,default,60,http://localhost/egifts/wp-content/uploads/2022/02/cat-bathroom-accessories.jpg
+248,Altitude,altitude,,default,237,
+249,Apparel,apparel,,default,181,
+250,Basic,basic,,default,111,
+251,Blanket,blanket,,default,181,
+252,Blazers,blazers,,default,111,http://localhost/egifts/wp-content/uploads/2022/01/cat-fashion-03.jpeg
+253,"Blends Coffee",blends-coffee,,default,91,
+254,Books,books,,default,228,http://localhost/egifts/wp-content/uploads/2022/01/cat_toy_book.png
+255,Boots,boots,,default,111,http://localhost/egifts/wp-content/uploads/2022/01/cat-fashion-06.jpeg
+256,Cameras,cameras,,default,108,http://localhost/egifts/wp-content/uploads/2022/02/cat-electronic-cameras.jpg
+257,"Candle Set",candle-set,,default,83,
+258,Chairs,chairs,,default,118,
+259,Choronos,choronos,,default,237,
+260,Complete,complete,,default,205,
+261,Computers,computers,,default,108,http://localhost/egifts/wp-content/uploads/2022/02/cat-electronic-computers.jpg
+262,Decks,decks,,default,205,
+263,Decoration,decoration,,default,228,http://localhost/egifts/wp-content/uploads/2022/01/cat_toy_decoration.png
+264,Dolls,dolls,,default,228,http://localhost/egifts/wp-content/uploads/2022/01/cat_toy_dolls.png
+265,Doormat,doormat,,default,181,
+266,Drinks,drinks,,default,168,
+267,"Fresh Fruits",fresh-fruits,,default,168,
+268,"Full Length Mirrors",full-length-mirrors,,default,162,
+269,Game,game,,default,228,http://localhost/egifts/wp-content/uploads/2022/01/cat_toy_game.png
+270,Gifts,gifts,,default,228,http://localhost/egifts/wp-content/uploads/2022/01/cat_toy_gifts.png
+271,Herbs,herbs,,default,168,
+272,"Herbs + Veggies",herbs-and-veggies,,default,179,
+273,"Indoor Plants",indoor-plants,,default,179,
+274,Marks,marks,,default,181,
+275,Mugs,mugs,,default,181,
+276,"Nail care",nail-care,,default,165,
+277,"Nail polish",nail-polish,,default,165,
+278,Nuts,nuts,,default,168,
+279,"Outdoor Plants",outdoor-plants,,default,179,
+280,"Phone cases",phone-cases,,default,181,
+281,Rogue,rogue,,default,237,
+282,Sensory,sensory,,default,228,http://localhost/egifts/wp-content/uploads/2022/01/cat_toy_sensory.png

@@ -1,0 +1,65 @@
+{
+    "gifto.co": {
+        "siteId": "qiDwjoFKbKBJCsAZDJmEQkxXvnqtcFrV",
+        "siteSecret": "v9mHM1tzsNLDhjQlCE1oPwaMYahmrkZPC0ga2MW8C0PXYKoCQCed5X05roZvxfcY",
+        "blogId": 1,
+        "compression": true,
+        "webhookToken": "554967c91f3a92c55be7b884482084c0",
+        "home_url": "https:\/\/gifto.co",
+        "admin_url": "https:\/\/gifto.co\/wp-admin\/",
+        "hosting": "unknown",
+        "alwaysBuffer": true,
+        "isEzoicActive": false,
+        "isApoActive": false,
+        "isNginxHelperActive": false,
+        "isLateIntegrationInitRequired": false,
+        "isDlmActive": false,
+        "isWoocommerceCacheHandlerActive": false,
+        "isWoocommerceActive": true,
+        "isAeliaCurrencySwitcherActive": false,
+        "isGeoTargetingWPActive": false,
+        "dlm_downloading_url": null,
+        "dlm_download_endpoint": null,
+        "pluginVersion": "1.8.1",
+        "options_cache": {
+            "cache_handler_cache_handler": false,
+            "woocommerce_default_customer_address": "geolocation",
+            "wc_aelia_currency_switcher": {
+                "ipgeolocation_enabled": null
+            }
+        },
+        "additional_domains": []
+    },
+    "config_path": "8e3c8ef744e66fab4884fdac571808b5",
+    "www.gifto.co": {
+        "siteId": "qiDwjoFKbKBJCsAZDJmEQkxXvnqtcFrV",
+        "siteSecret": "v9mHM1tzsNLDhjQlCE1oPwaMYahmrkZPC0ga2MW8C0PXYKoCQCed5X05roZvxfcY",
+        "blogId": 1,
+        "compression": true,
+        "webhookToken": "554967c91f3a92c55be7b884482084c0",
+        "home_url": "https:\/\/www.gifto.co",
+        "admin_url": "https:\/\/www.gifto.co\/wp-admin\/",
+        "hosting": "unknown",
+        "alwaysBuffer": true,
+        "isEzoicActive": false,
+        "isApoActive": false,
+        "isNginxHelperActive": false,
+        "isLateIntegrationInitRequired": false,
+        "isDlmActive": false,
+        "isWoocommerceCacheHandlerActive": false,
+        "isWoocommerceActive": true,
+        "isAeliaCurrencySwitcherActive": false,
+        "isGeoTargetingWPActive": false,
+        "dlm_downloading_url": null,
+        "dlm_download_endpoint": null,
+        "pluginVersion": "1.10.4",
+        "options_cache": {
+            "cache_handler_cache_handler": false,
+            "woocommerce_default_customer_address": "geolocation",
+            "wc_aelia_currency_switcher": {
+                "ipgeolocation_enabled": null
+            }
+        },
+        "additional_domains": []
+    }
+}

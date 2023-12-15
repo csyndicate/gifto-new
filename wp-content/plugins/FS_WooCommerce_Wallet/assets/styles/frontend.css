@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'fsww';
+    src: url('../fonts/fsww.eot');
+    src: url('../fonts/fsww.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/fsww.woff') format('woff'),
+    url('../fonts/fsww.ttf') format('truetype'),
+    url('../fonts/fsww.svg#fsww') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class*='fsww-icon-']:before {
+    display: inline-block;
+    font-family: 'fsww';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.fsww-icon-wallet:before {
+    content: '\0041';
+}
+
+.fsww-balance {
+    margin-left: 16px !important;
+    padding: 0px 10px;
+}
+
+.fsww-right {
+    float: right;
+}
+
+.fsww-input {
+    border: 1px solid #66666678 !important;
+}
+
+.fsww-wallet-icon {
+    display: inline-block;
+    width: 27px;
+    margin-right: 8px;
+    font-size: 24px;
+    vertical-align: middle;
+}
+
+.fsww-modals {
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    display: none;
+}
+
+.fsww-modals-container {
+    background: #000000bd;
+    height: 100%;
+    width: 100%;
+    padding-top: 160px;
+}
+
+.fsww-refund-modal {
+    min-width: 360px;
+    background: #FFF;
+    padding: 23px;
+    margin: auto;
+    max-width: 520px;
+    border-radius: 2px;
+}
+
+.fsww-hide-overflow {
+    overflow: hidden;
+}
+
+.fsww-modals-container textarea {
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.fsww-right {
+    float: right;
+}
+
+.fsww-wallet-checkout-icon {
+    margin-top: -3px;
+}

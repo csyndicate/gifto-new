@@ -1,0 +1,24 @@
+[11:34 AM] Navneet
+MADDY SERVER DETAILS
+http://43523f7b3b.nxcli.net/wp-admin
+admin: admin
+password: Toyed27Earwax16Gasped61Fabric75
+
+Hostname:43523f7b3b.nxcli.net
+43523f7b3b.nxcli.net
+Port    : 22
+Username: ac54d3c9_1
+Password    : ToddleThisOutputDazing
+Command: ssh ac54d3c9_1@43523f7b3b.nxcli.net
+
+[11:38 AM] Navneet
+staging server businesss account setuphttps://stagingstores.xoxoday.com/admin/dashboard
+info@desert-road.com
+xoxo12345
+Plum
+
+[11:39 AM] Navneet
+https://help.xoxoday.com/plum/developer-resources/storefront-integration/api-endpoints/token-creation-and-token-management
+
+Reward Product API
+blockUI blockOverlay

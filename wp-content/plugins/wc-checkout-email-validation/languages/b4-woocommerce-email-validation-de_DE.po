@@ -1,0 +1,55 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce checkout email validation by B4 Ecommerce\n"
+"POT-Creation-Date: 2022-10-30 15:00+0100\n"
+"PO-Revision-Date: 2022-10-30 15:00+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: b4-woocommerce-email-validation.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: b4-woocommerce-email-validation.php:37
+msgid ""
+"There seems to be a typo in the email address provided, please check the "
+"email address. If the email address is correct, you can ignore this message."
+msgstr ""
+"Es scheint einen Tippfehler in der angegebenen E-Mail-Adresse zu geben, "
+"bitte überprüfen Sie die E-Mail-Adresse. Wenn die E-Mail-Adresse korrekt "
+"ist, können Sie diese Nachricht ignorieren."
+
+#. Plugin Name of the plugin/theme
+msgid "WooCommerce checkout email validation by B4 Ecommerce"
+msgstr "WooCommerce Checkout E-Mail-Validierung durch B4 Ecommerce"
+
+#. Plugin URI of the plugin/theme
+msgid "https://b4ecommerce.nl/woocommerce-email-validation/"
+msgstr "https://b4ecommerce.nl/woocommerce-email-validation/"
+
+#. Description of the plugin/theme
+msgid ""
+"A lightweight plugin that checks for the most common email typos in the "
+"customer's email and provides them with a warning."
+msgstr ""
+"Ein leichtgewichtiges Plugin, das nach den häufigsten E-Mail-Tippfehlern in "
+"der E-Mail des Kunden sucht und ihm eine Warnung ausgibt."
+
+#. Author of the plugin/theme
+msgid "B4 Ecommerce"
+msgstr "B4 E-Commerce"
+
+#. Author URI of the plugin/theme
+msgid "https://b4ecommerce.nl"
+msgstr "https://b4ecommerce.nl"

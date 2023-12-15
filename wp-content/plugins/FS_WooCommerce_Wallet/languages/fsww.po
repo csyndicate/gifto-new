@@ -1,0 +1,1428 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-08-03 15:47+0100\n"
+"PO-Revision-Date: 2021-08-03 15:48+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Eazy Po 0.9.5.3\n"
+
+msgid "You can't mix top-up products and normal products in one order, please remove one of them."
+msgstr ""
+
+#: includes/frontend-html.php:4
+msgid "Refund Reason"
+msgstr ""
+
+#: includes/frontend-html.php:9 includes/classes/FS_WC_Wallet.php:695
+#: includes/classes/FS_WC_Wallet.php:730
+msgid "Request Refund"
+msgstr ""
+
+#: includes/frontend-html.php:10 includes/pages/wallets.php:259
+#: includes/pages/wallets.php:314 includes/pages/wallets.php:361
+msgid "Cancel"
+msgstr ""
+
+#: includes/functions.php:10
+msgid "Jan"
+msgstr ""
+
+#: includes/functions.php:11
+msgid "Feb"
+msgstr ""
+
+#: includes/functions.php:12
+msgid "Mar"
+msgstr ""
+
+#: includes/functions.php:13
+msgid "Apr"
+msgstr ""
+
+#: includes/functions.php:14
+msgid "May"
+msgstr ""
+
+#: includes/functions.php:15
+msgid "Jun"
+msgstr ""
+
+#: includes/functions.php:16
+msgid "Jul"
+msgstr ""
+
+#: includes/functions.php:17
+msgid "Aug"
+msgstr ""
+
+#: includes/functions.php:18
+msgid "Sep"
+msgstr ""
+
+#: includes/functions.php:19
+msgid "Oct"
+msgstr ""
+
+#: includes/functions.php:20
+msgid "Nov"
+msgstr ""
+
+#: includes/functions.php:21
+msgid "Dec"
+msgstr ""
+
+#: includes/functions.php:33
+msgid "None"
+msgstr ""
+
+#: includes/transactions_table_html.php:46
+#: includes/transactions_table_html.php:233 includes/pages/requests.php:35
+#: includes/pages/wallets.php:79 includes/pages/withdrawal_requests.php:41
+msgid "Current Page"
+msgstr ""
+
+#: includes/transactions_table_html.php:59
+#: includes/transactions_table_html.php:150
+#: includes/transactions_table_html.php:246
+#: includes/transactions_table_html.php:340
+#: includes/withdrawal-requests.php:552 includes/withdrawal-requests.php:688
+#: includes/pages/wallets.php:87 includes/pages/wallets.php:202
+msgid "ID"
+msgstr ""
+
+#: includes/transactions_table_html.php:60
+#: includes/transactions_table_html.php:162
+#: includes/transactions_table_html.php:247
+#: includes/transactions_table_html.php:341 includes/pages/requests.php:45
+#: includes/pages/requests.php:187
+msgid "Order ID"
+msgstr ""
+
+#: includes/transactions_table_html.php:62
+msgid "Username/Email"
+msgstr ""
+
+#: includes/transactions_table_html.php:64
+#: includes/transactions_table_html.php:166
+#: includes/withdrawal-requests.php:78 includes/withdrawal-requests.php:553
+#: includes/withdrawal-requests.php:689 includes/classes/FS_WC_Wallet.php:2323
+#: includes/pages/add_funds.php:34 includes/pages/requests.php:47
+#: includes/pages/requests.php:189 includes/pages/wallets.php:231
+#: includes/pages/wallets.php:286 includes/pages/withdrawal_requests.php:52
+#: includes/pages/withdrawal_requests.php:214
+msgid "Amount"
+msgstr ""
+
+#: includes/transactions_table_html.php:66
+#: includes/transactions_table_html.php:167 includes/classes/Gateway.php:84
+msgid "Description"
+msgstr ""
+
+#: includes/transactions_table_html.php:69
+msgid "Created By"
+msgstr ""
+
+#: includes/transactions_table_html.php:73
+#: includes/transactions_table_html.php:171
+#: includes/transactions_table_html.php:253
+#: includes/transactions_table_html.php:347
+msgid "Date"
+msgstr ""
+
+#: includes/transactions_table_html.php:102
+#: includes/transactions_table_html.php:112 includes/pages/requests.php:80
+#: includes/pages/wallets.php:148
+msgid "User Not Found. ID "
+msgstr ""
+
+#: includes/transactions_table_html.php:121
+#: includes/transactions_table_html.php:128
+#: includes/transactions_table_html.php:287
+#: includes/transactions_table_html.php:294 includes/pages/requests.php:127
+msgid "View Order"
+msgstr ""
+
+#: includes/transactions_table_html.php:157 includes/pages/wallets.php:178
+#: includes/pages/withdrawal_requests.php:187
+msgid "Delete"
+msgstr ""
+
+#: includes/transactions_table_html.php:179
+#: includes/transactions_table_html.php:332
+msgid "There is no transactions"
+msgstr ""
+
+#: includes/transactions_table_html.php:249
+#: includes/transactions_table_html.php:343 includes/pages/edit_wallet.php:60
+#: includes/pages/requests.php:46 includes/pages/requests.php:188
+msgid "User"
+msgstr ""
+
+#: includes/transactions_table_html.php:251
+#: includes/transactions_table_html.php:345
+msgid "Credits"
+msgstr ""
+
+#: includes/transactions_table_html.php:252
+#: includes/transactions_table_html.php:346
+msgid "Debits"
+msgstr ""
+
+#: includes/withdrawal-requests.php:37 includes/classes/FS_WC_Wallet.php:2934
+#: includes/classes/FS_WC_Wallet.php:2935
+#: includes/classes/Withdrawal_Requests_Endpoint.php:39
+#: includes/classes/Withdrawal_Requests_Endpoint.php:54
+#: includes/pages/withdrawal_requests.php:36
+msgid "Withdrawal Requests"
+msgstr ""
+
+#: includes/withdrawal-requests.php:39
+#: includes/classes/Transactions_History_Endpoint.php:69
+msgid "Your current balance is: "
+msgstr ""
+
+#: includes/withdrawal-requests.php:51
+msgid "Your wallet is locked; you can't send withdrawal requests."
+msgstr ""
+
+#: includes/withdrawal-requests.php:58
+msgid "Invalid amount."
+msgstr ""
+
+#: includes/withdrawal-requests.php:64
+msgid "Withdrawal request sent."
+msgstr ""
+
+#: includes/withdrawal-requests.php:95 includes/withdrawal-requests.php:97
+msgid "Select Payment Method"
+msgstr ""
+
+#: includes/withdrawal-requests.php:99 includes/settings_pages/general.php:316
+msgid "PayPal"
+msgstr ""
+
+#: includes/withdrawal-requests.php:104
+#: includes/settings_pages/general.php:340
+msgid "Bitcoin"
+msgstr ""
+
+#: includes/withdrawal-requests.php:109
+msgid "SWIFT"
+msgstr ""
+
+#: includes/withdrawal-requests.php:113
+msgid "Bank Transfer"
+msgstr ""
+
+#: includes/withdrawal-requests.php:117
+msgid "Bonifico Bancario "
+msgstr ""
+
+#: includes/withdrawal-requests.php:121
+#: includes/settings_pages/general.php:364
+msgid "Bank Transfer (Turkey)"
+msgstr ""
+
+#: includes/withdrawal-requests.php:125
+#: includes/settings_pages/general.php:389
+msgid "Bank Transfer (BACS)"
+msgstr ""
+
+#: includes/withdrawal-requests.php:135
+msgid "PayPal Address"
+msgstr ""
+
+#: includes/withdrawal-requests.php:148
+msgid "Bitcoin Address"
+msgstr ""
+
+#: includes/withdrawal-requests.php:160
+msgid "Full Name *"
+msgstr ""
+
+#: includes/withdrawal-requests.php:167
+msgid "Billing Address Line 1 *"
+msgstr ""
+
+#: includes/withdrawal-requests.php:174 includes/withdrawal-requests.php:584
+#: includes/pages/withdrawal_requests.php:92
+msgid "Billing Address Line 2"
+msgstr ""
+
+#: includes/withdrawal-requests.php:181 includes/withdrawal-requests.php:586
+#: includes/pages/withdrawal_requests.php:93
+msgid "Billing Address Line 3"
+msgstr ""
+
+#: includes/withdrawal-requests.php:188
+msgid "City *"
+msgstr ""
+
+#: includes/withdrawal-requests.php:195 includes/withdrawal-requests.php:589
+#: includes/pages/withdrawal_requests.php:95
+msgid "State"
+msgstr ""
+
+#: includes/withdrawal-requests.php:202
+msgid "Postcode *"
+msgstr ""
+
+#: includes/withdrawal-requests.php:210
+msgid "Country *"
+msgstr ""
+
+#: includes/withdrawal-requests.php:217
+msgid "Bank Account Holder's Name *"
+msgstr ""
+
+#: includes/withdrawal-requests.php:225
+msgid "Bank Account Number/IBAN *"
+msgstr ""
+
+#: includes/withdrawal-requests.php:233
+msgid "SWIFT Code *"
+msgstr ""
+
+#: includes/withdrawal-requests.php:241
+msgid "Bank Name in Full *"
+msgstr ""
+
+#: includes/withdrawal-requests.php:249
+msgid "Bank Branch City *"
+msgstr ""
+
+#: includes/withdrawal-requests.php:257
+msgid "Bank Branch Country *"
+msgstr ""
+
+#: includes/withdrawal-requests.php:265 includes/withdrawal-requests.php:603
+#: includes/pages/withdrawal_requests.php:104
+msgid "Intermediary Bank - Bank Code"
+msgstr ""
+
+#: includes/withdrawal-requests.php:273 includes/withdrawal-requests.php:605
+#: includes/pages/withdrawal_requests.php:105
+msgid "Intermediary Bank - Name"
+msgstr ""
+
+#: includes/withdrawal-requests.php:281 includes/withdrawal-requests.php:607
+#: includes/pages/withdrawal_requests.php:106
+msgid "Intermediary Bank - City"
+msgstr ""
+
+#: includes/withdrawal-requests.php:289 includes/withdrawal-requests.php:609
+#: includes/pages/withdrawal_requests.php:107
+msgid "Intermediary Bank - Country"
+msgstr ""
+
+#: includes/withdrawal-requests.php:301 includes/withdrawal-requests.php:509
+msgid "Owner Name *"
+msgstr ""
+
+#: includes/withdrawal-requests.php:308 includes/withdrawal-requests.php:516
+msgid "Bank Name *"
+msgstr ""
+
+#: includes/withdrawal-requests.php:315
+msgid "Bank Agency Number *"
+msgstr ""
+
+#: includes/withdrawal-requests.php:322 includes/withdrawal-requests.php:530
+msgid "Bank Account Number *"
+msgstr ""
+
+#: includes/withdrawal-requests.php:330
+msgid "CPF *"
+msgstr ""
+
+#: includes/withdrawal-requests.php:338
+msgid "Account Type *"
+msgstr ""
+
+#: includes/withdrawal-requests.php:340
+msgid "Checking Account"
+msgstr ""
+
+#: includes/withdrawal-requests.php:340
+msgid "Checking Account *"
+msgstr ""
+
+#: includes/withdrawal-requests.php:342
+msgid "Savings  Account"
+msgstr ""
+
+#: includes/withdrawal-requests.php:342
+msgid "Savings  Account *"
+msgstr ""
+
+#: includes/withdrawal-requests.php:356
+msgid "Nome *"
+msgstr ""
+
+#: includes/withdrawal-requests.php:363
+msgid "Cognome *"
+msgstr ""
+
+#: includes/withdrawal-requests.php:370
+msgid "Codice fiscale *"
+msgstr ""
+
+#: includes/withdrawal-requests.php:379
+msgid "Sesso *"
+msgstr ""
+
+#: includes/withdrawal-requests.php:386
+msgid "Numero di telefono *"
+msgstr ""
+
+#: includes/withdrawal-requests.php:395
+msgid "Via/Piazza e numero *"
+msgstr ""
+
+#: includes/withdrawal-requests.php:404
+msgid "Codice postale *"
+msgstr ""
+
+#: includes/withdrawal-requests.php:412
+msgid "Città *"
+msgstr ""
+
+#: includes/withdrawal-requests.php:419
+msgid "Provincia *"
+msgstr ""
+
+#: includes/withdrawal-requests.php:426
+msgid "Paese *"
+msgstr ""
+
+#: includes/withdrawal-requests.php:433
+msgid "Nome di banca *"
+msgstr ""
+
+#: includes/withdrawal-requests.php:441 includes/withdrawal-requests.php:523
+msgid "IBAN *"
+msgstr ""
+
+#: includes/withdrawal-requests.php:448
+msgid "BIC/SWIFT *"
+msgstr ""
+
+#: includes/withdrawal-requests.php:466
+msgid "First Name"
+msgstr ""
+
+#: includes/withdrawal-requests.php:473
+msgid "Last Name"
+msgstr ""
+
+#: includes/withdrawal-requests.php:480 includes/withdrawal-requests.php:618
+#: includes/withdrawal-requests.php:633
+#: includes/pages/withdrawal_requests.php:114
+#: includes/pages/withdrawal_requests.php:123
+msgid "Bank Name"
+msgstr ""
+
+#: includes/withdrawal-requests.php:487
+msgid "Account Number"
+msgstr ""
+
+#: includes/withdrawal-requests.php:494
+msgid "Sort Code"
+msgstr ""
+
+#: includes/withdrawal-requests.php:539
+msgid "Send Request"
+msgstr ""
+
+#: includes/withdrawal-requests.php:554 includes/withdrawal-requests.php:690
+#: includes/pages/withdrawal_requests.php:54
+#: includes/pages/withdrawal_requests.php:216
+msgid "Method"
+msgstr ""
+
+#: includes/withdrawal-requests.php:555 includes/withdrawal-requests.php:691
+#: includes/pages/withdrawal_requests.php:55
+#: includes/pages/withdrawal_requests.php:217
+msgid "Address"
+msgstr ""
+
+#: includes/withdrawal-requests.php:556 includes/withdrawal-requests.php:692
+#: includes/pages/add_funds.php:43 includes/pages/edit_wallet.php:123
+msgid "Status"
+msgstr ""
+
+#: includes/withdrawal-requests.php:581
+#: includes/pages/withdrawal_requests.php:90
+msgid "Full Name"
+msgstr ""
+
+#: includes/withdrawal-requests.php:582
+#: includes/pages/withdrawal_requests.php:91
+msgid "Billing Address Line 1"
+msgstr ""
+
+#: includes/withdrawal-requests.php:588
+#: includes/pages/withdrawal_requests.php:94
+msgid "City"
+msgstr ""
+
+#: includes/withdrawal-requests.php:590
+#: includes/pages/withdrawal_requests.php:96
+msgid "Postcode"
+msgstr ""
+
+#: includes/withdrawal-requests.php:591
+#: includes/pages/withdrawal_requests.php:97
+msgid "Country"
+msgstr ""
+
+#: includes/withdrawal-requests.php:592
+#: includes/pages/withdrawal_requests.php:98
+msgid "Bank Account Holder's Name"
+msgstr ""
+
+#: includes/withdrawal-requests.php:594
+#: includes/pages/withdrawal_requests.php:99
+msgid "Bank Account Number/IBAN"
+msgstr ""
+
+#: includes/withdrawal-requests.php:596
+#: includes/pages/withdrawal_requests.php:100
+msgid "SWIFT Code"
+msgstr ""
+
+#: includes/withdrawal-requests.php:597
+#: includes/pages/withdrawal_requests.php:101
+msgid "Bank Name in Full"
+msgstr ""
+
+#: includes/withdrawal-requests.php:599
+#: includes/pages/withdrawal_requests.php:102
+msgid "Bank Branch City"
+msgstr ""
+
+#: includes/withdrawal-requests.php:601
+#: includes/pages/withdrawal_requests.php:103
+msgid "Bank Branch Country"
+msgstr ""
+
+#: includes/withdrawal-requests.php:617 includes/withdrawal-requests.php:632
+#: includes/pages/withdrawal_requests.php:113
+#: includes/pages/withdrawal_requests.php:122
+msgid "Owner Name"
+msgstr ""
+
+#: includes/withdrawal-requests.php:619 includes/withdrawal-requests.php:634
+#: includes/pages/withdrawal_requests.php:115
+#: includes/pages/withdrawal_requests.php:124
+msgid "Bank Agency Number"
+msgstr ""
+
+#: includes/withdrawal-requests.php:621 includes/withdrawal-requests.php:636
+#: includes/pages/withdrawal_requests.php:116
+#: includes/pages/withdrawal_requests.php:125
+msgid "Bank Account Number"
+msgstr ""
+
+#: includes/withdrawal-requests.php:623
+#: includes/pages/withdrawal_requests.php:126
+msgid "CPF"
+msgstr ""
+
+#: includes/withdrawal-requests.php:624
+#: includes/pages/withdrawal_requests.php:127
+msgid "Account Type"
+msgstr ""
+
+#: includes/withdrawal-requests.php:671
+msgid "Under Review"
+msgstr ""
+
+#: includes/withdrawal-requests.php:675
+msgid "Request Accepted"
+msgstr ""
+
+#: includes/withdrawal-requests.php:679 includes/classes/FS_WC_Wallet.php:690
+#: includes/classes/FS_WC_Wallet.php:725 includes/pages/requests.php:156
+#: includes/pages/withdrawal_requests.php:174
+msgid "Request Rejected"
+msgstr ""
+
+#: includes/withdrawal-requests.php:706
+msgid "There is no requests"
+msgstr ""
+
+#: includes/classes/FS_WC_Wallet.php:17
+msgid ""
+"WooCommerce need to be installed and activated to be able to use "
+"\"WooCommerce Wallet\"."
+msgstr ""
+
+#: includes/classes/FS_WC_Wallet.php:174
+msgid "Top up can't be a 0 or a negative value"
+msgstr ""
+
+#: includes/classes/FS_WC_Wallet.php:416
+msgid "Withdrawal request"
+msgstr ""
+
+#: includes/classes/FS_WC_Wallet.php:419
+msgid "Withdrawal fee"
+msgstr ""
+
+#: includes/classes/FS_WC_Wallet.php:510
+msgid "Funds transfer to "
+msgstr ""
+
+#: includes/classes/FS_WC_Wallet.php:511
+msgid "Funds received from "
+msgstr ""
+
+#: includes/classes/FS_WC_Wallet.php:513
+msgid "Transfer fee"
+msgstr ""
+
+#: includes/classes/FS_WC_Wallet.php:681 includes/classes/FS_WC_Wallet.php:716
+msgid "Cancel Refund Request"
+msgstr ""
+
+#: includes/classes/FS_WC_Wallet.php:686 includes/classes/FS_WC_Wallet.php:721
+#: includes/pages/requests.php:146
+msgid "Already Refunded"
+msgstr ""
+
+#: includes/classes/FS_WC_Wallet.php:855
+msgid "Buy Now"
+msgstr ""
+
+#: includes/classes/FS_WC_Wallet.php:859
+msgid "Add to cart"
+msgstr ""
+
+#: includes/classes/FS_WC_Wallet.php:1328
+#: includes/classes/FS_WC_Wallet.php:2010
+#: includes/classes/FS_WC_Wallet.php:2045
+#: includes/classes/FS_WC_Wallet.php:2110
+#: includes/classes/FS_WC_Wallet.php:2561 includes/classes/Gateway.php:233
+#: includes/pages/requests.php:104
+msgid "Paid From Wallet"
+msgstr ""
+
+#: includes/classes/FS_WC_Wallet.php:1347 includes/pages/requests.php:135
+#: includes/pages/requests.php:153
+msgid "Refund"
+msgstr ""
+
+#: includes/classes/FS_WC_Wallet.php:1423
+#: includes/classes/FS_WC_Wallet.php:1424
+msgid "Wallet manually modified"
+msgstr ""
+
+#: includes/classes/FS_WC_Wallet.php:1445
+#: includes/classes/FS_WC_Wallet.php:2818
+msgid "We have added"
+msgstr ""
+
+#: includes/classes/FS_WC_Wallet.php:1445
+#: includes/classes/FS_WC_Wallet.php:2818
+msgid "to your Wallet balance"
+msgstr ""
+
+#: includes/classes/FS_WC_Wallet.php:1447
+#: includes/classes/FS_WC_Wallet.php:1448
+#: includes/classes/FS_WC_Wallet.php:2820
+#: includes/classes/FS_WC_Wallet.php:2821
+msgid "We have added funds to your Wallet!"
+msgstr ""
+
+#: includes/classes/FS_WC_Wallet.php:1455
+#: includes/classes/FS_WC_Wallet.php:2825
+msgid "Admin added funds"
+msgstr ""
+
+#: includes/classes/FS_WC_Wallet.php:1474
+msgid "Have been withdrawn from your account balance"
+msgstr ""
+
+#: includes/classes/FS_WC_Wallet.php:1476
+#: includes/classes/FS_WC_Wallet.php:1477
+msgid "Funds have been withdrawn from your account"
+msgstr ""
+
+#: includes/classes/FS_WC_Wallet.php:1484
+msgid "Admin withdraw funds"
+msgstr ""
+
+#: includes/classes/FS_WC_Wallet.php:1510
+msgid ""
+"Your wallet balance have been locked, you can no longer use it to pay for "
+"products."
+msgstr ""
+
+#: includes/classes/FS_WC_Wallet.php:1512
+#: includes/classes/FS_WC_Wallet.php:1513
+msgid "Your account have been locked"
+msgstr ""
+
+#: includes/classes/FS_WC_Wallet.php:1525
+msgid "Your wallet balance have been unlocked."
+msgstr ""
+
+#: includes/classes/FS_WC_Wallet.php:1526
+#: includes/classes/FS_WC_Wallet.php:1527
+msgid "Your account have been unlocked"
+msgstr ""
+
+#: includes/classes/FS_WC_Wallet.php:1753
+#: includes/classes/FS_WC_Wallet.php:1803
+msgid "Remove"
+msgstr ""
+
+#: includes/classes/FS_WC_Wallet.php:1754
+#: includes/classes/FS_WC_Wallet.php:1804
+msgid "Would you like to remove wallet partial payment?"
+msgstr ""
+
+#: includes/classes/FS_WC_Wallet.php:1761
+#: includes/classes/FS_WC_Wallet.php:1811
+#: includes/classes/FS_WC_Wallet.php:2466
+msgid "Add"
+msgstr ""
+
+#: includes/classes/FS_WC_Wallet.php:1762
+#: includes/classes/FS_WC_Wallet.php:1812
+msgid "You have "
+msgstr ""
+
+#: includes/classes/FS_WC_Wallet.php:1763
+#: includes/classes/FS_WC_Wallet.php:1813
+msgid " would you like to use them?"
+msgstr ""
+
+#: includes/classes/FS_WC_Wallet.php:1876
+msgid "Wallet Credit"
+msgstr ""
+
+#: includes/classes/FS_WC_Wallet.php:1879
+msgid "Enter the wallet credit given after purchasing this product"
+msgstr ""
+
+#: includes/classes/FS_WC_Wallet.php:1887
+#: includes/classes/FS_WC_Wallet.php:1903
+#: includes/classes/FS_WC_Wallet.php:2703
+msgid "Wallet Cashback"
+msgstr ""
+
+#: includes/classes/FS_WC_Wallet.php:1890
+#: includes/classes/FS_WC_Wallet.php:1906
+msgid ""
+"Enter the wallet cashback amount given after purchasing this "
+"product<br><br>Enter an exact value, or a value ending with % to give a "
+"percentage or leave empty for no cashback"
+msgstr ""
+
+#: includes/classes/FS_WC_Wallet.php:2000
+#: includes/classes/FS_WC_Wallet.php:2021
+msgid "Order cancelled"
+msgstr ""
+
+#: includes/classes/FS_WC_Wallet.php:2059
+msgid "Partial Payment"
+msgstr ""
+
+#: includes/classes/FS_WC_Wallet.php:2163
+#: includes/classes/FS_WC_Wallet.php:2203
+msgid "Wallet top up"
+msgstr ""
+
+#: includes/classes/FS_WC_Wallet.php:2242
+msgid "Your wallet is locked"
+msgstr ""
+
+#: includes/classes/FS_WC_Wallet.php:2244
+msgid "Your wallet is not locked"
+msgstr ""
+
+#: includes/classes/FS_WC_Wallet.php:2268
+msgid "You can't send money to yourself."
+msgstr ""
+
+#: includes/classes/FS_WC_Wallet.php:2275
+msgid "Invalid user email."
+msgstr ""
+
+#: includes/classes/FS_WC_Wallet.php:2282
+msgid "Insufficient funds"
+msgstr ""
+
+#: includes/classes/FS_WC_Wallet.php:2289
+msgid "The amount have been sent."
+msgstr ""
+
+#: includes/classes/FS_WC_Wallet.php:2314
+#: includes/classes/Send_Money_Endpoint.php:39
+#: includes/classes/Send_Money_Endpoint.php:54
+msgid "Send Money"
+msgstr ""
+
+#: includes/classes/FS_WC_Wallet.php:2330
+msgid "Receiver email address"
+msgstr ""
+
+#: includes/classes/FS_WC_Wallet.php:2336
+msgid "Send"
+msgstr ""
+
+#: includes/classes/FS_WC_Wallet.php:2435
+msgid "How much would you like to deposit?"
+msgstr ""
+
+#: includes/classes/FS_WC_Wallet.php:2447
+msgid "Make Deposit"
+msgstr ""
+
+#: includes/classes/FS_WC_Wallet.php:2460
+msgid "Enter amount"
+msgstr ""
+
+#: includes/classes/FS_WC_Wallet.php:2571
+msgid "Your wallet credit is locked for the following reason:"
+msgstr ""
+
+#: includes/classes/FS_WC_Wallet.php:2572
+msgid "If you think there is an error please contact us."
+msgstr ""
+
+#: includes/classes/FS_WC_Wallet.php:2732
+#: includes/classes/FS_WC_Wallet.php:2760
+msgid " Cashback"
+msgstr ""
+
+#: includes/classes/FS_WC_Wallet.php:2883
+msgid "Delete This item?"
+msgstr ""
+
+#: includes/classes/FS_WC_Wallet.php:2898
+#: includes/classes/FS_WC_Wallet.php:2899 includes/pages/wallets.php:68
+msgid "Wallets"
+msgstr ""
+
+#: includes/classes/FS_WC_Wallet.php:2910
+#: includes/classes/FS_WC_Wallet.php:2911 includes/pages/wallets.php:68
+msgid "Add Funds To a User"
+msgstr ""
+
+#: includes/classes/FS_WC_Wallet.php:2922
+#: includes/classes/FS_WC_Wallet.php:2923 includes/pages/requests.php:30
+msgid "Refund Requests"
+msgstr ""
+
+#: includes/classes/FS_WC_Wallet.php:2945
+#: includes/classes/FS_WC_Wallet.php:2946 includes/pages/transactions.php:24
+msgid "Transactions"
+msgstr ""
+
+#: includes/classes/FS_WC_Wallet.php:2954
+#: includes/classes/FS_WC_Wallet.php:2955 includes/pages/import-export.php:14
+msgid "Import/Export"
+msgstr ""
+
+#: includes/classes/FS_WC_Wallet.php:2964
+#: includes/classes/FS_WC_Wallet.php:2965 includes/pages/settings.php:14
+msgid "Settings"
+msgstr ""
+
+#: includes/classes/FS_WC_Wallet.php:3120
+msgid "WooCommerce Wallet Credit"
+msgstr ""
+
+#: includes/classes/Gateway.php:11 includes/classes/Gateway.php:80
+msgid "WooCommerce Wallet"
+msgstr ""
+
+#: includes/classes/Gateway.php:12
+msgid "Pay with your account balance."
+msgstr ""
+
+#: includes/classes/Gateway.php:45
+msgid "Available Balance:"
+msgstr ""
+
+#: includes/classes/Gateway.php:69 includes/classes/Gateway.php:70
+msgid "Enable WooCommerce Wallet"
+msgstr ""
+
+#: includes/classes/Gateway.php:76
+msgid "Title"
+msgstr ""
+
+#: includes/classes/Gateway.php:78
+msgid "Payment method description that the customer will see on your checkout."
+msgstr ""
+
+#: includes/classes/Gateway.php:86
+msgid "Payment method description that the customer will see on your website."
+msgstr ""
+
+#: includes/classes/Gateway.php:88
+msgid "Pay using your Wallet."
+msgstr ""
+
+#: includes/classes/Gateway.php:92
+msgid "Instructions"
+msgstr ""
+
+#: includes/classes/Gateway.php:94
+msgid "Instructions that will be added to the thank you page."
+msgstr ""
+
+#: includes/classes/Gateway.php:95
+msgid "Pay using your Wallet"
+msgstr ""
+
+#: includes/classes/Gateway.php:117
+msgid ""
+"<strong>Payment error:</strong> You can not purchase wallet credit money "
+"with wallet credit. Please choose another payment method."
+msgstr ""
+
+#: includes/classes/Gateway.php:128
+msgid ""
+"<strong>Payment error:</strong> Insufficient funds. Please purchase more "
+"credits or use a different payment method."
+msgstr ""
+
+#: includes/classes/Gateway.php:153
+msgid "Checkout using wallet funds"
+msgstr ""
+
+#: includes/classes/Gateway.php:161
+msgid "Order status set to "
+msgstr ""
+
+#: includes/classes/Make_Deposit_Endpoint.php:39
+#: includes/classes/Make_Deposit_Endpoint.php:54
+msgid "Make a Deposit"
+msgstr ""
+
+#: includes/classes/Transactions_History_Endpoint.php:39
+#: includes/classes/Transactions_History_Endpoint.php:54
+msgid "Transactions History"
+msgstr ""
+
+#: includes/classes/Transactions_History_Endpoint.php:70
+msgid "Show printable view"
+msgstr ""
+
+#: includes/classes/Wallet.php:402
+msgid "Payment refunded using Wallet Credit"
+msgstr ""
+
+#: includes/import_export_pages/export.php:14
+#: includes/pages/import-export.php:18
+msgid "Export Wallets"
+msgstr ""
+
+#: includes/import_export_pages/export.php:16
+msgid ""
+"Export the wallet users and balances, the file can be modified and imported "
+"back again, the new values will override the old ones."
+msgstr ""
+
+#: includes/import_export_pages/import.php:12
+#: includes/pages/import-export.php:17
+msgid "Import Wallets"
+msgstr ""
+
+#: includes/import_export_pages/import.php:18
+msgid "CSV file generated by the plugin in the export page"
+msgstr ""
+
+#: includes/import_export_pages/import.php:20
+msgid "CSV File"
+msgstr ""
+
+#: includes/import_export_pages/import.php:28
+msgid "Import"
+msgstr ""
+
+#: includes/import_export_pages/transactions-export.php:14
+#: includes/pages/import-export.php:19
+msgid "Export Transactions"
+msgstr ""
+
+#: includes/import_export_pages/withdrawal-export.php:14
+#: includes/pages/import-export.php:20
+msgid "Export Withdrawal Requests"
+msgstr ""
+
+#: includes/pages/add_funds.php:14 includes/pages/add_funds.php:55
+#: includes/pages/edit_wallet.php:156 includes/pages/wallets.php:258
+msgid "Add Funds"
+msgstr ""
+
+#: includes/pages/add_funds.php:25
+msgid "Username Or Email"
+msgstr ""
+
+#: includes/pages/add_funds.php:47 includes/pages/edit_wallet.php:127
+msgid "Unlocked"
+msgstr ""
+
+#: includes/pages/add_funds.php:48 includes/pages/edit_wallet.php:128
+msgid "Locked"
+msgstr ""
+
+#: includes/pages/edit_wallet.php:49
+msgid "Edit Wallet"
+msgstr ""
+
+#: includes/pages/edit_wallet.php:82 includes/pages/wallets.php:89
+#: includes/pages/wallets.php:204
+msgid "Balance"
+msgstr ""
+
+#: includes/pages/edit_wallet.php:91 includes/pages/wallets.php:91
+#: includes/pages/wallets.php:206
+msgid "Total Spent"
+msgstr ""
+
+#: includes/pages/edit_wallet.php:100
+msgid "Last Deposit Date"
+msgstr ""
+
+#: includes/pages/edit_wallet.php:136
+msgid "Lock Message"
+msgstr ""
+
+#: includes/pages/edit_wallet.php:145
+msgid "Unavailable Funds"
+msgstr ""
+
+#: includes/pages/edit_wallet.php:150
+msgid "Funds reserved for pending withdrawal requests."
+msgstr ""
+
+#: includes/pages/requests.php:44 includes/pages/requests.php:186
+#: includes/pages/withdrawal_requests.php:50
+#: includes/pages/withdrawal_requests.php:212
+msgid "Request ID"
+msgstr ""
+
+#: includes/pages/requests.php:48 includes/pages/requests.php:190
+msgid "Reason"
+msgstr ""
+
+#: includes/pages/requests.php:49 includes/pages/requests.php:191
+msgid "Request Date"
+msgstr ""
+
+#: includes/pages/requests.php:50 includes/pages/requests.php:192
+msgid "Order Date"
+msgstr ""
+
+#: includes/pages/requests.php:51 includes/pages/requests.php:193
+#: includes/pages/withdrawal_requests.php:56
+#: includes/pages/withdrawal_requests.php:218
+msgid "Action"
+msgstr ""
+
+#: includes/pages/requests.php:87 includes/pages/requests.php:88
+msgid "Order Not Found. ID"
+msgstr ""
+
+#: includes/pages/requests.php:141 includes/pages/withdrawal_requests.php:165
+msgid "Reject Request"
+msgstr ""
+
+#: includes/pages/requests.php:178
+msgid "There is no refund requests"
+msgstr ""
+
+#: includes/pages/settings.php:17
+msgid "General"
+msgstr ""
+
+#: includes/pages/settings.php:18
+msgid "Fees"
+msgstr ""
+
+#: includes/pages/settings.php:19
+msgid "Encryption"
+msgstr ""
+
+#: includes/pages/settings.php:20
+msgid "Advanced"
+msgstr ""
+
+#: includes/pages/transactions.php:29
+msgid "Filter by user"
+msgstr ""
+
+#: includes/pages/wallets.php:58
+msgid ""
+"The new version includes a database update. I highly recommend creating a "
+"database backup for safety before updating the database."
+msgstr ""
+
+#: includes/pages/wallets.php:62
+msgid "I have created a database backup, run the updater"
+msgstr ""
+
+#: includes/pages/wallets.php:71 includes/pages/wallets.php:73
+msgid "Search wallets"
+msgstr ""
+
+#: includes/pages/wallets.php:88 includes/pages/wallets.php:203
+msgid "Username"
+msgstr ""
+
+#: includes/pages/wallets.php:90 includes/pages/wallets.php:205
+msgid "Last Deposit"
+msgstr ""
+
+#: includes/pages/wallets.php:92 includes/pages/wallets.php:207
+msgid "Actions"
+msgstr ""
+
+#: includes/pages/wallets.php:152 includes/pages/wallets.php:218
+msgid "Add Credit"
+msgstr ""
+
+#: includes/pages/wallets.php:153
+msgid "Withdraw"
+msgstr ""
+
+#: includes/pages/wallets.php:159
+msgid "Unlock"
+msgstr ""
+
+#: includes/pages/wallets.php:164
+msgid "Lock"
+msgstr ""
+
+#: includes/pages/wallets.php:175
+msgid "Edit"
+msgstr ""
+
+#: includes/pages/wallets.php:194
+msgid ""
+"There is no user wallets, the user need to make a deposit or an admiin add "
+"funds the user to appear here"
+msgstr ""
+
+#: includes/pages/wallets.php:220
+msgid "The amount will be added to the current balance."
+msgstr ""
+
+#: includes/pages/wallets.php:241 includes/pages/wallets.php:296
+#: includes/pages/wallets.php:352
+msgid "Notify the user"
+msgstr ""
+
+#: includes/pages/wallets.php:250 includes/pages/wallets.php:305
+msgid "Notification Message"
+msgstr ""
+
+#: includes/pages/wallets.php:274
+msgid "Withdraw Credit"
+msgstr ""
+
+#: includes/pages/wallets.php:276
+msgid ""
+"The amount will be substracted from the current balance, If the amount is "
+"larger than the current balance the operation will fail."
+msgstr ""
+
+#: includes/pages/wallets.php:313
+msgid "Withraw Funds"
+msgstr ""
+
+#: includes/pages/wallets.php:330
+msgid "Lock Credit"
+msgstr ""
+
+#: includes/pages/wallets.php:332
+msgid ""
+"Locking the credit will make the user unable to use his wallet credit to "
+"checkout, the lock reason will be displayed instead."
+msgstr ""
+
+#: includes/pages/wallets.php:343
+msgid "Lock Reason"
+msgstr ""
+
+#: includes/pages/wallets.php:360
+msgid "Lock/Unlock Funds"
+msgstr ""
+
+#: includes/pages/withdrawal_requests.php:51
+#: includes/pages/withdrawal_requests.php:213
+msgid "User ID"
+msgstr ""
+
+#: includes/pages/withdrawal_requests.php:53
+#: includes/pages/withdrawal_requests.php:215
+msgid "Fee"
+msgstr ""
+
+#: includes/pages/withdrawal_requests.php:159
+msgid "Approve"
+msgstr ""
+
+#: includes/pages/withdrawal_requests.php:170
+msgid "Already Approved"
+msgstr ""
+
+#: includes/pages/withdrawal_requests.php:204
+msgid "There are no withdrawal requests"
+msgstr ""
+
+#: includes/settings_pages/advanced.php:23
+msgid "Run database update script"
+msgstr ""
+
+#: includes/settings_pages/encryption.php:13
+msgid "Encryption Settings"
+msgstr ""
+
+#: includes/settings_pages/encryption.php:15
+msgid ""
+"The encryption keys used to encrypt wallet balances to prevent tempering if "
+"the database is hacked"
+msgstr ""
+
+#: includes/settings_pages/encryption.php:33
+msgid "Disable Encryption"
+msgstr ""
+
+#: includes/settings_pages/encryption.php:42
+msgid "Data Encryption Key"
+msgstr ""
+
+#: includes/settings_pages/encryption.php:48
+msgid "The key used to encrypt/decrypt license keys in the database"
+msgstr ""
+
+#: includes/settings_pages/encryption.php:56
+msgid "Data Encryption VI"
+msgstr ""
+
+#: includes/settings_pages/encryption.php:62
+msgid "The VI used to encrypt/decrypt license keys in the database"
+msgstr ""
+
+#: includes/settings_pages/encryption.php:69
+msgid ""
+"Open SSL is not installed on this server license keys will be stored without "
+"encryption "
+msgstr ""
+
+#: includes/settings_pages/fees.php:20
+msgid "Refunds"
+msgstr ""
+
+#: includes/settings_pages/fees.php:24 includes/settings_pages/fees.php:66
+#: includes/settings_pages/fees.php:106
+msgid "Fee Type"
+msgstr ""
+
+#: includes/settings_pages/fees.php:32 includes/settings_pages/fees.php:74
+#: includes/settings_pages/fees.php:114
+msgid "Percentage"
+msgstr ""
+
+#: includes/settings_pages/fees.php:34 includes/settings_pages/fees.php:77
+#: includes/settings_pages/fees.php:117
+msgid "Fixed Amount"
+msgstr ""
+
+#: includes/settings_pages/fees.php:42 includes/settings_pages/fees.php:85
+#: includes/settings_pages/fees.php:125
+msgid "Fee Amount"
+msgstr ""
+
+#: includes/settings_pages/fees.php:62
+msgid "Withdrawals"
+msgstr ""
+
+#: includes/settings_pages/fees.php:102
+msgid "User to User Transfers"
+msgstr ""
+
+#: includes/settings_pages/general.php:22
+msgid "Number of Rows Per Page for Tables"
+msgstr ""
+
+#: includes/settings_pages/general.php:33
+msgid "Order Status After Purchase"
+msgstr ""
+
+#: includes/settings_pages/general.php:78
+msgid "Top up user wallet on order status:"
+msgstr ""
+
+#: includes/settings_pages/general.php:86
+msgid "Processing"
+msgstr ""
+
+#: includes/settings_pages/general.php:88
+msgid "Completed"
+msgstr ""
+
+#: includes/settings_pages/general.php:90
+msgid "Processing and Completed"
+msgstr ""
+
+#: includes/settings_pages/general.php:99
+msgid "Partial Payments"
+msgstr ""
+
+#: includes/settings_pages/general.php:106
+msgid ""
+"If account balance is not enough discount the available funds from the "
+"accounts balance and pay the rest using a different payment gateway."
+msgstr ""
+
+#: includes/settings_pages/general.php:116
+msgid ""
+"Disable all the other payment methods if there is enough funds in the wallet:"
+msgstr ""
+
+#: includes/settings_pages/general.php:128
+msgid ""
+"Force users to checkout using the wallet if there is enough funds in it."
+msgstr ""
+
+#: includes/settings_pages/general.php:134
+msgid "Show all users in the wallet dashboard:"
+msgstr ""
+
+#: includes/settings_pages/general.php:144
+msgid "Show users that never had a transaction using the wallet."
+msgstr ""
+
+#: includes/settings_pages/general.php:149
+msgid "Top Up/Add Funds:"
+msgstr ""
+
+#: includes/settings_pages/general.php:153
+msgid "Show make a deposit page in my account page"
+msgstr ""
+
+#: includes/settings_pages/general.php:161
+msgid "User To User Transfers:"
+msgstr ""
+
+#: includes/settings_pages/general.php:165
+msgid "Enable user to user transfers"
+msgstr ""
+
+#: includes/settings_pages/general.php:173
+msgid "Transactions:"
+msgstr ""
+
+#: includes/settings_pages/general.php:177
+msgid "Show transactions in my account page"
+msgstr ""
+
+#: includes/settings_pages/general.php:185
+msgid "Refund Requests:"
+msgstr ""
+
+#: includes/settings_pages/general.php:189
+msgid "Enable refund requests"
+msgstr ""
+
+#: includes/settings_pages/general.php:199
+msgid "Request refund button position"
+msgstr ""
+
+#: includes/settings_pages/general.php:207
+msgid "Orders Table"
+msgstr ""
+
+#: includes/settings_pages/general.php:209
+msgid "Inside the order details page"
+msgstr ""
+
+#: includes/settings_pages/general.php:215
+msgid "Show the wallet balance in the menu:"
+msgstr ""
+
+#: includes/settings_pages/general.php:237
+msgid "Show the balance to the right of the menu"
+msgstr ""
+
+#: includes/settings_pages/general.php:246
+msgid "Custom deposit amounts:"
+msgstr ""
+
+#: includes/settings_pages/general.php:250
+msgid ""
+"Allow the customer to enter a custom deposit amount instead of selecting one "
+"of the pre-made values:"
+msgstr ""
+
+#: includes/settings_pages/general.php:261
+msgid "Minimum deposit:"
+msgstr ""
+
+#: includes/settings_pages/general.php:271
+msgid "Maximum deposit:"
+msgstr ""
+
+#: includes/settings_pages/general.php:282
+msgid ""
+"Instead of a drop down with predefined amounts that you set by creating "
+"credit products the plugin will show an input box where the user can enter "
+"the amounts they want."
+msgstr ""
+
+#: includes/settings_pages/general.php:284
+msgid "The minimum and maximum does not affect the predefined values."
+msgstr ""
+
+#: includes/settings_pages/general.php:290
+msgid "Show both options, pre-made packages and custom inputs"
+msgstr ""
+
+#: includes/settings_pages/general.php:301
+msgid "Withdrawals:"
+msgstr ""
+
+#: includes/settings_pages/general.php:305
+msgid "Enable withdrawal requests"
+msgstr ""
+
+#: includes/settings_pages/general.php:328
+msgid "SWIFT bank transfer"
+msgstr ""
+
+#: includes/settings_pages/general.php:352
+msgid "Bank Transfer (Brazil)"
+msgstr ""
+
+#: includes/settings_pages/general.php:377
+msgid "Bank Transfer (Italy)"
+msgstr ""
+
+#: includes/settings_pages/general.php:402
+msgid "Minimum Amount:"
+msgstr ""
+
+#: includes/settings_pages/general.php:413
+msgid "Maximum Amount:"
+msgstr ""

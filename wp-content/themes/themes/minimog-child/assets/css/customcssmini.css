@@ -1,0 +1,36 @@
+.tm-modern-slider .slide-bg-wrap {
+    height: 100% !important;
+}
+
+
+@media (max-width: 1024px){
+div.tm-modern-slider--layout-split .slide-content.slide-content-outside {     display: -webkit-box;     display: -webkit-flex;     display: -ms-flexbox;     display: flex; }
+div.tm-modern-slider--layout-split .slide-content {     display: none; }
+/*8 dec 2023*/
+.banner_mk .minimog-box {
+    height: 55vh !important;
+}
+.banner_mk  .slide-bg.image {
+    background-position: center !important;
+}
+.banner_mk .tm-swiper .swiper-pagination-inner {
+margin: 0;
+position: absolute;
+top: calc(55vh - 27px);
+}
+.home_arrows .swiper-nav-buttons .swiper-nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+}
+
+@media (max-width: 767px){
+.banner_mk .tm-swiper .swiper-pagination-inner {
+top: calc(300px - 25px);
+}
+.banner_mk .minimog-box {
+    height: 300px !important;
+}
+}

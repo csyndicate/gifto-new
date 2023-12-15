@@ -1,0 +1,258 @@
+[2023-12-07 09:47:51] Array
+(
+    [0] => request
+    [1] => webhooks
+    [2] => GET
+    [3] => Array
+        (
+            [timeout] => 60
+            [method] => GET
+            [headers] => Array
+                (
+                    [Authorization] => Bearer sk_91af6a70-72b7-4819-a829-1dc07999ad8e
+                    [X-Merchant-Code] => AE
+                )
+
+        )
+
+)
+[2023-12-07 09:47:52] Array
+(
+    [0] => response
+    [1] => Array
+        (
+            [headers] => WpOrg\Requests\Utility\CaseInsensitiveDictionary Object
+                (
+                    [data:protected] => Array
+                        (
+                            [date] => Thu, 07 Dec 2023 09:47:52 GMT
+                            [content-type] => application/json
+                            [vary] => Origin
+                            [x-current-time] => 1701942471
+                            [strict-transport-security] => max-age=31536000; includeSubDomains
+                            [x-content-type-options] => nosniff
+                            [x-xss-protection] => 1; mode=block
+                            [referrer-policy] => no-referrer-when-downgrade
+                            [cf-cache-status] => DYNAMIC
+                            [set-cookie] => _cfuvid=N.MMoqYt9IED0qp2JxveGmUf4A0Wq7ZF6zPFyLevaIs-1701942472151-0-604800000; path=/; domain=.tabby.ai; HttpOnly; Secure; SameSite=None
+                            [server] => cloudflare
+                            [cf-ray] => 831bd981291c2231-ORD
+                            [content-encoding] => gzip
+                            [alt-svc] => h3=":443"; ma=86400
+                        )
+
+                )
+
+            [body] => [{"id":"702cf5fe-d4db-4815-8686-edc976a24bf2","url":"https://dev.gifto.co/wp-json/tabby/v1/webhook","is_test":true},{"id":"7b3d0da4-c6df-41a8-b8ff-6b06c02f9f37","url":"https://gifto.co/wp-json/tabby/v1/webhook","is_test":true},{"id":"81cce11e-e0a1-4681-b525-6f46abc277e3","url":"https://www.gifto.co/wp-json/tabby/v1/webhook","is_test":false}]
+
+            [response] => Array
+                (
+                    [code] => 200
+                    [message] => OK
+                )
+
+            [cookies] => Array
+                (
+                    [0] => WP_Http_Cookie Object
+                        (
+                            [name] => _cfuvid
+                            [value] => N.MMoqYt9IED0qp2JxveGmUf4A0Wq7ZF6zPFyLevaIs-1701942472151-0-604800000
+                            [expires] => 
+                            [path] => /
+                            [domain] => tabby.ai
+                            [port] => 
+                            [host_only] => 
+                        )
+
+                )
+
+            [filename] => 
+            [http_response] => WP_HTTP_Requests_Response Object
+                (
+                    [response:protected] => WpOrg\Requests\Response Object
+                        (
+                            [body] => [{"id":"702cf5fe-d4db-4815-8686-edc976a24bf2","url":"https://dev.gifto.co/wp-json/tabby/v1/webhook","is_test":true},{"id":"7b3d0da4-c6df-41a8-b8ff-6b06c02f9f37","url":"https://gifto.co/wp-json/tabby/v1/webhook","is_test":true},{"id":"81cce11e-e0a1-4681-b525-6f46abc277e3","url":"https://www.gifto.co/wp-json/tabby/v1/webhook","is_test":false}]
+
+                            [raw] => HTTP/1.1 200 OK
+Date: Thu, 07 Dec 2023 09:47:52 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: close
+vary: Origin
+x-current-time: 1701942471
+strict-transport-security: max-age=31536000; includeSubDomains
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+referrer-policy: no-referrer-when-downgrade
+CF-Cache-Status: DYNAMIC
+Set-Cookie: _cfuvid=N.MMoqYt9IED0qp2JxveGmUf4A0Wq7ZF6zPFyLevaIs-1701942472151-0-604800000; path=/; domain=.tabby.ai; HttpOnly; Secure; SameSite=None
+Server: cloudflare
+CF-RAY: 831bd981291c2231-ORD
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+[{"id":"702cf5fe-d4db-4815-8686-edc976a24bf2","url":"https://dev.gifto.co/wp-json/tabby/v1/webhook","is_test":true},{"id":"7b3d0da4-c6df-41a8-b8ff-6b06c02f9f37","url":"https://gifto.co/wp-json/tabby/v1/webhook","is_test":true},{"id":"81cce11e-e0a1-4681-b525-6f46abc277e3","url":"https://www.gifto.co/wp-json/tabby/v1/webhook","is_test":false}]
+
+                            [headers] => WpOrg\Requests\Response\Headers Object
+                                (
+                                    [data:protected] => Array
+                                        (
+                                            [date] => Array
+                                                (
+                                                    [0] => Thu, 07 Dec 2023 09:47:52 GMT
+                                                )
+
+                                            [content-type] => Array
+                                                (
+                                                    [0] => application/json
+                                                )
+
+                                            [vary] => Array
+                                                (
+                                                    [0] => Origin
+                                                )
+
+                                            [x-current-time] => Array
+                                                (
+                                                    [0] => 1701942471
+                                                )
+
+                                            [strict-transport-security] => Array
+                                                (
+                                                    [0] => max-age=31536000; includeSubDomains
+                                                )
+
+                                            [x-content-type-options] => Array
+                                                (
+                                                    [0] => nosniff
+                                                )
+
+                                            [x-xss-protection] => Array
+                                                (
+                                                    [0] => 1; mode=block
+                                                )
+
+                                            [referrer-policy] => Array
+                                                (
+                                                    [0] => no-referrer-when-downgrade
+                                                )
+
+                                            [cf-cache-status] => Array
+                                                (
+                                                    [0] => DYNAMIC
+                                                )
+
+                                            [set-cookie] => Array
+                                                (
+                                                    [0] => _cfuvid=N.MMoqYt9IED0qp2JxveGmUf4A0Wq7ZF6zPFyLevaIs-1701942472151-0-604800000; path=/; domain=.tabby.ai; HttpOnly; Secure; SameSite=None
+                                                )
+
+                                            [server] => Array
+                                                (
+                                                    [0] => cloudflare
+                                                )
+
+                                            [cf-ray] => Array
+                                                (
+                                                    [0] => 831bd981291c2231-ORD
+                                                )
+
+                                            [content-encoding] => Array
+                                                (
+                                                    [0] => gzip
+                                                )
+
+                                            [alt-svc] => Array
+                                                (
+                                                    [0] => h3=":443"; ma=86400
+                                                )
+
+                                        )
+
+                                )
+
+                            [status_code] => 200
+                            [protocol_version] => 1.1
+                            [success] => 1
+                            [redirects] => 0
+                            [url] => https://api.tabby.ai/api/v1/webhooks
+                            [history] => Array
+                                (
+                                )
+
+                            [cookies] => WpOrg\Requests\Cookie\Jar Object
+                                (
+                                    [cookies:protected] => Array
+                                        (
+                                            [_cfuvid] => WpOrg\Requests\Cookie Object
+                                                (
+                                                    [name] => _cfuvid
+                                                    [value] => N.MMoqYt9IED0qp2JxveGmUf4A0Wq7ZF6zPFyLevaIs-1701942472151-0-604800000
+                                                    [attributes] => WpOrg\Requests\Utility\CaseInsensitiveDictionary Object
+                                                        (
+                                                            [data:protected] => Array
+                                                                (
+                                                                    [path] => /
+                                                                    [domain] => tabby.ai
+                                                                    [httponly] => 1
+                                                                    [secure] => 1
+                                                                    [samesite] => None
+                                                                )
+
+                                                        )
+
+                                                    [flags] => Array
+                                                        (
+                                                            [creation] => 1701942472
+                                                            [last-access] => 1701942472
+                                                            [persistent] => 
+                                                            [host-only] => 
+                                                        )
+
+                                                    [reference_time] => 1701942472
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [filename:protected] => 
+                    [data] => 
+                    [headers] => 
+                    [status] => 
+                )
+
+        )
+
+)
+[2023-12-07 09:47:52] Array
+(
+    [0] => response - success data
+    [1] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [id] => 702cf5fe-d4db-4815-8686-edc976a24bf2
+                    [url] => https://dev.gifto.co/wp-json/tabby/v1/webhook
+                    [is_test] => 1
+                )
+
+            [1] => stdClass Object
+                (
+                    [id] => 7b3d0da4-c6df-41a8-b8ff-6b06c02f9f37
+                    [url] => https://gifto.co/wp-json/tabby/v1/webhook
+                    [is_test] => 1
+                )
+
+            [2] => stdClass Object
+                (
+                    [id] => 81cce11e-e0a1-4681-b525-6f46abc277e3
+                    [url] => https://www.gifto.co/wp-json/tabby/v1/webhook
+                    [is_test] => 
+                )
+
+        )
+
+)

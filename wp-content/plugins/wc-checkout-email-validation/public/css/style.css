@@ -1,0 +1,10 @@
+.b4-woocommerce-email-validation-warning {
+	border-radius: 6px;
+    border: 1px solid #ffeeba;
+    color: #856404;
+    background-color: #fff3cd;
+	margin-top: 10px;
+	padding-bottom: 0;
+	padding: 10px 12px;
+    font-size: 14px;
+}
