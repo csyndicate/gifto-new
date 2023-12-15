@@ -1,0 +1,9 @@
+2023-12-07T09:07:03+00:00 CRITICAL Uncaught Error: Call to undefined function html_class() in /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/header.php:14
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-includes/template.php(790): require_once()
+#1 /chroot/home/giftoco/gifto.co/html/wp-includes/template.php(725): load_template()
+#2 /chroot/home/giftoco/gifto.co/html/wp-includes/general-template.php(48): locate_template()
+#3 /chroot/home/giftoco/gifto.co/html/reloadlymail.php(5): get_header()
+#4 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/header.php on line 14
+

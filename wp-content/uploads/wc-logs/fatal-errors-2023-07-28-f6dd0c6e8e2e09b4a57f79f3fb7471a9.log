@@ -1,0 +1,30 @@
+2023-07-28T06:51:39+00:00 CRITICAL Uncaught TypeError: Cannot access offset of type string on string in /chroot/home/GiftoDevtest1/dev.gifto.co/html/wp-content/plugins/miniorange-login-openid/social_apps/linkedin.php:20
+Stack trace:
+#0 /chroot/home/GiftoDevtest1/dev.gifto.co/html/wp-content/plugins/miniorange-login-openid/mo-openid-social-login-functions.php(51): mo_linkedin->mo_openid_get_app_code()
+#1 /chroot/home/GiftoDevtest1/dev.gifto.co/html/wp-content/plugins/miniorange-login-openid/class-mo-openid-login-widget.php(1398): mo_openid_custom_app_oauth_redirect()
+#2 /chroot/home/GiftoDevtest1/dev.gifto.co/html/wp-includes/class-wp-hook.php(308): mo_openid_login_validate()
+#3 /chroot/home/GiftoDevtest1/dev.gifto.co/html/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#4 /chroot/home/GiftoDevtest1/dev.gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#5 /chroot/home/GiftoDevtest1/dev.gifto.co/html/wp-settings.php(623): do_action()
+#6 /chroot/home/GiftoDevtest1/dev.gifto.co/html/wp-config.php(123): require_once('...')
+#7 /chroot/home/GiftoDevtest1/dev.gifto.co/html/wp-load.php(50): require_once('...')
+#8 /chroot/home/GiftoDevtest1/dev.gifto.co/html/wp-blog-header.php(13): require_once('...')
+#9 /chroot/home/GiftoDevtest1/dev.gifto.co/html/index.php(17): require('...')
+#10 {main}
+  thrown in /chroot/home/GiftoDevtest1/dev.gifto.co/html/wp-content/plugins/miniorange-login-openid/social_apps/linkedin.php on line 20
+
+2023-07-28T06:52:25+00:00 CRITICAL Uncaught TypeError: Cannot access offset of type string on string in /chroot/home/GiftoDevtest1/dev.gifto.co/html/wp-content/plugins/miniorange-login-openid/social_apps/linkedin.php:20
+Stack trace:
+#0 /chroot/home/GiftoDevtest1/dev.gifto.co/html/wp-content/plugins/miniorange-login-openid/mo-openid-social-login-functions.php(51): mo_linkedin->mo_openid_get_app_code()
+#1 /chroot/home/GiftoDevtest1/dev.gifto.co/html/wp-content/plugins/miniorange-login-openid/class-mo-openid-login-widget.php(1398): mo_openid_custom_app_oauth_redirect()
+#2 /chroot/home/GiftoDevtest1/dev.gifto.co/html/wp-includes/class-wp-hook.php(308): mo_openid_login_validate()
+#3 /chroot/home/GiftoDevtest1/dev.gifto.co/html/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#4 /chroot/home/GiftoDevtest1/dev.gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#5 /chroot/home/GiftoDevtest1/dev.gifto.co/html/wp-settings.php(623): do_action()
+#6 /chroot/home/GiftoDevtest1/dev.gifto.co/html/wp-config.php(123): require_once('...')
+#7 /chroot/home/GiftoDevtest1/dev.gifto.co/html/wp-load.php(50): require_once('...')
+#8 /chroot/home/GiftoDevtest1/dev.gifto.co/html/wp-blog-header.php(13): require_once('...')
+#9 /chroot/home/GiftoDevtest1/dev.gifto.co/html/index.php(17): require('...')
+#10 {main}
+  thrown in /chroot/home/GiftoDevtest1/dev.gifto.co/html/wp-content/plugins/miniorange-login-openid/social_apps/linkedin.php on line 20
+

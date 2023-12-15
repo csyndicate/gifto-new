@@ -1,0 +1,51 @@
+2023-07-25T11:19:44+00:00 CRITICAL Uncaught Error: Undefined constant "php" in /chroot/home/GiftoDevtest1/dev.gifto.co/html/wp-content/themes/themes/minimog-child/woocommerce/checkout/review-order.php:53
+Stack trace:
+#0 /chroot/home/GiftoDevtest1/dev.gifto.co/html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /chroot/home/GiftoDevtest1/dev.gifto.co/html/wp-content/plugins/woocommerce/includes/wc-template-functions.php(2336): wc_get_template()
+#2 /chroot/home/GiftoDevtest1/dev.gifto.co/html/wp-includes/class-wp-hook.php(308): woocommerce_order_review()
+#3 /chroot/home/GiftoDevtest1/dev.gifto.co/html/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#4 /chroot/home/GiftoDevtest1/dev.gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#5 /chroot/home/GiftoDevtest1/dev.gifto.co/html/wp-content/themes/themes/minimog-child/woocommerce/checkout/form-checkout.php(62): do_action()
+#6 /chroot/home/GiftoDevtest1/dev.gifto.co/html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('...')
+#7 /chroot/home/GiftoDevtest1/dev.gifto.co/html/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-checkout.php(316): wc_get_template()
+#8 /chroot/home/GiftoDevtest1/dev.gifto.co/html/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-checkout.php(67): WC_Shortcode_Checkout::checkout()
+#9 /chroot/home/GiftoDevtest1/dev.gifto.co/html/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(72): WC_Shortcode_Checkout::output()
+#10 /chroot/home/GiftoDevtest1/dev.gifto.co/html/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(95): WC_Shortcodes::shortcode_wrapper()
+#11 /chroot/home/GiftoDevtest1/dev.gifto.co/html/wp-includes/shortcodes.php(355): WC_Shortcodes::checkout()
+#12 [internal function]: do_shortcode_tag()
+#13 /chroot/home/GiftoDevtest1/dev.gifto.co/html/wp-includes/shortcodes.php(227): preg_replace_callback()
+#14 /chroot/home/GiftoDevtest1/dev.gifto.co/html/wp-includes/class-wp-hook.php(308): do_shortcode()
+#15 /chroot/home/GiftoDevtest1/dev.gifto.co/html/wp-includes/plugin.php(205): WP_Hook->apply_filters()
+#16 /chroot/home/GiftoDevtest1/dev.gifto.co/html/wp-includes/post-template.php(255): apply_filters()
+#17 /chroot/home/GiftoDevtest1/dev.gifto.co/html/wp-content/themes/themes/minimog-child/template-parts/content-single-page.php(16): the_content()
+#18 /chroot/home/GiftoDevtest1/dev.gifto.co/html/wp-includes/template.php(785): require('...')
+#19 /chroot/home/GiftoDevtest1/dev.gifto.co/html/wp-includes/template.php(718): load_template()
+#20 /chroot/home/GiftoDevtest1/dev.gifto.co/html/wp-includes/general-template.php(204): locate_template()
+#21 /chroot/home/GiftoDevtest1/dev.gifto.co/html/wp-content/themes/minimog/framework/class-functions.php(82): get_template_part()
+#22 /chroot/home/GiftoDevtest1/dev.gifto.co/html/wp-content/themes/minimog/page.php(30): minimog_load_template()
+#23 /chroot/home/GiftoDevtest1/dev.gifto.co/html/wp-includes/template-loader.php(106): include('...')
+#24 /chroot/home/GiftoDevtest1/dev.gifto.co/html/wp-blog-header.php(19): require_once('...')
+#25 /chroot/home/GiftoDevtest1/dev.gifto.co/html/index.php(17): require('...')
+#26 {main}
+  thrown in /chroot/home/GiftoDevtest1/dev.gifto.co/html/wp-content/themes/themes/minimog-child/woocommerce/checkout/review-order.php on line 53
+
+2023-07-25T11:24:24+00:00 CRITICAL syntax error, unexpected token "endif", expecting end of file in /chroot/home/GiftoDevtest1/dev.gifto.co/html/wp-content/themes/themes/minimog-child/woocommerce/checkout/review-order.php on line 41
+
+2023-07-25T11:25:18+00:00 CRITICAL syntax error, unexpected token "endif", expecting end of file in /chroot/home/GiftoDevtest1/dev.gifto.co/html/wp-content/themes/themes/minimog-child/woocommerce/checkout/review-order.php on line 41
+
+2023-07-25T11:26:04+00:00 CRITICAL syntax error, unexpected token "endif", expecting end of file in /chroot/home/GiftoDevtest1/dev.gifto.co/html/wp-content/themes/themes/minimog-child/woocommerce/checkout/review-order.php on line 41
+
+2023-07-25T11:26:29+00:00 CRITICAL syntax error, unexpected token "endif", expecting end of file in /chroot/home/GiftoDevtest1/dev.gifto.co/html/wp-content/themes/themes/minimog-child/woocommerce/checkout/review-order.php on line 41
+
+2023-07-25T11:27:06+00:00 CRITICAL syntax error, unexpected token "endif", expecting end of file in /chroot/home/GiftoDevtest1/dev.gifto.co/html/wp-content/themes/themes/minimog-child/woocommerce/checkout/review-order.php on line 41
+
+2023-07-25T11:28:19+00:00 CRITICAL syntax error, unexpected token "endif", expecting end of file in /chroot/home/GiftoDevtest1/dev.gifto.co/html/wp-content/themes/themes/minimog-child/woocommerce/checkout/review-order.php on line 41
+
+2023-07-25T11:28:31+00:00 CRITICAL syntax error, unexpected token "endif", expecting end of file in /chroot/home/GiftoDevtest1/dev.gifto.co/html/wp-content/themes/themes/minimog-child/woocommerce/checkout/review-order.php on line 41
+
+2023-07-25T11:40:55+00:00 CRITICAL syntax error, unexpected token "endif", expecting end of file in /chroot/home/GiftoDevtest1/dev.gifto.co/html/wp-content/themes/themes/minimog-child/woocommerce/checkout/review-order.php on line 41
+
+2023-07-25T11:41:32+00:00 CRITICAL syntax error, unexpected token "endif", expecting end of file in /chroot/home/GiftoDevtest1/dev.gifto.co/html/wp-content/themes/themes/minimog-child/woocommerce/checkout/review-order.php on line 41
+
+2023-07-25T11:42:05+00:00 CRITICAL syntax error, unexpected token "endif", expecting end of file in /chroot/home/GiftoDevtest1/dev.gifto.co/html/wp-content/themes/themes/minimog-child/woocommerce/checkout/review-order.php on line 41
+

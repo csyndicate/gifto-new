@@ -1,0 +1,304 @@
+2023-09-25T06:42:38+00:00 CRITICAL syntax error, unexpected token ";", expecting ")" in /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/functions.php on line 4169
+
+2023-09-25T07:06:30+00:00 CRITICAL Unclosed '{' on line 1433 in /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/functions.php on line 1480
+
+2023-09-25T07:33:34+00:00 CRITICAL Uncaught Error: Call to a member function get_billing_phone() on bool in /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/woocommerce/checkout/thankyou.php:5
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-checkout.php(296): wc_get_template('...', Array)
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-checkout.php(63): WC_Shortcode_Checkout::order_received(514041)
+#3 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(72): WC_Shortcode_Checkout::output('')
+#4 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(95): WC_Shortcodes::shortcode_wrapper(Array, '')
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/shortcodes.php(395): WC_Shortcodes::checkout('', '', '...')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 /chroot/home/giftoco/gifto.co/html/wp-includes/shortcodes.php(235): preg_replace_callback('...', '...', '...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): do_shortcode('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(205): WP_Hook->apply_filters('...', Array)
+#10 /chroot/home/giftoco/gifto.co/html/wp-includes/post-template.php(256): apply_filters('...', '...')
+#11 /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/template-parts/content-single-page.php(16): the_content()
+#12 /chroot/home/giftoco/gifto.co/html/wp-includes/template.php(787): require('...')
+#13 /chroot/home/giftoco/gifto.co/html/wp-includes/template.php(720): load_template('...', false, Array)
+#14 /chroot/home/giftoco/gifto.co/html/wp-includes/general-template.php(206): locate_template(Array, true, false, Array)
+#15 /chroot/home/giftoco/gifto.co/html/wp-content/themes/minimog/framework/class-functions.php(82): get_template_part('...', '', Array)
+#16 /chroot/home/giftoco/gifto.co/html/wp-content/themes/minimog/page.php(30): minimog_load_template('...')
+#17 /chroot/home/giftoco/gifto.co/html/wp-includes/template-loader.php(106): include('...')
+#18 /chroot/home/giftoco/gifto.co/html/wp-blog-header.php(19): require_once('...')
+#19 /chroot/home/giftoco/gifto.co/html/index.php(253): require('...')
+#20 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/woocommerce/checkout/thankyou.php on line 5
+
+2023-09-25T07:47:51+00:00 CRITICAL Unclosed '{' on line 1432 in /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/functions.php on line 1479
+
+2023-09-25T07:47:52+00:00 CRITICAL Unclosed '{' on line 2483 in /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/functions.php on line 2505
+
+2023-09-25T07:48:33+00:00 CRITICAL Unclosed '[' on line 1919 in /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/functions.php on line 1963
+
+2023-09-25T07:48:34+00:00 CRITICAL Unclosed '{' on line 2483 in /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/functions.php on line 2506
+
+2023-09-25T07:51:28+00:00 CRITICAL Uncaught Error: Call to a member function get_billing_phone() on bool in /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/functions.php:1420
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): action_woocommerce_thankyou('...', NULL)
+#1 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(205): WP_Hook->apply_filters('...', Array)
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/woocommerce/checkout/thankyou.php(106): apply_filters('...', '...', NULL)
+#3 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('...')
+#4 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-checkout.php(296): wc_get_template('...', Array)
+#5 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-checkout.php(63): WC_Shortcode_Checkout::order_received(514041)
+#6 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(72): WC_Shortcode_Checkout::output('')
+#7 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(95): WC_Shortcodes::shortcode_wrapper(Array, '')
+#8 /chroot/home/giftoco/gifto.co/html/wp-includes/shortcodes.php(395): WC_Shortcodes::checkout('', '', '...')
+#9 [internal function]: do_shortcode_tag(Array)
+#10 /chroot/home/giftoco/gifto.co/html/wp-includes/shortcodes.php(235): preg_replace_callback('...', '...', '...')
+#11 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): do_shortcode('...')
+#12 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(205): WP_Hook->apply_filters('...', Array)
+#13 /chroot/home/giftoco/gifto.co/html/wp-includes/post-template.php(256): apply_filters('...', '...')
+#14 /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/template-parts/content-single-page.php(16): the_content()
+#15 /chroot/home/giftoco/gifto.co/html/wp-includes/template.php(787): require('...')
+#16 /chroot/home/giftoco/gifto.co/html/wp-includes/template.php(720): load_template('...', false, Array)
+#17 /chroot/home/giftoco/gifto.co/html/wp-includes/general-template.php(206): locate_template(Array, true, false, Array)
+#18 /chroot/home/giftoco/gifto.co/html/wp-content/themes/minimog/framework/class-functions.php(82): get_template_part('...', '', Array)
+#19 /chroot/home/giftoco/gifto.co/html/wp-content/themes/minimog/page.php(30): minimog_load_template('...')
+#20 /chroot/home/giftoco/gifto.co/html/wp-includes/template-loader.php(106): include('...')
+#21 /chroot/home/giftoco/gifto.co/html/wp-blog-header.php(19): require_once('...')
+#22 /chroot/home/giftoco/gifto.co/html/index.php(253): require('...')
+#23 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/functions.php on line 1420
+
+2023-09-25T07:52:39+00:00 CRITICAL Uncaught Error: Call to a member function get_billing_phone() on bool in /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/functions.php:1420
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(312): action_woocommerce_thankyou('...')
+#1 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(205): WP_Hook->apply_filters('...', Array)
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/woocommerce/checkout/thankyou.php(106): apply_filters('...', '...', NULL)
+#3 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('...')
+#4 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-checkout.php(296): wc_get_template('...', Array)
+#5 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-checkout.php(63): WC_Shortcode_Checkout::order_received(514041)
+#6 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(72): WC_Shortcode_Checkout::output('')
+#7 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(95): WC_Shortcodes::shortcode_wrapper(Array, '')
+#8 /chroot/home/giftoco/gifto.co/html/wp-includes/shortcodes.php(395): WC_Shortcodes::checkout('', '', '...')
+#9 [internal function]: do_shortcode_tag(Array)
+#10 /chroot/home/giftoco/gifto.co/html/wp-includes/shortcodes.php(235): preg_replace_callback('...', '...', '...')
+#11 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): do_shortcode('...')
+#12 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(205): WP_Hook->apply_filters('...', Array)
+#13 /chroot/home/giftoco/gifto.co/html/wp-includes/post-template.php(256): apply_filters('...', '...')
+#14 /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/template-parts/content-single-page.php(16): the_content()
+#15 /chroot/home/giftoco/gifto.co/html/wp-includes/template.php(787): require('...')
+#16 /chroot/home/giftoco/gifto.co/html/wp-includes/template.php(720): load_template('...', false, Array)
+#17 /chroot/home/giftoco/gifto.co/html/wp-includes/general-template.php(206): locate_template(Array, true, false, Array)
+#18 /chroot/home/giftoco/gifto.co/html/wp-content/themes/minimog/framework/class-functions.php(82): get_template_part('...', '', Array)
+#19 /chroot/home/giftoco/gifto.co/html/wp-content/themes/minimog/page.php(30): minimog_load_template('...')
+#20 /chroot/home/giftoco/gifto.co/html/wp-includes/template-loader.php(106): include('...')
+#21 /chroot/home/giftoco/gifto.co/html/wp-blog-header.php(19): require_once('...')
+#22 /chroot/home/giftoco/gifto.co/html/index.php(253): require('...')
+#23 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/functions.php on line 1420
+
+2023-09-25T07:55:20+00:00 CRITICAL Uncaught Error: Call to a member function get_billing_phone() on bool in /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/functions.php:1420
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): action_woocommerce_thankyou('...', NULL)
+#1 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(205): WP_Hook->apply_filters('...', Array)
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/woocommerce/checkout/thankyou.php(106): apply_filters('...', '...', NULL)
+#3 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('...')
+#4 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-checkout.php(296): wc_get_template('...', Array)
+#5 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-checkout.php(63): WC_Shortcode_Checkout::order_received(514041)
+#6 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(72): WC_Shortcode_Checkout::output('')
+#7 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(95): WC_Shortcodes::shortcode_wrapper(Array, '')
+#8 /chroot/home/giftoco/gifto.co/html/wp-includes/shortcodes.php(395): WC_Shortcodes::checkout('', '', '...')
+#9 [internal function]: do_shortcode_tag(Array)
+#10 /chroot/home/giftoco/gifto.co/html/wp-includes/shortcodes.php(235): preg_replace_callback('...', '...', '...')
+#11 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): do_shortcode('...')
+#12 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(205): WP_Hook->apply_filters('...', Array)
+#13 /chroot/home/giftoco/gifto.co/html/wp-includes/post-template.php(256): apply_filters('...', '...')
+#14 /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/template-parts/content-single-page.php(16): the_content()
+#15 /chroot/home/giftoco/gifto.co/html/wp-includes/template.php(787): require('...')
+#16 /chroot/home/giftoco/gifto.co/html/wp-includes/template.php(720): load_template('...', false, Array)
+#17 /chroot/home/giftoco/gifto.co/html/wp-includes/general-template.php(206): locate_template(Array, true, false, Array)
+#18 /chroot/home/giftoco/gifto.co/html/wp-content/themes/minimog/framework/class-functions.php(82): get_template_part('...', '', Array)
+#19 /chroot/home/giftoco/gifto.co/html/wp-content/themes/minimog/page.php(30): minimog_load_template('...')
+#20 /chroot/home/giftoco/gifto.co/html/wp-includes/template-loader.php(106): include('...')
+#21 /chroot/home/giftoco/gifto.co/html/wp-blog-header.php(19): require_once('...')
+#22 /chroot/home/giftoco/gifto.co/html/index.php(253): require('...')
+#23 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/functions.php on line 1420
+
+2023-09-25T07:56:37+00:00 CRITICAL Uncaught Error: Call to a member function get_billing_phone() on bool in /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/functions.php:1420
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): action_woocommerce_thankyou('...', NULL)
+#1 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(205): WP_Hook->apply_filters('...', Array)
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/woocommerce/checkout/thankyou.php(106): apply_filters('...', '...', NULL)
+#3 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('...')
+#4 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-checkout.php(296): wc_get_template('...', Array)
+#5 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-checkout.php(63): WC_Shortcode_Checkout::order_received(514041)
+#6 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(72): WC_Shortcode_Checkout::output('')
+#7 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(95): WC_Shortcodes::shortcode_wrapper(Array, '')
+#8 /chroot/home/giftoco/gifto.co/html/wp-includes/shortcodes.php(395): WC_Shortcodes::checkout('', '', '...')
+#9 [internal function]: do_shortcode_tag(Array)
+#10 /chroot/home/giftoco/gifto.co/html/wp-includes/shortcodes.php(235): preg_replace_callback('...', '...', '...')
+#11 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): do_shortcode('...')
+#12 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(205): WP_Hook->apply_filters('...', Array)
+#13 /chroot/home/giftoco/gifto.co/html/wp-includes/post-template.php(256): apply_filters('...', '...')
+#14 /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/template-parts/content-single-page.php(16): the_content()
+#15 /chroot/home/giftoco/gifto.co/html/wp-includes/template.php(787): require('...')
+#16 /chroot/home/giftoco/gifto.co/html/wp-includes/template.php(720): load_template('...', false, Array)
+#17 /chroot/home/giftoco/gifto.co/html/wp-includes/general-template.php(206): locate_template(Array, true, false, Array)
+#18 /chroot/home/giftoco/gifto.co/html/wp-content/themes/minimog/framework/class-functions.php(82): get_template_part('...', '', Array)
+#19 /chroot/home/giftoco/gifto.co/html/wp-content/themes/minimog/page.php(30): minimog_load_template('...')
+#20 /chroot/home/giftoco/gifto.co/html/wp-includes/template-loader.php(106): include('...')
+#21 /chroot/home/giftoco/gifto.co/html/wp-blog-header.php(19): require_once('...')
+#22 /chroot/home/giftoco/gifto.co/html/index.php(253): require('...')
+#23 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/functions.php on line 1420
+
+2023-09-25T07:59:00+00:00 CRITICAL Uncaught Error: Call to a member function get_items() on bool in /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/functions.php:1453
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): action_woocommerce_thankyou('...', NULL)
+#1 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(205): WP_Hook->apply_filters('...', Array)
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/woocommerce/checkout/thankyou.php(106): apply_filters('...', '...', NULL)
+#3 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('...')
+#4 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-checkout.php(296): wc_get_template('...', Array)
+#5 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-checkout.php(63): WC_Shortcode_Checkout::order_received(514041)
+#6 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(72): WC_Shortcode_Checkout::output('')
+#7 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(95): WC_Shortcodes::shortcode_wrapper(Array, '')
+#8 /chroot/home/giftoco/gifto.co/html/wp-includes/shortcodes.php(395): WC_Shortcodes::checkout('', '', '...')
+#9 [internal function]: do_shortcode_tag(Array)
+#10 /chroot/home/giftoco/gifto.co/html/wp-includes/shortcodes.php(235): preg_replace_callback('...', '...', '...')
+#11 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): do_shortcode('...')
+#12 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(205): WP_Hook->apply_filters('...', Array)
+#13 /chroot/home/giftoco/gifto.co/html/wp-includes/post-template.php(256): apply_filters('...', '...')
+#14 /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/template-parts/content-single-page.php(16): the_content()
+#15 /chroot/home/giftoco/gifto.co/html/wp-includes/template.php(787): require('...')
+#16 /chroot/home/giftoco/gifto.co/html/wp-includes/template.php(720): load_template('...', false, Array)
+#17 /chroot/home/giftoco/gifto.co/html/wp-includes/general-template.php(206): locate_template(Array, true, false, Array)
+#18 /chroot/home/giftoco/gifto.co/html/wp-content/themes/minimog/framework/class-functions.php(82): get_template_part('...', '', Array)
+#19 /chroot/home/giftoco/gifto.co/html/wp-content/themes/minimog/page.php(30): minimog_load_template('...')
+#20 /chroot/home/giftoco/gifto.co/html/wp-includes/template-loader.php(106): include('...')
+#21 /chroot/home/giftoco/gifto.co/html/wp-blog-header.php(19): require_once('...')
+#22 /chroot/home/giftoco/gifto.co/html/index.php(253): require('...')
+#23 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/functions.php on line 1453
+
+2023-09-25T08:00:34+00:00 CRITICAL Uncaught Error: Call to a member function get_items() on bool in /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/functions.php:1453
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): action_woocommerce_thankyou('...', NULL)
+#1 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(205): WP_Hook->apply_filters('...', Array)
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/woocommerce/checkout/thankyou.php(106): apply_filters('...', '...', NULL)
+#3 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('...')
+#4 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-checkout.php(296): wc_get_template('...', Array)
+#5 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-checkout.php(63): WC_Shortcode_Checkout::order_received(514041)
+#6 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(72): WC_Shortcode_Checkout::output('')
+#7 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(95): WC_Shortcodes::shortcode_wrapper(Array, '')
+#8 /chroot/home/giftoco/gifto.co/html/wp-includes/shortcodes.php(395): WC_Shortcodes::checkout('', '', '...')
+#9 [internal function]: do_shortcode_tag(Array)
+#10 /chroot/home/giftoco/gifto.co/html/wp-includes/shortcodes.php(235): preg_replace_callback('...', '...', '...')
+#11 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): do_shortcode('...')
+#12 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(205): WP_Hook->apply_filters('...', Array)
+#13 /chroot/home/giftoco/gifto.co/html/wp-includes/post-template.php(256): apply_filters('...', '...')
+#14 /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/template-parts/content-single-page.php(16): the_content()
+#15 /chroot/home/giftoco/gifto.co/html/wp-includes/template.php(787): require('...')
+#16 /chroot/home/giftoco/gifto.co/html/wp-includes/template.php(720): load_template('...', false, Array)
+#17 /chroot/home/giftoco/gifto.co/html/wp-includes/general-template.php(206): locate_template(Array, true, false, Array)
+#18 /chroot/home/giftoco/gifto.co/html/wp-content/themes/minimog/framework/class-functions.php(82): get_template_part('...', '', Array)
+#19 /chroot/home/giftoco/gifto.co/html/wp-content/themes/minimog/page.php(30): minimog_load_template('...')
+#20 /chroot/home/giftoco/gifto.co/html/wp-includes/template-loader.php(106): include('...')
+#21 /chroot/home/giftoco/gifto.co/html/wp-blog-header.php(19): require_once('...')
+#22 /chroot/home/giftoco/gifto.co/html/index.php(253): require('...')
+#23 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/functions.php on line 1453
+
+2023-09-25T08:00:37+00:00 CRITICAL Unmatched '}' in /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/functions.php on line 2073
+
+2023-09-25T08:01:02+00:00 CRITICAL Unmatched '}' in /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/functions.php on line 2073
+
+2023-09-25T08:01:22+00:00 CRITICAL Unmatched '}' in /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/functions.php on line 2073
+
+2023-09-25T08:01:44+00:00 CRITICAL Unmatched '}' in /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/functions.php on line 2073
+
+2023-09-25T08:01:45+00:00 CRITICAL Unmatched '}' in /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/functions.php on line 2073
+
+2023-09-25T08:02:01+00:00 CRITICAL Unmatched '}' in /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/functions.php on line 2073
+
+2023-09-25T08:03:02+00:00 CRITICAL Unmatched '}' in /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/functions.php on line 2073
+
+2023-09-25T08:03:12+00:00 CRITICAL Unmatched '}' in /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/functions.php on line 2073
+
+2023-09-25T08:03:43+00:00 CRITICAL Uncaught TypeError: fwrite(): Argument #1 ($stream) must be of type resource, null given in /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/functions.php:2070
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/functions.php(2070): fwrite(NULL, NULL)
+#1 /chroot/home/giftoco/gifto.co/html/wp-settings.php(600): include('...')
+#2 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#3 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#4 /chroot/home/giftoco/gifto.co/html/wp-blog-header.php(13): require_once('...')
+#5 /chroot/home/giftoco/gifto.co/html/index.php(253): require('...')
+#6 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/functions.php on line 2070
+
+2023-09-25T08:03:43+00:00 CRITICAL Uncaught TypeError: fwrite(): Argument #1 ($stream) must be of type resource, null given in /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/functions.php:2070
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/functions.php(2070): fwrite(NULL, NULL)
+#1 /chroot/home/giftoco/gifto.co/html/wp-settings.php(600): include('...')
+#2 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#3 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#4 /chroot/home/giftoco/gifto.co/html/wp-blog-header.php(13): require_once('...')
+#5 /chroot/home/giftoco/gifto.co/html/index.php(253): require('...')
+#6 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/functions.php on line 2070
+
+2023-09-25T08:03:44+00:00 CRITICAL Uncaught TypeError: fwrite(): Argument #1 ($stream) must be of type resource, null given in /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/functions.php:2070
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/functions.php(2070): fwrite(NULL, NULL)
+#1 /chroot/home/giftoco/gifto.co/html/wp-settings.php(600): include('...')
+#2 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#3 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#4 /chroot/home/giftoco/gifto.co/html/wp-blog-header.php(13): require_once('...')
+#5 /chroot/home/giftoco/gifto.co/html/index.php(253): require('...')
+#6 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/functions.php on line 2070
+
+2023-09-25T08:04:01+00:00 CRITICAL Uncaught TypeError: fwrite(): Argument #1 ($stream) must be of type resource, null given in /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/functions.php:2070
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/functions.php(2070): fwrite(NULL, NULL)
+#1 /chroot/home/giftoco/gifto.co/html/wp-settings.php(600): include('...')
+#2 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#3 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#4 /chroot/home/giftoco/gifto.co/html/reloadlymail.php(2): include('...')
+#5 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/functions.php on line 2070
+
+2023-09-25T08:05:01+00:00 CRITICAL Uncaught TypeError: fwrite(): Argument #1 ($stream) must be of type resource, null given in /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/functions.php:2070
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/functions.php(2070): fwrite(NULL, NULL)
+#1 /chroot/home/giftoco/gifto.co/html/wp-settings.php(600): include('...')
+#2 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#3 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#4 /chroot/home/giftoco/gifto.co/html/reloadlymail.php(2): include('...')
+#5 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/functions.php on line 2070
+
+2023-09-25T08:08:49+00:00 CRITICAL Uncaught Error: Call to a member function get_items() on bool in /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/functions.php:1452
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): action_woocommerce_thankyou('...', NULL)
+#1 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(205): WP_Hook->apply_filters('...', Array)
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/woocommerce/checkout/thankyou.php(106): apply_filters('...', '...', NULL)
+#3 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('...')
+#4 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-checkout.php(296): wc_get_template('...', Array)
+#5 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-checkout.php(63): WC_Shortcode_Checkout::order_received(514041)
+#6 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(72): WC_Shortcode_Checkout::output('')
+#7 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(95): WC_Shortcodes::shortcode_wrapper(Array, '')
+#8 /chroot/home/giftoco/gifto.co/html/wp-includes/shortcodes.php(395): WC_Shortcodes::checkout('', '', '...')
+#9 [internal function]: do_shortcode_tag(Array)
+#10 /chroot/home/giftoco/gifto.co/html/wp-includes/shortcodes.php(235): preg_replace_callback('...', '...', '...')
+#11 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): do_shortcode('...')
+#12 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(205): WP_Hook->apply_filters('...', Array)
+#13 /chroot/home/giftoco/gifto.co/html/wp-includes/post-template.php(256): apply_filters('...', '...')
+#14 /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/template-parts/content-single-page.php(16): the_content()
+#15 /chroot/home/giftoco/gifto.co/html/wp-includes/template.php(787): require('...')
+#16 /chroot/home/giftoco/gifto.co/html/wp-includes/template.php(720): load_template('...', false, Array)
+#17 /chroot/home/giftoco/gifto.co/html/wp-includes/general-template.php(206): locate_template(Array, true, false, Array)
+#18 /chroot/home/giftoco/gifto.co/html/wp-content/themes/minimog/framework/class-functions.php(82): get_template_part('...', '', Array)
+#19 /chroot/home/giftoco/gifto.co/html/wp-content/themes/minimog/page.php(30): minimog_load_template('...')
+#20 /chroot/home/giftoco/gifto.co/html/wp-includes/template-loader.php(106): include('...')
+#21 /chroot/home/giftoco/gifto.co/html/wp-blog-header.php(19): require_once('...')
+#22 /chroot/home/giftoco/gifto.co/html/index.php(253): require('...')
+#23 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/functions.php on line 1452
+
+2023-09-25T09:08:29+00:00 CRITICAL Unclosed '[' on line 2630 in /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/functions.php on line 2757
+

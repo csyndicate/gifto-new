@@ -1,0 +1,1463 @@
+2023-09-21T04:51:51+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-blog-header.php(13): require_once('...')
+#10 /chroot/home/giftoco/gifto.co/html/index.php(253): require('...')
+#11 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T04:51:51+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-blog-header.php(13): require_once('...')
+#10 /chroot/home/giftoco/gifto.co/html/index.php(253): require('...')
+#11 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T04:51:51+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-blog-header.php(13): require_once('...')
+#10 /chroot/home/giftoco/gifto.co/html/index.php(253): require('...')
+#11 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T04:51:51+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-blog-header.php(13): require_once('...')
+#10 /chroot/home/giftoco/gifto.co/html/index.php(253): require('...')
+#11 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T04:51:52+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-blog-header.php(13): require_once('...')
+#10 /chroot/home/giftoco/gifto.co/html/index.php(253): require('...')
+#11 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T04:51:52+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-blog-header.php(13): require_once('...')
+#10 /chroot/home/giftoco/gifto.co/html/index.php(253): require('...')
+#11 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T04:51:52+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-blog-header.php(13): require_once('...')
+#10 /chroot/home/giftoco/gifto.co/html/index.php(253): require('...')
+#11 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T04:51:52+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-blog-header.php(13): require_once('...')
+#10 /chroot/home/giftoco/gifto.co/html/index.php(253): require('...')
+#11 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T04:51:52+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-blog-header.php(13): require_once('...')
+#10 /chroot/home/giftoco/gifto.co/html/index.php(253): require('...')
+#11 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T04:51:52+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-blog-header.php(13): require_once('...')
+#10 /chroot/home/giftoco/gifto.co/html/index.php(253): require('...')
+#11 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T04:51:52+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-blog-header.php(13): require_once('...')
+#10 /chroot/home/giftoco/gifto.co/html/index.php(253): require('...')
+#11 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T04:51:52+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-blog-header.php(13): require_once('...')
+#10 /chroot/home/giftoco/gifto.co/html/index.php(253): require('...')
+#11 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T04:51:52+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-blog-header.php(13): require_once('...')
+#10 /chroot/home/giftoco/gifto.co/html/index.php(253): require('...')
+#11 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T04:51:52+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-blog-header.php(13): require_once('...')
+#10 /chroot/home/giftoco/gifto.co/html/index.php(253): require('...')
+#11 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T04:51:52+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-blog-header.php(13): require_once('...')
+#10 /chroot/home/giftoco/gifto.co/html/index.php(253): require('...')
+#11 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T04:51:52+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-blog-header.php(13): require_once('...')
+#10 /chroot/home/giftoco/gifto.co/html/index.php(253): require('...')
+#11 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T04:51:52+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-blog-header.php(13): require_once('...')
+#10 /chroot/home/giftoco/gifto.co/html/index.php(253): require('...')
+#11 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T04:51:52+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-blog-header.php(13): require_once('...')
+#10 /chroot/home/giftoco/gifto.co/html/index.php(253): require('...')
+#11 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T04:51:53+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-blog-header.php(13): require_once('...')
+#10 /chroot/home/giftoco/gifto.co/html/index.php(253): require('...')
+#11 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T04:51:53+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-blog-header.php(13): require_once('...')
+#10 /chroot/home/giftoco/gifto.co/html/index.php(253): require('...')
+#11 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T04:51:53+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-blog-header.php(13): require_once('...')
+#10 /chroot/home/giftoco/gifto.co/html/index.php(253): require('...')
+#11 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T04:51:53+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-blog-header.php(13): require_once('...')
+#10 /chroot/home/giftoco/gifto.co/html/index.php(253): require('...')
+#11 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T04:51:53+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-blog-header.php(13): require_once('...')
+#10 /chroot/home/giftoco/gifto.co/html/index.php(253): require('...')
+#11 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T04:51:54+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-blog-header.php(13): require_once('...')
+#10 /chroot/home/giftoco/gifto.co/html/index.php(253): require('...')
+#11 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T04:51:55+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-blog-header.php(13): require_once('...')
+#10 /chroot/home/giftoco/gifto.co/html/index.php(253): require('...')
+#11 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T05:05:23+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-blog-header.php(13): require_once('...')
+#10 /chroot/home/giftoco/gifto.co/html/index.php(253): require('...')
+#11 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T05:05:40+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-blog-header.php(13): require_once('...')
+#10 /chroot/home/giftoco/gifto.co/html/index.php(253): require('...')
+#11 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T05:05:56+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-blog-header.php(13): require_once('...')
+#10 /chroot/home/giftoco/gifto.co/html/index.php(253): require('...')
+#11 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T05:05:57+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-blog-header.php(13): require_once('...')
+#10 /chroot/home/giftoco/gifto.co/html/index.php(253): require('...')
+#11 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T05:05:57+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-blog-header.php(13): require_once('...')
+#10 /chroot/home/giftoco/gifto.co/html/index.php(253): require('...')
+#11 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T05:05:57+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-blog-header.php(13): require_once('...')
+#10 /chroot/home/giftoco/gifto.co/html/index.php(253): require('...')
+#11 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T05:05:57+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-blog-header.php(13): require_once('...')
+#10 /chroot/home/giftoco/gifto.co/html/index.php(253): require('...')
+#11 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T05:05:57+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-blog-header.php(13): require_once('...')
+#10 /chroot/home/giftoco/gifto.co/html/index.php(253): require('...')
+#11 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T05:05:57+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-blog-header.php(13): require_once('...')
+#10 /chroot/home/giftoco/gifto.co/html/index.php(253): require('...')
+#11 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T05:05:57+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-blog-header.php(13): require_once('...')
+#10 /chroot/home/giftoco/gifto.co/html/index.php(253): require('...')
+#11 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T05:05:57+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-blog-header.php(13): require_once('...')
+#10 /chroot/home/giftoco/gifto.co/html/index.php(253): require('...')
+#11 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T05:05:57+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-blog-header.php(13): require_once('...')
+#10 /chroot/home/giftoco/gifto.co/html/index.php(253): require('...')
+#11 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T05:05:57+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-blog-header.php(13): require_once('...')
+#10 /chroot/home/giftoco/gifto.co/html/index.php(253): require('...')
+#11 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T05:05:57+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-blog-header.php(13): require_once('...')
+#10 /chroot/home/giftoco/gifto.co/html/index.php(253): require('...')
+#11 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T05:05:57+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-blog-header.php(13): require_once('...')
+#10 /chroot/home/giftoco/gifto.co/html/index.php(253): require('...')
+#11 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T05:05:57+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-blog-header.php(13): require_once('...')
+#10 /chroot/home/giftoco/gifto.co/html/index.php(253): require('...')
+#11 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T05:05:57+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-blog-header.php(13): require_once('...')
+#10 /chroot/home/giftoco/gifto.co/html/index.php(253): require('...')
+#11 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T05:05:58+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-blog-header.php(13): require_once('...')
+#10 /chroot/home/giftoco/gifto.co/html/index.php(253): require('...')
+#11 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T05:05:58+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-blog-header.php(13): require_once('...')
+#10 /chroot/home/giftoco/gifto.co/html/index.php(253): require('...')
+#11 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T05:06:00+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-blog-header.php(13): require_once('...')
+#10 /chroot/home/giftoco/gifto.co/html/index.php(253): require('...')
+#11 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T05:06:00+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-blog-header.php(13): require_once('...')
+#10 /chroot/home/giftoco/gifto.co/html/index.php(253): require('...')
+#11 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T05:06:00+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-blog-header.php(13): require_once('...')
+#10 /chroot/home/giftoco/gifto.co/html/index.php(253): require('...')
+#11 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T05:06:06+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-blog-header.php(13): require_once('...')
+#10 /chroot/home/giftoco/gifto.co/html/index.php(253): require('...')
+#11 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T05:06:08+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-blog-header.php(13): require_once('...')
+#10 /chroot/home/giftoco/gifto.co/html/index.php(253): require('...')
+#11 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T05:06:10+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-blog-header.php(13): require_once('...')
+#10 /chroot/home/giftoco/gifto.co/html/index.php(253): require('...')
+#11 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T06:00:24+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WC_HitPay::custom_payment_gateway_icons(), 1 passed in /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php on line 310 and exactly 2 expected in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/hitpay-payment-gateway/includes/regular-checkout.php:178
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_HitPay->custom_payment_gateway_icons()
+#1 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(205): WP_Hook->apply_filters()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/business-api-plugin-woocommerce/includes/function/paymentgatwayclass.php(36): apply_filters()
+#3 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/class-wc-payment-gateways.php(97): WC_Mamopay_Gateway->__construct()
+#4 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/settings/class-wc-settings-payment-gateways.php(299): WC_Payment_Gateways->init()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_Settings_Payment_Gateways->save()
+#6 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#7 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-settings.php(77): do_action()
+#9 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-menus.php(153): WC_Admin_Settings::save()
+#10 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_Admin_Menus->save_settings()
+#11 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#12 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#13 /chroot/home/giftoco/gifto.co/html/wp-settings.php(654): do_action()
+#14 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#15 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#16 /chroot/home/giftoco/gifto.co/html/wp-admin/admin.php(34): require_once('...')
+#17 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/hitpay-payment-gateway/includes/regular-checkout.php on line 178
+
+2023-09-21T06:03:37+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WC_HitPay::custom_payment_gateway_icons(), 1 passed in /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php on line 310 and exactly 2 expected in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/hitpay-payment-gateway/includes/regular-checkout.php:178
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_HitPay->custom_payment_gateway_icons()
+#1 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(205): WP_Hook->apply_filters()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/business-api-plugin-woocommerce/includes/function/paymentgatwayclass.php(36): apply_filters()
+#3 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/class-wc-payment-gateways.php(97): WC_Mamopay_Gateway->__construct()
+#4 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/settings/class-wc-settings-payment-gateways.php(305): WC_Payment_Gateways->init()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_Settings_Payment_Gateways->save()
+#6 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#7 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-settings.php(77): do_action()
+#9 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-menus.php(151): WC_Admin_Settings::save()
+#10 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_Admin_Menus->save_settings()
+#11 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#12 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#13 /chroot/home/giftoco/gifto.co/html/wp-settings.php(654): do_action()
+#14 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#15 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#16 /chroot/home/giftoco/gifto.co/html/wp-admin/admin.php(34): require_once('...')
+#17 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/hitpay-payment-gateway/includes/regular-checkout.php on line 178
+
+2023-09-21T06:05:40+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WC_HitPay::custom_payment_gateway_icons(), 1 passed in /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php on line 310 and exactly 2 expected in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/hitpay-payment-gateway/includes/regular-checkout.php:178
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_HitPay->custom_payment_gateway_icons()
+#1 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(205): WP_Hook->apply_filters()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/business-api-plugin-woocommerce/includes/function/paymentgatwayclass.php(36): apply_filters()
+#3 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/class-wc-payment-gateways.php(97): WC_Mamopay_Gateway->__construct()
+#4 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/settings/class-wc-settings-payment-gateways.php(305): WC_Payment_Gateways->init()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_Settings_Payment_Gateways->save()
+#6 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#7 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-settings.php(77): do_action()
+#9 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-menus.php(151): WC_Admin_Settings::save()
+#10 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_Admin_Menus->save_settings()
+#11 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#12 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#13 /chroot/home/giftoco/gifto.co/html/wp-settings.php(654): do_action()
+#14 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#15 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#16 /chroot/home/giftoco/gifto.co/html/wp-admin/admin.php(34): require_once('...')
+#17 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/hitpay-payment-gateway/includes/regular-checkout.php on line 178
+
+2023-09-21T06:08:11+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WC_HitPay::custom_payment_gateway_icons(), 1 passed in /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php on line 310 and exactly 2 expected in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/hitpay-payment-gateway/includes/regular-checkout.php:178
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_HitPay->custom_payment_gateway_icons()
+#1 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(205): WP_Hook->apply_filters()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/business-api-plugin-woocommerce/includes/function/paymentgatwayclass.php(36): apply_filters()
+#3 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/class-wc-payment-gateways.php(97): WC_Mamopay_Gateway->__construct()
+#4 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/settings/class-wc-settings-payment-gateways.php(299): WC_Payment_Gateways->init()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_Settings_Payment_Gateways->save()
+#6 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#7 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-settings.php(77): do_action()
+#9 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-menus.php(153): WC_Admin_Settings::save()
+#10 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_Admin_Menus->save_settings()
+#11 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#12 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#13 /chroot/home/giftoco/gifto.co/html/wp-settings.php(654): do_action()
+#14 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#15 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#16 /chroot/home/giftoco/gifto.co/html/wp-admin/admin.php(34): require_once('...')
+#17 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/hitpay-payment-gateway/includes/regular-checkout.php on line 178
+
+2023-09-21T06:10:27+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WC_HitPay::custom_payment_gateway_icons(), 1 passed in /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php on line 310 and exactly 2 expected in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/hitpay-payment-gateway/includes/regular-checkout.php:178
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_HitPay->custom_payment_gateway_icons()
+#1 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(205): WP_Hook->apply_filters()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/business-api-plugin-woocommerce/includes/function/paymentgatwayclass.php(36): apply_filters()
+#3 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/class-wc-payment-gateways.php(97): WC_Mamopay_Gateway->__construct()
+#4 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/settings/class-wc-settings-payment-gateways.php(305): WC_Payment_Gateways->init()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_Settings_Payment_Gateways->save()
+#6 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#7 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-settings.php(77): do_action()
+#9 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-menus.php(151): WC_Admin_Settings::save()
+#10 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_Admin_Menus->save_settings()
+#11 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#12 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#13 /chroot/home/giftoco/gifto.co/html/wp-settings.php(654): do_action()
+#14 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#15 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#16 /chroot/home/giftoco/gifto.co/html/wp-admin/admin.php(34): require_once('...')
+#17 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/hitpay-payment-gateway/includes/regular-checkout.php on line 178
+
+2023-09-21T06:13:07+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WC_HitPay::custom_payment_gateway_icons(), 1 passed in /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php on line 310 and exactly 2 expected in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/hitpay-payment-gateway/includes/regular-checkout.php:178
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_HitPay->custom_payment_gateway_icons()
+#1 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(205): WP_Hook->apply_filters()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/business-api-plugin-woocommerce/includes/function/paymentgatwayclass.php(36): apply_filters()
+#3 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/class-wc-payment-gateways.php(97): WC_Mamopay_Gateway->__construct()
+#4 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/settings/class-wc-settings-payment-gateways.php(299): WC_Payment_Gateways->init()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_Settings_Payment_Gateways->save()
+#6 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#7 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-settings.php(77): do_action()
+#9 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-menus.php(153): WC_Admin_Settings::save()
+#10 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_Admin_Menus->save_settings()
+#11 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#12 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#13 /chroot/home/giftoco/gifto.co/html/wp-settings.php(654): do_action()
+#14 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#15 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#16 /chroot/home/giftoco/gifto.co/html/wp-admin/admin.php(34): require_once('...')
+#17 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/hitpay-payment-gateway/includes/regular-checkout.php on line 178
+
+2023-09-21T06:16:26+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WC_HitPay::custom_payment_gateway_icons(), 1 passed in /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php on line 310 and exactly 2 expected in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/hitpay-payment-gateway/includes/regular-checkout.php:178
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_HitPay->custom_payment_gateway_icons()
+#1 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(205): WP_Hook->apply_filters()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/business-api-plugin-woocommerce/includes/function/paymentgatwayclass.php(36): apply_filters()
+#3 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/class-wc-payment-gateways.php(97): WC_Mamopay_Gateway->__construct()
+#4 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/settings/class-wc-settings-payment-gateways.php(299): WC_Payment_Gateways->init()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_Settings_Payment_Gateways->save()
+#6 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#7 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-settings.php(77): do_action()
+#9 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-menus.php(153): WC_Admin_Settings::save()
+#10 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_Admin_Menus->save_settings()
+#11 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#12 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#13 /chroot/home/giftoco/gifto.co/html/wp-settings.php(654): do_action()
+#14 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#15 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#16 /chroot/home/giftoco/gifto.co/html/wp-admin/admin.php(34): require_once('...')
+#17 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/hitpay-payment-gateway/includes/regular-checkout.php on line 178
+
+2023-09-21T06:18:41+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WC_HitPay::custom_payment_gateway_icons(), 1 passed in /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php on line 310 and exactly 2 expected in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/hitpay-payment-gateway/includes/regular-checkout.php:178
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_HitPay->custom_payment_gateway_icons()
+#1 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(205): WP_Hook->apply_filters()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/business-api-plugin-woocommerce/includes/function/paymentgatwayclass.php(36): apply_filters()
+#3 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/class-wc-payment-gateways.php(97): WC_Mamopay_Gateway->__construct()
+#4 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/settings/class-wc-settings-payment-gateways.php(299): WC_Payment_Gateways->init()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_Settings_Payment_Gateways->save()
+#6 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#7 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-settings.php(77): do_action()
+#9 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-menus.php(153): WC_Admin_Settings::save()
+#10 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_Admin_Menus->save_settings()
+#11 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#12 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#13 /chroot/home/giftoco/gifto.co/html/wp-settings.php(654): do_action()
+#14 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#15 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#16 /chroot/home/giftoco/gifto.co/html/wp-admin/admin.php(34): require_once('...')
+#17 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/hitpay-payment-gateway/includes/regular-checkout.php on line 178
+
+2023-09-21T06:19:50+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WC_HitPay::custom_payment_gateway_icons(), 1 passed in /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php on line 310 and exactly 2 expected in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/hitpay-payment-gateway/includes/regular-checkout.php:178
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_HitPay->custom_payment_gateway_icons()
+#1 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(205): WP_Hook->apply_filters()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/business-api-plugin-woocommerce/includes/function/paymentgatwayclass.php(36): apply_filters()
+#3 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/class-wc-payment-gateways.php(97): WC_Mamopay_Gateway->__construct()
+#4 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/settings/class-wc-settings-payment-gateways.php(299): WC_Payment_Gateways->init()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_Settings_Payment_Gateways->save()
+#6 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#7 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-settings.php(77): do_action()
+#9 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-menus.php(153): WC_Admin_Settings::save()
+#10 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_Admin_Menus->save_settings()
+#11 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#12 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#13 /chroot/home/giftoco/gifto.co/html/wp-settings.php(654): do_action()
+#14 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#15 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#16 /chroot/home/giftoco/gifto.co/html/wp-admin/admin.php(34): require_once('...')
+#17 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/hitpay-payment-gateway/includes/regular-checkout.php on line 178
+
+2023-09-21T06:27:56+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WC_HitPay::custom_payment_gateway_icons(), 1 passed in /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php on line 310 and exactly 2 expected in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/hitpay-payment-gateway/includes/regular-checkout.php:178
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_HitPay->custom_payment_gateway_icons()
+#1 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(205): WP_Hook->apply_filters()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/business-api-plugin-woocommerce/includes/function/paymentgatwayclass.php(36): apply_filters()
+#3 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/class-wc-payment-gateways.php(97): WC_Mamopay_Gateway->__construct()
+#4 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/settings/class-wc-settings-payment-gateways.php(305): WC_Payment_Gateways->init()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_Settings_Payment_Gateways->save()
+#6 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#7 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-settings.php(77): do_action()
+#9 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-menus.php(151): WC_Admin_Settings::save()
+#10 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_Admin_Menus->save_settings()
+#11 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#12 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#13 /chroot/home/giftoco/gifto.co/html/wp-settings.php(654): do_action()
+#14 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#15 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#16 /chroot/home/giftoco/gifto.co/html/wp-admin/admin.php(34): require_once('...')
+#17 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/hitpay-payment-gateway/includes/regular-checkout.php on line 178
+
+2023-09-21T06:58:30+00:00 CRITICAL Unclosed '(' on line 507 in /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/functions.php on line 511
+
+2023-09-21T07:56:30+00:00 CRITICAL Unclosed '[' on line 1493 in /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/functions.php on line 1497
+
+2023-09-21T10:05:58+00:00 CRITICAL Uncaught Error: Failed opening required '/chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/templates/autocomplete.php' (include_path='.:/opt/remi/php80/root/usr/share/pear:/opt/remi/php80/root/usr/share/php:/usr/share/pear:/usr/share/php') in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-template-loader.php:212
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Template_Loader->load_autocomplete_template()
+#1 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#2 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/general-template.php(3069): do_action()
+#4 /chroot/home/giftoco/gifto.co/html/wp-content/themes/themes/minimog-child/footer.php(145): wp_footer()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/template.php(785): require_once('...')
+#6 /chroot/home/giftoco/gifto.co/html/wp-includes/template.php(720): load_template()
+#7 /chroot/home/giftoco/gifto.co/html/wp-includes/general-template.php(92): locate_template()
+#8 /chroot/home/giftoco/gifto.co/html/wp-content/themes/minimog/page.php(49): get_footer()
+#9 /chroot/home/giftoco/gifto.co/html/wp-includes/template-loader.php(106): include('...')
+#10 /chroot/home/giftoco/gifto.co/html/wp-blog-header.php(19): require_once('...')
+#11 /chroot/home/giftoco/gifto.co/html/index.php(253): require('...')
+#12 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-template-loader.php on line 212
+
+2023-09-21T10:05:58+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-admin/admin-ajax.php(22): require_once('...')
+#10 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T10:06:00+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-cron.php(46): require_once('...')
+#10 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T10:06:01+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-cron.php(46): require_once('...')
+#10 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T10:06:03+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-cron.php(46): require_once('...')
+#10 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T10:06:06+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-cron.php(46): require_once('...')
+#10 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T10:06:09+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-cron.php(46): require_once('...')
+#10 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T10:06:10+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-cron.php(46): require_once('...')
+#10 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T10:06:18+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-cron.php(46): require_once('...')
+#10 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T10:06:18+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-cron.php(46): require_once('...')
+#10 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T10:06:52+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-cron.php(46): require_once('...')
+#10 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T10:06:52+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-cron.php(46): require_once('...')
+#10 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T10:06:52+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-cron.php(46): require_once('...')
+#10 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T10:06:52+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-cron.php(46): require_once('...')
+#10 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T10:06:52+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-cron.php(46): require_once('...')
+#10 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T10:06:52+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-cron.php(46): require_once('...')
+#10 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T10:06:52+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-cron.php(46): require_once('...')
+#10 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T10:06:52+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-cron.php(46): require_once('...')
+#10 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T10:06:52+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-cron.php(46): require_once('...')
+#10 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T10:06:52+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-cron.php(46): require_once('...')
+#10 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T10:06:52+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-cron.php(46): require_once('...')
+#10 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T10:06:53+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-cron.php(46): require_once('...')
+#10 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T10:06:53+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-cron.php(46): require_once('...')
+#10 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T10:06:57+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-cron.php(46): require_once('...')
+#10 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T10:06:57+00:00 CRITICAL Uncaught Error: Class "WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Support\UserAgent" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php:43
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(100): Algolia_Search_Client_Factory::create()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-api.php(69): Algolia_API->get_client()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/class-algolia-plugin.php(169): Algolia_API->is_reachable()
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Plugin->load()
+#4 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /chroot/home/giftoco/gifto.co/html/wp-settings.php(632): do_action()
+#7 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#8 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-cron.php(46): require_once('...')
+#10 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/factories/class-algolia-search-client-factory.php on line 43
+
+2023-09-21T11:53:05+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WC_HitPay::custom_payment_gateway_icons(), 1 passed in /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php on line 310 and exactly 2 expected in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/hitpay-payment-gateway/includes/regular-checkout.php:178
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_HitPay->custom_payment_gateway_icons()
+#1 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(205): WP_Hook->apply_filters()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/business-api-plugin-woocommerce/includes/function/paymentgatwayclass.php(36): apply_filters()
+#3 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/class-wc-payment-gateways.php(97): WC_Mamopay_Gateway->__construct()
+#4 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/settings/class-wc-settings-payment-gateways.php(305): WC_Payment_Gateways->init()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_Settings_Payment_Gateways->save()
+#6 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#7 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-settings.php(77): do_action()
+#9 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-menus.php(151): WC_Admin_Settings::save()
+#10 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_Admin_Menus->save_settings()
+#11 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#12 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#13 /chroot/home/giftoco/gifto.co/html/wp-settings.php(654): do_action()
+#14 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#15 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#16 /chroot/home/giftoco/gifto.co/html/wp-admin/admin.php(34): require_once('...')
+#17 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/hitpay-payment-gateway/includes/regular-checkout.php on line 178
+
+2023-09-21T11:54:31+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WC_HitPay::custom_payment_gateway_icons(), 1 passed in /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php on line 310 and exactly 2 expected in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/hitpay-payment-gateway/includes/regular-checkout.php:178
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_HitPay->custom_payment_gateway_icons()
+#1 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(205): WP_Hook->apply_filters()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/business-api-plugin-woocommerce/includes/function/paymentgatwayclass.php(36): apply_filters()
+#3 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/class-wc-payment-gateways.php(97): WC_Mamopay_Gateway->__construct()
+#4 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/settings/class-wc-settings-payment-gateways.php(299): WC_Payment_Gateways->init()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_Settings_Payment_Gateways->save()
+#6 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#7 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-settings.php(77): do_action()
+#9 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-menus.php(153): WC_Admin_Settings::save()
+#10 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_Admin_Menus->save_settings()
+#11 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#12 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#13 /chroot/home/giftoco/gifto.co/html/wp-settings.php(654): do_action()
+#14 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#15 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#16 /chroot/home/giftoco/gifto.co/html/wp-admin/admin.php(34): require_once('...')
+#17 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/hitpay-payment-gateway/includes/regular-checkout.php on line 178
+
+2023-09-21T12:17:00+00:00 CRITICAL Uncaught WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Exceptions\UnreachableException: Impossible to connect, please check your Algolia Application Id. in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/vendor_prefixed/algolia/algoliasearch-client-php/src/RetryStrategy/ApiWrapper.php:202
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/vendor_prefixed/algolia/algoliasearch-client-php/src/RetryStrategy/ApiWrapper.php(107): WebDevStudios\WPSWA\Algolia\AlgoliaSearch\RetryStrategy\ApiWrapper->request()
+#1 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/vendor_prefixed/algolia/algoliasearch-client-php/src/SearchIndex.php(305): WebDevStudios\WPSWA\Algolia\AlgoliaSearch\RetryStrategy\ApiWrapper->write()
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/vendor_prefixed/algolia/algoliasearch-client-php/src/SearchIndex.php(344): WebDevStudios\WPSWA\Algolia\AlgoliaSearch\SearchIndex->rawBatch()
+#3 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/vendor_prefixed/algolia/algoliasearch-client-php/src/SearchIndex.php(268): WebDevStudios\WPSWA\Algolia\AlgoliaSearch\SearchIndex->splitIntoBatches()
+#4 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/indices/class-algolia-posts-index.php(505): WebDevStudios\WPSWA\Algolia\AlgoliaSearch\SearchIndex->deleteObjects()
+#5 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/indices/class-algolia-posts-index.php(406): Algolia_Posts_Index->delete_item()
+#6 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/indices/class-algolia-posts-index.php(377): Algolia_Posts_Index->update_post_records()
+#7 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/indices/class-algolia-index.php(467): Algolia_Posts_Index->update_records()
+#8 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/includes/admin/class-algolia-admin.php(263): Algolia_Index->re_index()
+#9 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): Algolia_Admin->re_index()
+#10 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#11 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#12 /chroot/home/giftoco/gifto.co/html/wp-admin/admin-ajax.php(188): do_action()
+#13 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/wp-search-with-algolia/vendor_prefixed/algolia/algoliasearch-client-php/src/RetryStrategy/ApiWrapper.php on line 202
+

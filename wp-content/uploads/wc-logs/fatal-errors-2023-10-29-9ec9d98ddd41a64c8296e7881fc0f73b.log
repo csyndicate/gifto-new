@@ -1,0 +1,25 @@
+2023-10-29T13:30:00+00:00 CRITICAL Uncaught Error: Class "OTP\SplClassLoader" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-otp-verification/autoload.php:63
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-otp-verification/miniorange_validation_settings.php(54): require_once()
+#1 /chroot/home/giftoco/gifto.co/html/wp-admin/includes/plugin.php(2318): include_once('...')
+#2 /chroot/home/giftoco/gifto.co/html/wp-admin/includes/plugin.php(663): plugin_sandbox_scrape('...')
+#3 /chroot/home/giftoco/gifto.co/html/wp-admin/plugins.php(58): activate_plugin('...', '...', false)
+#4 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-otp-verification/autoload.php on line 63
+
+2023-10-29T13:30:12+00:00 CRITICAL Uncaught Error: Class "OTP\SplClassLoader" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-otp-verification/autoload.php:63
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-otp-verification/miniorange_validation_settings.php(54): require_once()
+#1 /chroot/home/giftoco/gifto.co/html/wp-admin/includes/plugin.php(2318): include_once('...')
+#2 /chroot/home/giftoco/gifto.co/html/wp-admin/plugins.php(192): plugin_sandbox_scrape('...')
+#3 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-otp-verification/autoload.php on line 63
+
+2023-10-29T13:30:12+00:00 CRITICAL Uncaught Error: Class "OTP\SplClassLoader" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-otp-verification/autoload.php:63
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-otp-verification/miniorange_validation_settings.php(54): require_once()
+#1 /chroot/home/giftoco/gifto.co/html/wp-admin/includes/plugin.php(2318): include_once('...')
+#2 /chroot/home/giftoco/gifto.co/html/wp-admin/plugins.php(192): plugin_sandbox_scrape('...')
+#3 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-otp-verification/autoload.php on line 63
+

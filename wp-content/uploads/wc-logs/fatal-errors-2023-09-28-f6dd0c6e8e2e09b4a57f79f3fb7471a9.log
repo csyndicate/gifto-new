@@ -1,0 +1,10 @@
+2023-09-28T09:48:18+00:00 CRITICAL Uncaught Error: Failed opening required '/chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/social_apps/.php' (include_path='.:/opt/remi/php80/root/usr/share/pear:/opt/remi/php80/root/usr/share/php:/usr/share/pear:/usr/share/php') in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/view/config_apps/mo_openid_config_apps.php:40
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/miniorange_openid_sso_settings_page.php(232): mo_openid_show_apps()
+#1 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): mo_register_openid('')
+#2 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /chroot/home/giftoco/gifto.co/html/wp-admin/admin.php(259): do_action('...')
+#5 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/view/config_apps/mo_openid_config_apps.php on line 40
+

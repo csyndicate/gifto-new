@@ -1,0 +1,564 @@
+2023-09-27T05:12:41+00:00 CRITICAL Uncaught Error: Failed opening required '/chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/social_apps/.php' (include_path='.:/opt/remi/php80/root/usr/share/pear:/opt/remi/php80/root/usr/share/php:/usr/share/pear:/usr/share/php') in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/view/config_apps/mo_openid_config_apps.php:40
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/miniorange_openid_sso_settings_page.php(232): mo_openid_show_apps()
+#1 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): mo_register_openid('')
+#2 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /chroot/home/giftoco/gifto.co/html/wp-admin/admin.php(259): do_action('...')
+#5 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/view/config_apps/mo_openid_config_apps.php on line 40
+
+2023-09-27T05:13:49+00:00 CRITICAL Uncaught Error: Failed opening required '/chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/social_apps/.php' (include_path='.:/opt/remi/php80/root/usr/share/pear:/opt/remi/php80/root/usr/share/php:/usr/share/pear:/usr/share/php') in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/view/config_apps/mo_openid_config_apps.php:40
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/miniorange_openid_sso_settings_page.php(232): mo_openid_show_apps()
+#1 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): mo_register_openid('')
+#2 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /chroot/home/giftoco/gifto.co/html/wp-admin/admin.php(259): do_action('...')
+#5 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/view/config_apps/mo_openid_config_apps.php on line 40
+
+2023-09-27T05:25:35+00:00 CRITICAL Uncaught Error: Class "mo_" not found in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/view/config_apps/mo_openid_config_apps.php:42
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/miniorange_openid_sso_settings_page.php(232): mo_openid_show_apps()
+#1 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): mo_register_openid('')
+#2 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /chroot/home/giftoco/gifto.co/html/wp-admin/admin.php(259): do_action('...')
+#5 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/view/config_apps/mo_openid_config_apps.php on line 42
+
+2023-09-27T05:26:35+00:00 CRITICAL Uncaught Error: Call to undefined function mo_() in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/view/config_apps/mo_openid_config_apps.php:42
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/miniorange_openid_sso_settings_page.php(232): mo_openid_show_apps()
+#1 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): mo_register_openid('')
+#2 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /chroot/home/giftoco/gifto.co/html/wp-admin/admin.php(259): do_action('...')
+#5 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/view/config_apps/mo_openid_config_apps.php on line 42
+
+2023-09-27T05:36:46+00:00 CRITICAL Uncaught Error: Call to undefined function mo_facebook() in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/view/config_apps/mo_openid_config_apps.php:42
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/miniorange_openid_sso_settings_page.php(232): mo_openid_show_apps()
+#1 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): mo_register_openid('')
+#2 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /chroot/home/giftoco/gifto.co/html/wp-admin/admin.php(259): do_action('...')
+#5 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/view/config_apps/mo_openid_config_apps.php on line 42
+
+2023-09-27T06:21:17+00:00 CRITICAL Uncaught Error: Failed opening required '/chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/social_apps/.php' (include_path='.:/opt/remi/php80/root/usr/share/pear:/opt/remi/php80/root/usr/share/php:/usr/share/pear:/usr/share/php') in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/view/config_apps/mo_openid_config_apps.php:40
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/miniorange_openid_sso_settings_page.php(232): mo_openid_show_apps()
+#1 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): mo_register_openid('')
+#2 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /chroot/home/giftoco/gifto.co/html/wp-admin/admin.php(259): do_action('...')
+#5 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/view/config_apps/mo_openid_config_apps.php on line 40
+
+2023-09-27T06:28:00+00:00 CRITICAL Uncaught Error: Failed opening required '/chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/social_apps/.php' (include_path='.:/opt/remi/php80/root/usr/share/pear:/opt/remi/php80/root/usr/share/php:/usr/share/pear:/usr/share/php') in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/view/config_apps/mo_openid_config_apps.php:40
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/miniorange_openid_sso_settings_page.php(232): mo_openid_show_apps()
+#1 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): mo_register_openid('')
+#2 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /chroot/home/giftoco/gifto.co/html/wp-admin/admin.php(259): do_action('...')
+#5 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/view/config_apps/mo_openid_config_apps.php on line 40
+
+2023-09-27T06:40:09+00:00 CRITICAL Uncaught Error: Failed opening required '/chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/social_apps/.php' (include_path='.:/opt/remi/php80/root/usr/share/pear:/opt/remi/php80/root/usr/share/php:/usr/share/pear:/usr/share/php') in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/view/config_apps/mo_openid_config_apps.php:40
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/miniorange_openid_sso_settings_page.php(232): mo_openid_show_apps()
+#1 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): mo_register_openid('')
+#2 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /chroot/home/giftoco/gifto.co/html/wp-admin/admin.php(259): do_action('...')
+#5 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/view/config_apps/mo_openid_config_apps.php on line 40
+
+2023-09-27T06:49:46+00:00 CRITICAL Uncaught Error: Failed opening required '/chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/social_apps/.php' (include_path='.:/opt/remi/php80/root/usr/share/pear:/opt/remi/php80/root/usr/share/php:/usr/share/pear:/usr/share/php') in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/view/config_apps/mo_openid_config_apps.php:40
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/miniorange_openid_sso_settings_page.php(232): mo_openid_show_apps()
+#1 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): mo_register_openid('')
+#2 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /chroot/home/giftoco/gifto.co/html/wp-admin/admin.php(259): do_action('...')
+#5 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/view/config_apps/mo_openid_config_apps.php on line 40
+
+2023-09-27T06:50:05+00:00 CRITICAL Uncaught Error: Failed opening required '/chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/social_apps/.php' (include_path='.:/opt/remi/php80/root/usr/share/pear:/opt/remi/php80/root/usr/share/php:/usr/share/pear:/usr/share/php') in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/view/config_apps/mo_openid_config_apps.php:40
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/miniorange_openid_sso_settings_page.php(232): mo_openid_show_apps()
+#1 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): mo_register_openid('')
+#2 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /chroot/home/giftoco/gifto.co/html/wp-admin/admin.php(259): do_action('...')
+#5 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/view/config_apps/mo_openid_config_apps.php on line 40
+
+2023-09-27T07:25:07+00:00 CRITICAL Uncaught Error: Failed opening required '/chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/social_apps/.php' (include_path='.:/opt/remi/php80/root/usr/share/pear:/opt/remi/php80/root/usr/share/php:/usr/share/pear:/usr/share/php') in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/view/config_apps/mo_openid_config_apps.php:40
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/miniorange_openid_sso_settings_page.php(232): mo_openid_show_apps()
+#1 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): mo_register_openid('')
+#2 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /chroot/home/giftoco/gifto.co/html/wp-admin/admin.php(259): do_action('...')
+#5 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/view/config_apps/mo_openid_config_apps.php on line 40
+
+2023-09-27T07:26:22+00:00 CRITICAL Uncaught Error: Failed opening required '/chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/social_apps/.php' (include_path='.:/opt/remi/php80/root/usr/share/pear:/opt/remi/php80/root/usr/share/php:/usr/share/pear:/usr/share/php') in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/view/config_apps/mo_openid_config_apps.php:40
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/miniorange_openid_sso_settings_page.php(232): mo_openid_show_apps()
+#1 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): mo_register_openid('')
+#2 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /chroot/home/giftoco/gifto.co/html/wp-admin/admin.php(259): do_action('...')
+#5 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/view/config_apps/mo_openid_config_apps.php on line 40
+
+2023-09-27T07:51:25+00:00 CRITICAL Uncaught Error: Failed opening required '/chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/social_apps/.php' (include_path='.:/opt/remi/php80/root/usr/share/pear:/opt/remi/php80/root/usr/share/php:/usr/share/pear:/usr/share/php') in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/view/config_apps/mo_openid_config_apps.php:40
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/miniorange_openid_sso_settings_page.php(232): mo_openid_show_apps()
+#1 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): mo_register_openid('')
+#2 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /chroot/home/giftoco/gifto.co/html/wp-admin/admin.php(259): do_action('...')
+#5 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/view/config_apps/mo_openid_config_apps.php on line 40
+
+2023-09-27T07:51:36+00:00 CRITICAL Uncaught Error: Failed opening required '/chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/social_apps/.php' (include_path='.:/opt/remi/php80/root/usr/share/pear:/opt/remi/php80/root/usr/share/php:/usr/share/pear:/usr/share/php') in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/view/config_apps/mo_openid_config_apps.php:40
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/miniorange_openid_sso_settings_page.php(232): mo_openid_show_apps()
+#1 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): mo_register_openid('')
+#2 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /chroot/home/giftoco/gifto.co/html/wp-admin/admin.php(259): do_action('...')
+#5 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/view/config_apps/mo_openid_config_apps.php on line 40
+
+2023-09-27T07:53:27+00:00 CRITICAL Uncaught Error: Failed opening required '/chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/social_apps/.php' (include_path='.:/opt/remi/php80/root/usr/share/pear:/opt/remi/php80/root/usr/share/php:/usr/share/pear:/usr/share/php') in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/view/config_apps/mo_openid_config_apps.php:40
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/miniorange_openid_sso_settings_page.php(232): mo_openid_show_apps()
+#1 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): mo_register_openid('')
+#2 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /chroot/home/giftoco/gifto.co/html/wp-admin/admin.php(259): do_action('...')
+#5 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/view/config_apps/mo_openid_config_apps.php on line 40
+
+2023-09-27T07:59:41+00:00 CRITICAL Uncaught Error: Failed opening required '/chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/social_apps/.php' (include_path='.:/opt/remi/php80/root/usr/share/pear:/opt/remi/php80/root/usr/share/php:/usr/share/pear:/usr/share/php') in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/view/config_apps/mo_openid_config_apps.php:40
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/miniorange_openid_sso_settings_page.php(232): mo_openid_show_apps()
+#1 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): mo_register_openid('')
+#2 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /chroot/home/giftoco/gifto.co/html/wp-admin/admin.php(259): do_action('...')
+#5 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/view/config_apps/mo_openid_config_apps.php on line 40
+
+2023-09-27T08:02:33+00:00 CRITICAL Uncaught Error: Failed opening required '/chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/social_apps/.php' (include_path='.:/opt/remi/php80/root/usr/share/pear:/opt/remi/php80/root/usr/share/php:/usr/share/pear:/usr/share/php') in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/view/config_apps/mo_openid_config_apps.php:40
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/miniorange_openid_sso_settings_page.php(232): mo_openid_show_apps()
+#1 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): mo_register_openid('')
+#2 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /chroot/home/giftoco/gifto.co/html/wp-admin/admin.php(259): do_action('...')
+#5 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/view/config_apps/mo_openid_config_apps.php on line 40
+
+2023-09-27T08:15:07+00:00 CRITICAL Uncaught Error: Failed opening required '/chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/social_apps/.php' (include_path='.:/opt/remi/php80/root/usr/share/pear:/opt/remi/php80/root/usr/share/php:/usr/share/pear:/usr/share/php') in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/view/config_apps/mo_openid_config_apps.php:40
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/miniorange_openid_sso_settings_page.php(232): mo_openid_show_apps()
+#1 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): mo_register_openid('')
+#2 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /chroot/home/giftoco/gifto.co/html/wp-admin/admin.php(259): do_action('...')
+#5 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/view/config_apps/mo_openid_config_apps.php on line 40
+
+2023-09-27T09:47:09+00:00 CRITICAL Uncaught Error: Failed opening required '/chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/social_apps/.php' (include_path='.:/opt/remi/php80/root/usr/share/pear:/opt/remi/php80/root/usr/share/php:/usr/share/pear:/usr/share/php') in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/view/config_apps/mo_openid_config_apps.php:40
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/miniorange_openid_sso_settings_page.php(232): mo_openid_show_apps()
+#1 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): mo_register_openid('')
+#2 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#3 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /chroot/home/giftoco/gifto.co/html/wp-admin/admin.php(259): do_action('...')
+#5 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/miniorange-login-openid/view/config_apps/mo_openid_config_apps.php on line 40
+
+2023-09-27T10:25:54+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WC_HitPay::custom_payment_gateway_icons(), 1 passed in /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php on line 310 and exactly 2 expected in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/hitpay-payment-gateway/includes/regular-checkout.php:178
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_HitPay->custom_payment_gateway_icons('...')
+#1 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(205): WP_Hook->apply_filters('...', Array)
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/business-api-plugin-woocommerce/includes/function/paymentgatwayclass.php(36): apply_filters('...', '...')
+#3 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/class-wc-payment-gateways.php(97): WC_Mamopay_Gateway->__construct()
+#4 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/settings/class-wc-settings-payment-gateways.php(299): WC_Payment_Gateways->init()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_Settings_Payment_Gateways->save('')
+#6 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#7 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#8 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-settings.php(77): do_action('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-menus.php(153): WC_Admin_Settings::save()
+#10 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_Admin_Menus->save_settings('')
+#11 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#13 /chroot/home/giftoco/gifto.co/html/wp-settings.php(654): do_action('...')
+#14 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#15 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#16 /chroot/home/giftoco/gifto.co/html/wp-admin/admin.php(34): require_once('...')
+#17 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/hitpay-payment-gateway/includes/regular-checkout.php on line 178
+
+2023-09-27T10:26:49+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WC_HitPay::custom_payment_gateway_icons(), 1 passed in /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php on line 310 and exactly 2 expected in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/hitpay-payment-gateway/includes/regular-checkout.php:178
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_HitPay->custom_payment_gateway_icons('...')
+#1 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(205): WP_Hook->apply_filters('...', Array)
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/business-api-plugin-woocommerce/includes/function/paymentgatwayclass.php(36): apply_filters('...', '...')
+#3 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/class-wc-payment-gateways.php(97): WC_Mamopay_Gateway->__construct()
+#4 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/settings/class-wc-settings-payment-gateways.php(305): WC_Payment_Gateways->init()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_Settings_Payment_Gateways->save('')
+#6 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#7 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#8 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-settings.php(77): do_action('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-menus.php(151): WC_Admin_Settings::save()
+#10 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_Admin_Menus->save_settings('')
+#11 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#13 /chroot/home/giftoco/gifto.co/html/wp-settings.php(654): do_action('...')
+#14 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#15 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#16 /chroot/home/giftoco/gifto.co/html/wp-admin/admin.php(34): require_once('...')
+#17 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/hitpay-payment-gateway/includes/regular-checkout.php on line 178
+
+2023-09-27T10:58:47+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WC_HitPay::custom_payment_gateway_icons(), 1 passed in /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php on line 310 and exactly 2 expected in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/hitpay-payment-gateway/includes/regular-checkout.php:178
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_HitPay->custom_payment_gateway_icons('...')
+#1 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(205): WP_Hook->apply_filters('...', Array)
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/business-api-plugin-woocommerce/includes/function/paymentgatwayclass.php(36): apply_filters('...', '...')
+#3 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/class-wc-payment-gateways.php(97): WC_Mamopay_Gateway->__construct()
+#4 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/settings/class-wc-settings-payment-gateways.php(299): WC_Payment_Gateways->init()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_Settings_Payment_Gateways->save('')
+#6 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#7 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#8 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-settings.php(77): do_action('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-menus.php(153): WC_Admin_Settings::save()
+#10 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_Admin_Menus->save_settings('')
+#11 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#13 /chroot/home/giftoco/gifto.co/html/wp-settings.php(654): do_action('...')
+#14 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#15 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#16 /chroot/home/giftoco/gifto.co/html/wp-admin/admin.php(34): require_once('...')
+#17 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/hitpay-payment-gateway/includes/regular-checkout.php on line 178
+
+2023-09-27T11:05:06+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WC_HitPay::custom_payment_gateway_icons(), 1 passed in /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php on line 310 and exactly 2 expected in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/hitpay-payment-gateway/includes/regular-checkout.php:178
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_HitPay->custom_payment_gateway_icons('...')
+#1 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(205): WP_Hook->apply_filters('...', Array)
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/business-api-plugin-woocommerce/includes/function/paymentgatwayclass.php(36): apply_filters('...', '...')
+#3 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/class-wc-payment-gateways.php(97): WC_Mamopay_Gateway->__construct()
+#4 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/settings/class-wc-settings-payment-gateways.php(305): WC_Payment_Gateways->init()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_Settings_Payment_Gateways->save('')
+#6 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#7 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#8 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-settings.php(77): do_action('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-menus.php(151): WC_Admin_Settings::save()
+#10 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_Admin_Menus->save_settings('')
+#11 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#13 /chroot/home/giftoco/gifto.co/html/wp-settings.php(654): do_action('...')
+#14 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#15 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#16 /chroot/home/giftoco/gifto.co/html/wp-admin/admin.php(34): require_once('...')
+#17 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/hitpay-payment-gateway/includes/regular-checkout.php on line 178
+
+2023-09-27T11:05:30+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WC_HitPay::custom_payment_gateway_icons(), 1 passed in /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php on line 310 and exactly 2 expected in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/hitpay-payment-gateway/includes/regular-checkout.php:178
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_HitPay->custom_payment_gateway_icons('...')
+#1 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(205): WP_Hook->apply_filters('...', Array)
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/business-api-plugin-woocommerce/includes/function/paymentgatwayclass.php(36): apply_filters('...', '...')
+#3 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/class-wc-payment-gateways.php(97): WC_Mamopay_Gateway->__construct()
+#4 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/settings/class-wc-settings-payment-gateways.php(299): WC_Payment_Gateways->init()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_Settings_Payment_Gateways->save('')
+#6 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#7 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#8 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-settings.php(77): do_action('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-menus.php(153): WC_Admin_Settings::save()
+#10 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_Admin_Menus->save_settings('')
+#11 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#13 /chroot/home/giftoco/gifto.co/html/wp-settings.php(654): do_action('...')
+#14 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#15 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#16 /chroot/home/giftoco/gifto.co/html/wp-admin/admin.php(34): require_once('...')
+#17 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/hitpay-payment-gateway/includes/regular-checkout.php on line 178
+
+2023-09-27T12:33:56+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WC_HitPay::custom_payment_gateway_icons(), 1 passed in /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php on line 310 and exactly 2 expected in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/hitpay-payment-gateway/includes/regular-checkout.php:178
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_HitPay->custom_payment_gateway_icons('...')
+#1 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(205): WP_Hook->apply_filters('...', Array)
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/business-api-plugin-woocommerce/includes/function/paymentgatwayclass.php(36): apply_filters('...', '...')
+#3 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/class-wc-payment-gateways.php(97): WC_Mamopay_Gateway->__construct()
+#4 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/settings/class-wc-settings-payment-gateways.php(299): WC_Payment_Gateways->init()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_Settings_Payment_Gateways->save('')
+#6 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#7 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#8 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-settings.php(77): do_action('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-menus.php(153): WC_Admin_Settings::save()
+#10 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_Admin_Menus->save_settings('')
+#11 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#13 /chroot/home/giftoco/gifto.co/html/wp-settings.php(654): do_action('...')
+#14 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#15 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#16 /chroot/home/giftoco/gifto.co/html/wp-admin/admin.php(34): require_once('...')
+#17 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/hitpay-payment-gateway/includes/regular-checkout.php on line 178
+
+2023-09-27T12:39:18+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WC_HitPay::custom_payment_gateway_icons(), 1 passed in /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php on line 310 and exactly 2 expected in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/hitpay-payment-gateway/includes/regular-checkout.php:178
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_HitPay->custom_payment_gateway_icons('...')
+#1 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(205): WP_Hook->apply_filters('...', Array)
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/business-api-plugin-woocommerce/includes/function/paymentgatwayclass.php(36): apply_filters('...', '...')
+#3 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/class-wc-payment-gateways.php(97): WC_Mamopay_Gateway->__construct()
+#4 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/settings/class-wc-settings-payment-gateways.php(299): WC_Payment_Gateways->init()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_Settings_Payment_Gateways->save('')
+#6 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#7 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#8 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-settings.php(77): do_action('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-menus.php(153): WC_Admin_Settings::save()
+#10 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_Admin_Menus->save_settings('')
+#11 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#13 /chroot/home/giftoco/gifto.co/html/wp-settings.php(654): do_action('...')
+#14 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#15 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#16 /chroot/home/giftoco/gifto.co/html/wp-admin/admin.php(34): require_once('...')
+#17 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/hitpay-payment-gateway/includes/regular-checkout.php on line 178
+
+2023-09-27T12:51:30+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WC_HitPay::custom_payment_gateway_icons(), 1 passed in /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php on line 310 and exactly 2 expected in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/hitpay-payment-gateway/includes/regular-checkout.php:178
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_HitPay->custom_payment_gateway_icons('...')
+#1 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(205): WP_Hook->apply_filters('...', Array)
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/business-api-plugin-woocommerce/includes/function/paymentgatwayclass.php(36): apply_filters('...', '...')
+#3 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/class-wc-payment-gateways.php(97): WC_Mamopay_Gateway->__construct()
+#4 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/settings/class-wc-settings-payment-gateways.php(305): WC_Payment_Gateways->init()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_Settings_Payment_Gateways->save('')
+#6 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#7 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#8 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-settings.php(77): do_action('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-menus.php(151): WC_Admin_Settings::save()
+#10 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_Admin_Menus->save_settings('')
+#11 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#13 /chroot/home/giftoco/gifto.co/html/wp-settings.php(654): do_action('...')
+#14 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#15 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#16 /chroot/home/giftoco/gifto.co/html/wp-admin/admin.php(34): require_once('...')
+#17 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/hitpay-payment-gateway/includes/regular-checkout.php on line 178
+
+2023-09-27T12:53:15+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WC_HitPay::custom_payment_gateway_icons(), 1 passed in /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php on line 310 and exactly 2 expected in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/hitpay-payment-gateway/includes/regular-checkout.php:178
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_HitPay->custom_payment_gateway_icons('...')
+#1 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(205): WP_Hook->apply_filters('...', Array)
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/business-api-plugin-woocommerce/includes/function/paymentgatwayclass.php(36): apply_filters('...', '...')
+#3 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/class-wc-payment-gateways.php(97): WC_Mamopay_Gateway->__construct()
+#4 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/settings/class-wc-settings-payment-gateways.php(305): WC_Payment_Gateways->init()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_Settings_Payment_Gateways->save('')
+#6 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#7 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#8 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-settings.php(77): do_action('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-menus.php(151): WC_Admin_Settings::save()
+#10 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_Admin_Menus->save_settings('')
+#11 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#13 /chroot/home/giftoco/gifto.co/html/wp-settings.php(654): do_action('...')
+#14 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#15 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#16 /chroot/home/giftoco/gifto.co/html/wp-admin/admin.php(34): require_once('...')
+#17 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/hitpay-payment-gateway/includes/regular-checkout.php on line 178
+
+2023-09-27T12:55:43+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WC_HitPay::custom_payment_gateway_icons(), 1 passed in /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php on line 310 and exactly 2 expected in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/hitpay-payment-gateway/includes/regular-checkout.php:178
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_HitPay->custom_payment_gateway_icons('...')
+#1 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(205): WP_Hook->apply_filters('...', Array)
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/business-api-plugin-woocommerce/includes/function/paymentgatwayclass.php(36): apply_filters('...', '...')
+#3 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/class-wc-payment-gateways.php(97): WC_Mamopay_Gateway->__construct()
+#4 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/settings/class-wc-settings-payment-gateways.php(305): WC_Payment_Gateways->init()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_Settings_Payment_Gateways->save('')
+#6 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#7 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#8 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-settings.php(77): do_action('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-menus.php(151): WC_Admin_Settings::save()
+#10 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_Admin_Menus->save_settings('')
+#11 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#13 /chroot/home/giftoco/gifto.co/html/wp-settings.php(654): do_action('...')
+#14 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#15 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#16 /chroot/home/giftoco/gifto.co/html/wp-admin/admin.php(34): require_once('...')
+#17 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/hitpay-payment-gateway/includes/regular-checkout.php on line 178
+
+2023-09-27T13:10:11+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WC_HitPay::custom_payment_gateway_icons(), 1 passed in /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php on line 310 and exactly 2 expected in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/hitpay-payment-gateway/includes/regular-checkout.php:178
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_HitPay->custom_payment_gateway_icons('...')
+#1 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(205): WP_Hook->apply_filters('...', Array)
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/business-api-plugin-woocommerce/includes/function/paymentgatwayclass.php(36): apply_filters('...', '...')
+#3 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/class-wc-payment-gateways.php(97): WC_Mamopay_Gateway->__construct()
+#4 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/settings/class-wc-settings-payment-gateways.php(305): WC_Payment_Gateways->init()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_Settings_Payment_Gateways->save('')
+#6 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#7 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#8 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-settings.php(77): do_action('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-menus.php(151): WC_Admin_Settings::save()
+#10 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_Admin_Menus->save_settings('')
+#11 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#13 /chroot/home/giftoco/gifto.co/html/wp-settings.php(654): do_action('...')
+#14 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#15 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#16 /chroot/home/giftoco/gifto.co/html/wp-admin/admin.php(34): require_once('...')
+#17 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/hitpay-payment-gateway/includes/regular-checkout.php on line 178
+
+2023-09-27T13:10:44+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WC_HitPay::custom_payment_gateway_icons(), 1 passed in /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php on line 310 and exactly 2 expected in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/hitpay-payment-gateway/includes/regular-checkout.php:178
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_HitPay->custom_payment_gateway_icons('...')
+#1 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(205): WP_Hook->apply_filters('...', Array)
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/business-api-plugin-woocommerce/includes/function/paymentgatwayclass.php(36): apply_filters('...', '...')
+#3 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/class-wc-payment-gateways.php(97): WC_Mamopay_Gateway->__construct()
+#4 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/settings/class-wc-settings-payment-gateways.php(305): WC_Payment_Gateways->init()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_Settings_Payment_Gateways->save('')
+#6 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#7 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#8 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-settings.php(77): do_action('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-menus.php(151): WC_Admin_Settings::save()
+#10 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_Admin_Menus->save_settings('')
+#11 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#13 /chroot/home/giftoco/gifto.co/html/wp-settings.php(654): do_action('...')
+#14 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#15 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#16 /chroot/home/giftoco/gifto.co/html/wp-admin/admin.php(34): require_once('...')
+#17 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/hitpay-payment-gateway/includes/regular-checkout.php on line 178
+
+2023-09-27T13:11:28+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WC_HitPay::custom_payment_gateway_icons(), 1 passed in /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php on line 310 and exactly 2 expected in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/hitpay-payment-gateway/includes/regular-checkout.php:178
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_HitPay->custom_payment_gateway_icons('...')
+#1 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(205): WP_Hook->apply_filters('...', Array)
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/business-api-plugin-woocommerce/includes/function/paymentgatwayclass.php(36): apply_filters('...', '...')
+#3 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/class-wc-payment-gateways.php(97): WC_Mamopay_Gateway->__construct()
+#4 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/settings/class-wc-settings-payment-gateways.php(299): WC_Payment_Gateways->init()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_Settings_Payment_Gateways->save('')
+#6 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#7 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#8 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-settings.php(77): do_action('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-menus.php(153): WC_Admin_Settings::save()
+#10 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_Admin_Menus->save_settings('')
+#11 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#13 /chroot/home/giftoco/gifto.co/html/wp-settings.php(654): do_action('...')
+#14 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#15 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#16 /chroot/home/giftoco/gifto.co/html/wp-admin/admin.php(34): require_once('...')
+#17 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/hitpay-payment-gateway/includes/regular-checkout.php on line 178
+
+2023-09-27T13:12:16+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WC_HitPay::custom_payment_gateway_icons(), 1 passed in /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php on line 310 and exactly 2 expected in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/hitpay-payment-gateway/includes/regular-checkout.php:178
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_HitPay->custom_payment_gateway_icons('...')
+#1 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(205): WP_Hook->apply_filters('...', Array)
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/business-api-plugin-woocommerce/includes/function/paymentgatwayclass.php(36): apply_filters('...', '...')
+#3 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/class-wc-payment-gateways.php(97): WC_Mamopay_Gateway->__construct()
+#4 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/settings/class-wc-settings-payment-gateways.php(299): WC_Payment_Gateways->init()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_Settings_Payment_Gateways->save('')
+#6 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#7 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#8 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-settings.php(77): do_action('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-menus.php(153): WC_Admin_Settings::save()
+#10 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_Admin_Menus->save_settings('')
+#11 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#13 /chroot/home/giftoco/gifto.co/html/wp-settings.php(654): do_action('...')
+#14 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#15 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#16 /chroot/home/giftoco/gifto.co/html/wp-admin/admin.php(34): require_once('...')
+#17 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/hitpay-payment-gateway/includes/regular-checkout.php on line 178
+
+2023-09-27T13:16:36+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WC_HitPay::custom_payment_gateway_icons(), 1 passed in /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php on line 310 and exactly 2 expected in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/hitpay-payment-gateway/includes/regular-checkout.php:178
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_HitPay->custom_payment_gateway_icons('...')
+#1 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(205): WP_Hook->apply_filters('...', Array)
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/business-api-plugin-woocommerce/includes/function/paymentgatwayclass.php(36): apply_filters('...', '...')
+#3 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/class-wc-payment-gateways.php(97): WC_Mamopay_Gateway->__construct()
+#4 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/settings/class-wc-settings-payment-gateways.php(299): WC_Payment_Gateways->init()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_Settings_Payment_Gateways->save('')
+#6 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#7 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#8 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-settings.php(77): do_action('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-menus.php(153): WC_Admin_Settings::save()
+#10 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_Admin_Menus->save_settings('')
+#11 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#13 /chroot/home/giftoco/gifto.co/html/wp-settings.php(654): do_action('...')
+#14 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#15 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#16 /chroot/home/giftoco/gifto.co/html/wp-admin/admin.php(34): require_once('...')
+#17 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/hitpay-payment-gateway/includes/regular-checkout.php on line 178
+
+2023-09-27T13:17:09+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WC_HitPay::custom_payment_gateway_icons(), 1 passed in /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php on line 310 and exactly 2 expected in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/hitpay-payment-gateway/includes/regular-checkout.php:178
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_HitPay->custom_payment_gateway_icons('...')
+#1 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(205): WP_Hook->apply_filters('...', Array)
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/business-api-plugin-woocommerce/includes/function/paymentgatwayclass.php(36): apply_filters('...', '...')
+#3 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/class-wc-payment-gateways.php(97): WC_Mamopay_Gateway->__construct()
+#4 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/settings/class-wc-settings-payment-gateways.php(299): WC_Payment_Gateways->init()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_Settings_Payment_Gateways->save('')
+#6 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#7 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#8 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-settings.php(77): do_action('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-menus.php(153): WC_Admin_Settings::save()
+#10 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_Admin_Menus->save_settings('')
+#11 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#13 /chroot/home/giftoco/gifto.co/html/wp-settings.php(654): do_action('...')
+#14 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#15 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#16 /chroot/home/giftoco/gifto.co/html/wp-admin/admin.php(34): require_once('...')
+#17 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/hitpay-payment-gateway/includes/regular-checkout.php on line 178
+
+2023-09-27T13:18:52+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WC_HitPay::custom_payment_gateway_icons(), 1 passed in /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php on line 310 and exactly 2 expected in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/hitpay-payment-gateway/includes/regular-checkout.php:178
+Stack trace:
+#0 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_HitPay->custom_payment_gateway_icons('...')
+#1 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(205): WP_Hook->apply_filters('...', Array)
+#2 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/business-api-plugin-woocommerce/includes/function/paymentgatwayclass.php(36): apply_filters('...', '...')
+#3 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/class-wc-payment-gateways.php(97): WC_Mamopay_Gateway->__construct()
+#4 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/settings/class-wc-settings-payment-gateways.php(299): WC_Payment_Gateways->init()
+#5 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_Settings_Payment_Gateways->save('')
+#6 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#7 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#8 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-settings.php(77): do_action('...')
+#9 /chroot/home/giftoco/gifto.co/html/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-menus.php(153): WC_Admin_Settings::save()
+#10 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(310): WC_Admin_Menus->save_settings('')
+#11 /chroot/home/giftoco/gifto.co/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 /chroot/home/giftoco/gifto.co/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#13 /chroot/home/giftoco/gifto.co/html/wp-settings.php(654): do_action('...')
+#14 /chroot/home/giftoco/gifto.co/html/wp-config.php(124): require_once('...')
+#15 /chroot/home/giftoco/gifto.co/html/wp-load.php(50): require_once('...')
+#16 /chroot/home/giftoco/gifto.co/html/wp-admin/admin.php(34): require_once('...')
+#17 {main}
+  thrown in /chroot/home/giftoco/gifto.co/html/wp-content/plugins/hitpay-payment-gateway/includes/regular-checkout.php on line 178
+
