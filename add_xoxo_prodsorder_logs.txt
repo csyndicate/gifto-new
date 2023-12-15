@@ -1,0 +1,574 @@
+
+
+Order ID: 514054
+Total Reward Products/Orders: 1
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2023-09-26 04:48:02am
+
+
+Order ID: 514055
+Total Reward Products/Orders: 1
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2023-09-26 05:03:10am
+
+
+Order ID: 514056
+Total Reward Products/Orders: 1
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2023-09-26 05:27:45am
+Array
+(
+    [0] => Ding Order Status
+    [1] => Array
+        (
+            [ResultCode] => 4
+            [ErrorCodes] => Array
+                (
+                    [0] => Array
+                        (
+                            [Code] => AuthenticationFailed
+                            [Context] => 
+                        )
+
+                )
+
+        )
+
+)
+________________________________________________________{
+                        "SkuCode": "PGUSUS53921",
+                        "SendValue": 3.75,
+                        "SendCurrencyIso": "AED",
+                        "AccountNumber":"0000000000",
+                        "DistributorRef": "epaf5",
+                        "Settings": [
+                        {
+                        "Name": "znd2iui021",
+                        "Value": "k7r10lc829"
+                        }
+                        ],
+                        "ValidateOnly": false,
+                        "BillRef": "string"
+                      }
+
+Order ID: 514059
+Total Reward Products/Orders: 1
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2023-09-26 05:33:59am
+Array
+(
+    [0] => Ding Order Status
+    [1] => Array
+        (
+            [ResultCode] => 4
+            [ErrorCodes] => Array
+                (
+                    [0] => Array
+                        (
+                            [Code] => AuthenticationFailed
+                            [Context] => 
+                        )
+
+                )
+
+        )
+
+)
+________________________________________________________{
+                        "SkuCode": "PGUSUS53921",
+                        "SendValue": 3.75,
+                        "SendCurrencyIso": "AED",
+                        "AccountNumber":"0000000000",
+                        "DistributorRef": "338r6",
+                        "Settings": [
+                        {
+                        "Name": "d6qazgzfqk",
+                        "Value": "b6uwviki9"
+                        }
+                        ],
+                        "ValidateOnly": false,
+                        "BillRef": "string"
+                      }
+
+Order ID: 514061
+Total Reward Products/Orders: 1
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2023-09-26 05:36:49am
+
+
+Order ID: 514062
+Total Reward Products/Orders: 1
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2023-09-26 05:47:37am
+Array
+(
+    [0] => Ding Order Status
+    [1] => Array
+        (
+            [TransferRecord] => Array
+                (
+                    [TransferId] => Array
+                        (
+                            [TransferRef] => 669837017
+                            [DistributorRef] => 87eus
+                        )
+
+                    [SkuCode] => PGUSUS53921
+                    [Price] => Array
+                        (
+                            [CustomerFee] => 0
+                            [DistributorFee] => 0
+                            [ReceiveValue] => 1
+                            [ReceiveCurrencyIso] => USD
+                            [ReceiveValueExcludingTax] => 1
+                            [TaxRate] => 0
+                            [SendValue] => 3.75
+                            [SendCurrencyIso] => AED
+                        )
+
+                    [CommissionApplied] => 0.19
+                    [StartedUtc] => 2023-09-26T05:47:37Z
+                    [CompletedUtc] => 2023-09-26T05:47:39Z
+                    [ProcessingState] => Complete
+                    [ReceiptText] => Serial Number: csjex4tie
+Barcode: 5060102953692
+Pin : LZGiKPjS2v294aMfab
+
+                    [ReceiptParams] => Array
+                        (
+                            [pin] => LZGiKPjS2v294aMfab
+                        )
+
+                    [AccountNumber] => 0000000000
+                )
+
+            [ResultCode] => 1
+            [ErrorCodes] => Array
+                (
+                )
+
+        )
+
+)
+________________________________________________________{
+                        "SkuCode": "PGUSUS53921",
+                        "SendValue": 3.75,
+                        "SendCurrencyIso": "AED",
+                        "AccountNumber":"0000000000",
+                        "DistributorRef": "87eus",
+                        "Settings": [
+                        {
+                        "Name": "17bk38p5fx",
+                        "Value": "vqn27yyti"
+                        }
+                        ],
+                        "ValidateOnly": false,
+                        "BillRef": "string"
+                      }
+
+Order ID: 514063
+Total Reward Products/Orders: 1
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2023-09-26 06:02:29am
+Array
+(
+    [0] => Reward Order Status
+    [1] => stdClass Object
+        (
+            [error] => invalid_request
+            [error_description] => missing/invalid parameters authorization header
+        )
+
+)
+{
+                    "query": "plumProAPI.mutation.placeOrder",
+                    "tag": "plumProAPI",
+                    "variables": {
+                        "data":{
+                            "productId":"46545",
+                            "quantity": "1",
+                            "denomination": "100", 
+                            "email":"testdeviser@gmail.com",
+                            "contact": "+91-8708570233",
+                            
+                            
+                            "tag":"XOXO",
+                            "notifyReceiverEmail":"1",
+                            "poNumber":"514063-1"
+                                
+                        }
+                    }
+                }________________________________________________________
+
+Order ID: 514061
+Total Reward Products/Orders: 1
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2023-09-26 09:38:58am
+
+
+Order ID: 514105
+Total Reward Products/Orders: 1
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2023-09-26 11:56:22am
+Array
+(
+    [0] => Reward Order Status
+    [1] => stdClass Object
+        (
+            [error] => invalid_request
+            [error_description] => missing/invalid parameters authorization header
+        )
+
+)
+{
+                    "query": "plumProAPI.mutation.placeOrder",
+                    "tag": "plumProAPI",
+                    "variables": {
+                        "data":{
+                            "productId":"46545",
+                            "quantity": "1",
+                            "denomination": "100", 
+                            "email":"testdeviser@gmail.com",
+                            "contact": "+91-8708570233",
+                            
+                            
+                            "tag":"XOXO",
+                            "notifyReceiverEmail":"1",
+                            "poNumber":"514105-1"
+                                
+                        }
+                    }
+                }________________________________________________________
+
+Order ID: 514106
+Total Reward Products/Orders: 1
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2023-09-26 12:01:10pm
+Array
+(
+    [0] => Reward Order Status
+    [1] => stdClass Object
+        (
+            [data] => stdClass Object
+                (
+                    [placeOrder] => stdClass Object
+                        (
+                            [status] => 1
+                            [data] => stdClass Object
+                                (
+                                    [orderId] => 19412573
+                                    [orderTotal] => 4.46
+                                    [orderDiscount] => 
+                                    [discountPercent] => 
+                                    [currencyCode] => AED
+                                    [currencyValue] => 1
+                                    [amountCharged] => 4.46
+                                    [orderStatus] => complete
+                                    [deliveryStatus] => delivered
+                                    [tag] => XOXO
+                                    [quantity] => 1
+                                    [vouchers] => Array
+                                        (
+                                            [0] => stdClass Object
+                                                (
+                                                    [productId] => 46545
+                                                    [orderId] => 19412573
+                                                    [voucherCode] => https://v2.plum.gift/p5Srr4GLSVxNJhWA
+                                                    [pin] => 
+                                                    [validity] => 2024-09-26
+                                                    [amount] => 100
+                                                    [currency] => INR
+                                                    [country] => IN
+                                                    [type] => url
+                                                    [currencyValue] => 22.40144373
+                                                )
+
+                                        )
+
+                                    [voucherDetails] => Array
+                                        (
+                                            [0] => stdClass Object
+                                                (
+                                                    [orderId] => 19412573
+                                                    [productId] => 46545
+                                                    [productName] => Ola Cabs
+                                                    [currencyCode] => INR
+                                                    [productStatus] => delivered
+                                                    [denomination] => 100
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+{
+                    "query": "plumProAPI.mutation.placeOrder",
+                    "tag": "plumProAPI",
+                    "variables": {
+                        "data":{
+                            "productId":"46545",
+                            "quantity": "1",
+                            "denomination": "100", 
+                            "email":"testdeviser@gmail.com",
+                            "contact": "+91-8708570233",
+                            
+                            
+                            "tag":"XOXO",
+                            "notifyReceiverEmail":"1",
+                            "poNumber":"514106-1"
+                                
+                        }
+                    }
+                }________________________________________________________
+
+Order ID: 514107
+Total Reward Products/Orders: 1
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2023-09-26 12:10:10pm
+Array
+(
+    [0] => Reward Order Status
+    [1] => stdClass Object
+        (
+            [data] => stdClass Object
+                (
+                    [placeOrder] => stdClass Object
+                        (
+                            [status] => 1
+                            [data] => stdClass Object
+                                (
+                                    [orderId] => 
+                                    [orderTotal] => 
+                                    [orderDiscount] => 
+                                    [discountPercent] => 
+                                    [currencyCode] => 
+                                    [currencyValue] => 
+                                    [amountCharged] => 
+                                    [orderStatus] => 
+                                    [deliveryStatus] => 
+                                    [tag] => 
+                                    [quantity] => 
+                                    [vouchers] => 
+                                    [voucherDetails] => 
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+{
+                    "query": "plumProAPI.mutation.placeOrder",
+                    "tag": "plumProAPI",
+                    "variables": {
+                        "data":{
+                            "productId":"46545",
+                            "quantity": "1",
+                            "denomination": "100", 
+                            "email":"testdeviser@gmail.com",
+                            "contact": "+91-8708570233",
+                            
+                            
+                            "tag":"XOXO",
+                            "notifyReceiverEmail":"1",
+                            "poNumber":"514107-1"
+                                
+                        }
+                    }
+                }________________________________________________________
+
+Order ID: 514114
+Total Reward Products/Orders: 1
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2023-09-26 12:14:19pm
+Array
+(
+    [0] => Reward Order Status
+    [1] => stdClass Object
+        (
+            [data] => stdClass Object
+                (
+                    [placeOrder] => stdClass Object
+                        (
+                            [status] => 1
+                            [data] => stdClass Object
+                                (
+                                    [orderId] => 19412953
+                                    [orderTotal] => 4.46
+                                    [orderDiscount] => 
+                                    [discountPercent] => 
+                                    [currencyCode] => AED
+                                    [currencyValue] => 1
+                                    [amountCharged] => 4.46
+                                    [orderStatus] => complete
+                                    [deliveryStatus] => delivered
+                                    [tag] => XOXO
+                                    [quantity] => 1
+                                    [vouchers] => Array
+                                        (
+                                            [0] => stdClass Object
+                                                (
+                                                    [productId] => 46545
+                                                    [orderId] => 19412953
+                                                    [voucherCode] => https://v2.plum.gift/joWPyGMNFbi0zF4r
+                                                    [pin] => 
+                                                    [validity] => 2024-09-26
+                                                    [amount] => 100
+                                                    [currency] => INR
+                                                    [country] => IN
+                                                    [type] => url
+                                                    [currencyValue] => 22.40144373
+                                                )
+
+                                        )
+
+                                    [voucherDetails] => Array
+                                        (
+                                            [0] => stdClass Object
+                                                (
+                                                    [orderId] => 19412953
+                                                    [productId] => 46545
+                                                    [productName] => Ola Cabs
+                                                    [currencyCode] => INR
+                                                    [productStatus] => delivered
+                                                    [denomination] => 100
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+{
+                    "query": "plumProAPI.mutation.placeOrder",
+                    "tag": "plumProAPI",
+                    "variables": {
+                        "data":{
+                            "productId":"46545",
+                            "quantity": "1",
+                            "denomination": "100", 
+                            "email":"testdeviser@gmail.com",
+                            "contact": "+91-8708570233",
+                            
+                            
+                            "tag":"XOXO",
+                            "notifyReceiverEmail":"1",
+                            "poNumber":"514114-1"
+                                
+                        }
+                    }
+                }________________________________________________________
+
+Order ID: 514149
+Total Reward Products/Orders: 1
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2023-10-02 11:13:30am
+Array
+(
+    [0] => Reward Order Status
+    [1] => stdClass Object
+        (
+            [data] => stdClass Object
+                (
+                    [placeOrder] => stdClass Object
+                        (
+                            [status] => 1
+                            [data] => stdClass Object
+                                (
+                                    [orderId] => 19506549
+                                    [orderTotal] => 100
+                                    [orderDiscount] => 
+                                    [discountPercent] => 
+                                    [currencyCode] => AED
+                                    [currencyValue] => 1
+                                    [amountCharged] => 100
+                                    [orderStatus] => complete
+                                    [deliveryStatus] => delivered
+                                    [tag] => XOXO
+                                    [quantity] => 1
+                                    [vouchers] => Array
+                                        (
+                                            [0] => stdClass Object
+                                                (
+                                                    [productId] => 49260
+                                                    [orderId] => 19506549
+                                                    [voucherCode] => https://gift.shopmygiftcards.com//giftcards/preview/key_2bce4bc2-edf3-4b20-b951-79e63b4231b4
+                                                    [pin] => key_2bce4bc2-edf3-4b20-b951-79e63b4231b4
+                                                    [validity] => 2033-10-02
+                                                    [amount] => 100
+                                                    [currency] => AED
+                                                    [country] => AE
+                                                    [type] => url
+                                                    [currencyValue] => 1
+                                                )
+
+                                        )
+
+                                    [voucherDetails] => Array
+                                        (
+                                            [0] => stdClass Object
+                                                (
+                                                    [orderId] => 19506549
+                                                    [productId] => 49260
+                                                    [productName] => Amazon.ae
+                                                    [currencyCode] => AED
+                                                    [productStatus] => delivered
+                                                    [denomination] => 100
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+{
+                    "query": "plumProAPI.mutation.placeOrder",
+                    "tag": "plumProAPI",
+                    "variables": {
+                        "data":{
+                            "productId":"49260",
+                            "quantity": "1",
+                            "denomination": "100", 
+                            "email":"george@contenthq.co",
+                            "contact": "+971-504695322",
+                            
+                            
+                            "tag":"XOXO",
+                            "notifyReceiverEmail":"1",
+                            "poNumber":"514149-1"
+                                
+                        }
+                    }
+                }________________________________________________________
+
+Order ID: 514150
+Total Reward Products/Orders: 1
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2023-10-03 08:37:10am
+
+
+Order ID: 514151
+Total Reward Products/Orders: 1
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2023-10-05 08:38:38am
