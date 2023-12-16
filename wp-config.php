@@ -7,7 +7,7 @@ if (file_exists('/chroot/home/devtestn/devtestnew.gifto.co/html/aios-bootstrap.p
 define( 'WP_CACHE', true /* Modified by NitroPack */ ); // Added by WP Rocket
 
 /**
- * The base configuration for WordPress
+ * The base configuration for WordPress test
  *
  * The wp-config.php creation script uses this file during the installation.
  * You don't have to use the web site, you can copy this file to "wp-config.php"
