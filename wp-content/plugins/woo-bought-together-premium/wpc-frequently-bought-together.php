@@ -3,22 +3,21 @@
 Plugin Name: WPC Frequently Bought Together for WooCommerce (Premium)
 Plugin URI: https://wpclever.net/
 Description: Increase your sales with personalized product recommendations.
-Version: 6.1.0
+Version: 6.2.3
 Author: WPClever
 Author URI: https://wpclever.net
 Text Domain: woo-bought-together
 Domain Path: /languages/
 Requires at least: 4.0
-Tested up to: 6.2
+Tested up to: 6.4
 WC requires at least: 3.0
-WC tested up to: 7.7
+WC tested up to: 8.3
 */
-
-use Automattic\WooCommerce\Utilities\FeaturesUtil;
 
 defined( 'ABSPATH' ) || exit;
 
-! defined( 'WOOBT_VERSION' ) && define( 'WOOBT_VERSION', '6.1.0' );
+! defined( 'WOOBT_VERSION' ) && define( 'WOOBT_VERSION', '6.2.3' );
+! defined( 'WOOBT_PREMIUM' ) && define( 'WOOBT_PREMIUM', __FILE__ );
 ! defined( 'WOOBT_FILE' ) && define( 'WOOBT_FILE', __FILE__ );
 ! defined( 'WOOBT_URI' ) && define( 'WOOBT_URI', plugin_dir_url( __FILE__ ) );
 ! defined( 'WOOBT_DIR' ) && define( 'WOOBT_DIR', plugin_dir_path( __FILE__ ) );
@@ -28,9 +27,9 @@ defined( 'ABSPATH' ) || exit;
 ! defined( 'WOOBT_DISCUSSION' ) && define( 'WOOBT_DISCUSSION', 'https://wordpress.org/support/plugin/woo-bought-together' );
 ! defined( 'WPC_URI' ) && define( 'WPC_URI', WOOBT_URI );
 
-include 'includes/wpc-dashboard.php';
-include 'includes/wpc-menu.php';
+include 'includes/dashboard/wpc-dashboard.php';
 include 'includes/kit/wpc-kit.php';
+include 'includes/hpos.php';
 include 'includes/premium/wpc-premium.php';
 
 if ( ! function_exists( 'woobt_init' ) ) {
@@ -43,7 +42,7 @@ if ( ! function_exists( 'woobt_init' ) ) {
 		if ( ! function_exists( 'WC' ) || ! version_compare( WC()->version, '3.0', '>=' ) ) {
 			add_action( 'admin_notices', 'woobt_notice_wc' );
 
-			return;
+			return null;
 		}
 
 		if ( ! class_exists( 'WPCleverWoobt' ) && class_exists( 'WC_Product' ) ) {
@@ -86,8 +85,6 @@ if ( ! function_exists( 'woobt_init' ) ) {
 					add_action( 'admin_enqueue_scripts', [ $this, 'admin_enqueue_scripts' ] );
 					add_action( 'admin_init', [ $this, 'register_settings' ] );
 					add_action( 'admin_menu', [ $this, 'admin_menu' ] );
-					add_action( 'admin_notices', [ $this, 'admin_notices' ] );
-					add_action( 'wp_ajax_woobt_dismiss_notice', [ $this, 'dismiss_notice' ] );
 					add_action( 'wp_ajax_woobt_update_search_settings', [ $this, 'ajax_update_search_settings' ] );
 					add_action( 'wp_ajax_woobt_get_search_results', [ $this, 'ajax_get_search_results' ] );
 					add_action( 'wp_ajax_woobt_add_text', [ $this, 'ajax_add_text' ] );
@@ -144,7 +141,7 @@ if ( ! function_exists( 'woobt_init' ) ) {
 					add_action( 'wp_ajax_nopriv_woobt_add_all_to_cart', [ $this, 'ajax_add_all_to_cart' ] );
 
 					// Cart contents
-					add_action( 'woocommerce_before_mini_cart_contents', [ $this, 'before_mini_cart_contents' ] );
+					add_action( 'woocommerce_before_mini_cart_contents', [ $this, 'before_mini_cart_contents' ], 9999 );
 					add_action( 'woocommerce_before_calculate_totals', [ $this, 'before_calculate_totals' ], 9999 );
 
 					// Cart item
@@ -208,13 +205,6 @@ if ( ! function_exists( 'woobt_init' ) ) {
 						$this,
 						'import_process'
 					], 10, 2 );
-
-					// HPOS compatibility
-					add_action( 'before_woocommerce_init', function () {
-						if ( class_exists( '\Automattic\WooCommerce\Utilities\FeaturesUtil' ) ) {
-							FeaturesUtil::declare_compatibility( 'custom_order_tables', WOOBT_FILE );
-						}
-					} );
 				}
 
 				function init() {
@@ -281,60 +271,61 @@ if ( ! function_exists( 'woobt_init' ) ) {
 					add_thickbox();
 					$active_tab = isset( $_GET['tab'] ) ? sanitize_key( $_GET['tab'] ) : 'settings';
 					?>
-					<div class="wpclever_settings_page wrap">
-						<h1 class="wpclever_settings_page_title"><?php echo esc_html__( 'WPC Frequently Bought Together', 'woo-bought-together' ) . ' ' . WOOBT_VERSION; ?></h1>
-						<div class="wpclever_settings_page_desc about-text">
-							<p>
+                    <div class="wpclever_settings_page wrap">
+                        <h1 class="wpclever_settings_page_title"><?php echo esc_html__( 'WPC Frequently Bought Together', 'woo-bought-together' ) . ' ' . WOOBT_VERSION . ' ' . ( defined( 'WOOBT_PREMIUM' ) ? '<span class="premium" style="display: none">' . esc_html__( 'Premium', 'woo-bought-together' ) . '</span>' : '' ); ?></h1>
+                        <div class="wpclever_settings_page_desc about-text">
+                            <p>
 								<?php printf( /* translators: %s is the stars */ esc_html__( 'Thank you for using our plugin! If you are satisfied, please reward it a full five-star %s rating.', 'woo-bought-together' ), '<span style="color:#ffb900">&#9733;&#9733;&#9733;&#9733;&#9733;</span>' ); ?>
-								<br/>
-								<a href="<?php echo esc_url( WOOBT_REVIEWS ); ?>" target="_blank"><?php esc_html_e( 'Reviews', 'woo-bought-together' ); ?></a> |
-								<a href="<?php echo esc_url( WOOBT_CHANGELOG ); ?>" target="_blank"><?php esc_html_e( 'Changelog', 'woo-bought-together' ); ?></a> |
-								<a href="<?php echo esc_url( WOOBT_DISCUSSION ); ?>" target="_blank"><?php esc_html_e( 'Discussion', 'woo-bought-together' ); ?></a>
-							</p>
-						</div>
+                                <br/>
+                                <a href="<?php echo esc_url( WOOBT_REVIEWS ); ?>" target="_blank"><?php esc_html_e( 'Reviews', 'woo-bought-together' ); ?></a> |
+                                <a href="<?php echo esc_url( WOOBT_CHANGELOG ); ?>" target="_blank"><?php esc_html_e( 'Changelog', 'woo-bought-together' ); ?></a> |
+                                <a href="<?php echo esc_url( WOOBT_DISCUSSION ); ?>" target="_blank"><?php esc_html_e( 'Discussion', 'woo-bought-together' ); ?></a>
+                            </p>
+                        </div>
 						<?php if ( isset( $_GET['settings-updated'] ) && $_GET['settings-updated'] ) { ?>
-							<div class="notice notice-success is-dismissible">
-								<p><?php esc_html_e( 'Settings updated.', 'woo-bought-together' ); ?></p>
-							</div>
+                            <div class="notice notice-success is-dismissible">
+                                <p><?php esc_html_e( 'Settings updated.', 'woo-bought-together' ); ?></p>
+                            </div>
 						<?php } ?>
-						<div class="wpclever_settings_page_nav">
-							<h2 class="nav-tab-wrapper">
-								<a href="<?php echo admin_url( 'admin.php?page=wpclever-woobt&tab=how' ); ?>" class="<?php echo esc_attr( $active_tab === 'how' ? 'nav-tab nav-tab-active' : 'nav-tab' ); ?>">
+                        <div class="wpclever_settings_page_nav">
+                            <h2 class="nav-tab-wrapper">
+                                <a href="<?php echo admin_url( 'admin.php?page=wpclever-woobt&tab=how' ); ?>" class="<?php echo esc_attr( $active_tab === 'how' ? 'nav-tab nav-tab-active' : 'nav-tab' ); ?>">
 									<?php esc_html_e( 'How to use?', 'woo-bought-together' ); ?>
-								</a>
-								<a href="<?php echo admin_url( 'admin.php?page=wpclever-woobt&tab=settings' ); ?>" class="<?php echo esc_attr( $active_tab === 'settings' ? 'nav-tab nav-tab-active' : 'nav-tab' ); ?>">
+                                </a>
+                                <a href="<?php echo admin_url( 'admin.php?page=wpclever-woobt&tab=settings' ); ?>" class="<?php echo esc_attr( $active_tab === 'settings' ? 'nav-tab nav-tab-active' : 'nav-tab' ); ?>">
 									<?php esc_html_e( 'Settings', 'woo-bought-together' ); ?>
-								</a>
-								<a href="<?php echo admin_url( 'admin.php?page=wpclever-woobt&tab=localization' ); ?>" class="<?php echo esc_attr( $active_tab === 'localization' ? 'nav-tab nav-tab-active' : 'nav-tab' ); ?>">
+                                </a>
+                                <a href="<?php echo admin_url( 'admin.php?page=wpclever-woobt&tab=localization' ); ?>" class="<?php echo esc_attr( $active_tab === 'localization' ? 'nav-tab nav-tab-active' : 'nav-tab' ); ?>">
 									<?php esc_html_e( 'Localization', 'woo-bought-together' ); ?>
-								</a>
+                                </a>
+                                <!--
 								<a href="<?php echo admin_url( 'admin.php?page=wpclever-woobt&tab=tools' ); ?>" class="<?php echo esc_attr( $active_tab === 'tools' ? 'nav-tab nav-tab-active' : 'nav-tab' ); ?>">
 									<?php esc_html_e( 'Tools', 'woo-bought-together' ); ?>
 								</a>
-								<!--
                                 <a href="<?php echo admin_url( 'admin.php?page=wpclever-woobt&tab=premium' ); ?>"
                                    class="<?php echo esc_attr( $active_tab === 'premium' ? 'nav-tab nav-tab-active' : 'nav-tab' ); ?>" style="color: #c9356e">
 									<?php esc_html_e( 'Premium Version', 'woo-bought-together' ); ?>
                                 </a>
                                 -->
-								<a href="<?php echo esc_url( WOOBT_SUPPORT ); ?>" class="nav-tab" target="_blank">
+                                <a href="<?php echo esc_url( WOOBT_SUPPORT ); ?>" class="nav-tab" target="_blank">
 									<?php esc_html_e( 'Support', 'woo-bought-together' ); ?>
-								</a>
-								<a href="<?php echo admin_url( 'admin.php?page=wpclever-kit' ); ?>" class="nav-tab">
+                                </a>
+                                <a href="<?php echo admin_url( 'admin.php?page=wpclever-kit' ); ?>" class="nav-tab">
 									<?php esc_html_e( 'Essential Kit', 'woo-bought-together' ); ?>
-								</a>
-							</h2>
-						</div>
-						<div class="wpclever_settings_page_content">
+                                </a>
+                            </h2>
+                        </div>
+                        <div class="wpclever_settings_page_content">
 							<?php if ( $active_tab === 'how' ) { ?>
-								<div class="wpclever_settings_page_content_text">
-									<p>
+                                <div class="wpclever_settings_page_content_text">
+                                    <p>
 										<?php esc_html_e( 'When adding/editing the product you can choose Bought Together tab then add some products with the new price.', 'woo-bought-together' ); ?>
-									</p>
-									<p>
-										<img src="<?php echo esc_url( WOOBT_URI ); ?>assets/images/how-01.jpg"/>
-									</p>
-								</div>                            <?php } elseif ( $active_tab === 'settings' ) {
+                                    </p>
+                                    <p>
+                                        <img src="<?php echo esc_url( WOOBT_URI ); ?>assets/images/how-01.jpg" alt=""/>
+                                    </p>
+                                </div>
+							<?php } elseif ( $active_tab === 'settings' ) {
 								$pricing               = self::get_setting( 'pricing', 'sale_price' );
 								$default               = self::get_setting( 'default', [ 'default' ] );
 								$default_limit         = self::get_setting( 'default_limit', '5' );
@@ -356,30 +347,29 @@ if ( ! function_exists( 'woobt_init' ) ) {
 								$responsive            = self::get_setting( 'responsive', 'yes' );
 								$cart_quantity         = self::get_setting( 'cart_quantity', 'yes' );
 								?>
-								<form method="post" action="options.php">
-									<table class="form-table">
-										<tr class="heading">
-											<th colspan="2">
+                                <form method="post" action="options.php">
+                                    <table class="form-table">
+                                        <tr class="heading">
+                                            <th colspan="2">
 												<?php esc_html_e( 'General', 'woo-bought-together' ); ?>
-											</th>
-										</tr>
-										<tr>
-											<th><?php esc_html_e( 'Pricing method', 'woo-bought-together' ); ?></th>
-											<td>
-												<select name="woobt_settings[pricing]">
-													<option value="sale_price" <?php selected( $pricing, 'sale_price' ); ?>><?php esc_html_e( 'from Sale price', 'woo-bought-together' ); ?></option>
-													<option value="regular_price" <?php selected( $pricing, 'regular_price' ); ?>><?php esc_html_e( 'from Regular price ', 'woo-bought-together' ); ?></option>
-												</select>
-												<span class="description"><?php esc_html_e( 'Calculate prices from the sale price (default) or regular price of products.', 'woo-bought-together' ); ?></span>
-											</td>
-										</tr>
-										<tr>
-											<th><?php esc_html_e( 'Default products', 'woo-bought-together' ); ?></th>
-											<td>
-												<p class="description"><?php esc_html_e( 'Default products when don\'t specified any products.', 'woo-bought-together' ); ?> You can use
-													<a href="<?php echo esc_url( admin_url( 'plugin-install.php?tab=plugin-information&plugin=wpc-custom-related-products&TB_iframe=true&width=800&height=550' ) ); ?>" class="thickbox" title="WPC Custom Related Products">WPC Custom Related Products</a> or
-													<a href="<?php echo esc_url( admin_url( 'plugin-install.php?tab=plugin-information&plugin=wpc-smart-linked-products&TB_iframe=true&width=800&height=550' ) ); ?>" class="thickbox" title="WPC Smart Linked Products">WPC Smart Linked Products</a> plugin to configure related/upsells/cross-sells in bulk with smart conditions.</span>
-												</p>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th><?php esc_html_e( 'Pricing method', 'woo-bought-together' ); ?></th>
+                                            <td>
+                                                <select name="woobt_settings[pricing]">
+                                                    <option value="sale_price" <?php selected( $pricing, 'sale_price' ); ?>><?php esc_html_e( 'from Sale price', 'woo-bought-together' ); ?></option>
+                                                    <option value="regular_price" <?php selected( $pricing, 'regular_price' ); ?>><?php esc_html_e( 'from Regular price', 'woo-bought-together' ); ?></option>
+                                                </select>
+                                                <span class="description"><?php esc_html_e( 'Calculate prices from the sale price (default) or regular price of products.', 'woo-bought-together' ); ?></span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><?php esc_html_e( 'Default products', 'woo-bought-together' ); ?></th>
+                                            <td>
+                                                <span class="description"><?php esc_html_e( 'Default products when don\'t specified any products.', 'woo-bought-together' ); ?> You can use
+                                                    <a href="<?php echo esc_url( admin_url( 'plugin-install.php?tab=plugin-information&plugin=wpc-custom-related-products&TB_iframe=true&width=800&height=550' ) ); ?>" class="thickbox" title="WPC Custom Related Products">WPC Custom Related Products</a> or
+                                                    <a href="<?php echo esc_url( admin_url( 'plugin-install.php?tab=plugin-information&plugin=wpc-smart-linked-products&TB_iframe=true&width=800&height=550' ) ); ?>" class="thickbox" title="WPC Smart Linked Products">WPC Smart Linked Products</a> plugin to configure related/upsells/cross-sells in bulk with smart conditions.</span></span>
 												<?php
 												// backward compatibility before 5.1.1
 												if ( ! is_array( $default ) ) {
@@ -401,66 +391,66 @@ if ( ! function_exists( 'woobt_init' ) ) {
 													}
 												}
 												?>
-												<div class="woobt_inner_lines" style="margin-top: 10px">
-													<div class="woobt_inner_line">
-														<div class="woobt_inner_value">
-															<input type="hidden" name="woobt_settings[default][]" value="default" checked/>
-															<label><input type="checkbox" name="woobt_settings[default][]" value="related" <?php echo esc_attr( in_array( 'related', $default ) ? 'checked' : '' ); ?>/> <?php esc_html_e( 'Related products', 'woo-bought-together' ); ?>
-															</label>
-														</div>
-													</div>
-													<div class="woobt_inner_line">
-														<div class="woobt_inner_value">
-															<label><input type="checkbox" name="woobt_settings[default][]" value="upsells" <?php echo esc_attr( in_array( 'upsells', $default ) ? 'checked' : '' ); ?>/> <?php esc_html_e( 'Upsells products', 'woo-bought-together' ); ?>
-															</label>
-														</div>
-													</div>
-													<div class="woobt_inner_line">
-														<div class="woobt_inner_value">
-															<label><input type="checkbox" name="woobt_settings[default][]" value="crosssells" <?php echo esc_attr( in_array( 'crosssells', $default ) ? 'checked' : '' ); ?>/> <?php esc_html_e( 'Cross-sells products', 'woo-bought-together' ); ?>
-															</label>
-														</div>
-													</div>
-												</div>
-												<div class="woobt_show_if_default_products woobt_inner_lines" style="margin-top: 10px">
-													<div class="woobt_inner_line">
-														<div class="woobt_inner_label"><?php esc_html_e( 'Limit', 'woo-bought-together' ); ?></div>
-														<div class="woobt_inner_value">
-															<input type="number" class="small-text" name="woobt_settings[default_limit]" value="<?php echo esc_attr( $default_limit ); ?>"/>
-														</div>
-													</div>
-													<div class="woobt_inner_line">
-														<div class="woobt_inner_label"><?php esc_html_e( 'New price', 'woo-bought-together' ); ?></div>
-														<div class="woobt_inner_value">
-															<input type="text" class="small-text" name="woobt_settings[default_price]" value="<?php echo esc_attr( $default_price ); ?>"/>
-															<span class="description"><?php esc_html_e( 'Set a new price for each product using a number (eg. "49") or percentage (eg. "90%" of original price).', 'woo-bought-together' ); ?></span>
-														</div>
-													</div>
-													<div class="woobt_inner_line">
-														<div class="woobt_inner_label"><?php esc_html_e( 'Discount', 'woo-bought-together' ); ?></div>
-														<div class="woobt_inner_value">
-															<input type="number" class="small-text" name="woobt_settings[default_discount]" value="<?php echo esc_attr( $default_discount ); ?>"/>%.
-															<span class="description"><?php esc_html_e( 'Discount for the main product when buying at least one product in this list.', 'woo-bought-together' ); ?></span>
-														</div>
-													</div>
-												</div>
-											</td>
-										</tr>
-										<tr>
-											<th><?php esc_html_e( 'Layout', 'woo-bought-together' ); ?></th>
-											<td>
-												<select name="woobt_settings[layout]">
-													<option value="default" <?php selected( $layout, 'default' ); ?>><?php esc_html_e( 'List', 'woo-bought-together' ); ?></option>
-													<option value="separate" <?php selected( $layout, 'separate' ); ?>><?php esc_html_e( 'Separate images', 'woo-bought-together' ); ?></option>
-													<option value="grid-2" <?php selected( $layout, 'grid-2' ); ?>><?php esc_html_e( 'Grid - 2 columns', 'woo-bought-together' ); ?></option>
-													<option value="grid-3" <?php selected( $layout, 'grid-3' ); ?>><?php esc_html_e( 'Grid - 3 columns', 'woo-bought-together' ); ?></option>
-													<option value="grid-4" <?php selected( $layout, 'grid-4' ); ?>><?php esc_html_e( 'Grid - 4 columns', 'woo-bought-together' ); ?></option>
-												</select>
-											</td>
-										</tr>
-										<tr>
-											<th><?php esc_html_e( 'Position', 'woo-bought-together' ); ?></th>
-											<td>
+                                                <div class="woobt_inner_lines" style="margin-top: 10px">
+                                                    <div class="woobt_inner_line">
+                                                        <div class="woobt_inner_value">
+                                                            <input type="hidden" name="woobt_settings[default][]" value="default" checked/>
+                                                            <label><input type="checkbox" name="woobt_settings[default][]" value="related" <?php echo esc_attr( in_array( 'related', $default ) ? 'checked' : '' ); ?>/> <?php esc_html_e( 'Related products', 'woo-bought-together' ); ?>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="woobt_inner_line">
+                                                        <div class="woobt_inner_value">
+                                                            <label><input type="checkbox" name="woobt_settings[default][]" value="upsells" <?php echo esc_attr( in_array( 'upsells', $default ) ? 'checked' : '' ); ?>/> <?php esc_html_e( 'Upsells products', 'woo-bought-together' ); ?>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="woobt_inner_line">
+                                                        <div class="woobt_inner_value">
+                                                            <label><input type="checkbox" name="woobt_settings[default][]" value="crosssells" <?php echo esc_attr( in_array( 'crosssells', $default ) ? 'checked' : '' ); ?>/> <?php esc_html_e( 'Cross-sells products', 'woo-bought-together' ); ?>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="woobt_show_if_default_products woobt_inner_lines" style="margin-top: 10px">
+                                                    <div class="woobt_inner_line">
+                                                        <div class="woobt_inner_label"><?php esc_html_e( 'Limit', 'woo-bought-together' ); ?></div>
+                                                        <div class="woobt_inner_value">
+                                                            <input type="number" class="small-text" name="woobt_settings[default_limit]" value="<?php echo esc_attr( $default_limit ); ?>"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="woobt_inner_line">
+                                                        <div class="woobt_inner_label"><?php esc_html_e( 'New price', 'woo-bought-together' ); ?></div>
+                                                        <div class="woobt_inner_value">
+                                                            <input type="text" class="small-text" name="woobt_settings[default_price]" value="<?php echo esc_attr( $default_price ); ?>"/>
+                                                            <span class="description"><?php esc_html_e( 'Set a new price for each product using a number (eg. "49") or percentage (eg. "90%" of original price).', 'woo-bought-together' ); ?></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="woobt_inner_line">
+                                                        <div class="woobt_inner_label"><?php esc_html_e( 'Discount', 'woo-bought-together' ); ?></div>
+                                                        <div class="woobt_inner_value">
+                                                            <input type="number" class="small-text" name="woobt_settings[default_discount]" value="<?php echo esc_attr( $default_discount ); ?>"/>%.
+                                                            <span class="description"><?php esc_html_e( 'Discount for the main product when buying at least one product in this list.', 'woo-bought-together' ); ?></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><?php esc_html_e( 'Layout', 'woo-bought-together' ); ?></th>
+                                            <td>
+                                                <select name="woobt_settings[layout]">
+                                                    <option value="default" <?php selected( $layout, 'default' ); ?>><?php esc_html_e( 'List', 'woo-bought-together' ); ?></option>
+                                                    <option value="separate" <?php selected( $layout, 'separate' ); ?>><?php esc_html_e( 'Separate images', 'woo-bought-together' ); ?></option>
+                                                    <option value="grid-2" <?php selected( $layout, 'grid-2' ); ?>><?php esc_html_e( 'Grid - 2 columns', 'woo-bought-together' ); ?></option>
+                                                    <option value="grid-3" <?php selected( $layout, 'grid-3' ); ?>><?php esc_html_e( 'Grid - 3 columns', 'woo-bought-together' ); ?></option>
+                                                    <option value="grid-4" <?php selected( $layout, 'grid-4' ); ?>><?php esc_html_e( 'Grid - 4 columns', 'woo-bought-together' ); ?></option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><?php esc_html_e( 'Position', 'woo-bought-together' ); ?></th>
+                                            <td>
 												<?php
 												$position = apply_filters( 'woobt_position', self::get_setting( 'position', apply_filters( 'woobt_default_position', 'before' ) ) );
 
@@ -474,271 +464,271 @@ if ( ! function_exists( 'woobt_init' ) ) {
 													echo '</select>';
 												}
 												?>
-												<span class="description"><?php esc_html_e( 'Choose the position to show the products list. You also can use the shortcode [woobt] to show the list where you want.', 'woo-bought-together' ); ?></span>
-											</td>
-										</tr>
-										<tr>
-											<th><?php esc_html_e( 'Add to cart button', 'woo-bought-together' ); ?></th>
-											<td>
-												<select name="woobt_settings[atc_button]" class="woobt_atc_button">
-													<option value="main" <?php selected( $atc_button, 'main' ); ?>><?php esc_html_e( 'Main product\'s button', 'woo-bought-together' ); ?></option>
-													<option value="separate" <?php selected( $atc_button, 'separate' ); ?>><?php esc_html_e( 'Separate buttons', 'woo-bought-together' ); ?></option>
-												</select>
-											</td>
-										</tr>
-										<tr>
-											<th><?php esc_html_e( 'Show "this item"', 'woo-bought-together' ); ?></th>
-											<td>
-												<select name="woobt_settings[show_this_item]" class="woobt_show_this_item">
-													<option value="yes" <?php selected( $show_this_item, 'yes' ); ?>><?php esc_html_e( 'Yes', 'woo-bought-together' ); ?></option>
-													<option value="no" <?php selected( $show_this_item, 'no' ); ?>><?php esc_html_e( 'No', 'woo-bought-together' ); ?></option>
-												</select>
-												<span class="description"><?php esc_html_e( '"This item" cannot be hidden if "Separate buttons" is in use for the Add to Cart button.', 'woo-bought-together' ); ?></span>
-											</td>
-										</tr>
-										<tr>
-											<th><?php esc_html_e( 'Exclude unpurchasable', 'woo-bought-together' ); ?></th>
-											<td>
-												<select name="woobt_settings[exclude_unpurchasable]">
-													<option value="yes" <?php selected( $exclude_unpurchasable, 'yes' ); ?>><?php esc_html_e( 'Yes', 'woo-bought-together' ); ?></option>
-													<option value="no" <?php selected( $exclude_unpurchasable, 'no' ); ?>><?php esc_html_e( 'No', 'woo-bought-together' ); ?></option>
-												</select>
-												<span class="description"><?php esc_html_e( 'Exclude unpurchasable products from the list.', 'woo-bought-together' ); ?></span>
-											</td>
-										</tr>
-										<tr>
-											<th><?php esc_html_e( 'Show thumbnail', 'woo-bought-together' ); ?></th>
-											<td>
-												<select name="woobt_settings[show_thumb]">
-													<option value="yes" <?php selected( $show_thumb, 'yes' ); ?>><?php esc_html_e( 'Yes', 'woo-bought-together' ); ?></option>
-													<option value="no" <?php selected( $show_thumb, 'no' ); ?>><?php esc_html_e( 'No', 'woo-bought-together' ); ?></option>
-												</select>
-											</td>
-										</tr>
-										<tr>
-											<th><?php esc_html_e( 'Show price', 'woo-bought-together' ); ?></th>
-											<td>
-												<select name="woobt_settings[show_price]">
-													<option value="yes" <?php selected( $show_price, 'yes' ); ?>><?php esc_html_e( 'Price', 'woo-bought-together' ); ?></option>
-													<option value="total" <?php selected( $show_price, 'total' ); ?>><?php esc_html_e( 'Total', 'woo-bought-together' ); ?></option>
-													<option value="no" <?php selected( $show_price, 'no' ); ?>><?php esc_html_e( 'No', 'woo-bought-together' ); ?></option>
-												</select>
-											</td>
-										</tr>
-										<tr>
-											<th><?php esc_html_e( 'Show short description', 'woo-bought-together' ); ?></th>
-											<td>
-												<select name="woobt_settings[show_description]">
-													<option value="yes" <?php selected( $show_description, 'yes' ); ?>><?php esc_html_e( 'Yes', 'woo-bought-together' ); ?></option>
-													<option value="no" <?php selected( $show_description, 'no' ); ?>><?php esc_html_e( 'No', 'woo-bought-together' ); ?></option>
-												</select>
-											</td>
-										</tr>
-										<tr>
-											<th><?php esc_html_e( 'Show plus/minus button', 'woo-bought-together' ); ?></th>
-											<td>
-												<select name="woobt_settings[plus_minus]">
-													<option value="yes" <?php selected( $plus_minus, 'yes' ); ?>><?php esc_html_e( 'Yes', 'woo-bought-together' ); ?></option>
-													<option value="no" <?php selected( $plus_minus, 'no' ); ?>><?php esc_html_e( 'No', 'woo-bought-together' ); ?></option>
-												</select>
-												<span class="description"><?php esc_html_e( 'Show the plus/minus button for the quantity input.', 'woo-bought-together' ); ?></span>
-											</td>
-										</tr>
-										<tr>
-											<th><?php esc_html_e( 'Variations selector', 'woo-bought-together' ); ?></th>
-											<td>
-												<select name="woobt_settings[variations_selector]">
-													<option value="default" <?php selected( $variations_selector, 'default' ); ?>><?php esc_html_e( 'Default', 'woo-bought-together' ); ?></option>
-													<option value="woovr" <?php selected( $variations_selector, 'woovr' ); ?>><?php esc_html_e( 'Use WPC Variations Radio Buttons', 'woo-bought-together' ); ?></option>
-												</select> <span class="description">If you choose "Use WPC Variations Radio Buttons", please install <a href="<?php echo esc_url( admin_url( 'plugin-install.php?tab=plugin-information&plugin=wpc-variations-radio-buttons&TB_iframe=true&width=800&height=550' ) ); ?>" class="thickbox" title="WPC Variations Radio Buttons">WPC Variations Radio Buttons</a> to make it work.</span>
-											</td>
-										</tr>
-										<tr>
-											<th><?php esc_html_e( 'Link to individual product', 'woo-bought-together' ); ?></th>
-											<td>
-												<select name="woobt_settings[link]">
-													<option value="yes" <?php selected( $link, 'yes' ); ?>><?php esc_html_e( 'Yes, open in the same tab', 'woo-bought-together' ); ?></option>
-													<option value="yes_blank" <?php selected( $link, 'yes_blank' ); ?>><?php esc_html_e( 'Yes, open in the new tab', 'woo-bought-together' ); ?></option>
-													<option value="yes_popup" <?php selected( $link, 'yes_popup' ); ?>><?php esc_html_e( 'Yes, open quick view popup', 'woo-bought-together' ); ?></option>
-													<option value="no" <?php selected( $link, 'no' ); ?>><?php esc_html_e( 'No', 'woo-bought-together' ); ?></option>
-												</select> <span class="description">If you choose "Open quick view popup", please install <a href="<?php echo esc_url( admin_url( 'plugin-install.php?tab=plugin-information&plugin=woo-smart-quick-view&TB_iframe=true&width=800&height=550' ) ); ?>" class="thickbox" title="WPC Smart Quick View">WPC Smart Quick View</a> to make it work.</span>
-											</td>
-										</tr>
-										<tr>
-											<th><?php esc_html_e( 'Change image', 'woo-bought-together' ); ?></th>
-											<td>
-												<select name="woobt_settings[change_image]">
-													<option value="yes" <?php selected( $change_image, 'yes' ); ?>><?php esc_html_e( 'Yes', 'woo-bought-together' ); ?></option>
-													<option value="no" <?php selected( $change_image, 'no' ); ?>><?php esc_html_e( 'No', 'woo-bought-together' ); ?></option>
-												</select>
-												<span class="description"><?php esc_html_e( 'Change the main product image when choosing the variation of variable products.', 'woo-bought-together' ); ?></span>
-											</td>
-										</tr>
-										<tr>
-											<th><?php esc_html_e( 'Change price', 'woo-bought-together' ); ?></th>
-											<td>
-												<select name="woobt_settings[change_price]" class="woobt_change_price">
-													<option value="yes" <?php selected( $change_price, 'yes' ); ?>><?php esc_html_e( 'Yes', 'woo-bought-together' ); ?></option>
-													<option value="yes_custom" <?php selected( $change_price, 'yes_custom' ); ?>><?php esc_html_e( 'Yes, custom selector', 'woo-bought-together' ); ?></option>
-													<option value="no" <?php selected( $change_price, 'no' ); ?>><?php esc_html_e( 'No', 'woo-bought-together' ); ?></option>
-												</select>
-												<input type="text" name="woobt_settings[change_price_custom]" value="<?php echo self::get_setting( 'change_price_custom', '.summary > .price' ); ?>" placeholder=".summary > .price" class="woobt_change_price_custom"/>
-												<span class="description"><?php esc_html_e( 'Change the main product price when choosing the variation or quantity of products. It uses JavaScript to change product price so it is very dependent on theme’s HTML. If it cannot find and update the product price, please contact us and we can help you find the right selector or adjust the JS file.', 'woo-bought-together' ); ?></span>
-											</td>
-										</tr>
-										<tr>
-											<th><?php esc_html_e( 'Counter', 'woo-bought-together' ); ?></th>
-											<td>
-												<select name="woobt_settings[counter]">
-													<option value="individual" <?php selected( $counter, 'individual' ); ?>><?php esc_html_e( 'Count the individual products', 'woo-bought-together' ); ?></option>
-													<option value="qty" <?php selected( $counter, 'qty' ); ?>><?php esc_html_e( 'Count the product quantities', 'woo-bought-together' ); ?></option>
-													<option value="hide" <?php selected( $counter, 'hide' ); ?>><?php esc_html_e( 'Hide', 'woo-bought-together' ); ?></option>
-												</select>
-												<span class="description"><?php esc_html_e( 'Counter on the add to cart button.', 'woo-bought-together' ); ?></span>
-											</td>
-										</tr>
-										<tr>
-											<th><?php esc_html_e( 'Responsive', 'woo-bought-together' ); ?></th>
-											<td>
-												<select name="woobt_settings[responsive]">
-													<option value="yes" <?php selected( $responsive, 'yes' ); ?>><?php esc_html_e( 'Yes', 'woo-bought-together' ); ?></option>
-													<option value="no" <?php selected( $responsive, 'no' ); ?>><?php esc_html_e( 'No', 'woo-bought-together' ); ?></option>
-												</select>
-												<span class="description"><?php esc_html_e( 'Change the layout for small screen devices.', 'woo-bought-together' ); ?></span>
-											</td>
-										</tr>
-										<tr class="heading">
-											<th colspan="2">
+                                                <span class="description"><?php esc_html_e( 'Choose the position to show the products list. You also can use the shortcode [woobt] to show the list where you want.', 'woo-bought-together' ); ?></span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><?php esc_html_e( 'Add to cart button', 'woo-bought-together' ); ?></th>
+                                            <td>
+                                                <select name="woobt_settings[atc_button]" class="woobt_atc_button">
+                                                    <option value="main" <?php selected( $atc_button, 'main' ); ?>><?php esc_html_e( 'Main product\'s button', 'woo-bought-together' ); ?></option>
+                                                    <option value="separate" <?php selected( $atc_button, 'separate' ); ?>><?php esc_html_e( 'Separate buttons', 'woo-bought-together' ); ?></option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><?php esc_html_e( 'Show "this item"', 'woo-bought-together' ); ?></th>
+                                            <td>
+                                                <select name="woobt_settings[show_this_item]" class="woobt_show_this_item">
+                                                    <option value="yes" <?php selected( $show_this_item, 'yes' ); ?>><?php esc_html_e( 'Yes', 'woo-bought-together' ); ?></option>
+                                                    <option value="no" <?php selected( $show_this_item, 'no' ); ?>><?php esc_html_e( 'No', 'woo-bought-together' ); ?></option>
+                                                </select>
+                                                <span class="description"><?php esc_html_e( '"This item" cannot be hidden if "Separate buttons" is in use for the Add to Cart button.', 'woo-bought-together' ); ?></span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><?php esc_html_e( 'Exclude unpurchasable', 'woo-bought-together' ); ?></th>
+                                            <td>
+                                                <select name="woobt_settings[exclude_unpurchasable]">
+                                                    <option value="yes" <?php selected( $exclude_unpurchasable, 'yes' ); ?>><?php esc_html_e( 'Yes', 'woo-bought-together' ); ?></option>
+                                                    <option value="no" <?php selected( $exclude_unpurchasable, 'no' ); ?>><?php esc_html_e( 'No', 'woo-bought-together' ); ?></option>
+                                                </select>
+                                                <span class="description"><?php esc_html_e( 'Exclude unpurchasable products from the list.', 'woo-bought-together' ); ?></span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><?php esc_html_e( 'Show thumbnail', 'woo-bought-together' ); ?></th>
+                                            <td>
+                                                <select name="woobt_settings[show_thumb]">
+                                                    <option value="yes" <?php selected( $show_thumb, 'yes' ); ?>><?php esc_html_e( 'Yes', 'woo-bought-together' ); ?></option>
+                                                    <option value="no" <?php selected( $show_thumb, 'no' ); ?>><?php esc_html_e( 'No', 'woo-bought-together' ); ?></option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><?php esc_html_e( 'Show price', 'woo-bought-together' ); ?></th>
+                                            <td>
+                                                <select name="woobt_settings[show_price]">
+                                                    <option value="yes" <?php selected( $show_price, 'yes' ); ?>><?php esc_html_e( 'Price', 'woo-bought-together' ); ?></option>
+                                                    <option value="total" <?php selected( $show_price, 'total' ); ?>><?php esc_html_e( 'Total', 'woo-bought-together' ); ?></option>
+                                                    <option value="no" <?php selected( $show_price, 'no' ); ?>><?php esc_html_e( 'No', 'woo-bought-together' ); ?></option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><?php esc_html_e( 'Show short description', 'woo-bought-together' ); ?></th>
+                                            <td>
+                                                <select name="woobt_settings[show_description]">
+                                                    <option value="yes" <?php selected( $show_description, 'yes' ); ?>><?php esc_html_e( 'Yes', 'woo-bought-together' ); ?></option>
+                                                    <option value="no" <?php selected( $show_description, 'no' ); ?>><?php esc_html_e( 'No', 'woo-bought-together' ); ?></option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><?php esc_html_e( 'Show plus/minus button', 'woo-bought-together' ); ?></th>
+                                            <td>
+                                                <select name="woobt_settings[plus_minus]">
+                                                    <option value="yes" <?php selected( $plus_minus, 'yes' ); ?>><?php esc_html_e( 'Yes', 'woo-bought-together' ); ?></option>
+                                                    <option value="no" <?php selected( $plus_minus, 'no' ); ?>><?php esc_html_e( 'No', 'woo-bought-together' ); ?></option>
+                                                </select>
+                                                <span class="description"><?php esc_html_e( 'Show the plus/minus button for the quantity input.', 'woo-bought-together' ); ?></span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><?php esc_html_e( 'Variations selector', 'woo-bought-together' ); ?></th>
+                                            <td>
+                                                <select name="woobt_settings[variations_selector]">
+                                                    <option value="default" <?php selected( $variations_selector, 'default' ); ?>><?php esc_html_e( 'Default', 'woo-bought-together' ); ?></option>
+                                                    <option value="woovr" <?php selected( $variations_selector, 'woovr' ); ?>><?php esc_html_e( 'Use WPC Variations Radio Buttons', 'woo-bought-together' ); ?></option>
+                                                </select> <span class="description">If you choose "Use WPC Variations Radio Buttons", please install <a href="<?php echo esc_url( admin_url( 'plugin-install.php?tab=plugin-information&plugin=wpc-variations-radio-buttons&TB_iframe=true&width=800&height=550' ) ); ?>" class="thickbox" title="WPC Variations Radio Buttons">WPC Variations Radio Buttons</a> to make it work.</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><?php esc_html_e( 'Link to individual product', 'woo-bought-together' ); ?></th>
+                                            <td>
+                                                <select name="woobt_settings[link]">
+                                                    <option value="yes" <?php selected( $link, 'yes' ); ?>><?php esc_html_e( 'Yes, open in the same tab', 'woo-bought-together' ); ?></option>
+                                                    <option value="yes_blank" <?php selected( $link, 'yes_blank' ); ?>><?php esc_html_e( 'Yes, open in the new tab', 'woo-bought-together' ); ?></option>
+                                                    <option value="yes_popup" <?php selected( $link, 'yes_popup' ); ?>><?php esc_html_e( 'Yes, open quick view popup', 'woo-bought-together' ); ?></option>
+                                                    <option value="no" <?php selected( $link, 'no' ); ?>><?php esc_html_e( 'No', 'woo-bought-together' ); ?></option>
+                                                </select> <span class="description">If you choose "Open quick view popup", please install <a href="<?php echo esc_url( admin_url( 'plugin-install.php?tab=plugin-information&plugin=woo-smart-quick-view&TB_iframe=true&width=800&height=550' ) ); ?>" class="thickbox" title="WPC Smart Quick View">WPC Smart Quick View</a> to make it work.</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><?php esc_html_e( 'Change image', 'woo-bought-together' ); ?></th>
+                                            <td>
+                                                <select name="woobt_settings[change_image]">
+                                                    <option value="yes" <?php selected( $change_image, 'yes' ); ?>><?php esc_html_e( 'Yes', 'woo-bought-together' ); ?></option>
+                                                    <option value="no" <?php selected( $change_image, 'no' ); ?>><?php esc_html_e( 'No', 'woo-bought-together' ); ?></option>
+                                                </select>
+                                                <span class="description"><?php esc_html_e( 'Change the main product image when choosing the variation of variable products.', 'woo-bought-together' ); ?></span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><?php esc_html_e( 'Change price', 'woo-bought-together' ); ?></th>
+                                            <td>
+                                                <select name="woobt_settings[change_price]" class="woobt_change_price">
+                                                    <option value="yes" <?php selected( $change_price, 'yes' ); ?>><?php esc_html_e( 'Yes', 'woo-bought-together' ); ?></option>
+                                                    <option value="yes_custom" <?php selected( $change_price, 'yes_custom' ); ?>><?php esc_html_e( 'Yes, custom selector', 'woo-bought-together' ); ?></option>
+                                                    <option value="no" <?php selected( $change_price, 'no' ); ?>><?php esc_html_e( 'No', 'woo-bought-together' ); ?></option>
+                                                </select>
+                                                <input type="text" name="woobt_settings[change_price_custom]" value="<?php echo self::get_setting( 'change_price_custom', '.summary > .price' ); ?>" placeholder=".summary > .price" class="woobt_change_price_custom"/>
+                                                <span class="description"><?php esc_html_e( 'Change the main product price when choosing the variation or quantity of products. It uses JavaScript to change product price so it is very dependent on theme’s HTML. If it cannot find and update the product price, please contact us and we can help you find the right selector or adjust the JS file.', 'woo-bought-together' ); ?></span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><?php esc_html_e( 'Counter', 'woo-bought-together' ); ?></th>
+                                            <td>
+                                                <select name="woobt_settings[counter]">
+                                                    <option value="individual" <?php selected( $counter, 'individual' ); ?>><?php esc_html_e( 'Count the individual products', 'woo-bought-together' ); ?></option>
+                                                    <option value="qty" <?php selected( $counter, 'qty' ); ?>><?php esc_html_e( 'Count the product quantities', 'woo-bought-together' ); ?></option>
+                                                    <option value="hide" <?php selected( $counter, 'hide' ); ?>><?php esc_html_e( 'Hide', 'woo-bought-together' ); ?></option>
+                                                </select>
+                                                <span class="description"><?php esc_html_e( 'Counter on the add to cart button.', 'woo-bought-together' ); ?></span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><?php esc_html_e( 'Responsive', 'woo-bought-together' ); ?></th>
+                                            <td>
+                                                <select name="woobt_settings[responsive]">
+                                                    <option value="yes" <?php selected( $responsive, 'yes' ); ?>><?php esc_html_e( 'Yes', 'woo-bought-together' ); ?></option>
+                                                    <option value="no" <?php selected( $responsive, 'no' ); ?>><?php esc_html_e( 'No', 'woo-bought-together' ); ?></option>
+                                                </select>
+                                                <span class="description"><?php esc_html_e( 'Change the layout for small screen devices.', 'woo-bought-together' ); ?></span>
+                                            </td>
+                                        </tr>
+                                        <tr class="heading">
+                                            <th colspan="2">
 												<?php esc_html_e( 'Cart & Checkout', 'woo-bought-together' ); ?>
-											</th>
-										</tr>
-										<tr>
-											<th><?php esc_html_e( 'Change quantity', 'woo-bought-together' ); ?></th>
-											<td>
-												<select name="woobt_settings[cart_quantity]">
-													<option value="yes" <?php selected( $cart_quantity, 'yes' ); ?>><?php esc_html_e( 'Yes', 'woo-bought-together' ); ?></option>
-													<option value="no" <?php selected( $cart_quantity, 'no' ); ?>><?php esc_html_e( 'No', 'woo-bought-together' ); ?></option>
-												</select>
-												<span class="description"><?php esc_html_e( 'Buyer can change the quantity of associated products or not?', 'woo-bought-together' ); ?></span>
-											</td>
-										</tr>
-										<tr class="heading">
-											<th colspan="2">
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th><?php esc_html_e( 'Change quantity', 'woo-bought-together' ); ?></th>
+                                            <td>
+                                                <select name="woobt_settings[cart_quantity]">
+                                                    <option value="yes" <?php selected( $cart_quantity, 'yes' ); ?>><?php esc_html_e( 'Yes', 'woo-bought-together' ); ?></option>
+                                                    <option value="no" <?php selected( $cart_quantity, 'no' ); ?>><?php esc_html_e( 'No', 'woo-bought-together' ); ?></option>
+                                                </select>
+                                                <span class="description"><?php esc_html_e( 'Buyer can change the quantity of associated products or not?', 'woo-bought-together' ); ?></span>
+                                            </td>
+                                        </tr>
+                                        <tr class="heading">
+                                            <th colspan="2">
 												<?php esc_html_e( 'Search', 'woo-bought-together' ); ?>
-											</th>
-										</tr>
+                                            </th>
+                                        </tr>
 										<?php self::search_settings(); ?>
-										<tr class="heading">
-											<th colspan="2"><?php esc_html_e( 'Suggestion', 'woo-bought-together' ); ?></th>
-										</tr>
-										<tr>
-											<td colspan="2">
-												To display custom engaging real-time messages on any wished positions, please install
-												<a href="https://wordpress.org/plugins/wpc-smart-messages/" target="_blank">WPC Smart Messages for WooCommerce</a> plugin. It's free and available now on the WordPress repository.
-											</td>
-										</tr>
-										<tr class="submit">
-											<th colspan="2">
+                                        <tr class="heading">
+                                            <th colspan="2"><?php esc_html_e( 'Suggestion', 'woo-bought-together' ); ?></th>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                To display custom engaging real-time messages on any wished positions, please install
+                                                <a href="https://wordpress.org/plugins/wpc-smart-messages/" target="_blank">WPC Smart Messages</a> plugin. It's free!
+                                            </td>
+                                        </tr>
+                                        <tr class="submit">
+                                            <th colspan="2">
 												<?php settings_fields( 'woobt_settings' ); ?><?php submit_button(); ?>
-											</th>
-										</tr>
-									</table>
-								</form>                            <?php } elseif ( $active_tab === 'localization' ) { ?>
-								<form method="post" action="options.php">
-									<table class="form-table">
-										<tr class="heading">
-											<th scope="row"><?php esc_html_e( 'General', 'woo-bought-together' ); ?></th>
-											<td>
+                                            </th>
+                                        </tr>
+                                    </table>
+                                </form>                            <?php } elseif ( $active_tab === 'localization' ) { ?>
+                                <form method="post" action="options.php">
+                                    <table class="form-table">
+                                        <tr class="heading">
+                                            <th scope="row"><?php esc_html_e( 'General', 'woo-bought-together' ); ?></th>
+                                            <td>
 												<?php esc_html_e( 'Leave blank to use the default text and its equivalent translation in multiple languages.', 'woo-bought-together' ); ?>
-											</td>
-										</tr>
-										<tr>
-											<th><?php esc_html_e( 'This item', 'woo-bought-together' ); ?></th>
-											<td>
-												<input type="text" name="woobt_localization[this_item]" class="regular-text" value="<?php echo esc_attr( self::localization( 'this_item' ) ); ?>" placeholder="<?php esc_attr_e( 'This item:', 'woo-bought-together' ); ?>"/>
-											</td>
-										</tr>
-										<tr>
-											<th><?php esc_html_e( 'Choose an attribute', 'woo-bought-together' ); ?></th>
-											<td>
-												<input type="text" name="woobt_localization[choose]" class="regular-text" value="<?php echo esc_attr( self::localization( 'choose' ) ); ?>" placeholder="<?php esc_attr_e( 'Choose %s', 'woo-bought-together' ); ?>"/>
-												<span class="description"><?php esc_html_e( 'Use %s to show the attribute name.', 'woo-bought-together' ); ?></span>
-											</td>
-										</tr>
-										<tr>
-											<th><?php esc_html_e( 'Clear', 'woo-bought-together' ); ?></th>
-											<td>
-												<input type="text" name="woobt_localization[clear]" class="regular-text" value="<?php echo esc_attr( self::localization( 'clear' ) ); ?>" placeholder="<?php esc_attr_e( 'Clear', 'woo-bought-together' ); ?>"/>
-											</td>
-										</tr>
-										<tr>
-											<th><?php esc_html_e( 'Additional price', 'woo-bought-together' ); ?></th>
-											<td>
-												<input type="text" name="woobt_localization[additional]" class="regular-text" value="<?php echo esc_attr( self::localization( 'additional' ) ); ?>" placeholder="<?php esc_attr_e( 'Additional price:', 'woo-bought-together' ); ?>"/>
-											</td>
-										</tr>
-										<tr>
-											<th><?php esc_html_e( 'Total price', 'woo-bought-together' ); ?></th>
-											<td>
-												<input type="text" name="woobt_localization[total]" class="regular-text" value="<?php echo esc_attr( self::localization( 'total' ) ); ?>" placeholder="<?php esc_attr_e( 'Total:', 'woo-bought-together' ); ?>"/>
-											</td>
-										</tr>
-										<tr>
-											<th><?php esc_html_e( 'Associated', 'woo-bought-together' ); ?></th>
-											<td>
-												<input type="text" name="woobt_localization[associated]" class="regular-text" value="<?php echo esc_attr( self::localization( 'associated' ) ); ?>" placeholder="<?php esc_attr_e( '(bought together %s)', 'woo-bought-together' ); ?>"/>
-												<span class="description"><?php esc_html_e( 'The text behind associated products. Use "%s" for the main product name.', 'woo-bought-together' ); ?></span>
-											</td>
-										</tr>
-										<tr>
-											<th><?php esc_html_e( 'Add to cart', 'woo-bought-together' ); ?></th>
-											<td>
-												<input type="text" name="woobt_localization[add_to_cart]" class="regular-text" value="<?php echo esc_attr( self::localization( 'add_to_cart' ) ); ?>" placeholder="<?php esc_attr_e( 'Add to cart', 'woo-bought-together' ); ?>"/>
-											</td>
-										</tr>
-										<tr>
-											<th><?php esc_html_e( 'Add all to cart', 'woo-bought-together' ); ?></th>
-											<td>
-												<input type="text" name="woobt_localization[add_all_to_cart]" class="regular-text" value="<?php echo esc_attr( self::localization( 'add_all_to_cart' ) ); ?>" placeholder="<?php esc_attr_e( 'Add all to cart', 'woo-bought-together' ); ?>"/>
-											</td>
-										</tr>
-										<tr>
-											<th><?php esc_html_e( 'Default above text', 'woo-bought-together' ); ?></th>
-											<td>
-												<input type="text" name="woobt_localization[above_text]" class="large-text" value="<?php echo esc_attr( self::localization( 'above_text' ) ); ?>"/>
-												<span class="description"><?php esc_html_e( 'The default text above products list. You can overwrite it for each product in product settings.', 'woo-bought-together' ); ?></span>
-											</td>
-										</tr>
-										<tr>
-											<th><?php esc_html_e( 'Default under text', 'woo-bought-together' ); ?></th>
-											<td>
-												<input type="text" name="woobt_localization[under_text]" class="large-text" value="<?php echo esc_attr( self::localization( 'under_text' ) ); ?>"/>
-												<span class="description"><?php esc_html_e( 'The default text under products list. You can overwrite it for each product in product settings.', 'woo-bought-together' ); ?></span>
-											</td>
-										</tr>
-										<tr class="heading">
-											<th colspan="2">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><?php esc_html_e( 'This item', 'woo-bought-together' ); ?></th>
+                                            <td>
+                                                <input type="text" name="woobt_localization[this_item]" class="regular-text" value="<?php echo esc_attr( self::localization( 'this_item' ) ); ?>" placeholder="<?php esc_attr_e( 'This item:', 'woo-bought-together' ); ?>"/>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><?php esc_html_e( 'Choose an attribute', 'woo-bought-together' ); ?></th>
+                                            <td>
+                                                <input type="text" name="woobt_localization[choose]" class="regular-text" value="<?php echo esc_attr( self::localization( 'choose' ) ); ?>" placeholder="<?php esc_attr_e( 'Choose %s', 'woo-bought-together' ); ?>"/>
+                                                <span class="description"><?php esc_html_e( 'Use %s to show the attribute name.', 'woo-bought-together' ); ?></span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><?php esc_html_e( 'Clear', 'woo-bought-together' ); ?></th>
+                                            <td>
+                                                <input type="text" name="woobt_localization[clear]" class="regular-text" value="<?php echo esc_attr( self::localization( 'clear' ) ); ?>" placeholder="<?php esc_attr_e( 'Clear', 'woo-bought-together' ); ?>"/>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><?php esc_html_e( 'Additional price', 'woo-bought-together' ); ?></th>
+                                            <td>
+                                                <input type="text" name="woobt_localization[additional]" class="regular-text" value="<?php echo esc_attr( self::localization( 'additional' ) ); ?>" placeholder="<?php esc_attr_e( 'Additional price:', 'woo-bought-together' ); ?>"/>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><?php esc_html_e( 'Total price', 'woo-bought-together' ); ?></th>
+                                            <td>
+                                                <input type="text" name="woobt_localization[total]" class="regular-text" value="<?php echo esc_attr( self::localization( 'total' ) ); ?>" placeholder="<?php esc_attr_e( 'Total:', 'woo-bought-together' ); ?>"/>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><?php esc_html_e( 'Associated', 'woo-bought-together' ); ?></th>
+                                            <td>
+                                                <input type="text" name="woobt_localization[associated]" class="regular-text" value="<?php echo esc_attr( self::localization( 'associated' ) ); ?>" placeholder="<?php esc_attr_e( '(bought together %s)', 'woo-bought-together' ); ?>"/>
+                                                <span class="description"><?php esc_html_e( 'The text behind associated products. Use "%s" for the main product name.', 'woo-bought-together' ); ?></span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><?php esc_html_e( 'Add to cart', 'woo-bought-together' ); ?></th>
+                                            <td>
+                                                <input type="text" name="woobt_localization[add_to_cart]" class="regular-text" value="<?php echo esc_attr( self::localization( 'add_to_cart' ) ); ?>" placeholder="<?php esc_attr_e( 'Add to cart', 'woo-bought-together' ); ?>"/>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><?php esc_html_e( 'Add all to cart', 'woo-bought-together' ); ?></th>
+                                            <td>
+                                                <input type="text" name="woobt_localization[add_all_to_cart]" class="regular-text" value="<?php echo esc_attr( self::localization( 'add_all_to_cart' ) ); ?>" placeholder="<?php esc_attr_e( 'Add all to cart', 'woo-bought-together' ); ?>"/>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><?php esc_html_e( 'Default above text', 'woo-bought-together' ); ?></th>
+                                            <td>
+                                                <input type="text" name="woobt_localization[above_text]" class="large-text" value="<?php echo esc_attr( self::localization( 'above_text' ) ); ?>"/>
+                                                <span class="description"><?php esc_html_e( 'The default text above products list. You can overwrite it for each product in product settings.', 'woo-bought-together' ); ?></span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><?php esc_html_e( 'Default under text', 'woo-bought-together' ); ?></th>
+                                            <td>
+                                                <input type="text" name="woobt_localization[under_text]" class="large-text" value="<?php echo esc_attr( self::localization( 'under_text' ) ); ?>"/>
+                                                <span class="description"><?php esc_html_e( 'The default text under products list. You can overwrite it for each product in product settings.', 'woo-bought-together' ); ?></span>
+                                            </td>
+                                        </tr>
+                                        <tr class="heading">
+                                            <th colspan="2">
 												<?php esc_html_e( 'Alert', 'woo-bought-together' ); ?>
-											</th>
-										</tr>
-										<tr>
-											<th><?php esc_html_e( 'Require selection', 'woo-bought-together' ); ?></th>
-											<td>
-												<input type="text" name="woobt_localization[alert_selection]" class="large-text" value="<?php echo esc_attr( self::localization( 'alert_selection' ) ); ?>" placeholder="<?php esc_attr_e( 'Please select a purchasable variation for [name] before adding this product to the cart.', 'woo-bought-together' ); ?>"/>
-											</td>
-										</tr>
-										<tr class="submit">
-											<th colspan="2">
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th><?php esc_html_e( 'Require selection', 'woo-bought-together' ); ?></th>
+                                            <td>
+                                                <input type="text" name="woobt_localization[alert_selection]" class="large-text" value="<?php echo esc_attr( self::localization( 'alert_selection' ) ); ?>" placeholder="<?php esc_attr_e( 'Please select a purchasable variation for [name] before adding this product to the cart.', 'woo-bought-together' ); ?>"/>
+                                            </td>
+                                        </tr>
+                                        <tr class="submit">
+                                            <th colspan="2">
 												<?php settings_fields( 'woobt_localization' ); ?><?php submit_button(); ?>
-											</th>
-										</tr>
-									</table>
-								</form>
+                                            </th>
+                                        </tr>
+                                    </table>
+                                </form>
 							<?php } elseif ( $active_tab == 'tools' ) { ?>
-								<table class="form-table">
-									<tr class="heading">
-										<th scope="row"><?php esc_html_e( 'Data Migration', 'woo-bought-together' ); ?></th>
-										<td>
+                                <table class="form-table">
+                                    <tr class="heading">
+                                        <th scope="row"><?php esc_html_e( 'Data Migration', 'woo-bought-together' ); ?></th>
+                                        <td>
 											<?php esc_html_e( 'If selected products don\'t appear on the current version. Please try running Migrate tool.', 'woo-bought-together' ); ?>
 
 											<?php
@@ -795,7 +785,7 @@ if ( ! function_exists( 'woobt_init' ) ) {
 													echo '<span style="color: #2271b1; font-weight: 700">' . esc_html__( 'Migrating...', 'woo-bought-together' ) . '</span>';
 													echo '<p class="description">' . esc_html__( 'Please wait until it has finished!', 'woo-bought-together' ) . '</p>';
 													?>
-													<script type="text/javascript">
+                                                    <script type="text/javascript">
                                                       (function($) {
                                                         $(function() {
                                                           setTimeout(function() {
@@ -803,7 +793,7 @@ if ( ! function_exists( 'woobt_init' ) ) {
                                                           }, 1000);
                                                         });
                                                       })(jQuery);
-													</script>
+                                                    </script>
 												<?php } else {
 													echo '<span style="color: #2271b1; font-weight: 700">' . esc_html__( 'Finished!', 'woo-bought-together' ) . '</span>';
 												}
@@ -812,49 +802,25 @@ if ( ! function_exists( 'woobt_init' ) ) {
 											}
 											echo '</p>';
 											?>
-										</td>
-									</tr>
-								</table>
+                                        </td>
+                                    </tr>
+                                </table>
 							<?php } elseif ( $active_tab == 'premium' ) { ?>
-								<div class="wpclever_settings_page_content_text">
-									<p>Get the Premium Version just $29!
-										<a href="https://wpclever.net/downloads/frequently-bought-together?utm_source=pro&utm_medium=woobt&utm_campaign=wporg" target="_blank">https://wpclever.net/downloads/frequently-bought-together</a>
-									</p>
-									<p><strong>Extra features for Premium Version:</strong></p>
-									<ul style="margin-bottom: 0">
-										<li>- Add a variable product or a specific variation of a product.</li>
-										<li>- Insert heading/paragraph into products list.</li>
-										<li>- Get the lifetime update & premium support.</li>
-									</ul>
-								</div>
+                                <div class="wpclever_settings_page_content_text">
+                                    <p>Get the Premium Version just $29!
+                                        <a href="https://wpclever.net/downloads/frequently-bought-together?utm_source=pro&utm_medium=woobt&utm_campaign=wporg" target="_blank">https://wpclever.net/downloads/frequently-bought-together</a>
+                                    </p>
+                                    <p><strong>Extra features for Premium Version:</strong></p>
+                                    <ul style="margin-bottom: 0">
+                                        <li>- Add a variable product or a specific variation of a product.</li>
+                                        <li>- Insert heading/paragraph into products list.</li>
+                                        <li>- Get the lifetime update & premium support.</li>
+                                    </ul>
+                                </div>
 							<?php } ?>
-						</div>
-					</div>
+                        </div>
+                    </div>
 					<?php
-				}
-
-				function admin_notices() {
-					if ( get_option( 'wpc_dismiss_notice_woobt_migrate' ) ) {
-						return;
-					}
-					?>
-					<div data-dismissible="woobt_migrate" class="woobt-notice notice notice-warning is-dismissible">
-						<p>
-							[WPC Frequently Bought Together] If selected products don't appear on the current version. Please try running Migrate tool
-							<a href="<?php echo admin_url( 'admin.php?page=wpclever-woobt&tab=tools' ); ?>">here</a>.
-						</p>
-					</div>
-					<?php
-				}
-
-				function dismiss_notice() {
-					if ( isset( $_POST['key'] ) && ! empty( $_POST['key'] ) ) {
-						$key = sanitize_key( $_POST['key'] );
-
-						update_option( 'wpc_dismiss_notice_' . $key, time() );
-					}
-
-					wp_die();
 				}
 
 				function search_settings() {
@@ -864,64 +830,64 @@ if ( ! function_exists( 'woobt_init' ) ) {
 					$search_sentence = self::get_setting( 'search_sentence', 'no' );
 					$search_same     = self::get_setting( 'search_same', 'no' );
 					?>
-					<tr>
-						<th><?php esc_html_e( 'Search limit', 'woo-bought-together' ); ?></th>
-						<td>
-							<input class="woobt_search_limit" type="number" min="1" max="500" name="woobt_settings[search_limit]" value="<?php echo self::get_setting( 'search_limit', 10 ); ?>"/>
-						</td>
-					</tr>
-					<tr>
-						<th><?php esc_html_e( 'Search by SKU', 'woo-bought-together' ); ?></th>
-						<td>
-							<select name="woobt_settings[search_sku]" class="woobt_search_sku">
-								<option value="yes" <?php selected( $search_sku, 'yes' ); ?>><?php esc_html_e( 'Yes', 'woo-bought-together' ); ?></option>
-								<option value="no" <?php selected( $search_sku, 'no' ); ?>><?php esc_html_e( 'No', 'woo-bought-together' ); ?></option>
-							</select>
-						</td>
-					</tr>
-					<tr>
-						<th><?php esc_html_e( 'Search by ID', 'woo-bought-together' ); ?></th>
-						<td>
-							<select name="woobt_settings[search_id]" class="woobt_search_id">
-								<option value="yes" <?php selected( $search_id, 'yes' ); ?>><?php esc_html_e( 'Yes', 'woo-bought-together' ); ?></option>
-								<option value="no" <?php selected( $search_id, 'no' ); ?>><?php esc_html_e( 'No', 'woo-bought-together' ); ?></option>
-							</select>
-							<span class="description"><?php esc_html_e( 'Search by ID when entering the numeric only.', 'woo-bought-together' ); ?></span>
-						</td>
-					</tr>
-					<tr>
-						<th><?php esc_html_e( 'Search exact', 'woo-bought-together' ); ?></th>
-						<td>
-							<select name="woobt_settings[search_exact]" class="woobt_search_exact">
-								<option value="yes" <?php selected( $search_exact, 'yes' ); ?>><?php esc_html_e( 'Yes', 'woo-bought-together' ); ?></option>
-								<option value="no" <?php selected( $search_exact, 'no' ); ?>><?php esc_html_e( 'No', 'woo-bought-together' ); ?></option>
-							</select>
-							<span class="description"><?php esc_html_e( 'Match whole product title or content?', 'woo-bought-together' ); ?></span>
-						</td>
-					</tr>
-					<tr>
-						<th><?php esc_html_e( 'Search sentence', 'woo-bought-together' ); ?></th>
-						<td>
-							<select name="woobt_settings[search_sentence]" class="woobt_search_sentence">
-								<option value="yes" <?php selected( $search_sentence, 'yes' ); ?>><?php esc_html_e( 'Yes', 'woo-bought-together' ); ?></option>
-								<option value="no" <?php selected( $search_sentence, 'no' ); ?>><?php esc_html_e( 'No', 'woo-bought-together' ); ?></option>
-							</select>
-							<span class="description"><?php esc_html_e( 'Do a phrase search?', 'woo-bought-together' ); ?></span>
-						</td>
-					</tr>
-					<tr>
-						<th><?php esc_html_e( 'Accept same products', 'woo-bought-together' ); ?></th>
-						<td>
-							<select name="woobt_settings[search_same]" class="woobt_search_same">
-								<option value="yes" <?php selected( $search_same, 'yes' ); ?>><?php esc_html_e( 'Yes', 'woo-bought-together' ); ?></option>
-								<option value="no" <?php selected( $search_same, 'no' ); ?>><?php esc_html_e( 'No', 'woo-bought-together' ); ?></option>
-							</select>
-							<span class="description"><?php esc_html_e( 'If yes, a product can be added many times.', 'woo-bought-together' ); ?></span>
-						</td>
-					</tr>
-					<tr>
-						<th><?php esc_html_e( 'Product types', 'woo-bought-together' ); ?></th>
-						<td>
+                    <tr>
+                        <th><?php esc_html_e( 'Search limit', 'woo-bought-together' ); ?></th>
+                        <td>
+                            <input class="woobt_search_limit" type="number" min="1" max="500" name="woobt_settings[search_limit]" value="<?php echo self::get_setting( 'search_limit', 10 ); ?>"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><?php esc_html_e( 'Search by SKU', 'woo-bought-together' ); ?></th>
+                        <td>
+                            <select name="woobt_settings[search_sku]" class="woobt_search_sku">
+                                <option value="yes" <?php selected( $search_sku, 'yes' ); ?>><?php esc_html_e( 'Yes', 'woo-bought-together' ); ?></option>
+                                <option value="no" <?php selected( $search_sku, 'no' ); ?>><?php esc_html_e( 'No', 'woo-bought-together' ); ?></option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><?php esc_html_e( 'Search by ID', 'woo-bought-together' ); ?></th>
+                        <td>
+                            <select name="woobt_settings[search_id]" class="woobt_search_id">
+                                <option value="yes" <?php selected( $search_id, 'yes' ); ?>><?php esc_html_e( 'Yes', 'woo-bought-together' ); ?></option>
+                                <option value="no" <?php selected( $search_id, 'no' ); ?>><?php esc_html_e( 'No', 'woo-bought-together' ); ?></option>
+                            </select>
+                            <span class="description"><?php esc_html_e( 'Search by ID when entering the numeric only.', 'woo-bought-together' ); ?></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><?php esc_html_e( 'Search exact', 'woo-bought-together' ); ?></th>
+                        <td>
+                            <select name="woobt_settings[search_exact]" class="woobt_search_exact">
+                                <option value="yes" <?php selected( $search_exact, 'yes' ); ?>><?php esc_html_e( 'Yes', 'woo-bought-together' ); ?></option>
+                                <option value="no" <?php selected( $search_exact, 'no' ); ?>><?php esc_html_e( 'No', 'woo-bought-together' ); ?></option>
+                            </select>
+                            <span class="description"><?php esc_html_e( 'Match whole product title or content?', 'woo-bought-together' ); ?></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><?php esc_html_e( 'Search sentence', 'woo-bought-together' ); ?></th>
+                        <td>
+                            <select name="woobt_settings[search_sentence]" class="woobt_search_sentence">
+                                <option value="yes" <?php selected( $search_sentence, 'yes' ); ?>><?php esc_html_e( 'Yes', 'woo-bought-together' ); ?></option>
+                                <option value="no" <?php selected( $search_sentence, 'no' ); ?>><?php esc_html_e( 'No', 'woo-bought-together' ); ?></option>
+                            </select>
+                            <span class="description"><?php esc_html_e( 'Do a phrase search?', 'woo-bought-together' ); ?></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><?php esc_html_e( 'Accept same products', 'woo-bought-together' ); ?></th>
+                        <td>
+                            <select name="woobt_settings[search_same]" class="woobt_search_same">
+                                <option value="yes" <?php selected( $search_same, 'yes' ); ?>><?php esc_html_e( 'Yes', 'woo-bought-together' ); ?></option>
+                                <option value="no" <?php selected( $search_same, 'no' ); ?>><?php esc_html_e( 'No', 'woo-bought-together' ); ?></option>
+                            </select>
+                            <span class="description"><?php esc_html_e( 'If yes, a product can be added many times.', 'woo-bought-together' ); ?></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><?php esc_html_e( 'Product types', 'woo-bought-together' ); ?></th>
+                        <td>
 							<?php
 							$search_types  = self::get_setting( 'search_types', [ 'all' ] );
 							$product_types = wc_get_product_types();
@@ -942,16 +908,17 @@ if ( ! function_exists( 'woobt_init' ) ) {
 
 							echo '</select>';
 							?>
-						</td>
-					</tr>
+                        </td>
+                    </tr>
 					<?php
 				}
 
 				function enqueue_scripts() {
 					wp_enqueue_style( 'woobt-frontend', WOOBT_URI . 'assets/css/frontend.css', [], WOOBT_VERSION );
 					wp_enqueue_script( 'woobt-frontend', WOOBT_URI . 'assets/js/frontend.js', [ 'jquery' ], WOOBT_VERSION, true );
-					wp_localize_script( 'woobt-frontend', 'woobt_vars', [
+					wp_localize_script( 'woobt-frontend', 'woobt_vars', apply_filters( 'woobt_vars', [
 							'ajax_url'                 => admin_url( 'admin-ajax.php' ),
+							'nonce'                    => wp_create_nonce( 'woobt-security' ),
 							'change_image'             => self::get_setting( 'change_image', 'yes' ),
 							'change_price'             => self::get_setting( 'change_price', 'yes' ),
 							'price_selector'           => self::get_setting( 'change_price_custom', '' ),
@@ -968,7 +935,7 @@ if ( ! function_exists( 'woobt_init' ) ) {
 							'total_price_text'         => self::localization( 'total', esc_html__( 'Total:', 'woo-bought-together' ) ),
 							'add_to_cart'              => self::get_setting( 'atc_button', 'main' ) === 'main' ? self::localization( 'add_to_cart', esc_html__( 'Add to cart', 'woo-bought-together' ) ) : self::localization( 'add_all_to_cart', esc_html__( 'Add all to cart', 'woo-bought-together' ) ),
 							'alert_selection'          => self::localization( 'alert_selection', esc_html__( 'Please select a purchasable variation for [name] before adding this product to the cart.', 'woo-bought-together' ) ),
-						]
+						] )
 					);
 				}
 
@@ -980,6 +947,7 @@ if ( ! function_exists( 'woobt_init' ) ) {
 						'jquery-ui-dialog',
 						'jquery-ui-sortable'
 					], WOOBT_VERSION, true );
+					wp_localize_script( 'woobt-backend', 'woobt_vars', [ 'nonce' => wp_create_nonce( 'woobt-security' ), ] );
 				}
 
 				function action_links( $links, $file ) {
@@ -1202,11 +1170,7 @@ if ( ! function_exists( 'woobt_init' ) ) {
 				}
 
 				function add_to_cart( $cart_item_key, $product_id, $quantity, $variation_id, $variation, $cart_item_data ) {
-					if ( isset( $cart_item_data['_bundle_variation_id'] ) ) {
-						// WC Product Bundles Variation
-						$variation_product = wc_get_product( $cart_item_data['_bundle_variation_id'] );
-						$product_id        = $variation_product->get_parent_id();
-					}
+					$product_id = apply_filters( 'woobt_add_to_cart_product_id', $product_id, $cart_item_data );
 
 					if ( ! empty( $cart_item_data['woobt_ids'] ) && ( self::get_ids( $product_id, 'validate' ) || ( self::get_setting( 'default', [ 'default' ] ) !== [ 'default' ] ) ) ) {
 						$ids = $cart_item_data['woobt_ids'];
@@ -1215,11 +1179,17 @@ if ( ! function_exists( 'woobt_init' ) ) {
 							$custom_qty = apply_filters( 'woobt_custom_qty', get_post_meta( $product_id, 'woobt_custom_qty', true ) === 'on', $product_id );
 							$sync_qty   = ! $custom_qty && apply_filters( 'woobt_sync_qty', get_post_meta( $product_id, 'woobt_sync_qty', true ) === 'on' );
 
-							// add sync_qty for the main product
 							if ( get_post_meta( $product_id, 'woobt_separately', true ) !== 'on' ) {
+								// add sync_qty for the main product
 								WC()->cart->cart_contents[ $cart_item_key ]['woobt_ids']      = $ids;
 								WC()->cart->cart_contents[ $cart_item_key ]['woobt_key']      = $cart_item_key;
 								WC()->cart->cart_contents[ $cart_item_key ]['woobt_sync_qty'] = $sync_qty;
+							} else {
+								WC()->cart->cart_contents[ $cart_item_key ]['woobt_ids'] = '';
+								// unset woobt_ids then add main product again
+								//unset( $cart_item_data['woobt_ids'] );
+								//WC()->cart->remove_cart_item( $cart_item_key );
+								//WC()->cart->add_to_cart( $product_id, $quantity, $variation_id, $variation, $cart_item_data );
 							}
 
 							// add child products
@@ -1278,6 +1248,10 @@ if ( ! function_exists( 'woobt_init' ) ) {
 				}
 
 				function ajax_add_all_to_cart() {
+					if ( ! apply_filters( 'woobt_disable_security_check', false, 'add_all_to_cart' ) ) {
+						check_ajax_referer( 'woobt-security', 'nonce' );
+					}
+
 					if ( ! isset( $_POST['product_id'] ) ) {
 						return;
 					}
@@ -1342,16 +1316,18 @@ if ( ! function_exists( 'woobt_init' ) ) {
 					foreach ( $cart_contents as $cart_item_key => $cart_item ) {
 						// associated products
 						if ( isset( $cart_item['woobt_parent_id'], $cart_item['woobt_price_item'] ) && ( $cart_item['woobt_price_item'] !== '100%' ) && ( $cart_item['woobt_price_item'] !== '' ) ) {
-							$pricing  = self::get_setting( 'pricing', 'sale_price' );
-							$_product = wc_get_product( ! empty( $cart_item['variation_id'] ) ? $cart_item['variation_id'] : $cart_item['product_id'] );
+							$pricing                    = self::get_setting( 'pricing', 'sale_price' );
+							$item_product               = wc_get_product( ! empty( $cart_item['variation_id'] ) ? $cart_item['variation_id'] : $cart_item['product_id'] );
+							$item_product_price         = apply_filters( 'woobt_cart_item_product_price', $item_product->get_price(), $item_product );
+							$item_product_regular_price = apply_filters( 'woobt_cart_item_product_regular_price', $item_product->get_regular_price(), $item_product );
 
 							// calc new price
 							if ( $pricing === 'sale_price' ) {
 								// from sale price
-								$item_new_price = self::new_price( $_product->get_price( 'edit' ), $cart_item['woobt_price_item'] );
+								$item_new_price = self::new_price( $item_product_price, $cart_item['woobt_price_item'] );
 							} else {
 								// from regular price
-								$item_new_price = self::new_price( $_product->get_regular_price( 'edit' ), $cart_item['woobt_price_item'] );
+								$item_new_price = self::new_price( $item_product_regular_price, $cart_item['woobt_price_item'] );
 							}
 
 							$cart_item['data']->set_price( $item_new_price );
@@ -1409,17 +1385,19 @@ if ( ! function_exists( 'woobt_init' ) ) {
 				}
 
 				function get_cart_item_from_session( $cart_item, $item_session_values ) {
-					if ( isset( $item_session_values['woobt_ids'] ) && ! empty( $item_session_values['woobt_ids'] ) ) {
-						$cart_item['woobt_ids']      = $item_session_values['woobt_ids'];
-						$cart_item['woobt_sync_qty'] = $item_session_values['woobt_sync_qty'];
+					if ( ! empty( $item_session_values['woobt_ids'] ) ) {
+						$cart_item['woobt_ids'] = $item_session_values['woobt_ids'];
 					}
 
-					if ( isset( $item_session_values['woobt_parent_id'] ) ) {
+					if ( ! empty( $item_session_values['woobt_parent_id'] ) ) {
 						$cart_item['woobt_parent_id']  = $item_session_values['woobt_parent_id'];
 						$cart_item['woobt_parent_key'] = $item_session_values['woobt_parent_key'];
 						$cart_item['woobt_price_item'] = $item_session_values['woobt_price_item'];
 						$cart_item['woobt_qty']        = $item_session_values['woobt_qty'];
-						$cart_item['woobt_sync_qty']   = $item_session_values['woobt_sync_qty'];
+					}
+
+					if ( ! empty( $item_session_values['woobt_sync_qty'] ) ) {
+						$cart_item['woobt_sync_qty'] = $item_session_values['woobt_sync_qty'];
 					}
 
 					return $cart_item;
@@ -1510,8 +1488,11 @@ if ( ! function_exists( 'woobt_init' ) ) {
 				}
 
 				function ajax_update_search_settings() {
-					$settings = (array) get_option( 'woobt_settings', [] );
+					if ( ! apply_filters( 'woobt_disable_security_check', false, 'update_search_settings' ) ) {
+						check_ajax_referer( 'woobt-security', 'nonce' );
+					}
 
+					$settings                    = (array) get_option( 'woobt_settings', [] );
 					$settings['search_limit']    = (int) sanitize_text_field( $_POST['limit'] );
 					$settings['search_sku']      = sanitize_text_field( $_POST['sku'] );
 					$settings['search_id']       = sanitize_text_field( $_POST['id'] );
@@ -1525,6 +1506,10 @@ if ( ! function_exists( 'woobt_init' ) ) {
 				}
 
 				function ajax_get_search_results() {
+					if ( ! apply_filters( 'woobt_disable_security_check', false, 'get_search_results' ) ) {
+						check_ajax_referer( 'woobt-security', 'nonce' );
+					}
+
 					$types         = self::get_setting( 'search_types', [ 'all' ] );
 					$keyword       = esc_html( $_POST['woobt_keyword'] );
 					$id            = absint( $_POST['woobt_id'] );
@@ -1610,13 +1595,17 @@ if ( ! function_exists( 'woobt_init' ) ) {
 				}
 
 				function ajax_add_text() {
+					if ( ! apply_filters( 'woobt_disable_security_check', false, 'add_text' ) ) {
+						check_ajax_referer( 'woobt-security', 'nonce' );
+					}
+
 					self::text_data_li();
 
 					wp_die();
 				}
 
 				function product_data_li( $product, $price = '100%', $qty = 1, $search = false, $key = null ) {
-					if ( ! $key ) {
+					if ( empty( $key ) || is_numeric( $key ) ) {
 						$key = self::generate_key();
 					}
 
@@ -1648,7 +1637,7 @@ if ( ! function_exists( 'woobt_init' ) ) {
 				}
 
 				function text_data_li( $data = [], $key = null ) {
-					if ( ! $key ) {
+					if ( empty( $key ) || is_numeric( $key ) ) {
 						$key = self::generate_key();
 					}
 
@@ -1676,45 +1665,45 @@ if ( ! function_exists( 'woobt_init' ) ) {
 					$atc_button     = get_post_meta( $post_id, 'woobt_atc_button', true ) ?: 'unset';
 					$show_this_item = get_post_meta( $post_id, 'woobt_show_this_item', true ) ?: 'unset';
 					?>
-					<div id='woobt_settings' class='panel woocommerce_options_panel woobt_table'>
-						<div id="woobt_search_settings" style="display: none" data-title="<?php esc_html_e( 'Search settings', 'woo-bought-together' ); ?>">
-							<table>
+                    <div id='woobt_settings' class='panel woocommerce_options_panel woobt_table'>
+                        <div id="woobt_search_settings" style="display: none" data-title="<?php esc_html_e( 'Search settings', 'woo-bought-together' ); ?>">
+                            <table>
 								<?php self::search_settings(); ?>
-								<tr>
-									<th></th>
-									<td>
-										<button id="woobt_search_settings_update" class="button button-primary">
+                                <tr>
+                                    <th></th>
+                                    <td>
+                                        <button id="woobt_search_settings_update" class="button button-primary">
 											<?php esc_html_e( 'Update Options', 'woo-bought-together' ); ?>
-										</button>
-									</td>
-								</tr>
-							</table>
-						</div>
-						<table>
-							<tr>
-								<th><?php esc_html_e( 'Search', 'woo-bought-together' ); ?> (<a href="<?php echo admin_url( 'admin.php?page=wpclever-woobt&tab=settings#search' ); ?>" id="woobt_search_settings_btn"><?php esc_html_e( 'settings', 'woo-bought-together' ); ?></a>)
-								</th>
-								<td>
-									<div class="w100">
-										<span class="loading" id="woobt_loading" style="display: none"><?php esc_html_e( 'searching...', 'woo-bought-together' ); ?></span>
-										<input type="search" id="woobt_keyword" placeholder="<?php esc_attr_e( 'Type any keyword to search', 'woo-bought-together' ); ?>"/>
-										<div id="woobt_results" class="woobt_results" style="display: none"></div>
-									</div>
-								</td>
-							</tr>
-							<tr class="woobt_tr_space">
-								<th>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <table>
+                            <tr>
+                                <th><?php esc_html_e( 'Search', 'woo-bought-together' ); ?> (<a href="<?php echo admin_url( 'admin.php?page=wpclever-woobt&tab=settings#search' ); ?>" id="woobt_search_settings_btn"><?php esc_html_e( 'settings', 'woo-bought-together' ); ?></a>)
+                                </th>
+                                <td>
+                                    <div class="w100">
+                                        <span class="loading" id="woobt_loading" style="display: none"><?php esc_html_e( 'searching...', 'woo-bought-together' ); ?></span>
+                                        <input type="search" id="woobt_keyword" placeholder="<?php esc_attr_e( 'Type any keyword to search', 'woo-bought-together' ); ?>"/>
+                                        <div id="woobt_results" class="woobt_results" style="display: none"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="woobt_tr_space">
+                                <th>
 									<?php esc_html_e( 'Selected', 'woo-bought-together' ); ?>
-									<div class="woobt_tools">
-										<a href="#" class="woobt-import-export"><?php esc_html_e( 'import/export', 'woo-bought-together' ); ?></a>
-									</div>
-								</th>
-								<td>
-									<div class="w100">
+                                    <div class="woobt_tools">
+                                        <a href="#" class="woobt-import-export"><?php esc_html_e( 'import/export', 'woo-bought-together' ); ?></a>
+                                    </div>
+                                </th>
+                                <td>
+                                    <div class="w100">
 										<?php echo '<div class="woobt_notice_default">' . sprintf( esc_html__( '* If don\'t choose any products, it can shows the default products %s.', 'woo-bought-together' ), '<a
                                                     href="' . admin_url( 'admin.php?page=wpclever-woobt&tab=settings' ) . '" target="_blank">' . esc_html__( 'here', 'woo-bought-together' ) . '</a>' ) . '</div>'; ?>
-										<div id="woobt_selected" class="woobt_selected">
-											<ul>
+                                        <div id="woobt_selected" class="woobt_selected">
+                                            <ul>
 												<?php
 												if ( $items = self::get_product_items( $post_id ) ) {
 													foreach ( $items as $item_key => $item ) {
@@ -1735,102 +1724,102 @@ if ( ! function_exists( 'woobt_init' ) ) {
 													}
 												}
 												?>
-											</ul>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr class="woobt_tr_space">
-								<th></th>
-								<td>
-									<a href="#" class="woobt_add_text">
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="woobt_tr_space">
+                                <th></th>
+                                <td>
+                                    <a href="#" class="woobt_add_text">
 										<?php esc_html_e( '+ Add heading/paragraph', 'woo-bought-together' ); ?>
-									</a>
-									<!--
+                                    </a>
+                                    <!--
                                     <a href="https://wpclever.net/downloads/frequently-bought-together?utm_source=pro&utm_medium=woobt&utm_campaign=wporg"
                                        target="_blank" class="woobt_add_txt"
                                        onclick="return confirm('This feature only available in Premium Version!\nBuy it now? Just $29')">
                                         <?php esc_html_e( '+ Add heading/paragraph', 'woo-bought-together' ); ?>
                                     </a>
                                     -->
-								</td>
-							</tr>
-							<tr class="woobt_tr_space">
-								<th><?php esc_html_e( 'Add separately', 'woo-bought-together' ); ?></th>
-								<td>
-									<input id="woobt_separately" name="woobt_separately" type="checkbox" <?php echo esc_attr( get_post_meta( $post_id, 'woobt_separately', true ) === 'on' ? 'checked' : '' ); ?>/>
-									<span class="woocommerce-help-tip" data-tip="<?php esc_attr_e( 'If enabled, the associated products will be added as separate items and stay unaffected from the main product, their prices will change back to the original.', 'woo-bought-together' ); ?>"></span>
-								</td>
-							</tr>
-							<tr class="woobt_tr_space">
-								<th><?php esc_html_e( 'Selecting method', 'woo-bought-together' ); ?></th>
-								<td>
-									<select name="woobt_selection">
-										<option value="multiple" <?php selected( $selection, 'multiple' ); ?>><?php esc_html_e( 'Multiple selection (default)', 'woo-bought-together' ); ?></option>
-										<option value="single" <?php selected( $selection, 'single' ); ?>><?php esc_html_e( 'Single selection (choose 1 only)', 'woo-bought-together' ); ?></option>
-									</select>
-								</td>
-							</tr>
-							<tr class="woobt_tr_space">
-								<th><?php esc_html_e( 'Discount', 'woo-bought-together' ); ?></th>
-								<td>
-									<input id="woobt_discount" name="woobt_discount" type="number" min="0" max="100" step="0.0001" style="width: 50px" value="<?php echo get_post_meta( $post_id, 'woobt_discount', true ); ?>"/>%
-									<span class="woocommerce-help-tip" data-tip="<?php esc_attr_e( 'Discount for the main product when buying at least one product in this list.', 'woo-bought-together' ); ?>"></span>
-								</td>
-							</tr>
-							<tr class="woobt_tr_space">
-								<th><?php esc_html_e( 'Checked all', 'woo-bought-together' ); ?></th>
-								<td>
-									<input id="woobt_checked_all" name="woobt_checked_all" type="checkbox" <?php echo esc_attr( get_post_meta( $post_id, 'woobt_checked_all', true ) === 'on' ? 'checked' : '' ); ?>/>
-									<label for="woobt_checked_all"><?php esc_html_e( 'Checked all by default.', 'woo-bought-together' ); ?></label>
-								</td>
-							</tr>
-							<tr class="woobt_tr_space">
-								<th><?php esc_html_e( 'Custom quantity', 'woo-bought-together' ); ?></th>
-								<td>
-									<input id="woobt_custom_qty" name="woobt_custom_qty" type="checkbox" <?php echo esc_attr( get_post_meta( $post_id, 'woobt_custom_qty', true ) === 'on' ? 'checked' : '' ); ?>/>
-									<label for="woobt_custom_qty"><?php esc_html_e( 'Allow the customer can change the quantity of each product.', 'woo-bought-together' ); ?></label>
-								</td>
-							</tr>
-							<tr class="woobt_tr_space woobt_tr_hide_if_custom_qty">
-								<th><?php esc_html_e( 'Sync quantity', 'woo-bought-together' ); ?></th>
-								<td>
-									<input id="woobt_sync_qty" name="woobt_sync_qty" type="checkbox" <?php echo esc_attr( get_post_meta( $post_id, 'woobt_sync_qty', true ) === 'on' ? 'checked' : '' ); ?>/>
-									<label for="woobt_sync_qty"><?php esc_html_e( 'Sync the quantity of the main product with associated products.', 'woo-bought-together' ); ?></label>
-								</td>
-							</tr>
-							<tr class="woobt_tr_space woobt_tr_show_if_custom_qty">
-								<th><?php esc_html_e( 'Limit each item', 'woo-bought-together' ); ?></th>
-								<td>
-									<input id="woobt_limit_each_min_default" name="woobt_limit_each_min_default" type="checkbox" <?php echo esc_attr( get_post_meta( $post_id, 'woobt_limit_each_min_default', true ) === 'on' ? 'checked' : '' ); ?>/>
-									<label for="woobt_limit_each_min_default"><?php esc_html_e( 'Use default quantity as min', 'woo-bought-together' ); ?></label>
-									<u>or</u> Min
-									<input name="woobt_limit_each_min" type="number" min="0" value="<?php echo esc_attr( get_post_meta( $post_id, 'woobt_limit_each_min', true ) ?: '' ); ?>" style="width: 60px; float: none"/> Max
-									<input name="woobt_limit_each_max" type="number" min="1" value="<?php echo esc_attr( get_post_meta( $post_id, 'woobt_limit_each_max', true ) ?: '' ); ?>" style="width: 60px; float: none"/>
-								</td>
-							</tr>
-							<tr class="woobt_tr_space">
-								<th><?php esc_html_e( 'Displaying', 'woo-bought-together' ); ?></th>
-								<td>
-									<a href="#" class="woobt_displaying"><?php esc_html_e( 'Overwrite the default displaying settings', 'woo-bought-together' ); ?></a>
-								</td>
-							</tr>
-							<tr class="woobt_tr_space woobt_show_if_displaying">
-								<th><?php esc_html_e( 'Layout', 'woo-bought-together' ); ?></th>
-								<td>
-									<select name="woobt_layout">
-										<option value="unset" <?php selected( $layout, 'unset' ); ?>><?php esc_html_e( 'Unset (default setting)', 'woo-bought-together' ); ?></option>
-										<option value="default" <?php selected( $layout, 'default' ); ?>><?php esc_html_e( 'List', 'woo-bought-together' ); ?></option>
-										<option value="separate" <?php selected( $layout, 'separate' ); ?>><?php esc_html_e( 'Separate images', 'woo-bought-together' ); ?></option>
-										<option value="grid-2" <?php selected( $layout, 'grid-2' ); ?>><?php esc_html_e( 'Grid - 2 columns', 'woo-bought-together' ); ?></option>
-										<option value="grid-3" <?php selected( $layout, 'grid-3' ); ?>><?php esc_html_e( 'Grid - 3 columns', 'woo-bought-together' ); ?></option>
-										<option value="grid-4" <?php selected( $layout, 'grid-4' ); ?>><?php esc_html_e( 'Grid - 4 columns', 'woo-bought-together' ); ?></option>
-									</select>
-								</td>
-							</tr>
-							<tr class="woobt_tr_space woobt_show_if_displaying">
-								<th><?php esc_html_e( 'Position', 'woo-bought-together' ); ?></th>
-								<td>
+                                </td>
+                            </tr>
+                            <tr class="woobt_tr_space">
+                                <th><?php esc_html_e( 'Add separately', 'woo-bought-together' ); ?></th>
+                                <td>
+                                    <input id="woobt_separately" name="woobt_separately" type="checkbox" <?php echo esc_attr( get_post_meta( $post_id, 'woobt_separately', true ) === 'on' ? 'checked' : '' ); ?>/>
+                                    <span class="woocommerce-help-tip" data-tip="<?php esc_attr_e( 'If enabled, the associated products will be added as separate items and stay unaffected from the main product, their prices will change back to the original.', 'woo-bought-together' ); ?>"></span>
+                                </td>
+                            </tr>
+                            <tr class="woobt_tr_space">
+                                <th><?php esc_html_e( 'Selecting method', 'woo-bought-together' ); ?></th>
+                                <td>
+                                    <select name="woobt_selection">
+                                        <option value="multiple" <?php selected( $selection, 'multiple' ); ?>><?php esc_html_e( 'Multiple selection (default)', 'woo-bought-together' ); ?></option>
+                                        <option value="single" <?php selected( $selection, 'single' ); ?>><?php esc_html_e( 'Single selection (choose 1 only)', 'woo-bought-together' ); ?></option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr class="woobt_tr_space">
+                                <th><?php esc_html_e( 'Discount', 'woo-bought-together' ); ?></th>
+                                <td>
+                                    <input id="woobt_discount" name="woobt_discount" type="number" min="0" max="100" step="0.0001" style="width: 50px" value="<?php echo get_post_meta( $post_id, 'woobt_discount', true ); ?>"/>%
+                                    <span class="woocommerce-help-tip" data-tip="<?php esc_attr_e( 'Discount for the main product when buying at least one product in this list.', 'woo-bought-together' ); ?>"></span>
+                                </td>
+                            </tr>
+                            <tr class="woobt_tr_space">
+                                <th><?php esc_html_e( 'Checked all', 'woo-bought-together' ); ?></th>
+                                <td>
+                                    <input id="woobt_checked_all" name="woobt_checked_all" type="checkbox" <?php echo esc_attr( get_post_meta( $post_id, 'woobt_checked_all', true ) === 'on' ? 'checked' : '' ); ?>/>
+                                    <label for="woobt_checked_all"><?php esc_html_e( 'Checked all by default.', 'woo-bought-together' ); ?></label>
+                                </td>
+                            </tr>
+                            <tr class="woobt_tr_space">
+                                <th><?php esc_html_e( 'Custom quantity', 'woo-bought-together' ); ?></th>
+                                <td>
+                                    <input id="woobt_custom_qty" name="woobt_custom_qty" type="checkbox" <?php echo esc_attr( get_post_meta( $post_id, 'woobt_custom_qty', true ) === 'on' ? 'checked' : '' ); ?>/>
+                                    <label for="woobt_custom_qty"><?php esc_html_e( 'Allow the customer can change the quantity of each product.', 'woo-bought-together' ); ?></label>
+                                </td>
+                            </tr>
+                            <tr class="woobt_tr_space woobt_tr_hide_if_custom_qty">
+                                <th><?php esc_html_e( 'Sync quantity', 'woo-bought-together' ); ?></th>
+                                <td>
+                                    <input id="woobt_sync_qty" name="woobt_sync_qty" type="checkbox" <?php echo esc_attr( get_post_meta( $post_id, 'woobt_sync_qty', true ) === 'on' ? 'checked' : '' ); ?>/>
+                                    <label for="woobt_sync_qty"><?php esc_html_e( 'Sync the quantity of the main product with associated products.', 'woo-bought-together' ); ?></label>
+                                </td>
+                            </tr>
+                            <tr class="woobt_tr_space woobt_tr_show_if_custom_qty">
+                                <th><?php esc_html_e( 'Limit each item', 'woo-bought-together' ); ?></th>
+                                <td>
+                                    <input id="woobt_limit_each_min_default" name="woobt_limit_each_min_default" type="checkbox" <?php echo esc_attr( get_post_meta( $post_id, 'woobt_limit_each_min_default', true ) === 'on' ? 'checked' : '' ); ?>/>
+                                    <label for="woobt_limit_each_min_default"><?php esc_html_e( 'Use default quantity as min', 'woo-bought-together' ); ?></label>
+                                    <u>or</u> Min
+                                    <input name="woobt_limit_each_min" type="number" min="0" value="<?php echo esc_attr( get_post_meta( $post_id, 'woobt_limit_each_min', true ) ?: '' ); ?>" style="width: 60px; float: none"/> Max
+                                    <input name="woobt_limit_each_max" type="number" min="1" value="<?php echo esc_attr( get_post_meta( $post_id, 'woobt_limit_each_max', true ) ?: '' ); ?>" style="width: 60px; float: none"/>
+                                </td>
+                            </tr>
+                            <tr class="woobt_tr_space">
+                                <th><?php esc_html_e( 'Displaying', 'woo-bought-together' ); ?></th>
+                                <td>
+                                    <a href="#" class="woobt_displaying"><?php esc_html_e( 'Overwrite the default displaying settings', 'woo-bought-together' ); ?></a>
+                                </td>
+                            </tr>
+                            <tr class="woobt_tr_space woobt_show_if_displaying">
+                                <th><?php esc_html_e( 'Layout', 'woo-bought-together' ); ?></th>
+                                <td>
+                                    <select name="woobt_layout">
+                                        <option value="unset" <?php selected( $layout, 'unset' ); ?>><?php esc_html_e( 'Unset (default setting)', 'woo-bought-together' ); ?></option>
+                                        <option value="default" <?php selected( $layout, 'default' ); ?>><?php esc_html_e( 'List', 'woo-bought-together' ); ?></option>
+                                        <option value="separate" <?php selected( $layout, 'separate' ); ?>><?php esc_html_e( 'Separate images', 'woo-bought-together' ); ?></option>
+                                        <option value="grid-2" <?php selected( $layout, 'grid-2' ); ?>><?php esc_html_e( 'Grid - 2 columns', 'woo-bought-together' ); ?></option>
+                                        <option value="grid-3" <?php selected( $layout, 'grid-3' ); ?>><?php esc_html_e( 'Grid - 3 columns', 'woo-bought-together' ); ?></option>
+                                        <option value="grid-4" <?php selected( $layout, 'grid-4' ); ?>><?php esc_html_e( 'Grid - 4 columns', 'woo-bought-together' ); ?></option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr class="woobt_tr_space woobt_show_if_displaying">
+                                <th><?php esc_html_e( 'Position', 'woo-bought-together' ); ?></th>
+                                <td>
 									<?php
 									if ( is_array( self::$positions ) && ( count( self::$positions ) > 0 ) ) {
 										echo '<select name="woobt_position">';
@@ -1844,48 +1833,48 @@ if ( ! function_exists( 'woobt_init' ) ) {
 										echo '</select>';
 									}
 									?>
-									<span class="description"><?php esc_html_e( 'Choose the position to show the products list. You also can use the shortcode [woobt] to show the list where you want.', 'woo-bought-together' ); ?></span>
-								</td>
-							</tr>
-							<tr class="woobt_tr_space woobt_show_if_displaying">
-								<th><?php esc_html_e( 'Add to cart button', 'woo-bought-together' ); ?></th>
-								<td>
-									<select name="woobt_atc_button" class="woobt_atc_button">
-										<option value="unset" <?php selected( $atc_button, 'unset' ); ?>><?php esc_html_e( 'Unset (default setting)', 'woo-bought-together' ); ?></option>
-										<option value="main" <?php selected( $atc_button, 'main' ); ?>><?php esc_html_e( 'Main product\'s button', 'woo-bought-together' ); ?></option>
-										<option value="separate" <?php selected( $atc_button, 'separate' ); ?>><?php esc_html_e( 'Separate buttons', 'woo-bought-together' ); ?></option>
-									</select>
-								</td>
-							</tr>
-							<tr class="woobt_tr_space woobt_show_if_displaying">
-								<th><?php esc_html_e( 'Show "this item"', 'woo-bought-together' ); ?></th>
-								<td>
-									<select name="woobt_show_this_item" class="woobt_show_this_item">
-										<option value="unset" <?php selected( $show_this_item, 'unset' ); ?>><?php esc_html_e( 'Unset (default setting)', 'woo-bought-together' ); ?></option>
-										<option value="yes" <?php selected( $show_this_item, 'yes' ); ?>><?php esc_html_e( 'Yes', 'woo-bought-together' ); ?></option>
-										<option value="no" <?php selected( $show_this_item, 'no' ); ?>><?php esc_html_e( 'No', 'woo-bought-together' ); ?></option>
-									</select>
-									<span class="description"><?php esc_html_e( '"This item" cannot be hidden if "Separate buttons" is in use for the Add to Cart button.', 'woo-bought-together' ); ?></span>
-								</td>
-							</tr>
-							<tr class="woobt_tr_space woobt_show_if_displaying">
-								<th><?php esc_html_e( 'Above text', 'woo-bought-together' ); ?></th>
-								<td>
-									<div class="w100">
-										<textarea name="woobt_before_text" rows="1" style="width: 100%"><?php echo stripslashes( get_post_meta( $post_id, 'woobt_before_text', true ) ); ?></textarea>
-									</div>
-								</td>
-							</tr>
-							<tr class="woobt_tr_space woobt_show_if_displaying">
-								<th><?php esc_html_e( 'Under text', 'woo-bought-together' ); ?></th>
-								<td>
-									<div class="w100">
-										<textarea name="woobt_after_text" rows="1" style="width: 100%"><?php echo stripslashes( get_post_meta( $post_id, 'woobt_after_text', true ) ); ?></textarea>
-									</div>
-								</td>
-							</tr>
-						</table>
-					</div>
+                                    <span class="description"><?php esc_html_e( 'Choose the position to show the products list. You also can use the shortcode [woobt] to show the list where you want.', 'woo-bought-together' ); ?></span>
+                                </td>
+                            </tr>
+                            <tr class="woobt_tr_space woobt_show_if_displaying">
+                                <th><?php esc_html_e( 'Add to cart button', 'woo-bought-together' ); ?></th>
+                                <td>
+                                    <select name="woobt_atc_button" class="woobt_atc_button">
+                                        <option value="unset" <?php selected( $atc_button, 'unset' ); ?>><?php esc_html_e( 'Unset (default setting)', 'woo-bought-together' ); ?></option>
+                                        <option value="main" <?php selected( $atc_button, 'main' ); ?>><?php esc_html_e( 'Main product\'s button', 'woo-bought-together' ); ?></option>
+                                        <option value="separate" <?php selected( $atc_button, 'separate' ); ?>><?php esc_html_e( 'Separate buttons', 'woo-bought-together' ); ?></option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr class="woobt_tr_space woobt_show_if_displaying">
+                                <th><?php esc_html_e( 'Show "this item"', 'woo-bought-together' ); ?></th>
+                                <td>
+                                    <select name="woobt_show_this_item" class="woobt_show_this_item">
+                                        <option value="unset" <?php selected( $show_this_item, 'unset' ); ?>><?php esc_html_e( 'Unset (default setting)', 'woo-bought-together' ); ?></option>
+                                        <option value="yes" <?php selected( $show_this_item, 'yes' ); ?>><?php esc_html_e( 'Yes', 'woo-bought-together' ); ?></option>
+                                        <option value="no" <?php selected( $show_this_item, 'no' ); ?>><?php esc_html_e( 'No', 'woo-bought-together' ); ?></option>
+                                    </select>
+                                    <span class="description"><?php esc_html_e( '"This item" cannot be hidden if "Separate buttons" is in use for the Add to Cart button.', 'woo-bought-together' ); ?></span>
+                                </td>
+                            </tr>
+                            <tr class="woobt_tr_space woobt_show_if_displaying">
+                                <th><?php esc_html_e( 'Above text', 'woo-bought-together' ); ?></th>
+                                <td>
+                                    <div class="w100">
+                                        <textarea name="woobt_before_text" rows="1" style="width: 100%"><?php echo stripslashes( get_post_meta( $post_id, 'woobt_before_text', true ) ); ?></textarea>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="woobt_tr_space woobt_show_if_displaying">
+                                <th><?php esc_html_e( 'Under text', 'woo-bought-together' ); ?></th>
+                                <td>
+                                    <div class="w100">
+                                        <textarea name="woobt_after_text" rows="1" style="width: 100%"><?php echo stripslashes( get_post_meta( $post_id, 'woobt_after_text', true ) ); ?></textarea>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
 					<?php
 				}
 
@@ -1976,7 +1965,18 @@ if ( ! function_exists( 'woobt_init' ) ) {
 				}
 
 				function ajax_import_export() {
-					$ids = isset( $_POST['ids'] ) ? $_POST['ids'] : [];
+					if ( ! apply_filters( 'woobt_disable_security_check', false, 'import_export' ) ) {
+						check_ajax_referer( 'woobt-security', 'nonce' );
+					}
+
+					$ids      = [];
+					$ids_arr  = [];
+					$ids_data = isset( $_POST['ids'] ) ? sanitize_post( $_POST['ids'] ) : '';
+					parse_str( $ids_data, $ids_arr );
+
+					if ( isset( $ids_arr['woobt_ids'] ) && is_array( $ids_arr['woobt_ids'] ) ) {
+						$ids = $ids_arr['woobt_ids'];
+					}
 
 					echo '<textarea class="woobt_import_export_data" style="width: 100%; height: 200px">' . ( ! empty( $ids ) ? json_encode( $ids ) : '' ) . '</textarea>';
 					echo '<div style="display: flex; align-items: center"><button class="button button-primary woobt-import-export-save">' . esc_html__( 'Update', 'woo-product-timer' ) . '</button>';
@@ -1987,27 +1987,17 @@ if ( ! function_exists( 'woobt_init' ) ) {
 				}
 
 				function ajax_import_export_save() {
-					$ids = sanitize_textarea_field( trim( $_POST['ids'] ) );
+					if ( ! apply_filters( 'woobt_disable_security_check', false, 'import_export_save' ) ) {
+						check_ajax_referer( 'woobt-security', 'nonce' );
+					}
+
+					$ids = sanitize_textarea_field( isset( $_POST['ids'] ) ? $_POST['ids'] : '' );
 
 					if ( ! empty( $ids ) ) {
-						$items = [];
-						$ids   = json_decode( stripcslashes( $ids ) );
-
-						if ( $ids !== null ) {
-							foreach ( $ids as $id ) {
-								if ( preg_match( '/woobt_ids\[(.*?)\]\[(.*?)\]/', $id->name, $matches ) ) {
-									$key   = $matches[1];
-									$field = $matches[2];
-
-									if ( ! empty( $key ) && ! empty( $field ) ) {
-										$items[ $key ][ $field ] = $id->value;
-									}
-								}
-							}
-						}
+						$items = json_decode( stripcslashes( $ids ), true );
 
 						if ( ! empty( $items ) ) {
-							foreach ( $items as $item ) {
+							foreach ( $items as $item_key => $item ) {
 								if ( ! empty( $item['id'] ) ) {
 									$item_id      = $item['id'];
 									$item_price   = $item['price'];
@@ -2018,9 +2008,9 @@ if ( ! function_exists( 'woobt_init' ) ) {
 										continue;
 									}
 
-									self::product_data_li( $item_product, $item_price, $item_qty, false );
+									self::product_data_li( $item_product, $item_price, $item_qty, false, $item_key );
 								} else {
-									self::text_data_li( $item );
+									self::text_data_li( $item, $item_key );
 								}
 							}
 						}
@@ -2283,7 +2273,7 @@ if ( ! function_exists( 'woobt_init' ) ) {
 							if ( $is_separate_layout ) {
 								do_action( 'woobt_images_above', $product );
 								?>
-								<div class="woobt-images">
+                                <div class="woobt-images">
 									<?php
 									do_action( 'woobt_images_before', $product );
 
@@ -2318,7 +2308,7 @@ if ( ! function_exists( 'woobt_init' ) ) {
 
 									do_action( 'woobt_images_after', $product );
 									?>
-								</div>
+                                </div>
 								<?php
 								do_action( 'woobt_images_below', $product );
 							}
@@ -2342,7 +2332,7 @@ if ( ! function_exists( 'woobt_init' ) ) {
 
 							do_action( 'woobt_products_above', $product );
 							?>
-							<div class="<?php echo esc_attr( $products_class ); ?>" data-show-price="<?php echo esc_attr( self::get_setting( 'show_price', 'yes' ) ); ?>" data-optional="<?php echo esc_attr( $custom_qty ? 'on' : 'off' ); ?>" data-sync-qty="<?php echo esc_attr( $sync_qty ? 'on' : 'off' ); ?>" data-variables="<?php echo esc_attr( self::has_variables( $items ) ? 'yes' : 'no' ); ?>" data-product-id="<?php echo esc_attr( $product->is_type( 'variable' ) ? '0' : $product_id ); ?>" data-product-type="<?php echo esc_attr( $product->get_type() ); ?>" data-product-price-suffix="<?php echo esc_attr( htmlentities( $product->get_price_suffix() ) ); ?>" data-product-price-html="<?php echo esc_attr( $price_html ); ?>" data-product-o_price-html="<?php echo esc_attr( $price_html ); ?>" data-pricing="<?php echo esc_attr( $pricing ); ?>" data-discount="<?php echo esc_attr( $discount ); ?>" data-product-sku="<?php echo esc_attr( $sku ); ?>" data-product-o_sku="<?php echo esc_attr( $sku ); ?>" data-product-weight="<?php echo esc_attr( $weight ); ?>" data-product-o_weight="<?php echo esc_attr( $weight ); ?>" data-product-dimensions="<?php echo esc_attr( $dimensions ); ?>" data-product-o_dimensions="<?php echo esc_attr( $dimensions ); ?>">
+                            <div class="<?php echo esc_attr( $products_class ); ?>" data-show-price="<?php echo esc_attr( self::get_setting( 'show_price', 'yes' ) ); ?>" data-optional="<?php echo esc_attr( $custom_qty ? 'on' : 'off' ); ?>" data-sync-qty="<?php echo esc_attr( $sync_qty ? 'on' : 'off' ); ?>" data-variables="<?php echo esc_attr( self::has_variables( $items ) ? 'yes' : 'no' ); ?>" data-product-id="<?php echo esc_attr( $product->is_type( 'variable' ) ? '0' : $product_id ); ?>" data-product-type="<?php echo esc_attr( $product->get_type() ); ?>" data-product-price-suffix="<?php echo esc_attr( htmlentities( $product->get_price_suffix() ) ); ?>" data-product-price-html="<?php echo esc_attr( $price_html ); ?>" data-product-o_price-html="<?php echo esc_attr( $price_html ); ?>" data-pricing="<?php echo esc_attr( $pricing ); ?>" data-discount="<?php echo esc_attr( $discount ); ?>" data-product-sku="<?php echo esc_attr( $sku ); ?>" data-product-o_sku="<?php echo esc_attr( $sku ); ?>" data-product-weight="<?php echo esc_attr( $weight ); ?>" data-product-o_weight="<?php echo esc_attr( $weight ); ?>" data-product-dimensions="<?php echo esc_attr( $dimensions ); ?>" data-product-o_dimensions="<?php echo esc_attr( $dimensions ); ?>">
 								<?php
 								do_action( 'woobt_products_before', $product );
 
@@ -2368,7 +2358,7 @@ if ( ! function_exists( 'woobt_init' ) ) {
 
 								do_action( 'woobt_products_after', $product );
 								?>
-							</div><!-- /woobt-products -->
+                            </div><!-- /woobt-products -->
 							<?php
 							do_action( 'woobt_products_below', $product );
 
@@ -2430,23 +2420,23 @@ if ( ! function_exists( 'woobt_init' ) ) {
 
 					if ( $hide_this ) {
 						?>
-						<div class="woobt-product woobt-product-this woobt-hide-this" data-order="0" data-qty="1" data-id="<?php echo esc_attr( $product->is_type( 'variable' ) || ! $product->is_in_stock() ? 0 : $product_id ); ?>" data-pid="<?php echo esc_attr( $product_id ); ?>" data-name="<?php echo esc_attr( $product_name ); ?>" data-price="<?php echo esc_attr( apply_filters( 'woobt_item_data_price', wc_get_price_to_display( $product ), $product ) ); ?>" data-regular-price="<?php echo esc_attr( apply_filters( 'woobt_item_data_regular_price', wc_get_price_to_display( $product, [ 'price' => $product->get_regular_price() ] ), $product ) ); ?>">
-							<div class="woobt-choose">
-								<label for="woobt_checkbox_0"><?php echo esc_html( $product_name ); ?></label>
-								<input id="woobt_checkbox_0" class="woobt-checkbox woobt-checkbox-this" type="checkbox" checked disabled/>
-								<span class="checkmark"></span>
-							</div>
-						</div>
+                        <div class="woobt-product woobt-product-this woobt-hide-this" data-order="0" data-qty="1" data-id="<?php echo esc_attr( $product->is_type( 'variable' ) || ! $product->is_in_stock() ? 0 : $product_id ); ?>" data-pid="<?php echo esc_attr( $product_id ); ?>" data-name="<?php echo esc_attr( $product_name ); ?>" data-price="<?php echo esc_attr( apply_filters( 'woobt_item_data_price', wc_get_price_to_display( $product ), $product ) ); ?>" data-regular-price="<?php echo esc_attr( apply_filters( 'woobt_item_data_regular_price', wc_get_price_to_display( $product, [ 'price' => $product->get_regular_price() ] ), $product ) ); ?>">
+                            <div class="woobt-choose">
+                                <label for="woobt_checkbox_0"><?php echo esc_html( $product_name ); ?></label>
+                                <input id="woobt_checkbox_0" class="woobt-checkbox woobt-checkbox-this" type="checkbox" checked disabled/>
+                                <span class="checkmark"></span>
+                            </div>
+                        </div>
 					<?php } else { ?>
-						<div class="woobt-product woobt-product-this" data-order="0" data-qty="1" data-o_qty="1" data-id="<?php echo esc_attr( $product->is_type( 'variable' ) || ! $product->is_in_stock() ? 0 : $product_id ); ?>" data-pid="<?php echo esc_attr( $product_id ); ?>" data-name="<?php echo esc_attr( $product_name ); ?>" data-new-price="<?php echo esc_attr( ! $separately && ( $discount = get_post_meta( $product_id, 'woobt_discount', true ) ) ? ( 100 - (float) $discount ) . '%' : '100%' ); ?>" data-price-suffix="<?php echo esc_attr( htmlentities( $product->get_price_suffix() ) ); ?>" data-price="<?php echo esc_attr( apply_filters( 'woobt_item_data_price', wc_get_price_to_display( $product ), $product ) ); ?>" data-regular-price="<?php echo esc_attr( apply_filters( 'woobt_item_data_regular_price', wc_get_price_to_display( $product, [ 'price' => $product->get_regular_price() ] ), $product ) ); ?>">
+                        <div class="woobt-product woobt-product-this" data-order="0" data-qty="1" data-o_qty="1" data-id="<?php echo esc_attr( $product->is_type( 'variable' ) || ! $product->is_in_stock() ? 0 : $product_id ); ?>" data-pid="<?php echo esc_attr( $product_id ); ?>" data-name="<?php echo esc_attr( $product_name ); ?>" data-new-price="<?php echo esc_attr( ! $separately && ( $discount = get_post_meta( $product_id, 'woobt_discount', true ) ) ? ( 100 - (float) $discount ) . '%' : '100%' ); ?>" data-price-suffix="<?php echo esc_attr( htmlentities( $product->get_price_suffix() ) ); ?>" data-price="<?php echo esc_attr( apply_filters( 'woobt_item_data_price', wc_get_price_to_display( $product ), $product ) ); ?>" data-regular-price="<?php echo esc_attr( apply_filters( 'woobt_item_data_regular_price', wc_get_price_to_display( $product, [ 'price' => $product->get_regular_price() ] ), $product ) ); ?>">
 
 							<?php do_action( 'woobt_product_before', $product ); ?>
 
-							<div class="woobt-choose">
-								<label for="woobt_checkbox_0"><?php echo esc_html( $product_name ); ?></label>
-								<input id="woobt_checkbox_0" class="woobt-checkbox woobt-checkbox-this" type="checkbox" checked disabled/>
-								<span class="checkmark"></span>
-							</div>
+                            <div class="woobt-choose">
+                                <label for="woobt_checkbox_0"><?php echo esc_html( $product_name ); ?></label>
+                                <input id="woobt_checkbox_0" class="woobt-checkbox woobt-checkbox-this" type="checkbox" checked disabled/>
+                                <span class="checkmark"></span>
+                            </div>
 
 							<?php if ( ! $is_separate_layout && ( self::get_setting( 'show_thumb', 'yes' ) !== 'no' ) ) {
 								echo '<div class="woobt-thumb">';
@@ -2456,13 +2446,13 @@ if ( ! function_exists( 'woobt_init' ) ) {
 								echo '</div>';
 							} ?>
 
-							<div class="woobt-title">
+                            <div class="woobt-title">
                                 <span class="woobt-title-inner">
                                     <?php echo '<span>' . self::localization( 'this_item', esc_html__( 'This item:', 'woo-bought-together' ) ) . '</span> <span>' . apply_filters( 'woobt_product_get_name', $product->get_name(), $product ) . '</span>'; ?>
                                 </span>
 
 								<?php if ( $is_separate_layout && ( self::get_setting( 'show_price', 'yes' ) !== 'no' ) ) { ?>
-									<span class="woobt-price">
+                                    <span class="woobt-price">
                                         <span class="woobt-price-new">
                                             <?php
                                             if ( ! $separately && ( $discount = get_post_meta( $product_id, 'woobt_discount', true ) ) ) {
@@ -2495,11 +2485,11 @@ if ( ! function_exists( 'woobt_init' ) ) {
 											echo '<div class="variations">';
 
 											foreach ( $attributes as $attribute_name => $options ) { ?>
-												<div class="variation">
-													<div class="label">
+                                                <div class="variation">
+                                                    <div class="label">
 														<?php echo wc_attribute_label( $attribute_name ); ?>
-													</div>
-													<div class="select">
+                                                    </div>
+                                                    <div class="select">
 														<?php
 														$selected = isset( $_REQUEST[ 'attribute_' . sanitize_title( $attribute_name ) ] ) ? wc_clean( stripslashes( urldecode( $_REQUEST[ 'attribute_' . sanitize_title( $attribute_name ) ] ) ) ) : $product->get_variation_default_attribute( $attribute_name );
 														wc_dropdown_variation_attribute_options( [
@@ -2510,8 +2500,8 @@ if ( ! function_exists( 'woobt_init' ) ) {
 															'show_option_none' => sprintf( self::localization( 'choose', esc_html__( 'Choose %s', 'woo-bought-together' ) ), wc_attribute_label( $attribute_name ) )
 														] );
 														?>
-													</div>
-												</div>
+                                                    </div>
+                                                </div>
 											<?php }
 
 											echo '<div class="reset">' . apply_filters( 'woocommerce_reset_variations_link', '<a class="reset_variations" href="#">' . self::localization( 'clear', esc_html__( 'Clear', 'woo-bought-together' ) ) . '</a>' ) . '</div>';
@@ -2527,7 +2517,7 @@ if ( ! function_exists( 'woobt_init' ) ) {
 
 								echo '<div class="woobt-availability">' . wc_get_stock_html( $product ) . '</div>';
 								?>
-							</div>
+                            </div>
 
 							<?php if ( ( $is_separate_atc || $is_custom_position || $this_item_quantity ) && $custom_qty ) {
 								echo '<div class="' . esc_attr( ( $plus_minus ? 'woobt-quantity woobt-quantity-plus-minus' : 'woobt-quantity' ) ) . '">';
@@ -2537,15 +2527,17 @@ if ( ! function_exists( 'woobt_init' ) ) {
 									echo '<div class="woobt-quantity-input-minus">-</div>';
 								}
 
+								$this_max = 1000;
+
+								if ( ( $max_purchase = $product->get_max_purchase_quantity() ) && ( $max_purchase > 0 ) && ( $max_purchase < $this_max ) ) {
+									// get_max_purchase_quantity can return -1
+									$this_max = $max_purchase;
+								}
+
 								woocommerce_quantity_input( [
+									'classes'    => [ 'input-text', 'woobt-qty', 'woobt-this-qty', 'qty', 'text' ],
 									'input_name' => 'woobt_qty_0',
-									'classes'    => [
-										'input-text',
-										'woobt-qty',
-										'woobt-this-qty',
-										'qty',
-										'text'
-									]
+									'max_value'  => $this_max
 								], $product );
 
 								if ( $plus_minus ) {
@@ -2557,8 +2549,8 @@ if ( ! function_exists( 'woobt_init' ) ) {
 							}
 
 							if ( ! $is_separate_layout && ( self::get_setting( 'show_price', 'yes' ) !== 'no' ) ) { ?>
-								<div class="woobt-price">
-									<div class="woobt-price-new">
+                                <div class="woobt-price">
+                                    <div class="woobt-price-new">
 										<?php
 										if ( ! $separately && ( $discount = get_post_meta( $product_id, 'woobt_discount', true ) ) ) {
 											$sale_price = $product->get_price() * ( 100 - (float) $discount ) / 100;
@@ -2567,16 +2559,16 @@ if ( ! function_exists( 'woobt_init' ) ) {
 											echo $product->get_price_html();
 										}
 										?>
-									</div>
-									<div class="woobt-price-ori">
+                                    </div>
+                                    <div class="woobt-price-ori">
 										<?php echo $product->get_price_html(); ?>
-									</div>
-								</div>
+                                    </div>
+                                </div>
 							<?php }
 
 							do_action( 'woobt_product_after', $product );
 							?>
-						</div>
+                        </div>
 						<?php
 					}
 
@@ -2585,12 +2577,13 @@ if ( ! function_exists( 'woobt_init' ) ) {
 
 				function product_output( $item, $item_key = '', $product_id = 0, $order = 1 ) {
 					global $product;
+					$item['key']        = $item_key;
 					$product            = $item['product'];
 					$item_id            = $item['id'];
 					$item_price         = $item['price'];
 					$item_qty           = $item['qty'];
-					$item_qty_min       = 1;
-					$item_qty_max       = 1000;
+					$item_min           = 1;
+					$item_max           = 1000;
 					$pricing            = self::get_setting( 'pricing', 'sale_price' );
 					$custom_qty         = apply_filters( 'woobt_custom_qty', get_post_meta( $product_id, 'woobt_custom_qty', true ) === 'on', $product_id );
 					$checked_all        = apply_filters( 'woobt_checked_all', get_post_meta( $product_id, 'woobt_checked_all', true ) === 'on', $product_id );
@@ -2601,19 +2594,24 @@ if ( ! function_exists( 'woobt_init' ) ) {
 
 					if ( $custom_qty ) {
 						if ( get_post_meta( $product_id, 'woobt_limit_each_min_default', true ) === 'on' ) {
-							$item_qty_min = $item_qty;
+							$item_min = $item_qty;
 						} else {
-							$item_qty_min = absint( get_post_meta( $product_id, 'woobt_limit_each_min', true ) ?: 0 );
+							$item_min = absint( get_post_meta( $product_id, 'woobt_limit_each_min', true ) ?: 0 );
 						}
 
-						$item_qty_max = absint( get_post_meta( $product_id, 'woobt_limit_each_max', true ) ?: 1000 );
+						$item_max = absint( get_post_meta( $product_id, 'woobt_limit_each_max', true ) ?: 1000 );
 
-						if ( $item_qty < $item_qty_min ) {
-							$item_qty = $item_qty_min;
+						if ( ( $max_purchase = $product->get_max_purchase_quantity() ) && ( $max_purchase > 0 ) && ( $max_purchase < $item_max ) ) {
+							// get_max_purchase_quantity can return -1
+							$item_max = $max_purchase;
 						}
 
-						if ( $item_qty > $item_qty_max ) {
-							$item_qty = $item_qty_max;
+						if ( $item_qty < $item_min ) {
+							$item_qty = $item_min;
+						}
+
+						if ( ( $item_max > $item_min ) && ( $item_qty > $item_max ) ) {
+							$item_qty = $item_max;
 						}
 					}
 
@@ -2623,15 +2621,15 @@ if ( ! function_exists( 'woobt_init' ) ) {
 
 					ob_start();
 					?>
-					<div class="woobt-item-product woobt-product woobt-product-together" data-key="<?php echo esc_attr( $item_key ); ?>" data-order="<?php echo esc_attr( $order ); ?>" data-id="<?php echo esc_attr( $product->is_type( 'variable' ) || ! $product->is_in_stock() ? 0 : $item_id ); ?>" data-pid="<?php echo esc_attr( $item_id ); ?>" data-name="<?php echo esc_attr( $item_name ); ?>" data-new-price="<?php echo esc_attr( $item_price ); ?>" data-price-suffix="<?php echo esc_attr( htmlentities( $product->get_price_suffix() ) ); ?>" data-price="<?php echo esc_attr( apply_filters( 'woobt_item_data_price', ( $pricing === 'sale_price' ) ? wc_get_price_to_display( $product ) : wc_get_price_to_display( $product, [ 'price' => $product->get_regular_price() ] ), $product ) ); ?>" data-regular-price="<?php echo esc_attr( apply_filters( 'woobt_item_data_regular_price', wc_get_price_to_display( $product, [ 'price' => $product->get_regular_price() ] ), $product ) ); ?>" data-qty="<?php echo esc_attr( $item_qty ); ?>" data-o_qty="<?php echo esc_attr( $item_qty ); ?>">
+                    <div class="woobt-item-product woobt-product woobt-product-together" data-key="<?php echo esc_attr( $item_key ); ?>" data-order="<?php echo esc_attr( $order ); ?>" data-id="<?php echo esc_attr( $product->is_type( 'variable' ) || ! $product->is_in_stock() ? 0 : $item_id ); ?>" data-pid="<?php echo esc_attr( $item_id ); ?>" data-name="<?php echo esc_attr( $item_name ); ?>" data-new-price="<?php echo esc_attr( $item_price ); ?>" data-price-suffix="<?php echo esc_attr( htmlentities( $product->get_price_suffix() ) ); ?>" data-price="<?php echo esc_attr( apply_filters( 'woobt_item_data_price', ( $pricing === 'sale_price' ) ? wc_get_price_to_display( $product ) : wc_get_price_to_display( $product, [ 'price' => $product->get_regular_price() ] ), $product ) ); ?>" data-regular-price="<?php echo esc_attr( apply_filters( 'woobt_item_data_regular_price', wc_get_price_to_display( $product, [ 'price' => $product->get_regular_price() ] ), $product ) ); ?>" data-qty="<?php echo esc_attr( $item_qty ); ?>" data-o_qty="<?php echo esc_attr( $item_qty ); ?>">
 
 						<?php do_action( 'woobt_product_before', $product, $order ); ?>
 
-						<div class="woobt-choose">
-							<label for="<?php echo esc_attr( 'woobt_checkbox_' . $order ); ?>"><?php echo esc_html( $item_name ); ?></label>
-							<input id="<?php echo esc_attr( 'woobt_checkbox_' . $order ); ?>" class="woobt-checkbox" type="checkbox" value="<?php echo esc_attr( $item_id ); ?>" <?php echo esc_attr( ! $product->is_in_stock() ? 'disabled' : '' ); ?> <?php echo esc_attr( $product->is_in_stock() && ( $checked_all || $checked_individual ) ? 'checked' : '' ); ?>/>
-							<span class="checkmark"></span>
-						</div>
+                        <div class="woobt-choose">
+                            <label for="<?php echo esc_attr( 'woobt_checkbox_' . $order ); ?>"><?php echo esc_html( $item_name ); ?></label>
+                            <input id="<?php echo esc_attr( 'woobt_checkbox_' . $order ); ?>" class="woobt-checkbox" type="checkbox" value="<?php echo esc_attr( $item_id ); ?>" <?php echo esc_attr( ! $product->is_in_stock() ? 'disabled' : '' ); ?> <?php echo esc_attr( $product->is_in_stock() && ( $checked_all || $checked_individual ) ? 'checked' : '' ); ?>/>
+                            <span class="checkmark"></span>
+                        </div>
 
 						<?php if ( ! $is_separate_layout && ( self::get_setting( 'show_thumb', 'yes' ) !== 'no' ) ) {
 							echo '<div class="woobt-thumb">';
@@ -2649,7 +2647,7 @@ if ( ! function_exists( 'woobt_init' ) ) {
 							echo '</div>';
 						} ?>
 
-						<div class="woobt-title">
+                        <div class="woobt-title">
                             <span class="woobt-title-inner">
                                 <?php
                                 do_action( 'woobt_product_name_before', $product, $order );
@@ -2681,7 +2679,7 @@ if ( ! function_exists( 'woobt_init' ) ) {
                             </span>
 
 							<?php if ( $is_separate_layout && ( self::get_setting( 'show_price', 'yes' ) !== 'no' ) ) { ?>
-								<span class="woobt-price">
+                                <span class="woobt-price">
                                     <?php do_action( 'woobt_product_price_before', $product, $order ); ?>
                                     <span class="woobt-price-new"></span>
                                     <span class="woobt-price-ori">
@@ -2723,7 +2721,7 @@ if ( ! function_exists( 'woobt_init' ) ) {
 							}
 
 							if ( self::get_setting( 'show_description', 'no' ) === 'yes' ) {
-								echo '<div class="woobt-description">' . apply_filters( 'woobt_product_short_description', $product->get_short_description(), $product ) . '</div>';
+								echo '<div class="woobt-description">' . apply_filters( 'woobt_product_short_description', $product->is_type( 'variation' ) ? $product->get_description() : $product->get_short_description(), $product ) . '</div>';
 							}
 
 							if ( $product->is_type( 'variable' ) ) {
@@ -2741,11 +2739,11 @@ if ( ! function_exists( 'woobt_init' ) ) {
 										echo '<div class="variations">';
 
 										foreach ( $attributes as $attribute_name => $options ) { ?>
-											<div class="variation">
-												<div class="label">
+                                            <div class="variation">
+                                                <div class="label">
 													<?php echo wc_attribute_label( $attribute_name ); ?>
-												</div>
-												<div class="select">
+                                                </div>
+                                                <div class="select">
 													<?php
 													$selected = isset( $_REQUEST[ 'attribute_' . sanitize_title( $attribute_name ) ] ) ? wc_clean( stripslashes( urldecode( $_REQUEST[ 'attribute_' . sanitize_title( $attribute_name ) ] ) ) ) : $product->get_variation_default_attribute( $attribute_name );
 													wc_dropdown_variation_attribute_options( [
@@ -2756,8 +2754,8 @@ if ( ! function_exists( 'woobt_init' ) ) {
 														'show_option_none' => sprintf( self::localization( 'choose', esc_html__( 'Choose %s', 'woo-bought-together' ) ), wc_attribute_label( $attribute_name ) )
 													] );
 													?>
-												</div>
-											</div>
+                                                </div>
+                                            </div>
 										<?php }
 
 										echo '<div class="reset">' . apply_filters( 'woocommerce_reset_variations_link', '<a class="reset_variations" href="#">' . self::localization( 'clear', esc_html__( 'Clear', 'woo-bought-together' ) ) . '</a>' ) . '</div>';
@@ -2773,7 +2771,7 @@ if ( ! function_exists( 'woobt_init' ) ) {
 
 							echo '<div class="woobt-availability">' . apply_filters( 'woobt_product_availability', wc_get_stock_html( $product ), $product ) . '</div>';
 							?>
-						</div>
+                        </div>
 
 						<?php if ( $custom_qty ) {
 							echo '<div class="' . esc_attr( ( $plus_minus ? 'woobt-quantity woobt-quantity-plus-minus' : 'woobt-quantity' ) ) . '">';
@@ -2787,14 +2785,14 @@ if ( ! function_exists( 'woobt_init' ) ) {
 
 							woocommerce_quantity_input( [
 								'classes'     => [ 'input-text', 'woobt-qty', 'qty', 'text' ],
-								'input_value' => $item_qty,
-								'min_value'   => $item_qty_min,
-								'max_value'   => $item_qty_max,
 								'input_name'  => 'woobt_qty_' . $order,
+								'input_value' => $item_qty,
+								'min_value'   => $item_min,
+								'max_value'   => $item_max,
 								'woobt_qty'   => [
 									'input_value' => $item_qty,
-									'min_value'   => $item_qty_min,
-									'max_value'   => $item_qty_max
+									'min_value'   => $item_min,
+									'max_value'   => $item_max
 								]
 								// compatible with WPC Product Quantity
 							], $product );
@@ -2810,10 +2808,10 @@ if ( ! function_exists( 'woobt_init' ) ) {
 						}
 
 						if ( ! $is_separate_layout && ( self::get_setting( 'show_price', 'yes' ) !== 'no' ) ) { ?>
-							<div class="woobt-price">
+                            <div class="woobt-price">
 								<?php do_action( 'woobt_product_price_before', $product, $order ); ?>
-								<div class="woobt-price-new"></div>
-								<div class="woobt-price-ori">
+                                <div class="woobt-price-new"></div>
+                                <div class="woobt-price-ori">
 									<?php
 									if ( ! $separately && ( $item_price !== '100%' ) ) {
 										if ( $product->is_type( 'variable' ) ) {
@@ -2845,14 +2843,14 @@ if ( ! function_exists( 'woobt_init' ) ) {
 
 									echo apply_filters( 'woobt_product_price', $product_price, $product, $item );
 									?>
-								</div>
+                                </div>
 								<?php do_action( 'woobt_product_price_after', $product, $order ); ?>
-							</div>
+                            </div>
 						<?php }
 
 						do_action( 'woobt_product_after', $product, $order );
 						?>
-					</div>
+                    </div>
 					<?php
 
 					return apply_filters( 'woobt_product_output', ob_get_clean(), $item, $product_id, $order );
@@ -2898,7 +2896,7 @@ if ( ! function_exists( 'woobt_init' ) ) {
 								'id'    => 0,
 								'sku'   => '',
 								'price' => '100%',
-								'qty'   => 0,
+								'qty'   => 1,
 								'attrs' => []
 							], $item );
 
@@ -3169,15 +3167,17 @@ if ( ! function_exists( 'woobt_init' ) ) {
 
 			return WPCleverWoobt::instance();
 		}
+
+		return null;
 	}
 }
 
 if ( ! function_exists( 'woobt_notice_wc' ) ) {
 	function woobt_notice_wc() {
 		?>
-		<div class="error">
-			<p><strong>WPC Frequently Bought Together</strong> requires WooCommerce version 3.0 or greater.</p>
-		</div>
+        <div class="error">
+            <p><strong>WPC Frequently Bought Together</strong> requires WooCommerce version 3.0 or greater.</p>
+        </div>
 		<?php
 	}
 }

@@ -19,11 +19,11 @@ if ( ! class_exists( 'WPCleverWoosb_Compatible' ) ) {
 			 * https://wordpress.org/plugins/woocommerce-pdf-invoices-packing-slips/
 			 */
 
-			if ( WPCleverWoosb_Helper::get_setting( 'compatible_wcpdf_hide_bundles', 'no' ) === 'yes' ) {
+			if ( WPCleverWoosb_Helper()->get_setting( 'compatible_wcpdf_hide_bundles', 'no' ) === 'yes' ) {
 				add_filter( 'wpo_wcpdf_order_items_data', [ $this, 'wcpdf_hide_bundles' ], 99 );
 			}
 
-			if ( WPCleverWoosb_Helper::get_setting( 'compatible_wcpdf_hide_bundled', 'no' ) === 'yes' ) {
+			if ( WPCleverWoosb_Helper()->get_setting( 'compatible_wcpdf_hide_bundled', 'no' ) === 'yes' ) {
 				add_filter( 'wpo_wcpdf_order_items_data', [ $this, 'wcpdf_hide_bundled' ], 99 );
 			}
 
@@ -34,12 +34,12 @@ if ( ! class_exists( 'WPCleverWoosb_Compatible' ) ) {
 
 			add_filter( 'wf_pklist_modify_meta_data', [ $this, 'pklist_hide_meta' ], 99, 1 );
 
-			if ( WPCleverWoosb_Helper::get_setting( 'compatible_pklist_hide_bundles', 'no' ) === 'yes' ) {
+			if ( WPCleverWoosb_Helper()->get_setting( 'compatible_pklist_hide_bundles', 'no' ) === 'yes' ) {
 				add_filter( 'wf_pklist_alter_order_items', [ $this, 'pklist_order_hide_bundles' ], 99 );
 				add_filter( 'wf_pklist_alter_package_order_items', [ $this, 'pklist_package_hide_bundles' ], 99 );
 			}
 
-			if ( WPCleverWoosb_Helper::get_setting( 'compatible_pklist_hide_bundled', 'no' ) === 'yes' ) {
+			if ( WPCleverWoosb_Helper()->get_setting( 'compatible_pklist_hide_bundled', 'no' ) === 'yes' ) {
 				add_filter( 'wf_pklist_alter_order_items', [ $this, 'pklist_order_hide_bundled' ], 99 );
 				add_filter( 'wf_pklist_alter_package_order_items', [ $this, 'pklist_package_hide_bundled' ], 99 );
 			}

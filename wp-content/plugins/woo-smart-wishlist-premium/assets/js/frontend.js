@@ -34,6 +34,10 @@
     }
   });
 
+  $(document).on('woosw_refresh_data', function() {
+    woosw_get_data();
+  });
+
   $(document).on('woosw_refresh_count', function() {
     woosw_load_count();
   });
@@ -111,8 +115,9 @@
       id = product_id;
     }
 
+    // add product
     var data = {
-      action: 'wishlist_add', product_id: id,
+      action: 'wishlist_add', product_id: id, nonce: woosw_vars.nonce,
     };
 
     if ($this.hasClass('woosw-added')) {
@@ -201,14 +206,17 @@
     e.preventDefault();
   });
 
-  // remove from wishlist
+  // remove product
   $(document).on('click touch', '.woosw-item--remove span', function(e) {
     var $this = $(this);
     var key = $this.closest('.woosw-popup-inner').data('key');
     var $this_item = $this.closest('.woosw-item');
     var product_id = $this_item.attr('data-id');
     var data = {
-      action: 'wishlist_remove', product_id: product_id, key: key,
+      action: 'wishlist_remove',
+      product_id: product_id,
+      key: key,
+      nonce: woosw_vars.nonce,
     };
 
     $this.addClass('woosw-removing');
@@ -258,7 +266,7 @@
 
       var key = $this.closest('.woosw-popup-inner').data('key');
       var data = {
-        action: 'wishlist_empty', key: key,
+        action: 'wishlist_empty', key: key, nonce: woosw_vars.nonce,
       };
 
       $.post(woosw_vars.ajax_url, data, function(response) {
@@ -339,7 +347,7 @@
     woosw_popup_loading();
 
     var data = {
-      action: 'manage_wishlists',
+      action: 'manage_wishlists', nonce: woosw_vars.nonce,
     };
 
     $.post(woosw_vars.ajax_url, data, function(response) {
@@ -357,7 +365,7 @@
 
     var name = $('#woosw_wishlist_name').val();
     var data = {
-      action: 'add_wishlist', name: name,
+      action: 'add_wishlist', name: name, nonce: woosw_vars.nonce,
     };
 
     $.post(woosw_vars.ajax_url, data, function(response) {
@@ -374,7 +382,7 @@
 
     var key = $(this).data('key');
     var data = {
-      action: 'set_default', key: key,
+      action: 'set_default', key: key, nonce: woosw_vars.nonce,
     };
 
     $.post(woosw_vars.ajax_url, data, function(response) {
@@ -418,7 +426,7 @@
 
       var key = $(this).data('key');
       var data = {
-        action: 'delete_wishlist', key: key,
+        action: 'delete_wishlist', key: key, nonce: woosw_vars.nonce,
       };
 
       $.post(woosw_vars.ajax_url, data, function(response) {
@@ -436,7 +444,7 @@
 
     var key = $(this).data('key');
     var data = {
-      action: 'view_wishlist', key: key,
+      action: 'view_wishlist', key: key, nonce: woosw_vars.nonce,
     };
 
     $.post(woosw_vars.ajax_url, data, function(response) {
@@ -487,9 +495,10 @@
     var note = $this.closest('.woosw-item').find('input[type="text"]').val();
     var data = {
       action: 'add_note',
-      woosw_key: key,
+      key: key,
       product_id: product_id,
       note: woosw_html_entities(note),
+      nonce: woosw_vars.nonce,
     };
 
     $.post(woosw_vars.ajax_url, data, function(response) {
@@ -510,6 +519,7 @@
   function woosw_wishlist_load() {
     var data = {
       action: 'wishlist_load',
+      nonce: woosw_vars.nonce,
     };
 
     $.post(woosw_vars.ajax_url, data, function(response) {
@@ -542,6 +552,7 @@
   function woosw_load_count() {
     var data = {
       action: 'wishlist_load_count',
+      nonce: woosw_vars.nonce,
     };
 
     $.post(woosw_vars.ajax_url, data, function(response) {
@@ -729,6 +740,7 @@
   function woosw_get_data() {
     var data = {
       action: 'woosw_get_data',
+      nonce: woosw_vars.nonce,
     };
 
     $.post(woosw_vars.ajax_url, data, function(response) {

@@ -38,7 +38,7 @@
     // open import/export popup
     e.preventDefault();
 
-    var ids = $('#woobt_selected').find('input, select').serializeArrayAll();
+    var ids = $('#woobt_selected').find('input, select').serialize() || 0;
 
     if (!$('#woobt_import_export').length) {
       $('body').append('<div id=\'woobt_import_export\'></div>');
@@ -59,7 +59,7 @@
     });
 
     var data = {
-      action: 'woobt_import_export', ids: ids,
+      action: 'woobt_import_export', ids: ids, nonce: woobt_vars.nonce,
     };
 
     $.post(ajaxurl, data, function(response) {
@@ -73,8 +73,7 @@
 
       var ids = $('.woobt_import_export_data').val();
       var data = {
-        action: 'woobt_import_export_save',
-        ids: ids,
+        action: 'woobt_import_export_save', ids: ids, nonce: woobt_vars.nonce,
       };
 
       $.post(ajaxurl, data, function(response) {
@@ -113,6 +112,7 @@
 
     var data = {
       action: 'woobt_update_search_settings',
+      nonce: woobt_vars.nonce,
       limit: $('.woobt_search_limit').val(),
       sku: $('.woobt_search_sku').val(),
       id: $('.woobt_search_id').val(),
@@ -157,6 +157,7 @@
 
     var data = {
       action: 'woobt_add_text',
+      nonce: woobt_vars.nonce,
     };
 
     $.post(ajaxurl, data, function(response) {
@@ -203,28 +204,6 @@
   $(document).on('click touch', function(e) {
     if ($(e.target).closest($('#woobt_results')).length == 0) {
       $('#woobt_results').html('').hide();
-    }
-  });
-
-  $(document).on('click touch', '.woobt-notice .notice-dismiss', function(e) {
-    e.preventDefault();
-
-    var $this = $(this).closest('.woobt-notice');
-    var key = $this.attr('data-dismissible');
-
-    if (key !== '') {
-      $this.css('opacity', '0.5');
-
-      var data = {
-        action: 'woobt_dismiss_notice',
-        key: key,
-      };
-
-      console.log(data);
-
-      $.post(ajaxurl, data, function(response) {
-        $this.slideUp();
-      });
     }
   });
 
@@ -302,6 +281,7 @@
 
     var data = {
       action: 'woobt_get_search_results',
+      nonce: woobt_vars.nonce,
       woobt_keyword: $('#woobt_keyword').val(),
       woobt_id: $('#post_ID').val(),
       woobt_ids: ids.join(),
@@ -313,30 +293,4 @@
       $('#woobt_loading').hide();
     });
   }
-
-  $.fn.serializeArrayAll = function() {
-    var rCRLF = /\r?\n/g;
-
-    return this.map(function() {
-      return this.elements ? $.makeArray(this.elements) : this;
-    }).map(function(i, elem) {
-      var val = $(this).val();
-
-      if (val == null) {
-        return val == null;
-      } else if (this.type === 'checkbox') {
-        if (this.checked) {
-          return {name: this.name, value: this.checked ? this.value : ''};
-        }
-      } else if (this.type === 'radio') {
-        if (this.checked) {
-          return {name: this.name, value: this.checked ? this.value : ''};
-        }
-      } else {
-        return $.isArray(val) ? $.map(val, function(val, i) {
-          return {name: elem.name, value: val.replace(rCRLF, '\r\n')};
-        }) : {name: elem.name, value: val.replace(rCRLF, '\r\n')};
-      }
-    }).get();
-  };
 })(jQuery);

@@ -28,6 +28,12 @@ Minimog is The Next Generation of highest-converting and extensible WordPress th
 
 == Changelog ==
 
+= 2.9.10 - December 15, 2023 =
+- Fixed:
+Shop product images overlap on load more.
+Product variation price not showing up instantly on page load.
+Product variation badge not showing up instantly on page load.
+
 = 2.9.9 - December 06, 2023 =
 - Updated:
 Support Offload Media for media has defined thumbnail size.

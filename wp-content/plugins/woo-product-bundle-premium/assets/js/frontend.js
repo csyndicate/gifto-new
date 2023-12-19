@@ -28,6 +28,7 @@
       var _image_src = selected.attr('data-imagesrc');
       var _purchasable = selected.attr('data-purchasable');
       var _attrs = selected.attr('data-attrs');
+      var _availability = selected.attr('data-availability');
 
       if (_purchasable === 'yes' && _id >= 0) {
         // change data
@@ -36,17 +37,6 @@
 
         // change price
         woosb_change_price($product, _price, _regular_price, _price_html);
-
-        // change image
-        if (_image_src && _image_src !== '') {
-          $product.find('.woosb-thumb-ori').hide();
-          $product.find('.woosb-thumb-new').
-              html('<img src="' + _image_src + '"/>').
-              show();
-        } else {
-          $product.find('.woosb-thumb-ori').show();
-          $product.find('.woosb-thumb-new').html('').hide();
-        }
 
         // change attributes
         $product.attr('data-attrs', _attrs.replace(/\/$/, ''));
@@ -59,18 +49,34 @@
         // reset price
         $product.find('.woosb-price-ori').show();
         $product.find('.woosb-price-new').html('').hide();
+      }
 
-        // reset image
+      // change image
+      if (_image_src && _image_src !== '') {
+        $product.find('.woosb-thumb-ori').hide();
+        $product.find('.woosb-thumb-new').
+            html('<img src="' + _image_src + '"/>').
+            show();
+      } else {
         $product.find('.woosb-thumb-ori').show();
         $product.find('.woosb-thumb-new').html('').hide();
       }
 
+      // change availability
+      if (_availability && _availability !== '') {
+        $product.find('.woosb-availability').html(_availability).show();
+      } else {
+        $product.find('.woosb-availability').html('').hide();
+      }
+
       // reset sku, weight & dimensions
-      $('.product_meta .sku').wc_reset_content();
-      $('.product_weight, .woocommerce-product-attributes-item--weight .woocommerce-product-attributes-item__value').
-          wc_reset_content();
-      $('.product_dimensions, .woocommerce-product-attributes-item--dimensions .woocommerce-product-attributes-item__value').
-          wc_reset_content();
+      if (typeof wc_reset_content === 'function') {
+        $('.product_meta .sku').wc_reset_content();
+        $('.product_weight, .woocommerce-product-attributes-item--weight .woocommerce-product-attributes-item__value').
+            wc_reset_content();
+        $('.product_dimensions, .woocommerce-product-attributes-item--dimensions .woocommerce-product-attributes-item__value').
+            wc_reset_content();
+      }
     }
 
     woosb_init($wrap, 'woovr_selected');
@@ -149,11 +155,13 @@
       }
 
       // reset sku, weight & dimensions
-      $('.product_meta .sku').wc_reset_content();
-      $('.product_weight, .woocommerce-product-attributes-item--weight .woocommerce-product-attributes-item__value').
-          wc_reset_content();
-      $('.product_dimensions, .woocommerce-product-attributes-item--dimensions .woocommerce-product-attributes-item__value').
-          wc_reset_content();
+      if (typeof wc_reset_content === 'function') {
+        $('.product_meta .sku').wc_reset_content();
+        $('.product_weight, .woocommerce-product-attributes-item--weight .woocommerce-product-attributes-item__value').
+            wc_reset_content();
+        $('.product_dimensions, .woocommerce-product-attributes-item--dimensions .woocommerce-product-attributes-item__value').
+            wc_reset_content();
+      }
 
       $(document).trigger('woosb_found_variation', [$product, t]);
 
@@ -315,8 +323,9 @@ function woosb_check_ready($wrap) {
   var fixed_price = $products.attr('data-fixed-price') === 'yes';
   var is_optional = $products.attr('data-optional') === 'yes';
   var has_variables = $products.attr('data-variables') === 'yes';
+  var exclude_unpurchasable = $products.attr('data-exclude-unpurchasable') ===
+      'yes';
   var saved = '';
-  var fix = Math.pow(10, Number(woosb_vars.wc_price_decimals) + 1);
   var is_discount = discount > 0 && discount < 100;
   var is_discount_amount = discount_amount > 0;
   var qty_min = parseFloat($products.attr('data-min'));
@@ -325,7 +334,7 @@ function woosb_check_ready($wrap) {
   var total_max = parseFloat($products.attr('data-total-max'));
 
   if (!$products.length || (!has_variables && !is_optional)) {
-    // don't need to do anything
+    // don't need to do anything - already calculated in PHP
     return;
   }
 
@@ -335,11 +344,17 @@ function woosb_check_ready($wrap) {
     $products.find('.woosb-product').each(function() {
       var $this = jQuery(this);
 
+      if ($this.hasClass('woosb-product-unpurchasable') &&
+          exclude_unpurchasable) {
+        // don't count this product
+        return;
+      }
+
       if (parseFloat($this.attr('data-price')) > 0) {
         var _qty = parseFloat($this.attr('data-qty'));
         var _price = parseFloat($this.attr('data-price'));
 
-        total += woosb_round(_price, woosb_vars.wc_price_decimals) * _qty;
+        total += woosb_round(_price, woosb_vars.price_decimals) * _qty;
 
         if (!is_discount_amount && is_discount) {
           _price *= (100 - discount) / 100;
@@ -564,9 +579,9 @@ function woosb_check_qty($qty) {
 
     if (parseFloat($products.attr('data-discount')) > 0 &&
         $products.attr('data-fixed-price') === 'no') {
-      var new_price = woosb_round((ori_price *
-          (100 - parseFloat($products.attr('data-discount')))) / 100,
-          woosb_vars.price_decimals);
+      var new_price = woosb_round(
+          (ori_price * (100 - parseFloat($products.attr('data-discount')))) /
+          100, woosb_vars.price_decimals);
 
       $product.find('.woosb-price-new').
           html(woosb_price_html(ori_price * qty, new_price * qty) +
@@ -604,9 +619,9 @@ function woosb_change_price($product, price, regular_price, price_html) {
     var new_price = ori_price;
 
     if (parseFloat($products.attr('data-discount')) > 0) {
-      new_price = woosb_round((ori_price *
-          (100 - parseFloat($products.attr('data-discount')))) / 100,
-          woosb_vars.price_decimals);
+      new_price = woosb_round(
+          (ori_price * (100 - parseFloat($products.attr('data-discount')))) /
+          100, woosb_vars.price_decimals);
     }
 
     $product.find('.woosb-price-new').
@@ -621,9 +636,9 @@ function woosb_change_price($product, price, regular_price, price_html) {
         ori_price = parseFloat(regular_price);
       }
 
-      var new_price = woosb_round((ori_price *
-          (100 - parseFloat($products.attr('data-discount')))) / 100,
-          woosb_vars.price_decimals);
+      var new_price = woosb_round(
+          (ori_price * (100 - parseFloat($products.attr('data-discount')))) /
+          100, woosb_vars.price_decimals);
       $product.find('.woosb-price-new').
           html(woosb_price_html(ori_price, new_price) + price_suffix).
           show();
@@ -662,12 +677,11 @@ function woosb_format_money(number, places, symbol, thousand, decimal) {
   if (woosb_vars.trim_zeros === '1') {
     return symbol + negative + (j ? i.substr(0, j) + thousand : '') +
         i.substr(j).replace(/(\d{3})(?=\d)/g, '$1' + thousand) +
-        (places && (parseFloat(number) > parseFloat(i)) ?
-            decimal + Math.abs(number - i).
+        (places && (parseFloat(number) > parseFloat(i)) ? decimal +
+            Math.abs(number - i).
                 toFixed(places).
                 slice(2).
-                replace(/(\d*?[1-9])0+$/g, '$1') :
-            '');
+                replace(/(\d*?[1-9])0+$/g, '$1') : '');
   } else {
     return symbol + negative + (j ? i.substr(0, j) + thousand : '') +
         i.substr(j).replace(/(\d{3})(?=\d)/g, '$1' + thousand) +
@@ -678,8 +692,7 @@ function woosb_format_money(number, places, symbol, thousand, decimal) {
 function woosb_format_price(price) {
   var price_html = '<span class="woocommerce-Price-amount amount">';
   var price_formatted = woosb_format_money(price, woosb_vars.wc_price_decimals,
-      '',
-      woosb_vars.wc_price_thousand_separator,
+      '', woosb_vars.wc_price_thousand_separator,
       woosb_vars.wc_price_decimal_separator);
 
   switch (woosb_vars.wc_price_format) {

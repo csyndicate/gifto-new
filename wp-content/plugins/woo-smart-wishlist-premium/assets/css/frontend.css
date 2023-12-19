@@ -680,6 +680,44 @@ body.rtl .woosw-list .woosw-share .woosw-share-label, body.rtl .woosw-list .woos
     }
 }
 
+.woosw-suggested {
+    padding: 0 20px;
+}
+
+.woosw-suggested-heading {
+    text-align: center;
+    overflow: hidden;
+}
+
+.woosw-suggested-heading span {
+    position: relative;
+}
+
+.woosw-suggested-heading span:before {
+    content: '';
+    width: 1000px;
+    height: 1px;
+    background-color: #dddddd;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    transform: translateX(-100%);
+}
+
+.woosw-suggested-heading span:after {
+    content: '';
+    width: 1000px;
+    height: 1px;
+    background-color: #dddddd;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: auto;
+    right: -10px;
+    transform: translateX(100%);
+}
+
 /* Notiny */
 
 .notiny-container {

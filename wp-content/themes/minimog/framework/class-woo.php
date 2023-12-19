@@ -127,6 +127,12 @@ if ( ! class_exists( 'Minimog_Woo' ) ) {
 			add_action( 'init', [ $this, 'trim_zeroes_from_price' ] );
 			add_filter( 'woocommerce_get_price_html', [ $this, 'add_wrap_for_price_html' ], 999, 2 );
 			add_filter( 'woocommerce_format_price_range', [ $this, 'format_price_range' ], 999, 3 );
+			// Show default variation price including sale prices and old prices
+			add_filter( 'woocommerce_variable_price_html', [ $this, 'custom_variation_price' ], 10, 2 );
+			add_action( 'woocommerce_before_single_product', [
+				$this,
+				'cache_main_product_id',
+			], 0 ); // Cache main product id.
 
 			add_filter( 'woocommerce_product_get_image_id', [ $this, 'fix_product_image_id_type' ], 10, 2 );
 
@@ -275,6 +281,86 @@ if ( ! class_exists( 'Minimog_Woo' ) ) {
 			}
 
 			return $options;
+		}
+
+		/**
+		 * Display variation price html instead of product price.
+		 *
+		 * @param                      $price
+		 * @param \WC_Product_Variable $product
+		 *
+		 * @return mixed|string
+		 */
+		public function custom_variation_price( $price, $product ) {
+			$default_variation = $this->get_default_product_variation( $product );
+			if ( ! empty( $default_variation['price_html'] ) ) {
+				return $default_variation['price_html'];
+			}
+
+			return $price;
+		}
+
+		public function cache_main_product_id() {
+			global $product;
+
+			if ( $product instanceof \WC_Product ) {
+				global $main_product_id;
+				$main_product_id = $product->get_id();
+			}
+		}
+
+		/**
+		 * @param \WC_Product_Variable $product
+		 *
+		 * @return false|mixed
+		 */
+		public function get_default_product_variation( $product ) {
+			global $main_product_id;
+
+			if ( empty( $main_product_id ) || $main_product_id !== $product->get_id() ) { // Only handle for main product single.
+				return false;
+			}
+
+			$attributes           = $product->get_attributes();
+			$default_attributes   = $product->get_default_attributes();
+			$available_variations = $product->get_available_variations();
+			$selected_attributes  = [];
+
+			foreach ( $attributes as $attribute_name => $options ) {
+				$attribute_request = 'attribute_' . sanitize_title( $attribute_name );
+				if ( isset( $_REQUEST[ $attribute_request ] ) ) {
+					$selected = $_REQUEST[ $attribute_request ];
+				} else if ( isset( $default_attributes[ sanitize_title( $attribute_name ) ] ) ) {
+					$selected = $default_attributes[ sanitize_title( $attribute_name ) ];
+				} else {
+					$selected = '';
+				}
+
+				$selected_attributes[ $attribute_name ] = $selected;
+			}
+
+			foreach ( $available_variations as $variation ) {
+				$is_default = true;
+
+				foreach ( $selected_attributes as $attribute_name => $attribute_value ) {
+					/**
+					 * Custom attribute usually capitalize case. For eg: Yes | No
+					 * But value from url always lowercase.
+					 */
+					$variation_attribute_value = strtolower( $variation['attributes'][ 'attribute_' . $attribute_name ] );
+
+					if ( $variation_attribute_value != $attribute_value ) {
+						$is_default = false;
+						break;
+					}
+				}
+
+				if ( $is_default ) {
+					return $variation;
+				}
+			}
+
+			return false;
 		}
 
 		/**
@@ -774,33 +860,44 @@ if ( ! class_exists( 'Minimog_Woo' ) ) {
 					$percentage = round( ( ( $regular_price - $sale_price ) / $regular_price ) * 100 );
 				}
 			} elseif ( $product->is_type( 'variable' ) ) { // Show -x% badge if all variations has the same percent discount amount.
-				$sale_percent         = 0;
-				$available_variations = $product->get_available_variations( 'objects' );
+				if ( $default_variation = $this->get_default_product_variation( $product ) ) {
+					$regular_price = (float) $default_variation['display_regular_price'];
+					$sale_price    = (float) $default_variation['display_price'];
 
-				foreach ( $available_variations as $variation ) {
-					// @var $variation WC_Product_Variable
-					if ( ! $variation->is_on_sale() ) {
-						return 0;
-					}
-
-					$regular_price = (float) $variation->get_regular_price();
-					$sale_price    = (float) $variation->get_sale_price();
 					if ( empty( $sale_price ) || 0 >= $regular_price ) {
 						return 0;
 					}
 
-					$percentage = round( ( ( $regular_price - $sale_price ) / $regular_price ) * 100 );
+					return round( ( ( $regular_price - $sale_price ) / $regular_price ) * 100 );
+				} else {
+					$sale_percent         = 0;
+					$available_variations = $product->get_available_variations( 'objects' );
 
-					if ( $sale_percent === 0 ) { // Assign first discount amount for check later.
-						$sale_percent = $percentage;
+					foreach ( $available_variations as $variation ) {
+						// @var $variation WC_Product_Variable
+						if ( ! $variation->is_on_sale() ) {
+							return 0;
+						}
+
+						$regular_price = (float) $variation->get_regular_price();
+						$sale_price    = (float) $variation->get_sale_price();
+						if ( empty( $sale_price ) || 0 >= $regular_price ) {
+							return 0;
+						}
+
+						$percentage = round( ( ( $regular_price - $sale_price ) / $regular_price ) * 100 );
+
+						if ( $sale_percent === 0 ) { // Assign first discount amount for check later.
+							$sale_percent = $percentage;
+						}
+
+						if ( $sale_percent !== $percentage ) { // If discount amount not the same then do nothing.
+							return 0;
+						}
 					}
 
-					if ( $sale_percent !== $percentage ) { // If discount amount not the same then do nothing.
-						return 0;
-					}
+					return $sale_percent;
 				}
-
-				return $sale_percent;
 			} elseif ( $product->is_type( 'variation' ) ) {
 				$regular_price = (float) $product->get_regular_price();
 				$sale_price    = (float) $product->get_sale_price();

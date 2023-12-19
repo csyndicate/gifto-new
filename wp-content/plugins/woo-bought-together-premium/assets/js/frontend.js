@@ -502,9 +502,9 @@
     var val = $(this).val();
     var pid = $(this).closest('.woobt-wrap').attr('data-id');
     var $ids = $('.woobt-ids-' + pid);
-    var $form = $ids.closest('form.cart').length ?
-        $ids.closest('form.cart') :
-        $ids.closest('.woobt-form');
+    var $form = $ids.closest('form.cart').length
+        ? $ids.closest('form.cart')
+        : $ids.closest('.woobt-form');
 
     $(this).closest('.woobt-product-this').attr('data-qty', val);
 
@@ -597,6 +597,7 @@
         data.variation_id = $form.find('input[name="variation_id"]').val();
         data.woobt_ids = $form.find('input[name="woobt_ids"]').val();
         data.variation = attrs;
+        data.nonce = woobt_vars.nonce;
 
         $.post(woobt_vars.ajax_url, data, function(response) {
           if (!response) {
@@ -639,14 +640,13 @@ function woobt_check_position($wrap) {
   var position = $wrap.attr('data-position');
   var atc_button = $wrap.attr('data-atc-button');
   var $products = $wrap.find('.woobt-products');
-  var $ids = jQuery('.woobt-ids-' + pid);
+  var $ids = $wrap.parent().find('.woobt-ids-' + pid);
 
-  if ((position === 'before') &&
-      (atc_button === 'main') &&
+  if ((position === 'before') && (atc_button === 'main') &&
       ($products.attr('data-product-type') === 'variable') &&
       ($products.attr('data-variables') === 'no' ||
           woobt_vars.variation_selector === 'woovr')) {
-    $products.closest('.woobt-wrap').insertAfter($ids);
+    $wrap.insertAfter($ids);
   }
 
   jQuery(document).trigger('woobt_check_position', [$wrap]);
@@ -657,9 +657,9 @@ function woobt_check_ready($wrap) {
   var $products = $wrap.find('.woobt-products');
   var $alert = $wrap.find('.woobt-alert');
   var $ids = jQuery('.woobt-ids-' + pid);
-  var $form = $ids.closest('.woobt-form').length ?
-      $ids.closest('.woobt-form') :
-      $ids.closest('form.cart');
+  var $form = $ids.closest('.woobt-form').length
+      ? $ids.closest('.woobt-form')
+      : $ids.closest('form.cart');
   var $btn = $form.find('.single_add_to_cart_button:not(.wpcbn-btn)');
   var is_selection = false;
   var selection_name = '';
@@ -724,8 +724,7 @@ function woobt_calc_price($wrap) {
   var $total = $wrap.find('.woobt-total');
   var $products = $wrap.find('.woobt-products');
   var $product_this = $products.find('.woobt-product-this');
-  var count = 0, total = 0;
-  var additional_html = '', total_html = '';
+  var count = 0, total = 0, total_regular = 0;
   var discount = parseFloat($products.attr('data-discount'));
   var ori_price_suffix = $products.attr('data-product-price-suffix');
   var ori_price = parseFloat($product_this.attr('data-price'));
@@ -759,7 +758,7 @@ function woobt_calc_price($wrap) {
 
     if (isNaN(_price)) {
       // is percent
-      if (_price == '100%') {
+      if (_price === '100%') {
         _total_ori = _qty * _regular_price;
         _total_ori_regular = _qty * _regular_price;
         _total = _qty * _sale_price;
@@ -781,11 +780,13 @@ function woobt_calc_price($wrap) {
     if (_checked && (_qty > 0) && (_id > 0)) {
       count++;
       total += _total;
+      total_regular += _total_ori_regular;
       total_ori_regular += _total_ori_regular;
     }
   });
 
   total = Math.round(total * fix) / fix;
+  total_regular = Math.round(total_regular * fix) / fix;
 
   if ($product_this.length) {
     var _id = parseInt($product_this.attr('data-id'));
@@ -837,13 +838,11 @@ function woobt_calc_price($wrap) {
 
     total_ori = total_ori * (100 - discount) / 100 + total;
 
-    $additional.html(
-        woobt_vars.additional_price_text + ' ' + woobt_format_price(total) +
-        ori_price_suffix).
+    $additional.html(woobt_vars.additional_price_text + ' ' +
+        woobt_price_html(total_regular, total) + ori_price_suffix).
         slideDown();
-    $total.html(
-        woobt_vars.total_price_text + ' ' + woobt_format_price(total_ori) +
-        ori_price_suffix).
+    $total.html(woobt_vars.total_price_text + ' ' +
+        woobt_price_html(total_ori_regular, total_ori) + ori_price_suffix).
         slideDown();
   } else {
     $additional.html('').slideUp();
@@ -851,8 +850,7 @@ function woobt_calc_price($wrap) {
   }
 
   // change the main price
-  if ((woobt_vars.change_price !== 'no') &&
-      (atc_button !== 'separate')) {
+  if ((woobt_vars.change_price !== 'no') && (atc_button !== 'separate')) {
     if (parseInt($products.attr('data-product-id')) > 0 && count > 0) {
       $price.html(
           woobt_price_html(total_ori_regular, total_ori) + ori_price_suffix);
@@ -913,9 +911,9 @@ function woobt_update_count($wrap) {
   var pid = $wrap.attr('data-id');
   var $products = $wrap.find('.woobt-products');
   var $ids = jQuery('.woobt-ids-' + pid);
-  var $form = $ids.closest('form.cart').length ?
-      $ids.closest('form.cart') :
-      $ids.closest('.woobt-form');
+  var $form = $ids.closest('form.cart').length
+      ? $ids.closest('form.cart')
+      : $ids.closest('.woobt-form');
   var $btn = $form.find('.single_add_to_cart_button:not(.wpcbn-btn)');
   var qty = 0;
   var num = 0;
@@ -971,12 +969,11 @@ function woobt_format_money(number, places, symbol, thousand, decimal) {
   if (woobt_vars.trim_zeros === '1') {
     return symbol + negative + (j ? i.substr(0, j) + thousand : '') +
         i.substr(j).replace(/(\d{3})(?=\d)/g, '$1' + thousand) +
-        (places && (parseFloat(number) > parseFloat(i)) ?
-            decimal + Math.abs(number - i).
+        (places && (parseFloat(number) > parseFloat(i)) ? decimal +
+            Math.abs(number - i).
                 toFixed(places).
                 slice(2).
-                replace(/(\d*?[1-9])0+$/g, '$1') :
-            '');
+                replace(/(\d*?[1-9])0+$/g, '$1') : '');
   } else {
     return symbol + negative + (j ? i.substr(0, j) + thousand : '') +
         i.substr(j).replace(/(\d{3})(?=\d)/g, '$1' + thousand) +

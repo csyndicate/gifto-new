@@ -126,7 +126,7 @@ msgid_plural "Total stores showing: %d"
 msgstr[0] ""
 msgstr[1] ""
 
-#: src/minimog/dokan/store-lists-filter.php:36, src/minimog/elementor/widgets/posts/posts-base.php:686, src/minimog/elementor/widgets/posts/posts-base.php:726, src/minimog/framework/class-woo.php:577, src/minimog/woocommerce/content-widget-price-filter.php:34
+#: src/minimog/dokan/store-lists-filter.php:36, src/minimog/elementor/widgets/posts/posts-base.php:686, src/minimog/elementor/widgets/posts/posts-base.php:726, src/minimog/framework/class-woo.php:663, src/minimog/woocommerce/content-widget-price-filter.php:34
 msgid "Filter"
 msgstr ""
 
@@ -1290,7 +1290,7 @@ msgstr ""
 msgid "Image Box Carousel"
 msgstr ""
 
-#: src/minimog/elementor/widgets/carousel/image-box-carousel.php:57, src/minimog/elementor/widgets/carousel/image-box-carousel.php:58, src/minimog/elementor/widgets/carousel/testimonial-slideshow.php:52, src/minimog/elementor/widgets/carousel/testimonial-slideshow.php:53, src/minimog/elementor/widgets/countdown.php:49, src/minimog/elementor/widgets/countdown.php:50, src/minimog/elementor/widgets/image-box.php:58, src/minimog/elementor/widgets/image-box.php:59, src/minimog/elementor/widgets/original/countdown.php:37, src/minimog/elementor/widgets/posts/blog-carousel.php:63, src/minimog/elementor/widgets/posts/blog-carousel.php:64, src/minimog/elementor/widgets/posts/blog-carousel.php:65, src/minimog/elementor/widgets/posts/blog.php:104, src/minimog/elementor/widgets/posts/blog.php:105, src/minimog/elementor/widgets/posts/blog.php:106, src/minimog/elementor/widgets/tabs.php:54, src/minimog/elementor/widgets/tabs.php:55, src/minimog/elementor/widgets/woocommerce/feature-product-carousel.php:55, src/minimog/elementor/widgets/woocommerce/product-list-carousel.php:92, src/minimog/elementor/widgets/woocommerce/product-list-carousel.php:102, src/minimog/framework/class-top-bar.php:26, src/minimog/framework/class-woo.php:1816, src/minimog/framework/class-woo.php:1817, src/minimog/framework/class-woo.php:1818, src/minimog/framework/class-woo.php:1819, src/minimog/framework/class-woo.php:1820, src/minimog/framework/class-woo.php:1821, src/minimog/framework/class-woo.php:1822, src/minimog/framework/class-woo.php:1823, src/minimog/framework/class-woo.php:1824, src/minimog/framework/class-woo.php:1825, src/minimog/framework/class-woo.php:1826, src/minimog/framework/class-woo.php:1827, src/minimog/framework/class-woo.php:1833, src/minimog/framework/class-woo.php:1834, src/minimog/framework/class-woo.php:1835, src/minimog/framework/class-woo.php:1836, src/minimog/framework/class-woo.php:1837, src/minimog/framework/class-woo.php:1838, src/minimog/framework/class-woo.php:1839, src/minimog/framework/class-woo.php:1840, src/minimog/framework/class-woo.php:1841, src/minimog/framework/class-woo.php:1842, src/minimog/framework/class-woo.php:1843, src/minimog/framework/class-woo.php:1844, src/minimog/framework/class-woo.php:1850, src/minimog/framework/class-woo.php:1851, src/minimog/framework/class-woo.php:1852, src/minimog/framework/class-woo.php:1853, src/minimog/framework/class-woo.php:1854, src/minimog/framework/class-woo.php:1855, src/minimog/theme-options/sections/header/section-general.php:51, src/minimog/theme-options/sections/header/section-general.php:52, src/minimog/theme-options/sections/section-popup.php:29, src/minimog/theme-options/sections/section-popup.php:30, src/minimog/theme-options/sections/section-popup.php:31, src/minimog/theme-options/sections/top-bar/section-style-01.php:3
+#: src/minimog/elementor/widgets/carousel/image-box-carousel.php:57, src/minimog/elementor/widgets/carousel/image-box-carousel.php:58, src/minimog/elementor/widgets/carousel/testimonial-slideshow.php:52, src/minimog/elementor/widgets/carousel/testimonial-slideshow.php:53, src/minimog/elementor/widgets/countdown.php:49, src/minimog/elementor/widgets/countdown.php:50, src/minimog/elementor/widgets/image-box.php:58, src/minimog/elementor/widgets/image-box.php:59, src/minimog/elementor/widgets/original/countdown.php:37, src/minimog/elementor/widgets/posts/blog-carousel.php:63, src/minimog/elementor/widgets/posts/blog-carousel.php:64, src/minimog/elementor/widgets/posts/blog-carousel.php:65, src/minimog/elementor/widgets/posts/blog.php:104, src/minimog/elementor/widgets/posts/blog.php:105, src/minimog/elementor/widgets/posts/blog.php:106, src/minimog/elementor/widgets/tabs.php:54, src/minimog/elementor/widgets/tabs.php:55, src/minimog/elementor/widgets/woocommerce/feature-product-carousel.php:55, src/minimog/elementor/widgets/woocommerce/product-list-carousel.php:92, src/minimog/elementor/widgets/woocommerce/product-list-carousel.php:102, src/minimog/framework/class-top-bar.php:26, src/minimog/framework/class-woo.php:1913, src/minimog/framework/class-woo.php:1914, src/minimog/framework/class-woo.php:1915, src/minimog/framework/class-woo.php:1916, src/minimog/framework/class-woo.php:1917, src/minimog/framework/class-woo.php:1918, src/minimog/framework/class-woo.php:1919, src/minimog/framework/class-woo.php:1920, src/minimog/framework/class-woo.php:1921, src/minimog/framework/class-woo.php:1922, src/minimog/framework/class-woo.php:1923, src/minimog/framework/class-woo.php:1924, src/minimog/framework/class-woo.php:1930, src/minimog/framework/class-woo.php:1931, src/minimog/framework/class-woo.php:1932, src/minimog/framework/class-woo.php:1933, src/minimog/framework/class-woo.php:1934, src/minimog/framework/class-woo.php:1935, src/minimog/framework/class-woo.php:1936, src/minimog/framework/class-woo.php:1937, src/minimog/framework/class-woo.php:1938, src/minimog/framework/class-woo.php:1939, src/minimog/framework/class-woo.php:1940, src/minimog/framework/class-woo.php:1941, src/minimog/framework/class-woo.php:1947, src/minimog/framework/class-woo.php:1948, src/minimog/framework/class-woo.php:1949, src/minimog/framework/class-woo.php:1950, src/minimog/framework/class-woo.php:1951, src/minimog/framework/class-woo.php:1952, src/minimog/theme-options/sections/header/section-general.php:51, src/minimog/theme-options/sections/header/section-general.php:52, src/minimog/theme-options/sections/section-popup.php:29, src/minimog/theme-options/sections/section-popup.php:30, src/minimog/theme-options/sections/section-popup.php:31, src/minimog/theme-options/sections/top-bar/section-style-01.php:3
 msgid "Style %s"
 msgstr ""
 
@@ -1834,7 +1834,7 @@ msgstr ""
 msgid "Product Title"
 msgstr ""
 
-#: src/minimog/elementor/widgets/carousel/testimonial-carousel.php:544, src/minimog/elementor/widgets/carousel/testimonial-slideshow.php:529, src/minimog/elementor/widgets/grid/testimonial-grid.php:116, src/minimog/elementor/widgets/rating-box.php:45, src/minimog/elementor/widgets/testimonial.php:94, src/minimog/elementor/widgets/woocommerce/feature-product.php:488, src/minimog/framework/class-woo.php:646
+#: src/minimog/elementor/widgets/carousel/testimonial-carousel.php:544, src/minimog/elementor/widgets/carousel/testimonial-slideshow.php:529, src/minimog/elementor/widgets/grid/testimonial-grid.php:116, src/minimog/elementor/widgets/rating-box.php:45, src/minimog/elementor/widgets/testimonial.php:94, src/minimog/elementor/widgets/woocommerce/feature-product.php:488, src/minimog/framework/class-woo.php:732
 msgid "Rating"
 msgstr ""
 
@@ -3002,7 +3002,7 @@ msgstr ""
 msgid "Duration"
 msgstr ""
 
-#: src/minimog/elementor/widgets/marquee-list.php:114, src/minimog/framework/class-woo.php:660, src/minimog/widgets/product-highlight-filter.php:15
+#: src/minimog/elementor/widgets/marquee-list.php:114, src/minimog/framework/class-woo.php:746, src/minimog/widgets/product-highlight-filter.php:15
 msgid "Highlight"
 msgstr ""
 
@@ -3414,7 +3414,7 @@ msgstr ""
 msgid "Currency"
 msgstr ""
 
-#: src/minimog/elementor/widgets/pricing-table.php:107, src/minimog/elementor/widgets/woocommerce/feature-product.php:554, src/minimog/elementor/widgets/woocommerce/product-banner.php:325, src/minimog/framework/class-woo.php:681, src/minimog/woocommerce/cart/cart-content.php:15, src/minimog/woocommerce/cart/cart-content.php:92
+#: src/minimog/elementor/widgets/pricing-table.php:107, src/minimog/elementor/widgets/woocommerce/feature-product.php:554, src/minimog/elementor/widgets/woocommerce/product-banner.php:325, src/minimog/framework/class-woo.php:767, src/minimog/woocommerce/cart/cart-content.php:15, src/minimog/woocommerce/cart/cart-content.php:92
 msgid "Price"
 msgstr ""
 
@@ -3872,7 +3872,7 @@ msgid_plural "%s reviews"
 msgstr[0] ""
 msgstr[1] ""
 
-#: src/minimog/elementor/widgets/woocommerce/feature-product.php:1518, src/minimog/elementor/widgets/woocommerce/product-bundle.php:924, src/minimog/framework/woocommerce/product-bought-together.php:488, src/minimog/framework/woocommerce/product-bought-together.php:835, src/minimog/framework/woocommerce/product-bundle.php:421, src/minimog/woocommerce/custom/variable.php:56, src/minimog/woocommerce/single-product/add-to-cart/variable.php:53, src/minimog/woocommerce/swatches-single.php:203
+#: src/minimog/elementor/widgets/woocommerce/feature-product.php:1518, src/minimog/elementor/widgets/woocommerce/product-bundle.php:924, src/minimog/framework/woocommerce/product-bought-together.php:488, src/minimog/framework/woocommerce/product-bought-together.php:835, src/minimog/framework/woocommerce/product-bundle.php:424, src/minimog/woocommerce/custom/variable.php:56, src/minimog/woocommerce/single-product/add-to-cart/variable.php:53, src/minimog/woocommerce/swatches-single.php:203
 msgid "Clear"
 msgstr ""
 
@@ -3886,7 +3886,7 @@ msgstr[1] ""
 msgid "Low stock bar"
 msgstr ""
 
-#: src/minimog/elementor/widgets/woocommerce/feature-product.php:1586, src/minimog/framework/class-woo.php:1713, src/minimog/framework/woocommerce/product-stock.php:30, src/minimog/woocommerce/loop/availability.php:13
+#: src/minimog/elementor/widgets/woocommerce/feature-product.php:1586, src/minimog/framework/class-woo.php:1810, src/minimog/framework/woocommerce/product-stock.php:30, src/minimog/woocommerce/loop/availability.php:13
 msgid "Out of stock"
 msgstr ""
 
@@ -3926,7 +3926,7 @@ msgstr ""
 msgid "Shop now"
 msgstr ""
 
-#: src/minimog/elementor/widgets/woocommerce/product-banner.php:533, src/minimog/framework/class-woo.php:823, src/minimog/framework/woocommerce/compare.php:237, src/minimog/widgets/product-banner.php:127
+#: src/minimog/elementor/widgets/woocommerce/product-banner.php:533, src/minimog/framework/class-woo.php:920, src/minimog/framework/woocommerce/compare.php:237, src/minimog/widgets/product-banner.php:127
 msgid "Sale !"
 msgstr ""
 
@@ -4050,7 +4050,7 @@ msgstr ""
 msgid "Regular"
 msgstr ""
 
-#: src/minimog/elementor/widgets/woocommerce/product-carousel-countdown.php:444, src/minimog/elementor/widgets/woocommerce/product-carousel-tabs.php:802, src/minimog/elementor/widgets/woocommerce/product-carousel.php:335, src/minimog/elementor/widgets/woocommerce/product-grid-tabs.php:819, src/minimog/elementor/widgets/woocommerce/product-list-carousel.php:374, src/minimog/elementor/widgets/woocommerce/product.php:330, src/minimog/elementor/widgets/woocommerce/products-slideshow.php:459, src/minimog/framework/class-woo.php:1906, src/minimog/widgets/product-badge.php:35
+#: src/minimog/elementor/widgets/woocommerce/product-carousel-countdown.php:444, src/minimog/elementor/widgets/woocommerce/product-carousel-tabs.php:802, src/minimog/elementor/widgets/woocommerce/product-carousel.php:335, src/minimog/elementor/widgets/woocommerce/product-grid-tabs.php:819, src/minimog/elementor/widgets/woocommerce/product-list-carousel.php:374, src/minimog/elementor/widgets/woocommerce/product.php:330, src/minimog/elementor/widgets/woocommerce/products-slideshow.php:459, src/minimog/framework/class-woo.php:2003, src/minimog/widgets/product-badge.php:35
 msgid "Sale"
 msgstr ""
 
@@ -5263,7 +5263,7 @@ msgstr ""
 msgid "Select"
 msgstr ""
 
-#: src/minimog/framework/class-walker-nav-menu-edit.php:233, src/minimog/framework/class-walker-nav-menu-edit.php:265, src/minimog/framework/class-widget.php:321, src/minimog/framework/class-woo.php:1158, src/minimog/framework/woocommerce/avatar-upload.php:127, src/minimog/woocommerce/cart/cart-content.php:86, src/minimog/woocommerce/cart/mini-cart.php:104
+#: src/minimog/framework/class-walker-nav-menu-edit.php:233, src/minimog/framework/class-walker-nav-menu-edit.php:265, src/minimog/framework/class-widget.php:321, src/minimog/framework/class-woo.php:1255, src/minimog/framework/woocommerce/avatar-upload.php:127, src/minimog/woocommerce/cart/cart-content.php:86, src/minimog/woocommerce/cart/mini-cart.php:104
 msgid "Remove"
 msgstr ""
 
@@ -5291,114 +5291,114 @@ msgstr ""
 msgid "Upload"
 msgstr ""
 
-#: src/minimog/framework/class-woo.php:290
+#: src/minimog/framework/class-woo.php:376
 msgctxt "Price range: from-to"
 msgid "%1$s <span class=\"wc-price-separator\">&ndash;</span> %2$s"
 msgstr ""
 
-#: src/minimog/framework/class-woo.php:582, src/minimog/framework/class-woo.php:618, src/minimog/framework/class-woo.php:646, src/minimog/framework/class-woo.php:660, src/minimog/framework/class-woo.php:681
+#: src/minimog/framework/class-woo.php:668, src/minimog/framework/class-woo.php:704, src/minimog/framework/class-woo.php:732, src/minimog/framework/class-woo.php:746, src/minimog/framework/class-woo.php:767
 msgid "Remove This %s"
 msgstr ""
 
-#: src/minimog/framework/class-woo.php:645
+#: src/minimog/framework/class-woo.php:731
 msgid "%s star"
 msgid_plural "%s stars"
 msgstr[0] ""
 msgstr[1] ""
 
-#: src/minimog/framework/class-woo.php:673
+#: src/minimog/framework/class-woo.php:759
 msgid "From %s"
 msgstr ""
 
-#: src/minimog/framework/class-woo.php:675
+#: src/minimog/framework/class-woo.php:761
 msgid "To %s"
 msgstr ""
 
-#: src/minimog/framework/class-woo.php:689
+#: src/minimog/framework/class-woo.php:775
 msgid "Clear All"
 msgstr ""
 
-#: src/minimog/framework/class-woo.php:707
+#: src/minimog/framework/class-woo.php:793
 msgid "Remove This Filter"
 msgstr ""
 
-#: src/minimog/framework/class-woo.php:859
+#: src/minimog/framework/class-woo.php:956
 msgid "%1$d%%"
 msgstr ""
 
-#: src/minimog/framework/class-woo.php:1152
+#: src/minimog/framework/class-woo.php:1249
 msgid "Free shipping coupon"
 msgstr ""
 
-#: src/minimog/framework/class-woo.php:1245
+#: src/minimog/framework/class-woo.php:1342
 msgid "Select a option"
 msgstr ""
 
-#: src/minimog/framework/class-woo.php:1715, src/minimog/framework/class-woo.php:1717, src/minimog/framework/woocommerce/product-stock.php:32, src/minimog/framework/woocommerce/product-stock.php:34, src/minimog/woocommerce/cart/cart-content.php:81, src/minimog/woocommerce/loop/availability.php:17, src/minimog/woocommerce/loop/availability.php:19
+#: src/minimog/framework/class-woo.php:1812, src/minimog/framework/class-woo.php:1814, src/minimog/framework/woocommerce/product-stock.php:32, src/minimog/framework/woocommerce/product-stock.php:34, src/minimog/woocommerce/cart/cart-content.php:81, src/minimog/woocommerce/loop/availability.php:17, src/minimog/woocommerce/loop/availability.php:19
 msgid "Available on backorder"
 msgstr ""
 
-#: src/minimog/framework/class-woo.php:1721, src/minimog/framework/class-woo.php:1737, src/minimog/framework/woocommerce/product-stock.php:36, src/minimog/widgets/product-stock-filter.php:53, src/minimog/woocommerce/loop/availability.php:21, src/minimog/woocommerce/loop/availability.php:28
+#: src/minimog/framework/class-woo.php:1818, src/minimog/framework/class-woo.php:1834, src/minimog/framework/woocommerce/product-stock.php:36, src/minimog/widgets/product-stock-filter.php:53, src/minimog/woocommerce/loop/availability.php:21, src/minimog/woocommerce/loop/availability.php:28
 msgid "In stock"
 msgstr ""
 
-#: src/minimog/framework/class-woo.php:1743
+#: src/minimog/framework/class-woo.php:1840
 msgid "Only %s left in stock"
 msgstr ""
 
-#: src/minimog/framework/class-woo.php:1746
+#: src/minimog/framework/class-woo.php:1843
 msgid "%s in stock"
 msgstr ""
 
-#: src/minimog/framework/class-woo.php:1751, src/minimog/framework/woocommerce/product-stock.php:66
+#: src/minimog/framework/class-woo.php:1848, src/minimog/framework/woocommerce/product-stock.php:66
 msgid "(can be backordered)"
 msgstr ""
 
-#: src/minimog/framework/class-woo.php:1761, src/minimog/woocommerce/cart/cross-sells.php:24
+#: src/minimog/framework/class-woo.php:1858, src/minimog/woocommerce/cart/cross-sells.php:24
 msgid "You may also like"
 msgstr ""
 
-#: src/minimog/framework/class-woo.php:1768
+#: src/minimog/framework/class-woo.php:1865
 msgid "Recently viewed products"
 msgstr ""
 
-#: src/minimog/framework/class-woo.php:1863
+#: src/minimog/framework/class-woo.php:1960
 msgid "Showing the single result"
 msgstr ""
 
-#: src/minimog/framework/class-woo.php:1866
+#: src/minimog/framework/class-woo.php:1963
 msgid "Showing all %d result"
 msgid_plural "Showing all %d results"
 msgstr[0] ""
 msgstr[1] ""
 
-#: src/minimog/framework/class-woo.php:1871
+#: src/minimog/framework/class-woo.php:1968
 msgctxt "with first and last result"
 msgid "Showing %1$d of %2$d result"
 msgid_plural "Showing %1$d of %2$d results"
 msgstr[0] ""
 msgstr[1] ""
 
-#: src/minimog/framework/class-woo.php:1876
+#: src/minimog/framework/class-woo.php:1973
 msgctxt "with first and last result"
 msgid "Showing %1$d&ndash;%2$d of %3$d result"
 msgid_plural "Showing %1$d&ndash;%2$d of %3$d results"
 msgstr[0] ""
 msgstr[1] ""
 
-#: src/minimog/framework/class-woo.php:1903
+#: src/minimog/framework/class-woo.php:2000
 msgid "All Products"
 msgstr ""
 
-#: src/minimog/framework/class-woo.php:1904
+#: src/minimog/framework/class-woo.php:2001
 msgid "Best Seller"
 msgstr ""
 
-#: src/minimog/framework/class-woo.php:1905, src/minimog/widgets/product-badge.php:45
+#: src/minimog/framework/class-woo.php:2002, src/minimog/widgets/product-badge.php:45
 msgid "New Arrivals"
 msgstr ""
 
-#: src/minimog/framework/class-woo.php:1907
+#: src/minimog/framework/class-woo.php:2004
 msgid "Hot Items"
 msgstr ""
 

@@ -38,6 +38,52 @@
     });
   });
 
+  $(document).
+      on('click touch', '.woosb_selected .woosb-li-product span.settings',
+          function(e) {
+            var $this = $(this);
+            var $this_product = $this.closest('.woosb-li-product');
+            var key = $this_product.data('key');
+            var name = $this_product.data('name');
+
+            if (!$('#woosb_item_settings_' + key).length) {
+              $('body').
+                  append('<div id="woosb_item_settings_' + key + '"></div>');
+            }
+
+            $('.woosb_item_settings_' + key + ' select').selectWoo();
+
+            $('.woosb_item_settings_' + key).
+                appendTo('#woosb_item_settings_' + key);
+
+            $('#woosb_item_settings_' + key).dialog({
+              minWidth: 540,
+              title: 'Config terms for "' + name + '"',
+              modal: true,
+              dialogClass: 'wpc-dialog',
+              open: function() {
+                $('.ui-widget-overlay').bind('click', function() {
+                  $('#woosb_item_settings_' + key).dialog('close');
+                });
+
+                $('.woosb_item_settings_' + key).
+                    find('.woosb_item_settings_save_changes button').
+                    bind('click', function() {
+                      $('#woosb_item_settings_' + key).dialog('close');
+                    });
+              },
+              close: function() {
+                $('.woosb_item_settings_' + key + ' select').
+                    selectWoo('destroy');
+
+                $('.woosb_item_settings_' + key).
+                    appendTo(
+                        $('.woosb_selected .woosb-li-product[data-key="' + key +
+                            '"]'));
+              },
+            });
+          });
+
   $(document).on('click touch', '#woosb_search_settings_update', function(e) {
     // save search settings
     e.preventDefault();
@@ -46,6 +92,7 @@
 
     var data = {
       action: 'woosb_update_search_settings',
+      nonce: woosb_vars.nonce,
       limit: $('.woosb_search_limit').val(),
       sku: $('.woosb_search_sku').val(),
       id: $('.woosb_search_id').val(),
@@ -128,6 +175,7 @@
 
     var data = {
       action: 'woosb_add_text',
+      nonce: woosb_vars.nonce,
     };
 
     $.post(ajaxurl, data, function(response) {
@@ -375,6 +423,7 @@
 
     var data = {
       action: 'woosb_get_search_results',
+      nonce: woosb_vars.nonce,
       keyword: $('#woosb_keyword').val(),
       ids: ids.join(),
     };

@@ -1,5 +1,4 @@
-(
-	function( $ ) {
+(function( $ ) {
 		'use strict';
 
 		var MinimogGridPlugin = function( $el, options ) {
@@ -48,26 +47,25 @@
 						plugin._isotopeOptions.layoutMode = 'fitRows';
 					}
 
-					if ( $.fn.imagesLoaded ) {
+					if ( $.fn.laziestloader ) {
+						var $llImages = $grid.find( '.ll-image' ),
+							observer = [];
+
+						if ( $llImages.length > 0 ) {
+							$llImages.each(function() {
+								observer.push( plugin.isImageLoaded( $(this) ) );
+							});
+
+							Promise.all( observer ).then( ( values ) => {
+								plugin.calculateMasonrySize();
+							} );
+						}
+					} else if ( $.fn.imagesLoaded ) {
 						$grid.imagesLoaded( function() {
 							plugin.calculateMasonrySize();
 						} );
 					} else {
 						plugin.calculateMasonrySize();
-					}
-
-					var lazyLoadTimer;
-					if ( $.fn.laziestloader ) {
-						var llImages = $grid.find( '.ll-image' );
-
-						// Re cal layout one time when all lazy images in view loaded.
-						llImages.on( 'loaded', function( evt ) {
-							clearTimeout( lazyLoadTimer );
-							lazyLoadTimer = setTimeout( function() {
-								// Run code here, resizing has "stopped"
-								plugin.calculateMasonrySize();
-							}, 100 );
-						} );
 					}
 
 					$grid.one( 'arrangeComplete', function() {
@@ -94,17 +92,34 @@
 				} );
 			};
 
+			this.initAndTrackLazyImage = function( $image ) {
+				$image.laziestloader( {}, function() {
+					$( this ).unwrap( '.minimog-lazy-image' );
+				} ).trigger( 'laziestloader' );
+
+				return this.isImageLoaded( $image );
+			}
+
+			this.isImageLoaded = function( $image ) {
+				return new Promise( ( res, rej ) => {
+					$image.on( 'loaded', function() {
+						return res('This image loaded');
+					} );
+				} );
+			}
+
 			this.update = function( $items ) {
-				var plugin   = this;
-				var settings = $el.data( 'grid' );
+				var plugin   = this,
+					settings = $el.data( 'grid' ),
+					observer = [];
 
 				if ( $.fn.laziestloader ) {
-					var llImages = $items.find( '.ll-image' );
+					var $llImages = $items.find( '.ll-image' );
 
-					if ( llImages.length > 0 ) {
-						llImages.laziestloader( {}, function() {
-							$( this ).unwrap( '.minimog-lazy-image' );
-						} ).trigger( 'laziestloader' );
+					if ( $llImages.length > 0 ) {
+						$llImages.each(function() {
+							observer.push( plugin.initAndTrackLazyImage( $(this) ) );
+						});
 					}
 				}
 
@@ -121,6 +136,10 @@
 					} else {
 						$items.addClass( 'animate' );
 						plugin.calculateMasonrySize();
+
+						Promise.all( observer ).then( ( values ) => {
+							plugin.calculateMasonrySize();
+						} );
 					}
 				} else {
 					$grid.append( $items );
@@ -273,13 +292,9 @@
 
 				$el.attr( 'data-active-columns', plugin.activeColumns );
 
-				var totalGutterPerRow = (
-					                        plugin.activeColumns - 1
-				                        ) * plugin.activeGutter;
+				var totalGutterPerRow = (plugin.activeColumns - 1) * plugin.activeGutter;
 
-				var columnWidth = (
-					                  gridWidth - totalGutterPerRow
-				                  ) / plugin.activeColumns;
+				var columnWidth = (gridWidth - totalGutterPerRow) / plugin.activeColumns;
 
 				columnWidth = Math.floor( columnWidth );
 
@@ -291,9 +306,7 @@
 				/**
 				 * Used this css var for layout grid border around
 				 */
-				var realWidth = columnWidth * plugin.activeColumns + plugin.activeGutter * (
-					plugin.activeColumns - 1
-				);
+				var realWidth = columnWidth * plugin.activeColumns + plugin.activeGutter * (plugin.activeColumns - 1);
 				$el.css( '--grid-real-width', realWidth + 'px' );
 
 				$grid.children( '.grid-sizer' ).css( {
@@ -336,18 +349,10 @@
 				if ( plugin.activeAlternatingColumns ) {
 					if ( alternatingReversed ) {
 						alternatingColumnWidth =
-							(
-								gridWidth - (
-								totalAlternatingColumns - 1
-								) * plugin.activeGutter
-							) / totalAlternatingColumns;
+							(gridWidth - (totalAlternatingColumns - 1) * plugin.activeGutter) / totalAlternatingColumns;
 					} else {
 						alternatingColumnWidth =
-							(
-								gridWidth - plugin.activeColumns * plugin.activeGutter
-							) / (
-								plugin.activeColumns + 1
-							);
+							(gridWidth - plugin.activeColumns * plugin.activeGutter) / (plugin.activeColumns + 1);
 					}
 
 					alternatingColumnWidth = Math.floor( alternatingColumnWidth );
@@ -528,5 +533,4 @@
 				} );
 			}
 		} );
-	}( jQuery )
-);
+	}( jQuery ));

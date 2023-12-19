@@ -3,20 +3,21 @@
 Plugin Name: WPC Product Bundles for WooCommerce (Premium)
 Plugin URI: https://wpclever.net/
 Description: WPC Product Bundles is a plugin help you bundle a few products, offer them at a discount and watch the sales go up!
-Version: 7.1.3
+Version: 7.3.3
 Author: WPClever
 Author URI: https://wpclever.net
 Text Domain: woo-product-bundle
 Domain Path: /languages/
 Requires at least: 4.0
-Tested up to: 6.2
+Tested up to: 6.4
 WC requires at least: 3.0
-WC tested up to: 7.6
+WC tested up to: 8.3
 */
 
 defined( 'ABSPATH' ) || exit;
 
-! defined( 'WOOSB_VERSION' ) && define( 'WOOSB_VERSION', '7.1.3' );
+! defined( 'WOOSB_VERSION' ) && define( 'WOOSB_VERSION', '7.3.3' );
+! defined( 'WOOSB_PREMIUM' ) && define( 'WOOSB_PREMIUM', __FILE__ );
 ! defined( 'WOOSB_FILE' ) && define( 'WOOSB_FILE', __FILE__ );
 ! defined( 'WOOSB_URI' ) && define( 'WOOSB_URI', plugin_dir_url( __FILE__ ) );
 ! defined( 'WOOSB_DIR' ) && define( 'WOOSB_DIR', plugin_dir_path( __FILE__ ) );
@@ -27,9 +28,9 @@ defined( 'ABSPATH' ) || exit;
 ! defined( 'WOOSB_DISCUSSION' ) && define( 'WOOSB_DISCUSSION', 'https://wordpress.org/support/plugin/woo-product-bundle' );
 ! defined( 'WPC_URI' ) && define( 'WPC_URI', WOOSB_URI );
 
-include 'includes/wpc-dashboard.php';
-include 'includes/wpc-menu.php';
+include 'includes/dashboard/wpc-dashboard.php';
 include 'includes/kit/wpc-kit.php';
+include 'includes/hpos.php';
 include 'includes/premium/wpc-premium.php';
 
 if ( ! function_exists( 'woosb_init' ) ) {
@@ -42,7 +43,7 @@ if ( ! function_exists( 'woosb_init' ) ) {
 		if ( ! function_exists( 'WC' ) || ! version_compare( WC()->version, '3.0', '>=' ) ) {
 			add_action( 'admin_notices', 'woosb_notice_wc' );
 
-			return;
+			return null;
 		}
 
 		include_once 'includes/class-helper.php';
@@ -58,9 +59,9 @@ if ( ! function_exists( 'woosb_init' ) ) {
 if ( ! function_exists( 'woosb_notice_wc' ) ) {
 	function woosb_notice_wc() {
 		?>
-		<div class="error">
-			<p><strong>WPC Product Bundles</strong> requires WooCommerce version 3.0 or greater.</p>
-		</div>
+        <div class="error">
+            <p><strong>WPC Product Bundles</strong> requires WooCommerce version 3.0 or greater.</p>
+        </div>
 		<?php
 	}
 }

@@ -6,6 +6,8 @@
 
     var $this = $(this);
     var key = $('#wpc_update_key').val();
+    var site = $('#wpc_update_site').val();
+    var email = $('#wpc_update_email').val();
 
     if (key.length > 10) {
       $this.val('Verifying...');
@@ -14,6 +16,8 @@
       var data = {
         action: 'wpc_check_update_key',
         key: key,
+        site: site,
+        email: email,
       };
 
       $.post(ajaxurl, data, function(response) {

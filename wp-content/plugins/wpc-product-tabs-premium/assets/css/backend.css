@@ -1,5 +1,7 @@
 .woost-tabs-wrapper {
     background-color: #f7f7f7;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
 }
 
 .woost-tabs {
@@ -68,14 +70,63 @@
     display: block;
 }
 
-.woost-tabs .woost-tab .woost-tab-line {
-    margin-bottom: 10px;
-    display: inline-block;
+.woost-tabs .woost-tab .woost-tab-content .select2-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    float: none !important;
+    box-sizing: border-box !important;
+    display: inline-block !important;
+    margin-top: 10px;
+}
+
+.woost-tabs .woost-tab .woost-tab-content .woost-tab-line {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.woost-tabs .woost-tab .woost-tab-content .woost-tab-line .woost-tab-line-label {
+    width: 120px;
+    flex: 0 0 120px;
+}
+
+.woost-tabs .woost-tab .woost-tab-content .woost-tab-line .woost-tab-line-value {
+    flex-grow: 1;
+}
+
+.woost-tabs .woost-tab .woost-tab-content .woost-tab-line .woost-tab-line-value textarea {
+    float: none;
     width: 100%;
 }
 
-.woost-tabs .woost-tab .woost-tab-line:last-child {
-    margin-bottom: 0;
+.woost-tabs .woost-tab .woost-tab-content .woost-tab-line:first-child {
+    margin-top: 0;
+}
+
+.woost-tabs .woost-tab .woost-tab-content .woost-tab-line.woost-tab-line-apply, .woost-tabs .woost-tab .woost-tab-content .woost-tab-line.woost-tab-line-type {
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #dddddd;
+}
+
+.woost-tabs .woost-tab .woost-tab-content .woost-tab-line label {
+    float: none;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+}
+
+.woost-tabs .woost-tab .woost-tab-content .woost-tab-line select, .woost-tabs .woost-tab .woost-tab-content .woost-tab-line input {
+    float: none;
+}
+
+.woocommerce_options_panel .woost-tabs .woost-tab .woost-tab-content .woost-tab-line.woost-tab-line-apply, .woocommerce_options_panel .woost-tabs .woost-tab .woost-tab-label-apply {
+    display: none !important;
+}
+
+.woocommerce_options_panel .woost-tabs .woost-tab .woost-tab-content .woost-tab-line.woost-tab-line-type {
+    margin-top: 0 !important;
 }
 
 .woost-tab-move {
@@ -106,7 +157,7 @@
     text-overflow: ellipsis;
 }
 
-.woost-tab-label-type {
+.woost-tab-label-type, .woost-tab-label-apply {
     font-size: 12px;
     font-weight: 400;
     background-color: #eee;

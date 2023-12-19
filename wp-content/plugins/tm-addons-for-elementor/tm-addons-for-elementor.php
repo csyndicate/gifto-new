@@ -3,13 +3,13 @@
 Plugin Name: Thememove Addons For Elementor
 Description: Additional functions for Elementor
 Author: ThemeMove
-Version: 1.3.0
+Version: 1.3.1
 Author URI: https://thememove.com
 Text Domain: tm-addons-for-elementor
 Domain Path: /languages/
 Requires at least: 5.7
 Requires PHP: 7.0
-Elementor tested up to: 3.6.2
+Elementor tested up to: 3.16.4
 */
 defined( 'ABSPATH' ) || exit;
 
@@ -25,7 +25,7 @@ if ( ! class_exists( 'TM_Addons' ) ) {
 		}
 
 		public function define() {
-			define( 'TM_ADDONS_VER', '1.3.0' );
+			define( 'TM_ADDONS_VER', '1.3.1' );
 			define( 'TM_ADDONS_DIR', plugin_dir_path( __FILE__ ) );
 			define( 'TM_ADDONS_URL', plugin_dir_url( __FILE__ ) );
 		}

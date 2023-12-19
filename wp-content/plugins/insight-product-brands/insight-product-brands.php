@@ -4,17 +4,19 @@
  * Description: Add brands for products
  * Author: ThemeMove
  * Author URI: https://thememove.com
- * Version: 1.1.0
+ * Version: 1.3.0
  * Text Domain: insight-product-brands
  * License: GPLv2
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
+ * WC requires at least: 3.0
+ * WC tested up to: 8.1
  */
 
 defined( 'ABSPATH' ) || exit;
 
 define( 'INSIGHT_PRODUCT_BRANDS_DIR', plugin_dir_path( __FILE__ ) );
 define( 'INSIGHT_PRODUCT_BRANDS_URL', plugin_dir_url( __FILE__ ) );
-define( 'INSIGHT_PRODUCT_BRANDS_VERSION', '1.1.0' );
+define( 'INSIGHT_PRODUCT_BRANDS_VERSION', '1.3.0' );
 define( 'INSIGHT_PRODUCT_BRANDS_ASSETS_URI', INSIGHT_PRODUCT_BRANDS_URL . '/assets' );
 
 if ( ! function_exists( 'insight_product_brand_placeholder_img_src' ) ) {
@@ -60,6 +62,12 @@ class Insight_Product_Brands {
 		add_filter( 'manage_' . self::TAXONOMY_NAME . '_custom_column', [ $this, 'manage_table_column' ], 10, 3 );
 
 		add_action( 'admin_enqueue_scripts', [ $this, 'admin_scripts' ] );
+
+		// Allow custom ordering.
+		add_filter( 'woocommerce_screen_ids', [ $this, 'add_screen_id_to_load_scripts' ] );
+		add_filter( 'woocommerce_sortable_taxonomies', [ $this, 'add_to_sortable_list' ] );
+
+		add_action( 'before_woocommerce_init', [ $this, 'declare_compatibility_features' ] );
 	}
 
 	public function load_text_domain() {
@@ -297,6 +305,34 @@ class Insight_Product_Brands {
 		if ( 'edit-product_brand' === $screen->id ) {
 			wp_enqueue_media();
 			wp_enqueue_script( 'insight-product-brand-media', INSIGHT_PRODUCT_BRANDS_ASSETS_URI . '/admin/js/media-upload.js', [ 'jquery' ], null, true );
+		}
+	}
+
+	/**
+	 * Add this taxonomy screen id to wc screen id list to load styles & scripts.
+	 *
+	 * @param $screen_ids
+	 *
+	 * @return mixed
+	 */
+	public function add_screen_id_to_load_scripts( $screen_ids ) {
+		$screen_ids[] = 'edit-' . self::TAXONOMY_NAME;
+
+		return $screen_ids;
+	}
+
+	public function add_to_sortable_list( $sortable_taxonomies ) {
+		$sortable_taxonomies[] = self::TAXONOMY_NAME;
+
+		return $sortable_taxonomies;
+	}
+
+	public function declare_compatibility_features() {
+		/**
+		 * HPOS compatible.
+		 */
+		if ( class_exists( \Automattic\WooCommerce\Utilities\FeaturesUtil::class ) ) {
+			\Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility( 'custom_order_tables', __FILE__, true );
 		}
 	}
 }

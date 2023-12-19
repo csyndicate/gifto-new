@@ -2,57 +2,38 @@
 
 (function($) {
   $(function() {
-    woost_arrange();
     woost_overwrite();
+    woost_arrange();
+    woost_apply();
+    woost_type();
+  });
+
+  $(document).on('change', '.woost_apply', function() {
+    woost_apply();
+  });
+
+  $(document).on('change', '.woost_type', function() {
+    woost_type();
   });
 
   $(document).on('click touch', '.woost-tab-new', function() {
-    var woost_new = $(this);
-    var woost_type = $('.woost-tab-type').val();
-    var woost_editor = 'woost_editor_' + Date.now().toString();
+    var $btn = $(this);
 
-    if ((
-        (
-            woost_type == 'description'
-        ) && $('.woost-tabs .woost-tab-description').length
-    ) || (
-        (
-            woost_type == 'additional_information'
-        ) && $('.woost-tabs .woost-tab-additional_information').length
-    ) || (
-        (
-            woost_type == 'reviews'
-        ) && $('.woost-tabs .woost-tab-reviews').length
-    )) {
-      alert('Already has this tab!');
-      return false;
-    }
-
-    woost_new.prop('disabled', true);
+    $btn.prop('disabled', true);
 
     var data = {
-      action: 'woost_add_tab',
-      editor: woost_editor,
-      type: woost_type,
+      action: 'woost_add_tab', product_id: $btn.data('product_id'),
     };
 
     $.post(ajaxurl, data, function(response) {
+      var editor = $(response).find('.woost-textarea').attr('id');
+
       $('.woost-tabs').append(response);
-
-      if (woost_type == 'custom') {
-        wp.editor.initialize(woost_editor, {
-          mediaButtons: true,
-          tinymce: {
-            wpautop: true,
-            plugins: 'charmap colorpicker compat3x directionality fullscreen hr image lists media paste tabfocus textcolor wordpress wpautoresize wpdialogs wpeditimage wpemoji wpgallery wplink wptextpattern wpview',
-            toolbar1: 'formatselect bold italic | bullist numlist | blockquote | alignleft aligncenter alignright | link unlink | wp_more | spellchecker',
-          },
-          quicktags: true,
-        });
-      }
-
       woost_arrange();
-      woost_new.prop('disabled', false);
+      woost_apply();
+      woost_type();
+      woost_editor(editor);
+      $btn.prop('disabled', false);
     });
   });
 
@@ -98,5 +79,101 @@
         $('.woost-tabs-new').hide();
       }
     }
+  }
+
+  function woost_apply() {
+    $('.woost_apply').each(function() {
+      var $this = $(this);
+      var apply = $this.val();
+      var apply_text = $this.find('option:selected').text();
+      var $terms = $this.closest('.woost-tab').find('.woost_terms');
+      var $products = $this.closest('.woost-tab').find('.woost_products');
+
+      $this.closest('.woost-tab').
+          find('.woost-tab-label-apply').
+          html(apply_text);
+
+      $terms.closest('.woost-tab').find('.woost_hide').hide();
+      $terms.closest('.woost-tab').find('.woost_show').show();
+      $terms.closest('.woost-tab').find('.hide_if_apply_' + apply).hide();
+      $terms.closest('.woost-tab').find('.show_if_apply_' + apply).show();
+
+      $terms.selectWoo({
+        ajax: {
+          url: ajaxurl, dataType: 'json', delay: 250, data: function(params) {
+            return {
+              q: params.term, action: 'woost_search_term', taxonomy: apply,
+            };
+          }, processResults: function(data) {
+            var options = [];
+
+            if (data) {
+              $.each(data, function(index, text) {
+                options.push({id: text[0], text: text[1]});
+              });
+            }
+            return {
+              results: options,
+            };
+          }, cache: true,
+        }, minimumInputLength: 1,
+      });
+
+      if ((typeof $terms.data(apply) === 'string' ||
+          $terms.data(apply) instanceof String) && $terms.data(apply) !== '') {
+        $terms.val($terms.data(apply).split(',')).change();
+      } else {
+        $terms.val([]).change();
+      }
+
+      $products.selectWoo({
+        allowClear: true, ajax: {
+          url: ajaxurl, dataType: 'json', delay: 250, data: function(params) {
+            return {
+              term: params.term, action: 'woost_search_product',
+            };
+          }, processResults: function(data) {
+            var options = [];
+
+            if (data) {
+              $.each(data, function(index, text) {
+                options.push({id: text[0], text: text[1]});
+              });
+            }
+
+            return {
+              results: options,
+            };
+          }, cache: true,
+        }, minimumInputLength: 1,
+      });
+    });
+  }
+
+  function woost_editor(editor) {
+    wp.editor.initialize(editor, {
+      mediaButtons: true, tinymce: {
+        wpautop: true,
+        plugins: 'charmap colorpicker compat3x directionality fullscreen hr image lists media paste tabfocus textcolor wordpress wpautoresize wpdialogs wpeditimage wpemoji wpgallery wplink wptextpattern wpview',
+        toolbar1: 'formatselect bold italic | bullist numlist | blockquote | alignleft aligncenter alignright | link unlink | wp_more | spellchecker',
+      }, quicktags: true,
+    });
+  }
+
+  function woost_type() {
+    $('.woost_type').each(function() {
+      var $this = $(this);
+      var type = $this.val();
+
+      $this.closest('.woost-tab').
+          find('.woost-tab-label-type').
+          html('#' + type);
+
+      if (type === 'custom') {
+        $this.closest('.woost-tab').find('.woost-tab-line-content').show();
+      } else {
+        $this.closest('.woost-tab').find('.woost-tab-line-content').hide();
+      }
+    });
   }
 })(jQuery);

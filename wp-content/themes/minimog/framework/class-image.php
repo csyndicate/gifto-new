@@ -255,9 +255,13 @@ class Minimog_Image {
 			$image_attributes['src'] = self::get_lazy_image_src( $image_attributes['width'], $image_attributes['height'] );
 		}
 
+		$image_attributes['class'] = "attachment-$image_size size-$image_size";
 		if ( ! empty( $args['class'] ) ) {
-			$image_attributes['class'] = $args['class'];
+			$image_attributes['class'] .= ' ' . $args['class'];
 		}
+
+		/*$image_attributes['decoding'] = 'async';
+		$image_attributes['fetchpriority'] = 'high';*/
 
 		$image = self::build_img_tag( $image_attributes );
 

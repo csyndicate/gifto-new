@@ -89,8 +89,8 @@
     text-decoration: none;
 }
 
-.wpc-premium, .wpc-premium a {
-    color: #c9356e;
+.wpclever_settings_page .select2-container {
+    width: 100% !important;
 }
 
 /* WPC Dialog */

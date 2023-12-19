@@ -40,7 +40,7 @@
     display: none;
 }
 
-.woosb-products .woosb-product.woosb-product-unpurchasable {
+.woosb-products[data-exclude-unpurchasable="yes"] .woosb-product.woosb-product-unpurchasable {
     display: none;
 }
 
@@ -248,6 +248,7 @@ body.woocommerce-no-js .woosb-wrap + form.cart {
 .woosb-quantity-input .quantity {
     flex-grow: 1;
     height: auto;
+    margin: 0;
 }
 
 .woosb-quantity-plus-minus .plus, .woosb-quantity-plus-minus .minus, .woosb-quantity-plus-minus .quantity-minus, .woosb-quantity-plus-minus .quantity-plus, .woosb-quantity-plus-minus .plus-btn, .woosb-quantity-plus-minus .minus-btn {

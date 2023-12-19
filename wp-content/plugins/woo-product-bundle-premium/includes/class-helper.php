@@ -22,6 +22,14 @@ if ( ! class_exists( 'WPCleverWoosb_Helper' ) ) {
 			self::$localization = (array) get_option( 'woosb_localization', [] );
 		}
 
+		public static function round_price( $price ) {
+			if ( ! apply_filters( 'woosb_ignore_round_price', false ) ) {
+				$price = round( $price, (int) apply_filters( 'woosb_price_decimals', wc_get_price_decimals() ) );
+			}
+
+			return $price;
+		}
+
 		public static function get_price( $product, $min_or_max = 'min' ) {
 			if ( self::get_setting( 'bundled_price_from', 'sale_price' ) === 'regular_price' ) {
 				if ( $product->is_type( 'variable' ) ) {
@@ -69,7 +77,7 @@ if ( ! class_exists( 'WPCleverWoosb_Helper' ) ) {
 				if ( is_array( $v ) ) {
 					$arr[ $k ] = self::sanitize_array( $v );
 				} else {
-					$arr[ $k ] = sanitize_text_field( $v );
+					$arr[ $k ] = sanitize_post_field( 'post_content', $v, 0, 'db' );
 				}
 			}
 
@@ -143,5 +151,7 @@ if ( ! class_exists( 'WPCleverWoosb_Helper' ) ) {
 		}
 	}
 
-	return WPCleverWoosb_Helper::instance();
+	function WPCleverWoosb_Helper() {
+		return WPCleverWoosb_Helper::instance();
+	}
 }

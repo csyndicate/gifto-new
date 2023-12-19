@@ -36,7 +36,7 @@ if ( ! class_exists( 'Minimog_Login_Register' ) ) {
 			if ( defined( 'MO_OPENID_SOCIAL_LOGIN_VERSION' ) ) {
 				add_action( 'minimog/modal_user_login/after_form', [ $this, 'add_social_login_buttons' ], 10 );
 
-				add_action( 'minimog/user_register_form/after', [ $this, 'add_social_login_buttons' ], 10 );
+				add_action( 'minimog/modal_user_register/after_form', [ $this, 'add_social_login_buttons' ], 10 );
 
 				if ( version_compare( MO_OPENID_SOCIAL_LOGIN_VERSION, self::MINIMUM_MO_SOCIAL_LOGIN_VERSION, '<' ) ) {
 					add_action( 'admin_notices', [ $this, 'admin_notice_minimum_mo_social_login_version' ] );
